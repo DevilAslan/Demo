@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/icon.font.css"/>
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+</head>
+<body>
+	<div class="wrapper home">
+		<!-- 头部 -->
+		<div class="nav-outer">
+			<div class="nav-inner">
+				<div class="overflow-hidden">
+					<ul class="top-info right">
+						<li>
+							<a href="###">您好，李玉东（cxy）</a>
+						</li>
+						<li>
+							<a href="###">
+								<span class="head-icon message-icon"></span>
+								<span class="orange-point">19</span>
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								<span class="head-icon remind-icon"></span>
+								<span class="blue-point">5</span>
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								<span class="head-icon set-icon"></span>设置
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								<span class="head-icon exit-icon"></span>退出
+							</a>
+						</li>
+					</ul>
+				</div>
+				<h1 class="logo"></h1>
+				<ul class="nav" id="nav">
+					<li>
+						<a href="index.html">
+							<span class="index-icon"></span>系统首页
+						</a>
+						<span class="nav-cur-icon"></span>
+					</li>
+					<li class="cur">
+						<a href="report.html">
+							<span class="project-icon"></span>项目管理
+						</a>
+						<span class="nav-cur-icon"></span>
+					</li>
+					<li>
+						<a href="###">
+							<span class="statistics-icon"></span>统计分析
+						</a>
+						<span class="nav-cur-icon"></span>
+					</li>
+					<li>
+						<a href="###">
+							<span class="map-icon"></span>电子地图
+						</a>
+						<span class="nav-cur-icon"></span>
+					</li>
+					<li>
+						<a href="###">
+							<span class="public-info-icon"></span>公共信息
+						</a>
+						<span class="nav-cur-icon"></span>
+					</li>
+					<li>
+						<a href="###">
+							<span class="system-icon"></span>系统管理
+						</a>
+						<span class="nav-cur-icon"></span>
+					</li>
+					<li>
+						<a href="###">
+							<span class="performance-icon"></span>绩效管理
+						</a>
+						<span class="nav-cur-icon"></span>
+					</li>
+				</ul>
+			</div>
+			<div class="nav-line-vertical"></div>
+		</div>
+		<!-- 主体 -->
+		<div class="main">
+			<div class="index-shortcut clearfix">
+				<a href="###" class="home-icon icon-pro-add bg-blue">
+					<p>项目新增</p>
+					<span><i class="fi-record"></i></span>
+				</a>
+				<a href="###" class="home-icon icon-plan bg-red">
+					<p>按计划填报</p>
+					<span><i class="fi-record"></i></span>
+				</a>
+				<a href="###" class="home-icon icon-record bg-yellow">
+					<p>入库备案</p>
+					<span><i class="fi-record"></i></span>
+				</a>
+				<a href="###" class="home-icon icon-pro-month bg-black">
+					<p>项目月报</p>
+					<span><i class="fi-record"></i></span>
+				</a>
+				<a href="###" class="home-icon icon-month-record bg-yellow">
+					<p>月报备案</p>
+					<span><i class="fi-record"></i></span>
+				</a>
+				<a href="###" class="home-icon icon-pro-library bg-blue">
+					<p>项目库</p>
+					<span><i class="fi-record"></i></span>
+				</a>
+				<a href="###" class="home-icon icon-subtotal bg-green">
+					<p>分类汇总</p>
+					<span><i class="fi-record"></i></span>
+				</a>
+				<a href="###" class="home-icon icon-charts bg-red">
+					<p>智能图表</p>
+					<span><i class="fi-record"></i></span>
+				</a>
+				<!--<a href="###" class="home-icon icon-policy-file bg-black">
+					<p>政策文件</p>
+					<span><i class="fi-record"></i></span>
+				</a>
+				<a href="###" class="home-icon icon-address-list bg-green">
+					<p>通讯名录</p>
+					<span><i class="fi-record"></i></span>
+				</a>-->
+			</div>
+		</div>
+		<!-- 尾部 -->
+		<div class="footer-outer">
+			<div class="footer-inner">
+				<div class="null-div"></div>
+				<div class="foot-infos">
+					<p>技术支持：广多科技有限公司</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+	//home page中icon的行高
+	function homeIcon(){
+		$(".home .main i").css({
+			'line-height':$(".home .main i").parent('span').height() + 'px'
+		});
+	};
+	$(function(){
+		homeIcon();
+	});
+	$(document).resize(function(){
+		homeIcon();
+	})
+</script>
+</body>
+</html>

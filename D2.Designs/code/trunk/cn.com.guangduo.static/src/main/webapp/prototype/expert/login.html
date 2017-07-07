@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>专家库</title>
+		<style type="text/css">
+			*{box-sizing: border-box;}
+			*:after, *:before{box-sizing: border-box;}
+			html,body{margin: 0; padding: 0;height: 100%;}
+			body{position: relative; overflow-x: hidden;overflow-y: auto;font-weight: 400;font:12px/1.5 "microsoft yahei"; -webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d9d9d9',GradientType=0 ); 
+		    -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr='#ffffff',endcolorstr='#d9d9d9',gradientType=0);/*IE8*/	
+		    background: -o-linear-gradient(top, #fff 0%,#d9d9d9 40%,#d9d9d9 80%,#fff 100%);
+		    background:#fff; /* 一些不支持背景渐变的浏览器 */  
+		    background:-moz-linear-gradient(top,rgb(255,255,255) 14%,rgb(217,217,217) 40%,rgb(217,217,217) 70%,rgb(255,255,255) 100%);
+			background:-webkit-gradient(linear , 0 0, 0 bottom,color-stop(0.1,rgb(255,255,255)),color-stop(0.5,rgb(217,217,217)),color-stop(0.7,rgb(217,217,217)),color-stop(1,rgb(255,255,255)));
+    		}
+    		a{text-decoration: none;}
+    		input{font:12px/1.5 "microsoft yahei";}
+    		input:focus{border-color:#62c7b9;}
+    		input[type="checkbox"]{vertical-align: middle;margin:-2px 2px 0 auto;/*border-color: #fff;*/}
+    		input[type="text"],input[type="button"]{-webkit-appearance: none;-moz-appearance: none;}
+			input[type="text"], input[type="password"]{padding: 2px 5px;line-height: 40px;vertical-align: middle;border: 1px solid #cdcdcd;}
+			input[type="button"]{border: 0 none;}
+    		
+    		/* 清除浮动*/
+			.clearfix{*zoom:1;}
+			.clearfix:before,.clearfix:after{display:table; content:''; clear:both;}
+    		
+    		:root body{filter:none;} 
+    		.login-head{position: absolute;top:0;width: 100%;height: 70px;padding-top: 30px;}
+    		.login-head img{display: block;margin: 0 auto;}
+    		
+    		.login-container{position: absolute; left: 0; top: 70px; right: 0; bottom: 0; z-index: 1;width: 1100px;height: 540px;margin: auto;background: url('login/expert-bg.png') no-repeat center center;background-size: cover; }
+    		@media only screen and (max-height: 610px) {
+    			.login-container{top: 0;margin: 70px auto auto;}
+    		}
+    		.login-box{float: right;width: 300px;margin-top: 120px;margin-right: 125px;}
+    		.login-user,.login-password{position: relative;height: 40px;margin-bottom: 10px;}
+    		.login-user > *,.login-password > *{position: absolute;height: 100%;}
+    		.login-user input,.login-password input{width: 100%;padding-left: 35px;font-size: 14px;color: #a3abbe;}
+    		.login-user input{padding-right: 30px;}
+    		.login-user span,.login-password span{z-index: 1;width: 35px;}
+    		.user-icon{left: 0;background: url('login/login-user.png') no-repeat center center;}
+    		.password-icon{left: 0;background: url('login/login-password.png') no-repeat center center;}
+    		.del-icon{display: none;right: 0;background: url('login/login-del.png') no-repeat center center;cursor: pointer;}
+    		.code-box > *{float: left;}
+    		.code-box input,.code-box div{width: 100px;height: 40px;}
+    		.code-box div{background-color: #fff;border: 1px solid #cdcdcd;}
+    		.code-box input{margin-right: 10px;}
+    		.code-box a{margin-left: 6px;line-height: 40px;vertical-align: middle;color: #fff;}
+    		.login-box a:hover{color: #ffdaad;}
+    		.code-box div img{width: 100%;height: 100%;}
+    		#loginBtn{width: 100%;margin-top: 40px;line-height: 40px;font-size: 14px;text-align: center;color: #fff;background-color: #fbab4a;}
+    		.login-other-btn{margin-top: 16px;overflow: hidden;}
+    		.login-other-btn > *{color: #fff;}
+    		.login-other-btn label{float: left;}
+    		.login-other-btn a{float: right;}
+		</style>
+		<!--[if lte IE 8]>
+		<style type="text/css">
+			.login-container{top: 0;margin: 70px auto auto;}
+		</style>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="login-head">
+			<img src="login/expert-logo.png"/>
+		</div>
+		<div class="login-container">
+			<div class="login-box clearfix">
+				<form>
+					<div class="login-user">
+						<span class="user-icon"></span>
+						<input type="text" id="userName" oninput="onInput(event)" placeholder="用户名"/>
+						<span class="del-icon"></span>
+					</div>
+					<div class="login-password">
+						<span class="password-icon"></span>
+						<input type="password" placeholder="密码"/>
+					</div>
+					<div class="code-box clearfix">
+						<input type="text" id="" value="" />
+						<div class="code-show"><img src="login/expert-logo.png"/></div>
+						<a href="###">看不清?换一张</a>
+					</div>
+					<input type="button" value="立即登录" id="loginBtn"/>
+					<div class="login-other-btn">
+						<label> <input type="checkbox" value=""/> 记住密码</label>
+						<a href="###">忘记密码?</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<script type="text/javascript">
+			/*回车登录*/
+			$(document).keypress(function(e) { 
+				if(e.which == 13) { 
+					jQuery("#loginBtn").click();
+				} 
+		   });
+		   
+		   //清空用户名文本框
+		   $(".del-icon").click(function(){
+				$("#userName").val("");
+				$(".del-icon").hide();
+		   });
+		   //清空图标显示
+		   function onInput(event){
+			 if($("#userName").val == ""){
+					$(".del-icon").hide();
+			   }else{
+			   		$(".del-icon").show();
+			   }
+		   };
+		   $("#userName").blur(function(){
+		   		$(".del-icon").hide();
+		   });
+		   $("#userName").focus(function(){
+		   		$(".del-icon").show();
+		   });
+		</script>
+	</body>
+</html>

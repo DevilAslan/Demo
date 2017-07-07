@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>简单表单</title>
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="js/jquery-easyui-1.4.5/themes/icon.css">
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/ztree/css/zTreeStyle/zTreeStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<!-- 头部 -->
+			<div class="nav-outer">
+				<div class="nav-inner">
+					<div class="nav-box">
+						<h1 class="logo"></h1>
+						<ul class="nav" id="nav">
+							<li>
+								<a href="index.html">
+									首页
+								</a>
+								
+							</li>
+							<li class="cur">
+								<a href="report.html">
+									数据管理系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									数据查询系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									报告管理系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									数据挖掘系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									应用支撑系统
+								</a>
+							</li>
+						</ul>
+						<div class="overflow-hidden">
+							<ul class="top-info right">
+								<li class="relative">
+									<a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+									
+									<div class="user-control">
+										<a href="###">
+											<span class="fi-key"></span>
+											修改密码
+										</a>
+										<a href="###">
+											<span class="fi-envelop"></span>
+											消息
+										</a>
+										<a href="###">
+											<span class="fi-cog"></span>
+											设置
+										</a>
+									</div>
+								</li>
+								<li>
+									<a href="###">
+										<span class="fi-exit"></span>退出
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			
+				<div class="vertical-shadow"></div>
+			</div>
+			<!-- 侧边栏 -->
+			<div class="sub-nav-outer">
+				<div class="sub-nav-box clearfix">
+					<div class="left sub-nav-scroll">
+						<div class="scroll">
+							<div class="sub-nav-inner">
+								<div>
+									<h3><i class="fi-bell"></i>表格</h3>
+									<ul>
+										<li><a href="base.html">dG基础结构</a></li>
+										<li><a href="base2-noControlBtn.html">dG基础结构-无</a></li>
+										<li><a href="doubleTable.html">双表格1</a></li>
+										<li><a href="doubleTable2.html">双表格2</a></li>
+										<li><a href="tabTable.html">tab同页</a></li>
+										<li><a href="tabTable-differentPage1.html">tab不同页</a></li>
+										<li><a href="tabTable-nesting-mix.html">tab嵌套-同页不同页混合</a></li>
+										<li><a href="tabTable-differentPage7-compositeAnalysis.html">综合分析</a></li>
+										<li><a href="treeAndTable.html">树和表格</a></li>
+										<li><a href="treeAndTable2.html">树,表格,查询栏</a></li>
+										<li><a href="doubleTableAndForm.html">上:表单,下:并列表格</a></li>
+										<li><a href="treeAndTableAndForm.html">树\表格\表单</a></li>
+										<li><a href="pureTable.html">纯表格</a></li>
+									</ul>
+									<h4><a href="widget.html"><i class="fi-bell"></i>小部件</a></h4>
+									<h3 class="cur"><i class="fi-bell"></i>表单</h3>
+									<ul>
+										<li><a href="formAccordion.html">折叠表单</a></li>
+										<li><a href="formAccordion-iframe.html">折叠表单-iframe</a></li>
+										<li><a href="formModule.html">分块表单</a></li>
+										<li><a href="formSimple.html" class="cur-a">基本表单</a></li>
+										<li><a href="formSimple-detail.html">基本表单-详情</a></li>
+										<li><a href="formEdit-detail.html">可编辑-详情</a></li>
+										<li><a href="cns-detail.html">承诺书-详情</a></li>
+									</ul>
+									<h4><a href="searchAndCharts.html"><i class="fi-bell"></i>搜索和图表</a></h4>
+									<h3><i class="fi-bell"></i>数据归集目录</h3>
+									<ul>
+										<li><a href="dataDirectory.html">版本一</a></li>
+										<li><a href="dataDirectory2.html">版本二</a></li>
+									</ul>
+									<h3><i class="fi-bell"></i>数据挖掘</h3>
+									<ul>
+										<li><a href="dataMiningSearch1.html">查询一</a></li>
+										<li><a href="dataMiningSearch2.html">查询二</a></li>
+										<li><a href="dataMiningSearch3.html">查询三</a></li>
+										<li><a href="dataMiningSearch4-v1.html">查询四-档案查询</a></li>
+										<li><a href="dataMiningSearch5-v1.html">查询五-报告查询</a></li>
+										<li><a href="dataMiningSearchDetail1.html">查询详情一</a></li>
+										<li><a href="dataMiningSearchDetail2.html">查询详情二</a></li>
+										<li><a href="dataMiningSearchDetail3-v1.html">查询详情三</a></li>
+										<li><a href="dataMiningLayout1.html">布局-左一右上一右下二</a></li>
+										<li><a href="dataMiningLayout2.html">布局-左二右一</a></li>
+										<li><a href="dataMiningLayout3.html">布局-田字</a></li>
+										<li><a href="dataMiningLayout4.html">布局-查询栏下田字</a></li>
+										<li><a href="dataMiningLayout5.html">布局-左右</a></li>
+										<li><a href="dataMiningCharts1.html">关系图1</a></li>
+										<li><a href="dataMiningCharts2.html">关系图2</a></li>
+										<li><a href="dataMiningCharts3.html">树图</a></li>
+									</ul>
+									<h3><i class="fi-bell"></i>列表</h3>
+									<ul>
+										<li><a href="list.html">列表1</a></li>
+										<li><a href="list2.html">列表2</a></li>
+									</ul>
+									<h3><i class="fi-bell"></i>信用评估</h3>
+									<ul>
+										<li><a href="credit-evaluate-charts.html">信用评估图表</a></li>
+										<li><a href="credit-evaluate-details.html">信用评估详情</a></li>
+									</ul>
+									<h4><a href="ranking.html"><i class="fi-bell"></i>排行</a></h4>
+									<h4><a href="icon.html"><i class="fi-bell"></i>图标</a></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="left horizontal-shadow relative nav-control">
+						<i class="absolute icon-arrow-left"></i>
+					</div>
+				</div>
+			</div>
+			<!-- 主体 -->
+			<div class="main">
+				<!-- 面包屑 -->
+				<div class="main-bread-crumb">
+					<div class="breadcrumb-hidden">
+						<span class="fi-position left"></span>
+						<ol class="left">
+							<li>
+								<span>：</span>
+								<a href="###">项目管理</a>
+							</li>
+							<li>
+								<span class="breadcrumb-line">>></span><a href="###">项目填报</a>
+							</li>
+						</ol>
+					</div>
+				</div>
+				<!-- 表格 -->
+				<div class="main-form-outer">
+					<div class="form-inner relative overflow-auto">
+						<div class="form-content absolute">
+							<div class="form-table">
+								<table>
+									<tr>
+										<th>
+											<label class="query-label">项目编号</label>
+										</th>
+										<td>
+											<p>12345646677</p>
+										</td>
+										<th>
+											<label class="query-label">项目名称</label>
+										</th>
+										<td>
+											<input type="text" />
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<label class="query-label">建设地址</label>
+										</th>
+										<td colspan="3">
+											<div class="select-list">
+												<select class="province"></select>
+												<select class="city"></select>
+												<select class="district"></select>
+											</div>
+											<input type="text" />
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<label class="query-label">项目类型</label>
+										</th>
+										<td>
+											<select>
+												<option value="0">未开工</option>
+												<option value="1">谋划</option>
+												<option value="2">待开工</option>
+												<option value="3">建设初期</option>
+												<option value="4">建设中期</option>
+											</select>
+										</td>
+										<th>
+											<label class="query-label">项目级别</label>
+										</th>
+										<td>
+											<input id="citySel" type="text"  onclick="showMenu(); return false;" readonly/>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<label class="query-label">项目属性</label>
+										</th>
+										<td colspan="3">
+											<div class="radio-outer">
+												<label>
+													<input type="checkbox" name="property" />411项目</label>
+												<label>
+													<input type="checkbox" name="property" />市重点项目</label>
+												<label>
+													<input type="checkbox" name="property" />省重大工业项目</label>
+												<label>
+													<input type="checkbox" name="property" />PPP项目</label>
+												<label>
+													<input type="checkbox" name="property" />中央投资项目</label>
+												<label>
+													<input type="checkbox" name="property" />省重点项目</label>
+												<label>
+													<input type="checkbox" name="property" />省重大产业项目</label>
+												<label>
+													<input type="checkbox" name="property" />省重大服务业项目</label>
+												<label>
+													<input type="checkbox" name="property" />外资项目</label>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<label class="query-label">主管科室</label>
+										</th>
+										<td colspan="3">
+											<div class="been-elected-box">
+												<ul>
+													<li>
+														<span>政策法规处</span>
+														<i class="cancel-ico"></i>
+													</li>
+													<li>
+														<span>发展规划处</span>
+														<i class="cancel-ico"></i>
+													</li>
+													<li>
+														<span>体制改革处</span>
+														<i class="cancel-ico"></i>
+													</li>
+													<li>
+														<span>工高处</span>
+														<i class="cancel-ico"></i>
+													</li>
+													<li>
+														<span>农村经济发展处</span>
+														<i class="cancel-ico"></i>
+													</li>
+													<li>
+														<span>办公室</span>
+														<i class="cancel-ico"></i>
+													</li>
+													<li>
+														<span>国外资金利用处</span>
+														<i class="cancel-ico"></i>
+													</li>
+													<li>
+														<span>基本建设综合处</span>
+														<i class="cancel-ico"></i>
+													</li>
+													<li>
+														<span>人事处</span>
+														<i class="cancel-ico"></i>
+													</li>
+												</ul>
+												<a href="###" class="theme-btn">选择</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<label class="query-label">建设性质</label>
+										</th>
+										<td>
+											<select>
+												<option value="wenzhou">温州市</option>
+												<option value="ningbo">宁波市</option>
+												<option value="hangzhou">杭州市</option>
+												<option value="quzhou">衢州市</option>
+												<option value="huzhou">湖州市</option>
+												<option value="jiaxing">嘉兴市</option>
+												<option value="jinhua">金华市</option>
+												<option value="zhoushan">舟山市</option>
+											</select>
+										</td>
+										<th>
+											<label class="query-label">是否已读</label>
+										</th>
+										<td>
+											<div class="radio-outer">
+												<label>
+													<input type="radio" name="radioGroup" checked/>已读
+												</label>
+												<label>
+													<input type="radio" name="radioGroup" />未读
+												</label>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<label class="query-label">项目区域</label>
+										</th>
+										<td class="relative">
+											<!--<select>
+												<option value="wenzhou">温州市</option>
+												<option value="ningbo">宁波市</option>
+												<option value="hangzhou">杭州市</option>
+												<option value="quzhou">衢州市</option>
+												<option value="huzhou">湖州市</option>
+												<option value="jiaxing">嘉兴市</option>
+												<option value="jinhua">金华市</option>
+												<option value="zhoushan">舟山市</option>
+											</select>-->
+											<input type="text" id="areaName" onclick="showMenuEare();" />
+										</td>
+										<th>
+											<label class="query-label">建设工期</label>
+										</th>
+										<td>
+											<div class="unit-font-box">
+												<input type="text" />
+												<span class="unit-font">月</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<label class="query-label">计划开工时间</label>
+										</th>
+										<td>
+											<input type="text" class="date Wdate" />
+											<!--<label class="error" for="name">请填写计划开工时间</label>-->
+										</td>
+										<th>
+											<label class="query-label">计划竣工时间</label>
+										</th>
+										<td>
+											<input type="text" class="date Wdate" />
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<label class="query-label">申报单位</label>
+										</th>
+										<td>
+											<input type="text" id="groupIdName" />
+											<input type="hidden" id="groupIds" name="sysGroupIds" />
+										</td>
+										<th>
+											<label class="query-label">项目总投资</label>
+										</th>
+										<td>
+											<div class="unit-font-box">
+												<input type="text" />
+												<span class="unit-font">万元</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<label class="query-label">申报单位联系人</label>
+										</th>
+										<td>
+											<input type="text" />
+										</td>
+										<th>
+											<label class="query-label">申报单位联系电话</label>
+										</th>
+										<td>
+											<input type="text" />
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="btn-row fixed">
+							<input type="submit" class="theme-btn" value="保存">
+							<a href="###" class="theme-btn2" id="instorage">提交</a>
+							<a href="###" class="theme-btn">取消</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="menuContent" class="menuContent" style="display:none; position: absolute;">
+				<ul id="treeDemo" class="ztree" style="margin-top:0; width:180px; height: 300px;"></ul>
+			</div>
+			 <!-- 配送区域 -->
+			 <div id="areaContent" class="menuContent" style="display: none; position: absolute;">
+			   <ul id="areatree" class="ztree" style="margin-top:0; width:180px; height: 300px;"></ul>
+			 </div>
+		</div>
+
+		<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+		<script src="../../thirdparty/jquery-validation-1.13.1/dist/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../../thirdparty/ztree/js/jquery.ztree.core-3.5.min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/ztree/js/jquery.ztree.excheck-3.5.min.js"></script>
+		<!--slimScroll-->
+		<script type="text/javascript" src="../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+		<script src="js/layout.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+			//下拉联动
+			$(".select-list").each(function(){
+	            var url = "js/area.json";
+	            var areaJson;
+	            var temp_html;
+	            var oProvince = $(this).find(".province");
+	            var oCity = $(this).find(".city");
+	            var oDistrict = $(this).find(".district");
+	            //初始化省
+	            var province = function(){
+	                $.each(areaJson,function(i,province){
+	                    temp_html+="<option value='"+province.p+"'>"+province.p+"</option>";
+	                });
+	                oProvince.html(temp_html);
+	                city();
+	            };
+	            //赋值市
+	            var city = function(){
+	                temp_html = ""; 
+	                var n = oProvince.get(0).selectedIndex;
+	                $.each(areaJson[n].c,function(i,city){
+	                    temp_html+="<option value='"+city.ct+"'>"+city.ct+"</option>";
+	                });
+	                oCity.html(temp_html);
+	                district();
+	            };
+	            //赋值县
+	            var district = function(){
+	                temp_html = ""; 
+	                var m = oProvince.get(0).selectedIndex;
+	                var n = oCity.get(0).selectedIndex;
+	                if(typeof(areaJson[m].c[n].d) == "undefined"){
+	                    oDistrict.css("display","none");
+	                }else{
+	                    oDistrict.css("display","inline");
+	                    $.each(areaJson[m].c[n].d,function(i,district){
+	                        temp_html+="<option value='"+district.dt+"'>"+district.dt+"</option>";
+	                    });
+	                    oDistrict.html(temp_html);
+	                };
+	            };
+	            //选择省改变市
+	            oProvince.change(function(){
+	                city();
+	            });
+	            //选择市改变县
+	            oCity.change(function(){
+	                district();
+	            });
+	            //获取json数据
+	            $.getJSON(url,function(data){
+	                areaJson = data;
+	                province();
+	            });
+	        });
+		</script>
+		<script type="text/javascript">
+			/*下拉树一 ---------------start*/
+			var setting2 = {
+				check: {
+					enable: true,
+					chkboxType: {"Y":"", "N":""}
+				},
+				view: {
+					dblClickExpand: false
+				},
+				data: {
+					simpleData: {
+						enable: true
+					}
+				},
+				callback: {
+					beforeClick: beforeClick2,
+					onCheck: onCheck2
+				}
+			};
+		
+			var zNodes =[
+				{id:1, pId:0, name:"北京2"},
+				{id:2, pId:0, name:"天津2"},
+				{id:3, pId:0, name:"上海2"},
+				{id:6, pId:0, name:"重庆2"},
+				{id:4, pId:0, name:"河北省2", open:true, nocheck:true},
+				{id:41, pId:4, name:"石家庄2"},
+				{id:42, pId:4, name:"保定2"},
+				{id:43, pId:4, name:"邯郸2"},
+				{id:44, pId:4, name:"承德2"},
+				{id:5, pId:0, name:"广东省2", open:true, nocheck:true},
+				{id:51, pId:5, name:"广州2"},
+				{id:52, pId:5, name:"深圳2"},
+				{id:53, pId:5, name:"东莞2"},
+				{id:54, pId:5, name:"佛山2"},
+				{id:6, pId:0, name:"福建省2", open:true, nocheck:true},
+				{id:61, pId:6, name:"福州2"},
+				{id:62, pId:6, name:"厦门2"},
+				{id:63, pId:6, name:"泉州2"},
+				{id:64, pId:6, name:"三明2"}
+			 ];
+			
+				function beforeClick2(treeId, treeNode) {
+					var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+					zTree.checkNode(treeNode, !treeNode.checked, null, true);
+					return false;
+				}
+				
+				function onCheck2(e, treeId, treeNode) {
+					var zTree = $.fn.zTree.getZTreeObj("treeDemo"),
+					nodes = zTree.getCheckedNodes(true),
+					v = "";
+					for (var i=0, l=nodes.length; i<l; i++) {
+						v += nodes[i].name + ",";
+					}
+					if (v.length > 0 ) v = v.substring(0, v.length-1);
+					var cityObj = $("#citySel");
+					cityObj.attr("value", v);
+				}
+		
+				function showMenu() {
+					var cityObj = $("#citySel");
+					var cityOffset = $("#citySel").offset();
+					$("#menuContent").css({left:cityOffset.left + "px", top:cityOffset.top + cityObj.outerHeight() + "px"}).slideDown("fast");
+					$("body").bind("mousedown", onBodyDown2);
+				}
+				function hideMenu2() {
+					$("#menuContent").fadeOut("fast");
+					$("body").unbind("mousedown", onBodyDown2);
+				}
+				function onBodyDown2(event) {
+					if (!(event.target.id == "citySel" || event.target.id == "menuContent" || $(event.target).parents("#menuContent").length>0)) {
+						hideMenu2();
+					}
+				}
+		    /*下拉树一 ---------------end*/
+				
+			/*下拉树二 ---------------start*/
+			var setting = {
+				check: {
+					enable: true,
+					chkboxType: {"Y":"", "N":""}
+				},
+				view: {
+					dblClickExpand: false
+				},
+				data: {
+					simpleData: {
+						enable: true
+					}
+				},
+				callback: {
+					beforeClick: beforeClick,
+					onCheck: onCheck
+				}
+			};
+		
+			var areaNodes=[
+				{id:1, pId:0, name:"北京"},
+				{id:2, pId:0, name:"天津"},
+				{id:3, pId:0, name:"上海"},
+				{id:6, pId:0, name:"重庆"},
+				{id:4, pId:0, name:"河北省", open:true, nocheck:true},
+				{id:41, pId:4, name:"石家庄"},
+				{id:42, pId:4, name:"保定"},
+				{id:43, pId:4, name:"邯郸"},
+				{id:44, pId:4, name:"承德"},
+				{id:5, pId:0, name:"广东省", open:true, nocheck:true},
+				{id:51, pId:5, name:"广州"},
+				{id:52, pId:5, name:"深圳"},
+				{id:53, pId:5, name:"东莞"},
+				{id:54, pId:5, name:"佛山"},
+				{id:6, pId:0, name:"福建省", open:true, nocheck:true},
+				{id:61, pId:6, name:"福州"},
+				{id:62, pId:6, name:"厦门"},
+				{id:63, pId:6, name:"泉州"},
+				{id:64, pId:6, name:"三明"}
+			 ];
+			
+			function beforeClick(treeId, treeNode) {
+				var zTree = $.fn.zTree.getZTreeObj("areatree");
+				zTree.checkNode(treeNode, !treeNode.checked, null, true);
+				return false;
+			};
+			function onCheck(e, treeId, treeNode) {
+				var zTree = $.fn.zTree.getZTreeObj("areatree"),
+				nodes = zTree.getCheckedNodes(true),
+				v = "";
+				for (var i=0, l=nodes.length; i<l; i++) {
+					v += nodes[i].name + ",";
+				}
+				if (v.length > 0 ) v = v.substring(0, v.length-1);
+				var cityObj = $("#areaName");
+				cityObj.attr("value", v);
+				 
+			};
+		
+			 function showMenuEare() {
+				var cityObj = $("#areaName");
+				var cityOffset = $("#areaName").offset();
+				$("#areaContent").css({left:cityOffset.left + "px", top:cityOffset.top + cityObj.outerHeight() + "px"}).slideDown("fast");
+				$("body").bind("mousedown", onBodyDown);
+			 };
+		
+			function hideMenu() {
+				$("#areaContent").fadeOut("fast");
+				$("body").unbind("mousedown", onBodyDown);
+			};
+		
+			function onBodyDown(event) {
+				if (!(event.target.id == "areaName" || event.target.id == "areaContent" || $(event.target).parents("#areaContent").length>0)) {
+					hideMenu();
+				}
+			};
+			/*下拉树二 ---------------end*/
+        	$(document).ready(function(){
+	            $.fn.zTree.init($("#treeDemo"), setting2, zNodes);
+	            $.fn.zTree.init($("#areatree"), setting, areaNodes);
+	        });
+			$(window).resize(function(){
+				hideMenu();
+				hideMenu2();
+				$('input[type="text"]').blur();
+			});
+			$('.overflow-auto').scroll(function() {
+			  	hideMenu();
+			  	hideMenu2();
+				$('input[type="text"]').blur();
+			});
+		</script>
+	</body>
+
+</html>

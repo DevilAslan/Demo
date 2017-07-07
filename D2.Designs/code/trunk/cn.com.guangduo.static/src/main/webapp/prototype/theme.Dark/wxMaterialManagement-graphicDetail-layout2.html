@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>素材管理 - 图文 - 样式二</title>
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" href="../../thirdparty/artDialog/ui-dialog.css" />
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/ztree/css/zTreeStyle/zTreeStyle.css">
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/uploadify/uploadify.css" />
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/Swiper-3.4.2/dist/css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layout.css">	
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- 头部 -->
+			<div class="nav-outer">
+				<div class="nav-inner">
+					<div class="nav-box">
+						<h1 class="logo"></h1>
+						<div class="nav-slider">
+							<!-- Add Arrows -->
+					        <div class="fi-arrow-left"></div>
+					        <div class="fi-arrow-right"></div>
+							<div class="swiper-container">
+						        <ul class="nav swiper-wrapper" id="nav">
+									<li class="swiper-slide">
+										<a href="index.html">
+											首页
+										</a>
+									</li>
+									<li class="cur swiper-slide">
+										<a href="report.html">
+											数据管理系统
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="###">
+											数据查询系统
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="###">
+											报告管理系统
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="###">
+											数据挖掘系统
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="###">
+											应用支撑系统
+										</a>
+									</li>
+								</ul>
+						        
+						    </div>
+						</div>
+						<div class="overflow-hidden">
+							<ul class="top-info right">
+								<li class="relative">
+									<a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+									
+									<div class="user-control">
+										<a href="###">
+											<span class="fi-key"></span>
+											修改密码
+										</a>
+										<a href="###">
+											<span class="fi-envelop"></span>
+											消息
+										</a>
+										<a href="###">
+											<span class="fi-cog"></span>
+											设置
+										</a>
+									</div>
+								</li>
+								<li>
+									<a href="###">
+										<span class="fi-exit"></span>退出
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			
+				<div class="vertical-shadow"></div>
+			</div>
+		
+			<!-- 侧边栏 -->
+			<div class="sub-nav-outer">
+				<div class="sub-nav-box clearfix">
+					<div class="left sub-nav-scroll">
+						<div class="scroll">
+							<div class="sub-nav-inner">
+								<div>
+									<h3><i class="fi-bell"></i>表格</h3>
+									<ul>
+										<li><a href="base.html">dG基础结构</a></li>
+										<li><a href="base2-noControlBtn.html">dG基础结构-无</a></li>
+										<li><a href="doubleTable.html">双表格1</a></li>
+										<li><a href="doubleTable2.html">双表格2</a></li>
+										<li><a href="tabTable.html">tab同页</a></li>
+										<li><a href="tabTable-differentPage1.html">tab不同页</a></li>
+										<li><a href="tabTable-nesting-mix.html">tab嵌套-同页不同页混合</a></li>
+										<li><a href="treeAndTable.html">树和表格</a></li>
+										<li><a href="treeAndTable2.html">树,表格,查询栏</a></li>
+										<li><a href="doubleTableAndForm.html">上:表单,下:并列表格</a></li>
+										<li><a href="treeAndTableAndForm.html">树\表格\表单</a></li>
+										<li><a href="pureTable.html">纯表格</a></li>
+									</ul>
+									<h4><a href="widget.html"><i class="fi-bell"></i>小部件</a></h4>
+									<h3><i class="fi-bell"></i>表单</h3>
+									<ul>
+										<li><a href="formAccordion.html">折叠表单</a></li>
+										<li><a href="formAccordion-iframe.html">折叠表单-iframe</a></li>
+										<li><a href="formModule.html">分块表单</a></li>
+										<li><a href="formSimple.html">基本表单</a></li>
+										<li><a href="formSimple-detail.html">基本表单-详情</a></li>
+										<li><a href="formEdit-detail.html">可编辑-详情</a></li>
+									</ul>
+									<h4><a href="searchAndCharts.html"><i class="fi-bell"></i>搜索和图表</a></h4>
+									<h3><i class="fi-bell"></i>数据归集目录</h3>
+									<ul>
+										<li><a href="dataDirectory.html">版本一</a></li>
+										<li><a href="dataDirectory2.html">版本二</a></li>
+									</ul>
+									<h3><i class="fi-bell"></i>数据挖掘</h3>
+									<ul>
+										<li><a href="dataMiningSearch1.html">查询一</a></li>
+										<li><a href="dataMiningSearch2.html">查询二</a></li>
+										<li><a href="dataMiningSearch3.html">查询三</a></li>
+										<li><a href="dataMiningSearch4-v1.html">查询四</a></li>
+										<li><a href="dataMiningSearch5-v1.html">查询五</a></li>
+										<li><a href="dataMiningSearchDetail1.html">查询详情一</a></li>
+										<li><a href="dataMiningSearchDetail2.html">查询详情二</a></li>
+										<li><a href="dataMiningLayout1.html">布局-左一右上一右下二</a></li>
+										<li><a href="dataMiningLayout2.html">布局-左二右一</a></li>
+										<li><a href="dataMiningLayout3.html">布局-田字</a></li>
+										<li><a href="dataMiningLayout4.html">布局-查询栏下田字</a></li>
+										<li><a href="dataMiningLayout5.html">布局-左右</a></li>
+										<li><a href="dataMiningCharts1.html">关系图1</a></li>
+										<li><a href="dataMiningCharts2.html">关系图2</a></li>
+										<li><a href="dataMiningCharts3.html">树图</a></li>
+									</ul>
+									<h3><i class="fi-bell"></i>列表</h3>
+									<ul>
+										<li><a href="list.html">列表1</a></li>
+										<li><a href="list2.html">列表2</a></li>
+									</ul>
+									<h3 class="cur"><i class="fi-bell"></i>微信</h3>
+									<ul>
+										<li><a href="wxMaterialManagement-pic.html">素材管理-图片</a></li>
+										<li><a href="wxMaterialManagement-graphic.html" class="cur-a">素材管理-图文</a></li>
+										<li>
+											<a href="wxManySend.html">消息群发</a>
+										</li>
+									</ul>
+									<h4><a href="ranking.html"><i class="fi-bell"></i>排行</a></h4>
+									<h4><a href="icon.html"><i class="fi-bell"></i>图标</a></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="left horizontal-shadow relative nav-control">
+						<i class="absolute icon-arrow-left"></i>
+					</div>
+				</div>
+			</div>
+		
+			<!--内容-->
+			<div class="main">
+				<form id="searchForm1" name="searchForm1">
+					<!-- 面包屑 Start -->
+					<div class="main-bread-crumb">
+						<div class="breadcrumb-hidden">
+							<span class="fi-breadcrumb left"></span>
+							<ol class="left">
+								<li>
+									<span>您的位置：</span>
+									<a href="###">系统管理</a>
+								</li>
+								<li>
+									<span class="breadcrumb-line breadcrumb-arrow"></span>
+									<a href="###">微信公众号管理</a>
+								</li>
+							</ol>
+	
+						</div>
+					</div>
+					<!-- 面包屑 End -->
+				</form>
+				
+				<div class="main-table-outer tab-outer">
+					<div class="tab-title-box">
+						<div >
+							<a href="${path}wxUser/list.htm"><h3>用户</h3></a>
+						</div>
+						<div class="cur">
+							<a href="${path}wxMaterials/list.htm"><h3>素材</h3></a>
+						</div>
+						<div>
+							<a href="${path}msgText/list.htm"><h3>自动回复</h3></a>
+						</div>
+						<div>
+							<a href="${path}wxUser/userList.htm"><h3>消息发送</h3></a>
+						</div>
+						<div>
+							<a href="${path}wxUser/toInfoList.htm"><h3>消息群发</h3></a>
+						</div>
+						<div>
+							<a href="${path}wxMenu/list.htm"><h3>菜单</h3></a>
+						</div>
+						<div>
+							<a href="${path}wxGroup/list.htm"><h3>用户组</h3></a>
+						</div>
+					</div>
+					<div class="tab-content block nested-tab">
+						<div class="tab-outer">
+							<div class="tab-title-box">
+								<div>
+									<a href="wxMaterialManagement-pic.html">图片</a>
+								</div>
+								<div class="cur">
+									<a href="javascript:void(0);">图文</a>
+								</div>
+							</div>
+							
+							<div class="tab-content block">
+								<div class="tab-table-inner tab-form" style="bottom: 40px;">
+									<div class="graphic-box">
+										<div class="scroll">
+											<div class="wx-content-box clearfix">
+												<div class="wx-left">
+													<p class="left-title">图文列表</p>
+													<div class="wx-box">
+														<div class="img-box">
+															<!--<img src="" />-->
+															<p>标题</p>
+														</div>
+													</div>
+													<div class="wx-box other-box state-checked">
+														<p class="left">标题</p>
+														<div class="right img-box">
+															<!--<img src="images/logo.png">-->
+														</div>
+													</div>
+													<div class="add-content"><i class="fi-add"></i></div>
+												</div>
+												
+												<div class="wx-right">
+													<div class="main-control">
+														<div class="btns-outer">
+															<a href="javascript:void(0);" class="theme-btn">图片选择</a>
+														</div>
+													</div>
+													<p class="row"><label>标题</label></p>
+													<div class="input-box graphic-title">
+														
+														<input type="text" id="title"/>
+														<span class="placeholder">请在这里输入标题</span>
+													</div>
+													<p class="row"><label>作者</label></p>
+													<div class="input-box graphic-author mg-b-10">
+														<input type="text" id="author"/>
+														<span class="placeholder">请在这里输入作者</span>
+													</div>
+													<!-- 加载编辑器的容器 -->
+												   	<div class="graphic-text">
+													    <script id="myEditor" name="content" type="text/plain"></script>
+												   	</div>
+												    <div class="graphic-other-info">
+												    	<div class="row">
+												    		<input type="checkbox" name="originalLink" id="originalLink"/>
+												    		<label for="originalLink">原文链接</label>
+												    		<div class="input-box" style="display: none;">
+												    			<input type="text" id="originalLinkText" class="w-per100"/>
+												    		</div>
+												    	</div>
+												    	<div>
+												    		<div class="row">
+												    			<label>封面</label><a href="javascript:void(0)" class="theme-btn mg-l-10">图片选择</a>
+											    			</div>
+											    			<p class="row">
+											    				<input type="text" disabled class="w-per100"/>
+											    			</p>
+										    				<p class="row"><label>摘要</label><span>选填,如果不填写会默认抓取正文前54个字</span></p>
+											    			
+										    				<textarea rows="5" class="w-per100"></textarea>
+												    		
+												    	</div>
+												    </div>
+												</div>
+											</div>
+										</div>
+										<div class="btn-row fixed">
+											<input type="button" class="theme-btn" value="保存" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="../../thirdparty/jquery-easyui-1.4.5/locale/easyui-lang-zh_CN.js"></script>
+	<!--slimScroll-->
+	<script type="text/javascript" src="../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+	<!--dialog-->
+	<script type="text/javascript" src="../../thirdparty/artDialog/dialog-min.js"></script>
+	<script type="text/javascript" src="../../thirdparty/artDialog/dialog-plus-min.js"></script>
+	<!--ztree-->
+	<script type="text/javascript" src="../../thirdparty/ztree/js/jquery.ztree.core-3.5.min.js"></script>
+	<script type="text/javascript" src="../../thirdparty/ztree/js/jquery.ztree.excheck-3.5.min.js"></script>
+	<!--uploadify-->
+	<script type="text/javascript" src="../../thirdparty/uploadify/jquery.uploadify.min.js"></script>
+	<!-- Swiper JS -->
+	<script src="../../thirdparty/Swiper-3.4.2/dist/js/swiper.min.js"></script>
+	 <!-- ueditor配置文件 -->
+    <script type="text/javascript" src="js/ueditor/ueditor.config.js"></script>
+    <!-- ueditor编辑器源码文件 -->
+    <script type="text/javascript" src="js/ueditor/ueditor.all.min.js"></script>
+	
+	<script type="text/javascript" src="js/common.js"></script>
+	<script src="js/layout.js" type="text/javascript" charset="utf-8"></script>
+	
+   
+    <!-- 实例化编辑器 -->
+    <script type="text/javascript">
+        $(function(){
+        	var ue = UE.getEditor('myEditor', {
+			    toolbars: [
+			        [
+			         'undo', //撤销
+	        		 'redo', //重做
+	        		 'fontsize', //字号
+	        		 'blockquote', //引用
+	        		 'removeformat', //清除格式
+	        		 'formatmatch', //格式刷
+	        		],
+	        		[
+	        		 'bold',//加粗
+	        		 'italic',//斜体
+	        		 'underline',//下划线
+	        		 'forecolor', //字体颜色
+	        		 'backcolor', //背景色
+	        		 'indent', //首行缩进
+	        		 'justifyleft', //居左对齐
+			         'justifyright', //居右对齐
+			         'justifycenter', //居中对齐
+			         'justifyjustify', //两端对齐
+			         'rowspacingtop', //段前距
+	        		 'rowspacingbottom', //段后距
+	        		 'lineheight', //行间距
+	        		 'insertorderedlist', //有序列表
+	        		 'insertunorderedlist', //无序列表
+	        		 'imagenone', //默认
+			         'imageleft', //左浮动
+			         'imageright', //右浮动
+			         'imagecenter', //居中
+	        		]
+			    ],
+			    /*autoHeightEnabled: true,
+			    autoFloatEnabled: true,*/
+				initialFrameWidth:null,
+				initialFrameHeight :500,
+				enableAutoSave: false, //启用自动保存
+				maximumWords: 2000,//允许的最大字符数
+				wordCountMsg:'{#count} / {#leave}', //字数统计提示
+				enableContextMenu: false, //打开右键菜单功能
+				autoHeightEnabled: true
+			});
+	       
+	       ue.ready(function() {
+		       if ($(".wx-left").height() < $(".wx-right").height()){
+		       		console.log('left '  + $(".wx-left").height() + ' right '  + $(".wx-right").height())
+		       		$(".wx-left").height($(".wx-right").height() - 2)
+		       }
+	       });
+	       
+        })
+       //scrollbar
+       $('.graphic-box .scroll').slimScroll({
+       		height: '100%',
+		    alwaysVisible: true
+		});
+       
+       /*************** input输入框的提示 ****************/
+		//input的placeholder
+		if($('.input-box').length > 0){
+			$('.input-box input').each(function(){
+				var $this = $(this),val = $(this).val();
+				if(val.length > 0){
+					$this.siblings('.placeholder').hide(0);
+				}
+			})
+		};
+		$('.input-box input').on('input propertychange',function(){
+			var $this = $(this),val = $(this).val();
+			if(val.length > 0){
+				$this.siblings('.placeholder').hide(0);
+			}else{
+				$this.siblings('.placeholder').show(0);
+			}
+		});
+		
+		//原文链接 显示/隐藏
+		$("#originalLink").click(function(){
+			var $this = $(this);
+			if($this.is(':checked')){
+				$this.siblings('.input-box').show();
+			} else {
+				$this.siblings('.input-box').hide();
+			}
+		});
+		//box选择
+		$(document).on('click','.wx-left .wx-box,.wx-left .other-box',function(){
+			var $this = $(this);
+			$this.addClass('state-checked').siblings('.wx-box').removeClass('state-checked');
+		});
+		//增加box
+		$(".add-content").click(function(){
+			var html ='<div class="wx-box other-box state-checked">'
+						+'<p class="left">标题</p>'
+						+'<div class="right img-box"></div>'
+					+'</div>';
+			$(this).siblings('.wx-box').removeClass('state-checked');
+			$(this).before(html);
+		});
+		
+    </script>
+	
+	<script type="text/javascript">
+		//nav slider
+		var curNavIndex = $(".nav .cur").index();
+		var swiper = new Swiper('.swiper-container', {
+	//  	pagination: '.swiper-pagination',
+	        nextButton: '.fi-arrow-right',//前进按钮的css选择器或HTML元素。
+	        prevButton: '.fi-arrow-left',//后退按钮的css选择器或HTML元素
+	        slidesPerView: 'auto', //(number 或 'auto')设置slider容器能够同时显示的slides数量,默认1
+	        mousewheelControl: true,
+	        initialSlide :curNavIndex,//设定初始化时slide的索引 ,默认0
+	        onInit: function(swiper){//Swiper初始化了
+	        	var winWidth = $(window).width();
+			    if( winWidth < 1295){
+		    		$(".fi-arrow-right,.fi-arrow-left").show();
+		    	}else{
+		    		$(".fi-arrow-right,.fi-arrow-left").hide();
+		    	}
+		    },
+	        onBeforeResize: function(swiper){//当swiper跟随windows变化尺寸时触发。
+	        	var winWidth = $(window).width();
+		    	if( winWidth < 1295){
+		    		$(".fi-arrow-right,.fi-arrow-left").show();
+		    	}else{
+		    		$(".fi-arrow-right,.fi-arrow-left").hide();
+		    	}
+		    }
+	    });
+	    $(window).resize(function(){
+	    	swiper.onResize();
+	    	swiper.slideTo(curNavIndex, 1000, false);
+	    	$(".swiper-button-prev").hide();
+	    	//Swiper切换到指定slide。index:必选，num，指定将要切换到的slide的索引。speed:可选，num(单位ms)，切换速度runCallbacks:可选，boolean，设置为false时不会触发onSlideChange回调函数。
+	    });
+	</script>
+	
+	<script type="text/javascript">
+		/**
+		 * 展示微信图文列表
+		 */
+		/*function showNewsList() {
+			var content = {
+				"articles" : [
+						{
+							"content" : "11111",
+							"author" : "12",
+							"title" : "111",
+							"thumb_media_id" : "yt44HjQkmJj8THXiujOsXwebn-UhbS2618cAzBt6eMA",
+							"content_source_url" : "www.baidu.com",
+							"show_cover_pic" : 1,
+							"digest" : "111"
+						},
+						{
+							"content" : "11111fsff",
+							"author" : "fsfesf",
+							"title" : "fwwfw",
+							"thumb_media_id" : "yt44HjQkmJj8THXiujOsXzOkJchFMwQpmySEObKL7uE",
+							"content_source_url" : "www.baidu.com",
+							"show_cover_pic" : 0,
+							"digest" : "fsfs"
+						} ]
+			};
+			var html = createHtmlByContent(content);
+			$("#masonry").empty();
+			$("#masonry").append(html);
+			$("#masonry").append(html);
+			$("#masonry").append(html);
+			$("#masonry").append(html);
+			bindClick();
+		}*/
+		/**
+		 *根据图文素材的内容生成展示的html
+		 */
+		function createHtmlByContent(content) {
+			var html = '';
+			html += '<div class="wx-box">';
+			for (i = 0; i < content.articles.length; i++) {
+				var article = content.articles[i];
+				var thumb_media_id = article.thumb_media_id;
+				var imageUrl = imageMap[thumb_media_id];
+				if (i == 0) {//第一条图文
+					html += '<div class="img-box">';
+					html += '<img src="'
+							+ imageSuffix
+							+ imageUrl+'"/>';
+					html += '<p>'+article.title+'</p>';
+					html += '</div>';
+				} else {
+					//后续图文以li菜单显示
+					if (i == 1) {//只在第二条图文添加菜单标签
+						html += '<ul>';
+					}
+					html += '<li>';
+					html += '<a href="###" class="left">' + article.title
+							+ '</a>';
+					html += '<img src="'
+							+ imageSuffix
+							+ imageUrl+'"/>';
+					html += '</li>';
+				}
+			}
+			if (content.articles.length > 1) {
+				html += '</ul>';
+			}
+			html += '</div>';
+			return html;
+		}
+		/**
+		 *绑定图文列表选中效果
+		 */
+		function bindClick(){
+			$(".wx-box").click(
+				function() {
+					$(".weixin-outer").find('.bg').remove();
+					$(".weixin-outer").find('.wx-box').removeClass('cur');
+					$(this).addClass('cur').append(
+							'<div class="bg"><i class="checked-icon"></i></div>');
+				});
+		}
+	</script>
+</html>

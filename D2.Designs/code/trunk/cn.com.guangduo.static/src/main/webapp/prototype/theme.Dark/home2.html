@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="css/icon.font.css"/>
+	<link rel="stylesheet" type="text/css" href="css/home.layout2.css"/>
+</head>
+<body>
+	<div class="wrapper home">
+		<!-- 头部 -->
+		<div class="nav-outer">
+			<div class="nav-inner">
+				<div class="nav-box">
+					<h1 class="logo"></h1>
+					<ul class="nav" id="nav">
+						<li>
+							<a href="index.html">
+								首页
+							</a>
+							
+						</li>
+						<li class="cur">
+							<a href="report.html">
+								数据管理系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								数据查询系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								报告管理系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								数据挖掘系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								应用支撑系统
+							</a>
+						</li>
+					</ul>
+					<div class="overflow-hidden">
+						<ul class="top-info right">
+							<li class="relative">
+								<a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+								
+								<div class="user-control">
+									<a href="###">
+										<span class="fi-key"></span>
+										修改密码
+									</a>
+									<a href="###">
+										<span class="fi-envelop"></span>
+										消息
+									</a>
+									<a href="###">
+										<span class="fi-cog"></span>
+										设置
+									</a>
+								</div>
+							</li>
+							<li>
+								<a href="###">
+									<span class="fi-exit"></span>退出
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		
+			<div class="vertical-shadow"></div>
+		</div>
+		<!-- 主体 -->
+		<div class="main" style="bottom: 0;">
+			<div class="chart-outer">
+				<div class="chart-fl">
+					<div class="chart-top">
+						<div class="block-box overflow-auto w-per100 h-per100 charts-box">
+							<div id="pie1" style="width:100%;"></div>
+						</div>
+					</div>
+					<div class="chart-bottom">
+						<div class="block-box overflow-auto w-per100 h-per100 charts-box">
+							<div id="pie2" style="width:100%;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="chart-fc">
+					 
+					 <div class="w-per100 h-per100 charts-box">
+							<div id="wzMap" style="width:100%;"></div>
+					</div>
+				</div>
+				<div class="chart-fr">
+					<div class="chart-top">
+						<a href="###" class="level-box level3">
+							<h5>三级预警</h5>
+							<p>
+								<label><i class="fi-company"></i><span>100</span></label>
+								<label><i class="fi-dm-natural-man"></i><span>2000</span></label>
+							</p>
+						</a>
+						<a href="###" class="level-box level2">
+							<h5>二级预警</h5>
+							<p>
+								<label><i class="fi-company"></i><span>100</span></label>
+								<label><i class="fi-dm-natural-man"></i><span>2000</span></label>
+							</p>
+						</a>
+						<a href="###" class="level-box level1">
+							<h5>一级预警</h5>
+							<p>
+								<label><i class="fi-company"></i><span>100</span></label>
+								<label><i class="fi-dm-natural-man"></i><span>2000</span></label>
+							</p>
+						</a>
+					</div>
+					<div class="chart-bottom">
+						<div class="home-list">
+							<h6>企业黑名单</h6>
+							<ul>
+								<li><a href="###"><i class="circle-icon"></i>杭州六翼科技有限公司</a></li>
+								<li><a href="###"><i class="circle-icon"></i>杭州六翼科技有限公司</a></li>
+								<li><a href="###"><i class="circle-icon"></i>杭州六翼科技有限公司杭州六翼科技有限公司</a></li>
+								<li><a href="###"><i class="circle-icon"></i>杭州六翼科技有限公司</a></li>
+								<li><a href="###"><i class="circle-icon"></i>杭州六翼科技有限公司</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 尾部 -->
+		<!--<div class="footer-outer">
+			<div class="footer-inner">
+				<div class="foot-infos">
+					<p>技术支持：广多科技有限公司</p>
+				</div>
+			</div>
+		</div>-->
+	</div>
+
+
+	<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+	<!--echarts-->
+	<script type="text/javascript" src="../../thirdparty/echarts-3.2.3/echarts.js"></script>
+	<script type="text/javascript">
+		var pie1 = echarts.init(document.getElementById('pie1'));
+		var option1 = {
+		    title : {
+		        text: '信用评估',
+		        textStyle:{
+		        	fontSize: 14,
+		        	fontWeight:'normal'
+		        },
+		        textBaseline :'top',
+		        x: 'center',
+		        y : 'center',
+		        subtext:'自然人',
+		        subtextStyle:{
+		        	fontSize: 16,
+		        	fontWeight:'bold',
+		        	color:'#6cb35b'
+		        }
+		    },
+		    tooltip : {
+		        trigger: 'item',
+		        formatter: "{a} <br/>{b} : {c} ({d}%)"
+		    },
+		    legend: {
+		        x : 'center',
+		        y:'bottom',
+		        data:['AAA','AA','A','B','C','D'],
+		        itemWidth: 16,//矩形宽度,默认25
+		        itemHeight: 16, //矩形高度,默认14
+		        textStyle: {
+                    fontSize: 14 //标签字号
+                }
+		    },
+		    calculable : true,
+		    series : [
+		        {
+		            type:'pie',
+		          	radius: ['50%', '90%'],
+		            center : ['50%', '50%'],
+//		            roseType : 'area',
+		            data:[
+		            	{value:30, name:'AAA'},
+		            	{value:12, name:'AA'},
+		                {value:10, name:'A'},
+		                {value:5, name:'B'},
+		                {value:15, name:'C'},
+		                {value:25, name:'D'},
+		            ],
+		            /*label: {
+		                normal: {
+		                    textStyle: {
+		                        color: '#445e6d',//标签颜色
+		                        fontSize: 18 //标签字号
+		                    },
+//		                    position: 'inner'
+		                }
+		            },
+		            labelLine: {
+		                normal: {
+		                    lineStyle: {
+		                        color: '#445e6d',//标签线颜色
+		                    }
+		                }
+		            },*/
+		            itemStyle: {
+		                normal: {
+		                    color: function(params) {
+		                        // build a color map as your need.
+		                        var colorList = [
+		                          '#053f76','#0c529a','#3481bb','#6badd5','#bcd6e6','#eef2fe'
+		                        ];
+		                        return colorList[params.dataIndex]
+		                    },
+		                    label: {
+		                     	show : false,
+                               /* position: 'center',
+                                distance: 1,
+                                textStyle: {
+                                    color: '#4b4b4b',
+                                    fontSize: '14'
+                                },
+                                formatter: function(){
+                                    return "在职人数" + "\n" + name + "人"
+                                }*/
+                            },
+                            labelLine: {
+                                show: false
+                            }
+		                }
+		            }
+		            /* itemStyle: {
+                            normal: {
+                                label: {
+                                    position: 'center',
+                                    distance: 8,
+                                    textStyle: {
+                                        color: '#4b4b4b',
+                                        fontSize: '14'
+                                    },
+                                    formatter: function(){
+                                        return "在职人数" + "\n" + data.jobUserCount + "人"
+                                    }
+                                },
+                                labelLine: {
+                                    show: false
+                                }
+                            },*/
+		        }
+		    ]
+		};
+
+	/*pie1.on('hover', function() {
+		var opt = myChart.getOption();
+		opt.title.visible = false;
+		myChart.setOption(opt);
+	}).on('mouseout', function() {
+		var opt = myChart.getOption();
+		opt.title.visible = true;
+		myChart.setOption(opt);
+	});*/
+		pie1.setOption(option1);
+
+		var pie2 = echarts.init(document.getElementById('pie2'));
+		var option2 = {
+		    title : {
+		        text: '信用评估',
+		        textStyle:{
+		        	fontSize: 14,
+		        	fontWeight:'normal'
+		        },
+		        textBaseline :'top',
+		        x: 'center',
+		        y : 'center',
+		        subtext:'企业',
+		        subtextStyle:{
+		        	fontSize: 16,
+		        	fontWeight:'bold',
+		        	color:'#20bbef'
+		        }
+		    },
+		    tooltip : {
+		        trigger: 'item',
+		        formatter: "{a} <br/>{b} : {c} ({d}%)"
+		    },
+		    legend: {
+		        x : 'center',
+		        y:'bottom',
+		        data:['AAA','AA','A','B','C','D'],
+		        itemWidth: 16,//矩形宽度,默认25
+		        itemHeight: 16, //矩形高度,默认14
+		        textStyle: {
+                    fontSize: 14 //标签字号
+                }
+		    },
+		    calculable : true,
+		    series : [
+		        {
+		            type:'pie',
+		            radius: ['50%', '90%'],
+//		            radius : [40, '75%'],
+		            center : ['50%', '50%'],
+//		            roseType : 'area',
+//					radius : '55%',
+		            data:[
+		                {value:30, name:'AAA'},
+		            	{value:12, name:'AA'},
+		                {value:10, name:'A'},
+		                {value:5, name:'B'},
+		                {value:15, name:'C'},
+		                {value:25, name:'D'},
+		            ],
+		           /* label: {
+		                normal: {
+		                    textStyle: {
+		                        color: '#445e6d',//标签颜色
+		                        fontSize: 18 //标签字号
+		                    },
+//		                    position: 'inner'
+		                }
+		            },
+		            labelLine: {
+		                normal: {
+		                    lineStyle: {
+		                        color: '#445e6d',//标签线颜色
+		                    }
+		                }
+		            },*/
+		            itemStyle: {
+		                normal: {
+		                    color: function(params) {
+		                        // build a color map as your need.
+		                        var colorList = [
+		                          '#25bcee','#2fc3ee','#5fd3f4','#92dff4','#c6eaf3','#e2f6fb'
+		                        ];
+		                        return colorList[params.dataIndex]
+		                    },
+		                    label: {
+		                     	show : false,
+                               /* position: 'center',
+                                distance: 1,
+                                textStyle: {
+                                    color: '#4b4b4b',
+                                    fontSize: '14'
+                                },
+                                formatter: function(){
+                                    return "在职人数" + "\n" + name + "人"
+                                }*/
+                            },
+                            labelLine: {
+                                show: false
+                            }
+		                },
+		            }
+		        }
+		    ]
+		};
+		pie2.setOption(option2);
+
+		var option3 = {
+			title: {
+				text: null
+			},
+			tooltip: {
+				trigger: 'item'
+			},
+
+			legend: {
+				show:true,//是否显示,默认true
+				left: 'right',
+				selectedMode:'single',
+				data: ['数量']
+			},
+			visualMap: [],
+			geo: {
+				map: 'wenzhou',
+				roam: true,
+				label: {
+					normal: {
+						show: true,
+						textStyle: {
+							color: 'rgba(0,0,0,0.4)'
+						}
+					}
+				},
+				itemStyle: {
+					normal:{
+						borderColor: 'rgba(0, 0, 0, 0.2)'
+					},
+					emphasis:{
+						areaColor: null,
+						shadowOffsetX: 0,
+						shadowOffsetY: 0,
+						shadowBlur: 20,
+						borderWidth: 0,
+						shadowColor: 'rgba(0, 0, 0, 0.5)'
+					}
+				}
+			},
+			series: [{
+				type: 'scatter',
+				coordinateSystem: 'geo',
+				data:[
+					{name: '永嘉县',value:[120.06,29.32,3200],itemStyle: {
+						normal: {
+							color: '#0ce928',
+							shadowBlur: 20,
+							shadowColor: '#0ce928',
+						}
+					}},
+					{name: '乐清市',value:[119.92,28.45,100000001]},
+					{name: '鹿城区',value:[31583]},
+					{name: '瓯海区',value:[32584]},
+					{name: '龙湾区',value:[32055]},
+					{name: '洞头区',value:[10106]},
+					{name: '瑞安市',value:[3250]},
+					{name: '文成县',value:[32108]},
+					{name: '平阳县',value:[32189]},
+					{name: '苍南县',value:[15000]},
+					{name: '泰顺县',value:[321591]},
+				],
+				label: {
+					normal: {
+						formatter: '嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻',
+						position: 'right',
+						show: true
+					},
+					emphasis: {
+						show: true
+					}
+				},
+				itemStyle: {
+					normal: {
+						color: '#F06C00'
+					}
+				}
+			}],
+		};
+
+		var map1 = echarts.init(document.getElementById('wzMap'));
+		$.get('js/wenzhou.json', function (mapData) {
+			echarts.registerMap('wenzhou', mapData);
+			option3.legend.data =['数量1','数量2','数量3','数量4','数量5'];
+			for(var i = 0; i < 5; i++){
+				var bool = false;
+				if(i == 0){
+					bool = true;
+				}
+
+				var visMap = {
+					type: 'piecewise',
+					pieces: [
+						{min: Math.round(Math.random()*1000)}, // 不指定 max，表示 max 为无限大（Infinity）。
+						{min: 900, max: 1500},
+						{min: 310, max: 1000},
+						{min: 200, max: 300},
+						{min: 10, max: 200, label: '10 到 200（自定义label）'},
+						{value: 123, label: '123（自定义特殊颜色）', color: 'grey'}, // 表示 value 等于 123 的情况。
+						{max: Math.round(Math.random()*10)}     // 不指定 min，表示 min 为无限大（-Infinity）。
+					],
+				/*	text:['High'+ Math.round(Math.random()*1000),'Low'],*/
+					showLabel : true,
+					inRange: {
+						color: ['#eef2fe','#bcd6e6','#6badd5','#3481bb','#0c529a','#053f76' ]
+					},
+					seriesIndex:[i+1],
+					show: bool //是否显示
+				};
+				option3.visualMap.push(visMap);
+			}
+
+			for(var i = 0; i < 5; i++){
+				var seriesData = {
+					name: '数量' + (i + 1),
+					type: 'map',
+					map: 'wenzhou',
+					label: {
+						normal: {
+							show: true,
+						},
+						emphasis: {
+							label: {
+								show: true
+							},
+							areaColor: '#fdba37',
+						}
+					},
+					data:[
+						{name: '永嘉县',value: 3200},
+						{name: '乐清市',value: 12182},
+						{name: '鹿城区',value: 31583},
+						{name: '瓯海区',value: 32584},
+						{name: '龙湾区',value: 32055},
+						{name: '洞头区',value: 10106},
+						{name: '瑞安市',value: 3250},
+						{name: '文成县',value: 32108},
+						{name: '平阳县',value: 32189},
+						{name: '苍南县',value: 15000},
+						{name: '泰顺县',value: 321591},
+					]
+				};
+				option3.series.push(seriesData);
+			}
+			console.log(option3);
+			map1.setOption(option3);
+		});
+
+		map1.on('legendselectchanged', function (params) {
+			$.each(option3.legend.data,function(i,leg){
+				option3.visualMap[i].show = false;
+				if(params.name == leg){
+					option3.visualMap[i].show = true;
+				}
+			});
+
+			map1.setOption(option3);
+		});
+		
+		
+		//下拉显示
+		function slideShow(){
+			$('.user-control').css({
+				'top':$(".fi-arrow-down").parent('a').offset().top + 10 + $(".fi-arrow-down").parent('a').outerHeight(),
+				'left':$(".fi-arrow-down").parent('a').offset().left + 30 + 'px'
+			}).slideDown().show();
+		};
+		//下拉隐藏
+		function slideHide(){
+			$('.user-control').fadeOut("fast");
+		};
+		//图表大小
+		function chartWH(){
+			$(".charts-box div[id]").each(function(){
+				$(this).css({
+					"width":$(this).closest('.charts-box').width() - 30,"height":$(this).closest('.charts-box').height() - 10
+				})
+			})
+		};
+		$(function() {
+			//头部用户信息下拉
+			$('.top-info .fi-arrow-down').parent('a').click(function(){
+				slideShow();
+			});
+			$('.user-control').mouseleave(function() {
+				slideHide();
+			});
+			$("body").bind("click",function(evt){ 
+				if($(evt.target).parents(".top-info").length==0) slideHide();
+			});
+			//图表大小
+			chartWH();
+			//图表自适应
+			pie1.resize();
+			pie2.resize();
+			map1.resize();
+		});
+		//监听窗体大小变更事件
+		$(window).resize(function(){
+			chartWH();
+			pie1.resize(); 
+			pie2.resize();
+			map1.resize();
+		});
+	</script>
+</body>
+</html>

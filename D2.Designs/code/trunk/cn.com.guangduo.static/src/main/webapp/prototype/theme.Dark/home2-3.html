@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+	<title>首页3</title>
+	<link rel="stylesheet" href="../../thirdparty/artDialog/ui-dialog.css" />
+	<link rel="stylesheet" type="text/css" href="css/icon.font.css"/>
+	<link rel="stylesheet" type="text/css" href="css/home.layout2.css"/>
+</head>
+<body>
+	<div class="wrapper home">
+		<!-- 头部 -->
+		<div class="nav-outer">
+			<div class="nav-inner">
+				<div class="nav-box">
+					<h1 class="logo"></h1>
+					<ul class="nav" id="nav">
+						<li>
+							<a href="index.html">
+								首页
+							</a>
+							
+						</li>
+						<li class="cur">
+							<a href="report.html">
+								数据管理系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								数据查询系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								报告管理系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								数据挖掘系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								应用支撑系统
+							</a>
+						</li>
+					</ul>
+					<div class="overflow-hidden">
+						<ul class="top-info right">
+							<li class="relative">
+								<a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+								
+								<div class="user-control">
+									<a href="###">
+										<span class="fi-key"></span>
+										修改密码
+									</a>
+									<a href="###">
+										<span class="fi-envelop"></span>
+										消息
+									</a>
+									<a href="###">
+										<span class="fi-cog"></span>
+										设置
+									</a>
+								</div>
+							</li>
+							<li>
+								<a href="###">
+									<span class="fi-exit"></span>退出
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		
+			<div class="vertical-shadow"></div>
+		</div>
+		<!-- 主体 -->
+		<div class="main" style="bottom: 0;">
+			<div class="chart-outer">
+				<div class="chart-fl big-tab-outer">
+					<div class="tab-nav">
+						<a href="javascript:;" class="gwrz cur">
+							<i class="tab-btn-left"></i>
+							<span class="tab-btn-center"><i class="sprite tab-icon1"></i>官网日志</span>
+							<i class="tab-btn-right"></i></a>
+						<a href="javascript:;" class="htrz">
+							<i class="tab-btn-left"></i>
+							<span class="tab-btn-center"><i class="sprite tab-icon2"></i>后台日志</span>
+							<i class="tab-btn-right"></i>
+						</a>
+					</div>
+					<div class="tab-content shadow">
+						<!--官网日志-->
+						<div class="cur-content scrollbar">
+							<div class="box h-per100">
+								<div class="content h-per100">
+									
+									<table class="table table-odd">
+										<thead>
+											<tr>
+												<th>时段</th>
+												<th>浏览量</th>
+												<th>访客数</th>
+												<th>游客数</th>
+												<th>实名用户</th>
+												<th>平均停留时长</th>
+											</tr>
+										</thead>
+										<tbody class="text-right">
+											<tr>
+												<th>今&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日</th>
+												<td>880</td>
+												<td>373</td>
+												<td>312</td>
+												<td>61</td>
+												<td>00:05:23</td>
+											</tr>
+											<tr>
+												<th>昨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日</th>
+												<td>769</td>
+												<td>543</td>
+												<td>217</td>
+												<td>45</td>
+												<td>00:05:19</td>
+											</tr>
+											<tr>
+												<th>昨日此时</th>
+												<td>896</td>
+												<td>384</td>
+												<td>370</td>
+												<td>61</td>
+												<td>00:05:20</td>
+											</tr>
+											<tr>
+												<th>每日平均</th>
+												<td>402</td>
+												<td>176</td>
+												<td>180</td>
+												<td>69</td>
+												<td>00:06:01</td>
+											</tr>
+											<tr>
+												<th>历史峰值</th>
+												<td>727</td>
+												<td>283</td>
+												<td>295</td>
+												<td>58</td>
+												<td>00:04:23</td>
+											</tr>
+										</tbody>
+									</table>
+									
+									<div class="tab-chart-outer absolute">
+										<div class="chart-control clearfix">
+											<div class="left">
+												<label class="control-label checked-label">今天</label>
+												<label class="control-label">昨天</label>
+												<label class="control-label">最近7天</label>
+												<label class="control-label">最近30天</label>
+											</div>
+											<div class="right">
+												<select class="select1">
+													<option value="op0" selected>浏览量</option>
+													<option value="op1">选项一</option>
+													<option value="op2">选项二</option>
+													<option value="op3">选项三</option>
+												</select>
+												<select class="select2">
+													<option value="date0" selected>对比选择</option>
+													<option value="date1">前一日</option>
+													<option value="date2" >上周同期</option>
+													<option value="date3">历史峰值</option>
+												</select>
+											</div>
+										</div>
+										<div class="tab-chart-box charts-box absolute">
+											<div id="line1" style="width:100%;height: 100%;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="track"><div></div></div>
+						</div>
+						<!--后台日志-->
+						<div class="htrz-content scrollbar">
+							<div class="box h-per100">
+								<div class="content w-per100 h-per100">
+									<table class="table table-th-right">
+										<caption>
+											<h5>累积归集：</h5>
+											<label>
+												自然人<span>489302190</span>位
+											</label>
+											<label>
+												企业<span>38299282</span>家
+											</label>
+											<label>
+												其他组织<span>7829373</span>家
+											</label>
+										</caption>
+										<colgroup>
+											<col style="width: 23%;" />
+											<col style="width: 27%;" />
+											<col style="width: 23%;" />
+											<col style="width: 27%;" />
+										</colgroup>
+										<tbody class="text-right">
+											<tr>
+												<th>累计归集数据量</th>
+												<td>31029201条</td>
+												<th>今日归集数据量</th>
+												<td>2910条</td>
+											</tr>
+											<tr>
+												<th>累计注册用户数</th>
+												<td>178293位</td>
+												<th>今日注册用户数</th>
+												<td>291位</td>
+											</tr>
+											<tr>
+												<th>累计提供查询次数</th>
+												<td>637222次</td>
+												<th>今日提供查询次数</th>
+												<td>1922次</td>
+											</tr>
+											<tr>
+												<th>累计报告打印次数</th>
+												<td>27282份</td>
+												<th>今日报告打印次数</th>
+												<td>3628份</td>
+											</tr>
+										</tbody>
+									</table>
+									
+									<div class="tab-chart-outer tab-chart-outer2">
+										<div class="chart-control clearfix">
+											<div class="left">
+												<label class="control-label checked-label">今日</label>
+												<label class="control-label">本周</label>
+												<label class="control-label">本月</label>
+											</div>
+										</div>
+										<div id="">
+											<table class="table table-border">
+												<thead>
+													<tr>
+														<th>登录用户数</th>
+														<th>异议处理条数</th>
+														<th>投诉处理条数</th>
+														<th>自然人查询数</th>
+														<th>法人查询数</th>
+														<th>其他组织查询数</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>238</td>
+														<td>31</td>
+														<td>27</td>
+														<td>3189</td>
+														<td>192</td>
+														<td>2467</td>
+													</tr>
+												</tbody>
+											</table>
+											<div class="clearfix">
+												<div class="right">
+													<select class="select3">
+														<option value="op0" selected>报告打印</option>
+														<option value="op1">选项一</option>
+														<option value="op2">选项二</option>
+														<option value="op3">选项三</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="tab-chart-box charts-box w-per100">
+											<div id="line2" style="width:100%;height: 100%;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="track"><div></div></div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="chart-fr admin-fr">
+					<div class="chart-top clearfix">
+						<div class="left shadow">
+							<div class="msg-detail-box">
+								<div class="msg-tip">
+									<label class="font-size16">数据接口交换预警</label>
+									<span class="num">[<span id="curNum1">1</span>/<span id="totalNum1"></span>]</span>
+								</div>
+								<div class="slider msg-slider shadow" id="earlyWarning">
+									<div class="container">
+										<ul class="content">
+											<li>
+												<div class="home-list info-list">
+													<ul>
+														<li><label>数据来源：</label><span>温州市建设局</span></li>
+														<li><label>交换部门：</label><span>温州市质监局</span></li>
+														<li><label>异常类型：</label><span>接口异常</span></li>
+														<li><label>提醒时间：</label><span>2016-01-14 8:35</span></li>
+														<li><label>处理状态：</label><span>未处理</span></li>
+													</ul>
+												</div>
+											</li>
+											<li>2</li>
+											<li>3</li>
+										</ul>
+									</div>
+									<div class="slider-control clearfix">
+										<div class="left">
+											<span class="sprite prev"></span>
+											<span class="sprite next"></span>
+										</div>
+										<div class="right">
+											<a href="javascript:" class="detail-btn">详情</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="right">
+							<div class="msg-outer">
+								<div class="msg-tip">
+									<i class="sprite bugle-icon"></i>
+									<label data-length="5" id="msgTip"></label>
+									<span class="look">[查看]</span>
+								</div>
+								<div class="msg-detail-box">
+									<div class="msg-tip">
+										<label class="font-size16">授权信息</label>
+										<span class="num">[<span id="curNum">1</span>/<span id="totalNum"></span>]</span>
+									</div>
+									<div class="slider msg-slider shadow" id="msgBox">
+										<div class="container">
+											<ul class="content">
+												<li>
+													<div class="home-list info-list">
+														<ul>
+															<li><label>申请人：</label><span>信用信息管理</span></li>
+															<li><label>申请时间：</label><span>2016-12-20</span></li>
+															<li><label>主体名称：</label><span>温州福达股份有限公司</span></li>
+															<li><label>维护类型：</label><span>修改</span></li>
+														</ul>
+													</div>
+												</li>
+												<li>2</li>
+												<li>3</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
+										</div>
+										<div class="slider-control clearfix">
+											<div class="left">
+												<span class="sprite prev"></span>
+												<span class="sprite next"></span>
+											</div>
+											<div class="right">
+												<a href="javascript:" class="detail-btn">详情</a>
+												<span class="pack-up">收起</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="btn-group-outer shadow">
+								<div class="btn-group">
+									<a href="###">
+										<i class="btn-left"></i>
+										<span class="btn-center">公众号后台管理</span>
+										<i class="btn-right"></i>
+									</a>
+									<a href="###">
+										<i class="btn-left"></i>
+										<span class="btn-center">网站后台管理</span>
+										<i class="btn-right"></i>
+									</a>
+									<a href="###">
+										<i class="btn-left"></i>
+										<span class="btn-center">资源目录管理</span>
+										<i class="btn-right"></i>
+									</a>
+									<a href="###">
+										<i class="btn-left"></i>
+										<span class="btn-center">操作日志</span>
+										<i class="btn-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="chart-bottom shadow">
+						<div class="table-hd">
+							<table class="table">
+								<colgroup>
+									<col style="width: 40%;" />
+									<col style="width: 30%;" />
+									<col style="width: 30%;" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th>部门</th>
+										<th>接入数据</th>
+										<th>换出数据</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+						<div class="table-tb-outer">
+							<div class="scrollbar table-tb">
+								<div class="box">
+									<table class="content table">
+										<colgroup>
+											<col style="width: 40%;" />
+											<col style="width: 30%;" />
+											<col style="width: 30%;" />
+										</colgroup>
+										<tbody>
+											<tr>
+												<td>市机构编制委员会办公室</td>
+												<td>880292</td>
+												<td>750514</td>
+											</tr>
+											<tr>
+												<td>市人力资源社会保障局</td>
+												<td>795270</td>
+												<td>750514</td>
+											</tr>
+											<tr>
+												<td>市公安局</td>
+												<td>421101</td>
+												<td>400015</td>
+											</tr>
+											<tr>
+												<td>市住房和建设委员会</td>
+												<td>80110</td>
+												<td>124500</td>
+											</tr>
+											<tr>
+												<td>中国电信温州分公司</td>
+												<td>88401</td>
+												<td>11514</td>
+											</tr>
+											<tr>
+												<td>市人力资源社会保障局</td>
+												<td>795270</td>
+												<td>750514</td>
+											</tr>
+											<tr>
+												<td>市公安局</td>
+												<td>421101</td>
+												<td>400015</td>
+											</tr>
+											<tr>
+												<td>市住房和建设委员会</td>
+												<td>80110</td>
+												<td>124500</td>
+											</tr>
+											<tr>
+												<td>中国电信温州分公司</td>
+												<td>88401</td>
+												<td>11514</td>
+											</tr>
+											<tr>
+												<td>市人力资源社会保障局</td>
+												<td>795270</td>
+												<td>750514</td>
+											</tr>
+											<tr>
+												<td>市公安局</td>
+												<td>421101</td>
+												<td>400015</td>
+											</tr>
+											<tr>
+												<td>市住房和建设委员会</td>
+												<td>80110</td>
+												<td>124500</td>
+											</tr>
+											<tr>
+												<td>中国电信温州分公司</td>
+												<td>88401</td>
+												<td>11514</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="track"><div></div></div>
+							</div>
+						</div>
+						<div class="table-ft clearfix">
+							<div class="right">
+								<div class="">
+									<input type="text" id="year" value="2016" />
+									<label>年</label>
+								</div>
+								<div class="">
+									<input type="text" id="month" value="12" />
+									<label>月</label>
+								</div>
+								<input type="button" value="确定" class="blue-btn"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+	<!--echarts-->
+	<script type="text/javascript" src="../../thirdparty/echarts-3.2.3/echarts.js"></script>
+	<!--widget-gh-pages-->
+	<script type="text/javascript" src="js/widget-gh-pages/jquery.slider.js"></script>
+	<script type="text/javascript" src="js/widget-gh-pages/jquery.select.js"></script>
+	<script type="text/javascript" src="js/widget-gh-pages/jquery.scrollbar.js"></script>
+	<!--dialog-->
+	<script type="text/javascript" src="../../thirdparty/artDialog/dialog-min.js"></script>
+	<script type="text/javascript" src="../../thirdparty/artDialog/dialog-plus-min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script src="js/layout.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+		//tab大小
+		function tabSize(){
+			var winWidth = $(document.body).width(),
+				winHei = $(document.body).height();
+			if(winHei < 768 && winWidth < 1170){
+				$(".tab-chart-outer2").removeClass('absolute');
+				$(".tab-chart-outer2 .charts-box").removeClass('absolute').css({'width':600,'height':260});
+				$(".htrz-content .content").removeClass('h-per100');
+				$(".scrollbar").scrollbar();
+			}else{
+				$(".tab-chart-outer2").addClass('absolute');
+				$(".tab-chart-outer2 .charts-box").addClass('absolute').css({'width':'auto','height':'auto'});
+				$(".htrz-content .content").addClass('h-per100');
+				$(".scrollbar .track").hide();
+			};
+		};
+		$(function(){
+			tabSize();
+		});
+		//图表大小
+		function chartWH(){
+			$(".charts-box div[id]").each(function(){
+				$(this).css({
+					"width":$(this).closest('.charts-box').width() + 20,"height":$(this).closest('.charts-box').height() + 20
+				})
+			})
+		};
+		
+		//图
+		var line1 = echarts.init(document.getElementById('line1'));
+		var option1 = {
+			grid:{
+				borderColor:'#f00',
+				borderWidth: 2
+			},
+		    xAxis: {
+		    	name:'时间段',
+		    	nameLocation:'start',
+		    	boundaryGap:['20%','20%'],
+		    	splitArea:{
+			    	show: true,
+			    	areaStyle: {
+			    		color:['#fff','#12a1cb'],
+			    		opacity:0.05
+			    	}
+			    },
+			    axisTick:{
+			    	alignWithLabel: true,
+			    },
+			    axisLine:{
+			    	lineStyle:{
+			    		color:'#12a1cb'
+			    	}
+			    },
+			    axisLabel:{
+			    	textStyle:{
+			    		fontSize: 14
+			    	}
+			    },
+		        data: ['1', '2', '3', '4', '5', '6', '7','8', '9', '10', '11', '12', '13', '14','15', '16', '17', '18', '19', '20', '21','22','23']
+		    },
+		    yAxis: {
+		    	name:'人次',
+		    	nameLocation:'end',
+		    	nameGap: 20,
+		    	nameTextStyle:{
+		    		fontSize: 14
+		    	},
+		    	axisLine:{
+			    	show:false
+			    },
+			    splitLine:{
+			    	lineStyle:{
+			    		type:'dashed',
+			    		color: '#e5ecf2'
+			    	}
+			    },
+			    axisTick:{
+			    	show: false
+			    },
+			    axisLabel:{
+			    	textStyle:{
+			    		fontSize: 14
+			    	}
+			    }
+		    },
+		    series: [{
+		        type: 'line',
+		        itemStyle:{
+		        	normal:{
+		        		opacity: 0,
+		        	},
+		        	emphasis:{
+		        		opacity: 1,
+		        		show:true,
+		        		color:'#23bdf0',
+		        		borderWidth:8,
+		        		borderColor: 'rgba(35, 189, 240, 0.3)',
+		        	}
+		        },
+		        lineStyle:{
+		        	normal:{
+		        		color:'#23bdf0'
+		        	}
+		        },
+		        data:[29, 51, 44, 49, 50, 50, 46,45, 50, 48, 39, 38, 36, 34,30, 32, 35, 39, 10, 29, 23,20,16]
+		    }]
+		};
+		line1.setOption(option1);
+		
+		var line2 = echarts.init(document.getElementById('line2'));
+		var option2 = {
+			grid:{
+				borderColor:'#f00',
+				borderWidth: 2
+			},
+		    xAxis: {
+		    	name:'区域',
+		    	nameLocation:'start',
+		    	boundaryGap:['20%','20%'],
+		    	splitArea:{
+			    	show: true,
+			    	areaStyle: {
+			    		color:['#fff','#12a1cb'],
+			    		opacity:0.05
+			    	}
+			    },
+			    axisTick:{
+			    	alignWithLabel: true,
+			    },
+			    axisLine:{
+			    	lineStyle:{
+			    		color:'#12a1cb'
+			    	}
+			    },
+			    axisLabel:{
+			    	textStyle:{
+			    		fontSize: 14
+			    	},
+			    	interval:0
+			    },
+		        data: ['鹿城区','龙湾区','瓯海区','洞头区','永嘉县','乐清市','平阳县','泰顺县','文成县','苍南县','瑞安市']
+		    },
+		    yAxis: {
+		    	name:'份',
+		    	nameLocation:'end',
+		    	nameGap: 20,
+		    	nameTextStyle:{
+		    		fontSize: 14
+		    	},
+		    	axisLine:{
+			    	show:false
+			    },
+			    splitLine:{
+			    	lineStyle:{
+			    		type:'dashed',
+			    		color: '#e5ecf2'
+			    	}
+			    },
+			    axisTick:{
+			    	show: false
+			    },
+			    axisLabel:{
+			    	textStyle:{
+			    		fontSize: 14
+			    	}
+			    }
+		    },
+		    series: [{
+		        type: 'line',
+		        itemStyle:{
+		        	normal:{
+		        		opacity: 0,
+		        	},
+		        	emphasis:{
+		        		opacity: 1,
+		        		show:true,
+		        		color:'#23bdf0',
+		        		borderWidth:8,
+		        		borderColor: 'rgba(35, 189, 240, 0.3)',
+		        	}
+		        },
+		        lineStyle:{
+		        	normal:{
+		        		color:'#23bdf0'
+		        	}
+		        },
+		        data:[29, 51, 44, 49, 50, 50, 66, 45, 50, 48, 39]
+		    }]
+		};
+		line2.setOption(option2);
+		
+		$(function(){
+			//轮播
+			var $pages = $('#msgBox .content > li');
+			$("#msgBox").slider({
+				easing:"swing",
+				keyboardAble:true,
+				hasTriggers:false,
+				inEndEffect:"none",
+				afterEvent:function(status){
+					$pages.eq(status.index).addClass('active').siblings().removeClass('active');
+					$("#curNum").text(status.index + 1);
+				}
+			});
+			var $pages2 = $('#earlyWarning .content > li');
+			$("#earlyWarning").slider({
+				easing:"swing",
+				keyboardAble:true,
+				hasTriggers:false,
+				inEndEffect:"none",
+				afterEvent:function(status){
+					$pages2.eq(status.index).addClass('active').siblings().removeClass('active');
+					$("#curNum1").text(status.index + 1);
+				}
+			});
+			
+			//消息提示
+			$("#totalNum").text($("#msgBox .content > li").length);
+			$("#totalNum1").text($("#earlyWarning .content > li").length);
+			var msgLength = $("#msgTip").data('length');
+			if (msgLength == 0) {
+				$("#msgTip").text('消息提示：暂无');
+				$("#msgTip").closest('.msg-outer').addClass('nothiing-msg');
+			} else{
+				$("#msgTip").text('您有 ' + msgLength + ' 条授权消息' );
+				$("#msgTip").closest('.msg-outer').addClass('have-msg').removeClass('nothiing-msg');
+			};
+			//消息展开
+			$(".msg-tip + .msg-detail-box").hide();
+			$(".look").click(function(){
+				var $this = $(this);
+				$this.parents('.have-msg').css({'z-index':11});
+				$this.parents('.have-msg').find('.msg-detail-box').animate({
+					'height': 214
+				},'fast').show().css('z-index',12);
+			});
+			//消息收起
+			$(".pack-up").click(function(){
+				var $this = $(this);
+				$this.parents('.have-msg').css({'z-index':0});
+				$this.parents('.have-msg').find('.msg-detail-box').animate({
+					'height': 0
+				}).hide().css('z-index',0);
+			});
+			
+			//弹窗
+			$(".detail-btn").click(function(){
+				$.GD.dialog({
+					id: 'showDialog' ,
+			        title: '鹿城区发展和改革局',
+			        url: 'dialogHome.html',
+			        width: '500px',
+			        height: '450px',
+		    	});
+			});
+			
+			//tab
+			$(".big-tab-outer .tab-nav a").click(function(){
+				var $this = $(this),
+					index = $this.index(),
+					contentLi = $(".big-tab-outer .tab-content").children('div').eq(index);
+				$this.addClass('cur');
+				contentLi.addClass('cur-content');
+				$this.siblings('a').removeClass('cur')
+				contentLi.siblings('div').removeClass('cur-content');
+				//图表大小
+				chartWH();
+				line1.resize(); 
+				line2.resize();
+				//tab大小
+				tabSize();
+				//top
+				$(".tab-chart-outer2").css('top',$(".tab-chart-outer2").prev().height() + 30);
+			});
+			
+			//chart数据选择
+			$(".control-label").click(function(){
+				var $this =$(this);
+				$this.addClass('checked-label').siblings('.control-label').removeClass('checked-label')
+			});
+			
+			//隔行变色
+			$(".table-odd tbody tr:odd,.table-tb tbody tr:odd").addClass('odd');
+			
+			//select
+			$(".select1").select({
+				selected: function(){
+					$('.select1').next('.select').find('.list li').eq(0).hide()
+				}
+			});
+			$(".select2").select({
+				selected: function(){
+					$('.select2').next('.select').find('.list li').eq(0).hide()
+				}
+			});
+			$(".select3").select({
+				selected: function(){
+					$('.select3').next('.select').find('.list li').eq(0).hide()
+				}
+			});
+			
+			//滚动条
+			$(".table-tb").scrollbar();
+			
+			//下拉显示
+			function slideShow(){
+				$('.user-control').css({
+					'top':$(".fi-arrow-down").parent('a').offset().top + 10 + $(".fi-arrow-down").parent('a').outerHeight(),
+					'left':$(".fi-arrow-down").parent('a').offset().left + 30 + 'px'
+				}).slideDown().show();
+			};
+			//下拉隐藏
+			function slideHide(){
+				$('.user-control').fadeOut("fast");
+			};
+			//头部用户信息下拉
+			$('.top-info .fi-arrow-down').parent('a').click(function(){
+				slideShow();
+			});
+			$('.user-control').mouseleave(function() {
+				slideHide();
+			});
+			$("body").bind("click",function(evt){ 
+				if($(evt.target).parents(".top-info").length==0) slideHide();
+			});
+			
+			//图表大小
+			chartWH();
+			//图表自适应
+			line1.resize();
+			line2.resize();
+		});
+		
+		//监听窗体大小变更事件
+		$(window).resize(function(){
+			//tab大小
+			tabSize();
+			//top
+			$(".tab-chart-outer2").css('top',$(".tab-chart-outer2").prev().height() + 30);
+			//图表大小
+			chartWH();
+			line1.resize(); 
+			line2.resize();
+			//滚动条
+			$(".table-tb").scrollbar();
+			
+			//轮播
+			var $pages = $('#msgBox .content > li');
+			$("#msgBox").slider({
+				easing:"swing",
+				keyboardAble:true,
+				hasTriggers:false,
+				inEndEffect:"none",
+				afterEvent:function(status){
+					$pages.eq(status.index).addClass('active').siblings().removeClass('active');
+					$("#curNum").text(status.index + 1);
+				}
+			});
+			var $pages2 = $('#earlyWarning .content > li');
+			$("#earlyWarning").slider({
+				easing:"swing",
+				keyboardAble:true,
+				hasTriggers:false,
+				inEndEffect:"none",
+				afterEvent:function(status){
+					$pages2.eq(status.index).addClass('active').siblings().removeClass('active');
+					$("#curNum1").text(status.index + 1);
+				}
+			});
+		});
+	</script>
+</body>
+</html>

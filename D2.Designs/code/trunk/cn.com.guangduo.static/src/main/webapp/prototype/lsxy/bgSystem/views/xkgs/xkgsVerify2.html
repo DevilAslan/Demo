@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>许可公示校验</title>
+		<link rel="stylesheet" type="text/css" href="../../../../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css" />
+		<link rel="stylesheet" href="../../../../../thirdparty/artDialog/ui-dialog.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../../css/icon.font.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/layout.css">
+	</head>
+
+	<body>
+
+		<div class="main-form-outer dialog-table-outer">
+			<div class="form-inner relative overflow-auto">
+				<form action="" method="post">
+					<div class="form-content absolute">
+						<div class="form-table">
+							<table>
+								<colgroup>
+									<col span="1" style="width: 20%;" />
+									<col span="1" style="width: 70%;" />
+									<col span="1" style="width: 10%;" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th></th>
+										<th></th>
+										<th>校验结果</th>
+									</tr>
+								</thead>
+								<tr>
+									<th><label class="query-label">办件编码</label></th>
+									<td>330324181608091000025</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup1" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup1" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">行政许可决定书文号</label></th>
+									<td></td>
+									<td>
+										<div class="radio-outer">
+											<label>
+											<input type="radio" name="radioGroup2" checked/>正确
+										</label>
+											<label>
+											<input type="radio" name="radioGroup2" />错误
+										</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">项目名称（申报名称）</label></th>
+									<td>医师执业许可变更</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup3" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup3" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">审批类别</label></th>
+									<td>行政许可</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup4" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup4" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">许可内容</label></th>
+									<td>医师执业许可变更</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup5" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup5" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">行政相对人名称</label></th>
+									<td>张素芳</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup6" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup6" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">行政相对人证件类型</label></th>
+									<td></td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup7" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup7" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">行政相对人代码</label></th>
+									<td></td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup8" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup8" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">行政相对人姓名</label></th>
+									<td></td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup9" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup9" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">许可机构</label></th>
+									<td>县卫生局</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup10" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup10" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">许可机构组织机构代码</label></th>
+									<td>2533767</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup11" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup11" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">许可部门</label></th>
+									<td>县卫生局</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup13" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup13" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">许可生效期</label></th>
+									<td>2016-09-17</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup14" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup14" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">许可截止期</label></th>
+									<td></td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup15" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup15" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">所属地区</label></th>
+									<td>丽水市龙全县</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup16" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup16" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">所属区代码</label></th>
+									<td>323700</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup17" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup17" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">当前状态</label></th>
+									<td></td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup18" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup18" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">数据更新时间</label></th>
+									<td></td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup19" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup19" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">备注</label></th>
+									<td></td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup20" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup20" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="btn-row fixed">
+						<input type="button" class="theme-btn" value="提交" onclick="confirm();" />
+						<a href="xkgs.html" class="theme-btn">取消</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+		<!--slimScroll-->
+		<script type="text/javascript" src="../../../../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+		<!--My97日期插件-->
+		<script type="text/javascript" src="../../../../../thirdparty/My97DatePicker/WdatePicker.js"></script>
+
+		<!--dialog-->
+		<script type="text/javascript" src="../../../../../thirdparty/artDialog/dialog-min.js"></script>
+		<script type="text/javascript" src="../../../../../thirdparty/artDialog/dialog-plus-min.js"></script>
+
+		<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/layout.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(function() {
+					//my97
+					$(".date").click(function() {
+						WdatePicker()
+					});
+					$(".time").click(function() {
+						WdatePicker({
+							dateFmt: 'yyyy-MM-dd HH:mm'
+						});
+					});
+					//禁止输入
+					$(".time,.date").keyup(function() {
+						var thisVal = $(this).val();
+						$(this).val(thisVal.slice(0, thisVal.length - 2))
+					});
+				});
+			});
+
+			function confirm() {
+				$.GD.confirm({
+					//title: '确认提交？',
+					msg: '确认提交？',
+					oktext: '提交',
+					canceltext: '关闭',
+					fixed: true,
+					ok: function() {
+						top.location.href = "xkgs.html"
+					}
+				});
+			};
+		</script>
+	</body>
+
+</html>

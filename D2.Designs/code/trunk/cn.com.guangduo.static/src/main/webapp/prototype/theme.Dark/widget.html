@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>其他小部件样式</title>
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" href="../../thirdparty/artDialog/ui-dialog.css" />
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/ztree/css/zTreeStyle/zTreeStyle.css">
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/uploadify/uploadify.css" />
+		<link rel="stylesheet" type="text/css" href="css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<link rel="stylesheet" type="text/css" href="css/dataGrid.layout.css"/>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<!-- 头部 -->
+			<div class="nav-outer">
+				<div class="nav-inner">
+					<div class="nav-box">
+						<h1 class="logo"></h1>
+						<ul class="nav" id="nav">
+							<li>
+								<a href="index.html">
+									首页
+								</a>
+								
+							</li>
+							<li class="cur">
+								<a href="report.html">
+									数据管理系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									数据查询系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									报告管理系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									数据挖掘系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									应用支撑系统
+								</a>
+							</li>
+						</ul>
+						<div class="overflow-hidden">
+							<ul class="top-info right">
+								<li class="relative">
+									<a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+									
+									<div class="user-control">
+										<a href="###">
+											<span class="fi-key"></span>
+											修改密码
+										</a>
+										<a href="###">
+											<span class="fi-envelop"></span>
+											消息
+										</a>
+										<a href="###">
+											<span class="fi-cog"></span>
+											设置
+										</a>
+									</div>
+								</li>
+								<li>
+									<a href="###">
+										<span class="fi-exit"></span>退出
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			
+				<div class="vertical-shadow"></div>
+			</div>
+			<!-- 侧边栏 -->
+			<div class="sub-nav-outer">
+				<div class="sub-nav-box clearfix">
+					<div class="left sub-nav-scroll">
+						<div class="scroll">
+							<div class="sub-nav-inner">
+								<div>
+									<h3><i class="fi-bell"></i>表格</h3>
+									<ul>
+										<li><a href="base.html">dG基础结构</a></li>
+										<li><a href="base2-noControlBtn.html">dG基础结构-无</a></li>
+										<li><a href="doubleTable.html">双表格1</a></li>
+										<li><a href="doubleTable2.html">双表格2</a></li>
+										<li><a href="tabTable.html">tab同页</a></li>
+										<li><a href="tabTable-differentPage1.html">tab不同页</a></li>
+										<li><a href="tabTable-differentPage5.html">tab不同页2-评估</a></li>
+										<li><a href="tabTable-nesting-mix.html">tab嵌套-同页不同页混合</a></li>
+										<li><a href="tabTable-differentPage7-compositeAnalysis.html">综合分析</a></li>
+										<li><a href="treeAndTable.html">树和表格</a></li>
+										<li><a href="treeAndTable2.html">树,表格,查询栏</a></li>
+										<li><a href="doubleTableAndForm.html">上:表单,下:并列表格</a></li>
+										<li><a href="treeAndTableAndForm.html">树\表格\表单</a></li>
+										<li><a href="pureTable.html">纯表格</a></li>
+									</ul>
+									<h4 class="cur"><a href="widget.html"><i class="fi-bell"></i>小部件</a></h4>
+									<h3><i class="fi-bell"></i>表单</h3>
+									<ul>
+										<li><a href="formAccordion.html">折叠表单</a></li>
+										<li><a href="formAccordion-iframe.html">折叠表单-iframe</a></li>
+										<li><a href="formModule.html">分块表单</a></li>
+										<li><a href="formSimple.html">基本表单</a></li>
+										<li><a href="formSimple-detail.html">基本表单-详情</a></li>
+										<li><a href="formEdit-detail.html">可编辑-详情</a></li>
+										<li><a href="cns-detail.html">承诺书-详情</a></li>
+									</ul>
+									<h4><a href="searchAndCharts.html"><i class="fi-bell"></i>搜索和图表</a></h4>
+									<h3><i class="fi-bell"></i>数据归集目录</h3>
+									<ul>
+										<li><a href="dataDirectory.html">版本一</a></li>
+										<li><a href="dataDirectory2.html">版本二</a></li>
+									</ul>
+									<h3><i class="fi-bell"></i>数据挖掘</h3>
+									<ul>
+										<li><a href="dataMiningSearch1.html">查询一</a></li>
+										<li><a href="dataMiningSearch2.html">查询二</a></li>
+										<li><a href="dataMiningSearch3.html">查询三</a></li>
+										<li><a href="dataMiningSearch4-v1.html">查询四-档案查询</a></li>
+										<li><a href="dataMiningSearch5-v1.html">查询五-报告查询</a></li>
+										<li><a href="dataMiningSearchDetail1.html">查询详情一</a></li>
+										<li><a href="dataMiningSearchDetail2.html">查询详情二</a></li>
+										<li><a href="dataMiningSearchDetail3-v1.html">查询详情三</a></li>
+										<li><a href="dataMiningLayout1.html">布局-左一右上一右下二</a></li>
+										<li><a href="dataMiningLayout2.html">布局-左二右一</a></li>
+										<li><a href="dataMiningLayout3.html">布局-田字</a></li>
+										<li><a href="dataMiningLayout4.html">布局-查询栏下田字</a></li>
+										<li><a href="dataMiningLayout5.html">布局-左右</a></li>
+										<li><a href="dataMiningCharts1.html">关系图1</a></li>
+										<li><a href="dataMiningCharts2.html">关系图2</a></li>
+										<li><a href="dataMiningCharts3.html">树图</a></li>
+									</ul>
+									<h3><i class="fi-bell"></i>列表</h3>
+									<ul>
+										<li><a href="list.html">列表1</a></li>
+										<li><a href="list2.html">列表2</a></li>
+									</ul>
+									<h3><i class="fi-bell"></i>信用评估</h3>
+									<ul>
+										<li><a href="credit-evaluate-charts.html">信用评估图表</a></li>
+										<li><a href="credit-evaluate-details.html">信用评估详情</a></li>
+									</ul>
+									<h4><a href="ranking.html"><i class="fi-bell"></i>排行</a></h4>
+									<h4><a href="icon.html"><i class="fi-bell"></i>图标</a></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="left horizontal-shadow relative nav-control">
+						<i class="absolute icon-arrow-left"></i>
+					</div>
+				</div>
+			</div>
+			<!-- 主体 -->
+			<div class="main">
+				<!-- 面包屑 -->
+				<div class="main-bread-crumb">
+					<div class="breadcrumb-hidden">
+						<span class="fi-position left"></span>
+						<ol class="left">
+							<li>
+								<span>：</span>
+								<a href="###">项目管理</a>
+							</li>
+							<li>
+								<span class="breadcrumb-line">>></span><a href="###">项目填报</a>
+							</li>
+						</ol>
+						<div class="right relative">
+							<p class="fi-search absolute"></p>
+							<input type="text" placeholder="输入关键字" class="search-input left" />
+						</div>
+					</div>
+				</div>
+				
+				<p class="color-red font-size14">注意：有些页面上没有关键字查询，且下面的精确查询是直接显示的（不需要点击“显示更多查询条件”就显示的），那么下面的“查询”等按钮，是要放到前面的<b>li标签</b>里的,每个li标签里面一个按钮</p>
+				<!--input无icon版版————按钮操作栏 -->
+				<p>input版无icon版</p>
+				<div class="main-control">
+					<div class="btns-outer">
+						<input type="reset" class="theme-btn-gray" value="重置" />
+						<input type="button" class="theme-btn" value="新增" />
+						<input type="button" class="theme-btn" value="查看" />
+						<input type="button" class="theme-btn" value="启用" />
+						<input type="button" class="theme-btn" value="提交" />
+						<input type="button" class="theme-btn" value="保存" />
+						<input type="button" class="theme-btn" value="确定" />
+						<input type="button" class="theme-btn" value="关联" />
+						<input type="button" class="theme-btn" value="通过" />
+						<input type="button" class="theme-btn" value="详情" />
+						<input type="button" class="theme-btn" value="删除" />
+						<input type="button" class="theme-btn" value="取消" />
+						<input type="button" class="theme-btn" value="返回" />
+						<input type="button" class="theme-btn" value="不通过" />
+						<input type="button" class="theme-btn" value="禁用">
+						<input type="button" class="theme-btn" value="修改">
+					</div>
+				</div>
+				<!--input有icon版版————按钮操作栏 -->
+				<br />
+				<p>input版有icon版</p>
+				<div class="main-control">
+					<div class="btns-outer">
+						<label class="theme-btn-gray fi-bell fi"><input type="reset" value="重置" /></label>
+						<label class="theme-btn fi-bell fi"><input type="button" value="新增" /></label>
+						<label class="theme-btn fi-bell fi"><input type="button" value="查看" /></label>
+						<label class="theme-btn fi-bell fi"><input type="button" value="启用" /></label>
+						<label class="theme-btn fi-bell fi"><input type="button" value="提交" /></label>
+						<label class="theme-btn fi-bell fi"><input type="button" value="保存" /></label>
+						<label class="theme-btn fi-bell fi"><input type="button" value="确定" /></label>
+						<label class="theme-btn fi-bell fi"><input type="button" value="关联" /></label>
+						<label class="theme-btn fi-bell fi"><input type="button" value="通过" /></label>
+						<label class="theme-btn fi-bell fi"><input type="button" value="详情" /></label>
+						<label class="theme-btn fi-bell fi"><input type="button" value="删除" /></label>
+						<label class="theme-btn fi-bell fi"><input type="button" value="取消" /></label>
+						<label class="theme-btn fi-bell fi"><input type="button" value="返回" /></label>
+						<label class="theme-btn fi-bell fi"><input type="button" value="不通过" /></label>
+						<label class="theme-btn fi-bell fi"><input type="button" value="禁用" /></label>
+						<label class="theme-btn fi-bell fi"><input type="button" value="修改" /></label>
+					</div>
+				</div>
+				
+				<!-- button无icon版————按钮操作栏 -->
+				<br />
+				<p>button标签无icon版</p>
+				<div class="main-control">
+					<!--button按钮-->
+					<div class="btns-outer">
+						<button class="theme-btn2">新增</button>
+						<button class="theme-btn2">查看</button>
+						<button class="theme-btn2">启用</button>
+						<button class="theme-btn2">提交</button>
+						<button class="theme-btn2">保存</button>
+						<button class="theme-btn2">确定</button>
+						<button class="theme-btn2">关联</button>
+						<button class="theme-btn2">通过</button>
+						<button class="theme-btn2">详情</button>
+						<button class="theme-btn2">删除</button>
+						<button class="theme-btn2">取消</button>
+						<button class="theme-btn2">返回</button>
+						<button class="theme-btn2">不通过</button>
+						<button class="theme-btn2">禁用</button>
+						<button class="theme-btn2">修改</button>
+					</div>
+				</div>
+				<!-- button有icon版————按钮操作栏 -->
+				<br />
+				<p>button标签有icon版</p>
+				<div class="main-control">
+					<!--button按钮-->
+					<div class="btns-outer">
+						<button class="theme-btn2"><i class="fi-bell fi"></i>新增</button>
+						<button class="theme-btn2"><i class="fi-bell fi"></i>查看</button>
+						<button class="theme-btn2"><i class="fi-bell fi"></i>启用</button>
+						<button class="theme-btn2"><i class="fi-bell fi"></i>提交</button>
+						<button class="theme-btn2"><i class="fi-bell fi"></i>保存</button>
+						<button class="theme-btn2"><i class="fi-bell fi"></i>确定</button>
+						<button class="theme-btn2"><i class="fi-bell fi"></i>关联</button>
+						<button class="theme-btn2"><i class="fi-bell fi"></i>通过</button>
+						<button class="theme-btn2"><i class="fi-bell fi"></i>详情</button>
+						<button class="theme-btn2"><i class="fi-bell fi"></i>删除</button>
+						<button class="theme-btn2"><i class="fi-bell fi"></i>取消</button>
+						<button class="theme-btn2"><i class="fi-bell fi"></i>返回</button>
+						<button class="theme-btn2"><i class="fi-bell fi"></i>不通过</button>
+						<button class="theme-btn2"><i class="fi-bell fi"></i>禁用</button>
+						<button class="theme-btn2"><i class="fi-bell fi"></i>修改</button>
+					</div>
+				</div>
+				<!-- a标签无icon版版————按钮操作栏 -->
+				<br />
+				<p>a标签版无icon版</p>
+				<div class="main-control">
+					<!--a标签按钮-->
+					<div class="btns-outer">
+						<a href="###" class="theme-btn2">新增</a>
+						<a href="###" class="theme-btn2">查看</a>
+						<a href="###" class="theme-btn2">启用</a>
+						<a href="###" class="theme-btn2">提交</a>
+						<a href="###" class="theme-btn2">保存</a>
+						<a href="###" class="theme-btn2">确定</a>
+						<a href="###" class="theme-btn2">关联</a>
+						<a href="###" class="theme-btn2">通过</a>
+						<a href="###" class="theme-btn2">详情</a>
+						<a href="###" class="theme-btn2">删除</a>
+						<a href="###" class="theme-btn2">取消</a>
+						<a href="###" class="theme-btn2">返回</a>
+						<a href="###" class="theme-btn2">不通过</a>
+						<a href="###" class="theme-btn2">禁用</a>
+						<a href="###" class="theme-btn2">修改</a>
+					</div>
+				</div>
+				
+				<!-- a标签有icon版版————按钮操作栏 -->
+				<br />
+				<p>a标签版有icon版</p>
+				<div class="main-control">
+					<!--a标签按钮-->
+					<div class="btns-outer">
+						<a href="###" class="theme-btn2"><i class="fi-bell fi"></i>新增</a>
+						<a href="###" class="theme-btn2"><i class="fi-bell fi"></i>查看</a>
+						<a href="###" class="theme-btn2"><i class="fi-bell fi"></i>启用</a>
+						<a href="###" class="theme-btn2"><i class="fi-bell fi"></i>提交</a>
+						<a href="###" class="theme-btn2"><i class="fi-bell fi"></i>保存</a>
+						<a href="###" class="theme-btn2"><i class="fi-bell fi"></i>确定</a>
+						<a href="###" class="theme-btn2"><i class="fi-bell fi"></i>关联</a>
+						<a href="###" class="theme-btn2"><i class="fi-bell fi"></i>通过</a>
+						<a href="###" class="theme-btn2"><i class="fi-bell fi"></i>详情</a>
+						<a href="###" class="theme-btn2"><i class="fi-bell fi"></i>删除</a>
+						<a href="###" class="theme-btn2"><i class="fi-bell fi"></i>取消</a>
+						<a href="###" class="theme-btn2"><i class="fi-bell fi"></i>返回</a>
+						<a href="###" class="theme-btn2"><i class="fi-bell fi"></i>不通过</a>
+						<a href="###" class="theme-btn2"><i class="fi-bell fi"></i>禁用</a>
+						<a href="###" class="theme-btn2"><i class="fi-bell fi"></i>修改</a>
+					</div>
+				</div>
+				<p class="color-blue" style="font:12px 'microsoft yahei'">
+					<span class="info-icon"></span>
+					以上theme-btn和theme-btn2在a标签、input[type=button]和button标签上都可以使用<br />
+					有图标的按钮的图标都是放着临时占位的
+				</p>
+				
+				<!--文本样式-->
+				<br />
+				<div class="overflow-hidden">
+					<div class="left">
+						<!--状态标签-->
+						<p>状态标签</p>
+						<span class="label label-default">默认状态</span>
+						<span class="label label-primary">正常状态</span>
+						<span class="label label-success">成功状态</span>
+						<span class="label label-warning">警告状态</span>
+						<span class="label label-danger">危险状态</span>
+					</div>
+					<span class="left"> &nbsp;&nbsp;</span>
+					<div class="left">
+						<!--彩色文字-->
+						<p>彩色文字</p>
+						<span class="color-gray">灰色</span>
+						<span class="color-blue">蓝色</span>
+						<span class="color-green">绿色</span>
+						<span class="color-orange">橘色</span>
+						<span class="color-red">红色</span>
+					</div>
+				</div>
+				
+				<!--选择部门效果-->
+				<br />
+				<p>选择部门————点击“选择”按钮会有交互效果————zTree</p>
+				<div class="been-elected-box">
+					<input type="hidden" name="tableOwnerIds" class="group-tmp"/>
+					<ul></ul>
+					<a href="###" class="chooseGroupInfo theme-btn">选择</a>
+				</div>
+				
+				<br />
+				<p>选择部门————点击“选择”按钮会有交互效果————dataGrid</p>
+				<div class="been-elected-box">
+					<input type="hidden" name="tableOwnerIdss" class="group-tmp"/>
+					<ul></ul>
+					<a href="###" class="chooseData theme-btn">选择列表</a>
+				</div>
+				
+				<!--uploadify-->
+				<br />
+				<p>上传按钮样式</p>
+				<div class="uploadify-outer">
+					<input type="file" name="uploadify" id="uploadify" />
+				</div>
+				
+				<br />
+				<p>弹出的输入框</p>
+					<span id="import" class="theme-btn" onclick="openImport()">输入</span>
+				<br />
+				<p>表格</p>
+				<table class="simple-prue-table">
+					<thead>
+						<tr>
+							<th>标题1</th>
+							<th>标题2</th>
+							<th>标题3</th>
+							<th>标题4</th>
+							<th>标题5</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>内容1-1</td>
+							<td>内容1-2</td>
+							<td>内容1-3</td>
+							<td>内容1-4</td>
+							<td>内容1-5</td>
+						</tr>
+						<tr>
+							<td>内容2-1</td>
+							<td>内容2-2</td>
+							<td>内容2-3</td>
+							<td>内容2-4</td>
+							<td>内容2-5</td>
+						</tr>
+						<tr>
+							<td>内容3-1</td>
+							<td>内容3-2</td>
+							<td>内容3-3</td>
+							<td>内容3-4</td>
+							<td>内容3-5</td>
+						</tr>
+						<tr>
+							<td>内容4-1</td>
+							<td>内容4-2</td>
+							<td>内容4-3</td>
+							<td>内容4-4</td>
+							<td>内容4-5</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td>合计</td>
+							<td>合计1</td>
+							<td>合计2</td>
+							<td>合计3</td>
+							<td>合计4</td>
+						</tr>
+					</tfoot>
+				</table>
+				<br />
+				<p>表格2</p>
+				<table class="simple-prue-table small-table">
+					<thead>
+						<tr>
+							<th>标题1</th>
+							<th>标题2</th>
+							<th>标题3</th>
+							<th>标题4</th>
+							<th>标题5</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>内容1-1</th>
+							<td>内容1-2</td>
+							<td>内容1-3</td>
+							<td>内容1-4</td>
+							<td>内容1-5</td>
+						</tr>
+						<tr>
+							<th>内容2-1</th>
+							<td>内容2-2</td>
+							<td>内容2-3</td>
+							<td>内容2-4</td>
+							<td>内容2-5</td>
+						</tr>
+						<tr>
+							<th>内容3-1</th>
+							<td>内容3-2</td>
+							<td>内容3-3</td>
+							<td>内容3-4</td>
+							<td>内容3-5</td>
+						</tr>
+						<tr>
+							<th>内容4-1</th>
+							<td>内容4-2</td>
+							<td>内容4-3</td>
+							<td>内容4-4</td>
+							<td>内容4-5</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td>合计</td>
+							<td>合计1</td>
+							<td>合计2</td>
+							<td>合计3</td>
+							<td>合计4</td>
+						</tr>
+					</tfoot>
+				</table>
+				<br />
+				<br />
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+		<!--dialog-->
+		<script type="text/javascript" src="../../thirdparty/artDialog/dialog-min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/artDialog/dialog-plus-min.js"></script>
+		<!--ztree-->
+		<script type="text/javascript" src="../../thirdparty/ztree/js/jquery.ztree.core-3.5.min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/ztree/js/jquery.ztree.excheck-3.5.min.js"></script>
+		<!--slimScroll-->
+		<script type="text/javascript" src="../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+		<!--uploadify-->
+		<script type="text/javascript" src="../../thirdparty/uploadify/jquery.uploadify.min.js"></script>
+		
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/treeSelecHtml.js"></script>
+		<script src="js/layout.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function openImport(){
+				$.GD.confirm({
+					msg: '<input style="width:200px;" id="inputTest" type="text" value="" />',
+					oktext: '确定',
+					canceltext: '关闭',
+					ok: function() {
+						$.GD.msg($('#inputTest').val());
+					}
+				});
+			};
+			/*上传*/
+			    $('#uploadify').uploadify({
+			        'swf'      : '../../thirdparty/uploadify/uploadify.swf',
+			        'uploader' : 'uploadify.php',
+			        'uploader': '../../thirdparty/uploadify/uploadify.swf',//进度条，Uploadify里面含有
+			       // 'script': '/qmsproject/uploadFile',//一般处理程序
+			        'cancelImg': '../../thirdparty/uploadify/cancel.png',//取消图片路径
+			        'buttonImg': '/custom/plugs/uploadify/uploadButton.jpg',//取消图片路径
+			        //'queueID': 'up_file_queue3',
+			        //'auto': false,
+			        'multi': true ,
+			        fileDataName : "attach",
+			        buttonText :"上传按钮",
+			        height : 30,
+			        width : 'auto',
+			        //method:'post',
+			        removeCompleted : true,
+			        fileTypeExts:"*.jpg;*.avi;*.wmv;*.txt;*.doc",
+			      //  fileSizeLimit:'10MB',
+			        'onComplete': function(event, queueID, fileObj, response, data) {
+			            $('#filesUploaded').append('<img src="+fileObj.filePath+" alt="" width="100" height="150" /><input name="pic[]" type="hidden" value="+fileObj.filePath+" />');
+			        },
+			        onUploadError:function(file,data,response){
+			            if(response=='File Cancelled'){
+			            }
+			        }
+			        // Your options here
+			    });
+			    
+			    //在上传按钮上添加一个按钮
+//			    $(".uploadify-button").prepend('<i class="fi fi-upload"></i>')
+		</script>
+	</body>
+
+</html>

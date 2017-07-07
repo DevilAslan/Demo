@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>行业失信率</title>
+		<link rel="stylesheet" type="text/css" href="../../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../../css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/layout.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- 头部 -->
+			<div class="nav-outer">
+				<div class="nav-inner">
+					<h1 class="logo"></h1>
+					<span class="fi-menu"></span>
+					<ul class="nav" id="nav">
+						<li>
+							<a href="###">
+								系统首页
+							</a>
+						</li>
+						<li>
+							<a href="../../dataDirectory.html">
+								数据管理系统
+							</a>
+						</li>
+						<li class="cur">
+							<a href="qyDataMining.html">
+								数据挖掘系统
+							</a>
+						</li>
+						<li>
+							<a href="../zrr/zrrCredit.html">
+								数据查询系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								报告管理系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								行业应用系统
+							</a>
+						</li>
+						<li>
+							<a href="../cfgs/cfgs.html">
+								信用双公示
+							</a>
+						</li>
+						<li>
+							<a href="../xypj/gCreditRating.html">
+								信用评价
+							</a>
+						</li>
+					</ul>
+					<div class="overflow-hidden">
+						<ul class="top-info right">
+							<li class="relative">
+								<a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+								
+								<div class="user-control">
+									<a href="###">
+										<span class="fi-key"></span>
+										修改密码
+									</a>
+									<a href="###">
+										<span class="fi-envelop"></span>
+										消息
+									</a>
+									<a href="###">
+										<span class="fi-cog"></span>
+										设置
+									</a>
+								</div>
+							</li>
+							<li>
+								<a href="###">
+									<span class="fi-exit"></span>退出
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 侧边栏 -->
+			<div class="sub-nav-outer">
+				<div class="scroll">
+					<div class="sub-nav-inner">
+						<div>
+							<h4 class="cur"><a href="qyDataMining.html">企业与其他社会组织</a></h4>
+							<h4><a href="../sjwj.zrr/zrrDataMining.html">自然人</a></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 主体 -->
+			<div class="main">
+				<!-- 面包屑 -->
+				<form id="creditSearch">
+					<div class="main-bread-crumb">
+						<div class="breadcrumb-hidden">
+							<span class="fi-breadcrumb left"></span>
+							<ol class="left">
+								<li>
+									<span>您的位置：</span>
+									<a href="###">数据挖掘系统</a>
+								</li>
+								<li>
+									<span class="breadcrumb-line breadcrumb-arrow"></span><a href="###">行业失信率</a>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<!-- 搜索栏 -->
+				
+					<div class="main-search">
+						<div class="overflow-hidden" style="border-bottom: 1px dashed #E9E9E9;">
+							<ul>
+								<li>
+									<button type="button" class="theme-btn" id="selectIndustry">选择企业行业</button>
+								</li>
+								<li>
+									<button type="button" class="theme-btn" id="selectArea">选择企业区域</button>
+								</li>
+								<li>
+									<label class="query-label">自定义时间</label>
+									<input type="text" class="date Wdate"/>
+									<span>至</span>
+									<input type="text" class="date Wdate"/>
+								</li>
+								<li>
+									<input type="button" class="theme-btn" value="统计">
+								</li>
+							</ul>
+							<div class="hide-li" id="selectIndustryBox">
+								<label><input type="checkbox">采矿业</label>
+								<label><input type="checkbox">制造业</label>
+								<label><input type="checkbox">建筑业</label>
+								<label><input type="checkbox">金融业</label>
+								<label><input type="checkbox">服务业</label>
+							</div>
+							<div class="hide-li" id="selectAreaBox">
+								<label><input type="checkbox">鹿城区</label>
+								<label><input type="checkbox">瓯海区</label>
+								<label><input type="checkbox">永嘉县</label>
+								<label><input type="checkbox">文成县</label>
+								<label><input type="checkbox">平阳县</label>
+							</div>
+						</div>
+					</div>
+				</form>
+				<!-- 表格 -->
+				<div class="main-table-outer cfl">
+					<div class="form-inner relative overflow-auto">
+						<table class="table-padding">
+							<colgroup>
+								<col span="2" style="width: 50%;height: 240px;"/>
+							</colgroup>
+							<tr>
+								<td>
+									<img src="../../images/qy-hyxy1.png" />
+								</td>
+								<td>
+									<img src="../../images/qy-hyxy2.png" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="../../images/qy-hyxy3.png" />
+								</td>
+								<td>
+									<img src="../../images/qy-hyxy4.png" />
+								</td>
+							</tr>
+						</table>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="../../../../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<!--My97日期插件-->
+		<script type="text/javascript" src="../../../../../thirdparty/My97DatePicker/WdatePicker.js"></script>
+		<!--slimScroll-->
+		<script type="text/javascript" src="../../../../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+		<script src="../../js/layout.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				//my97
+				$(".date").click(function() {
+					WdatePicker()
+				});
+				$(".time").click(function() {
+					WdatePicker({
+						skin: 'whyGreen',
+						dateFmt: 'H:mm:ss'
+					});
+				});
+				//禁止输入
+				$(".time,.date").keyup(function() {
+					var thisVal = $(this).val();
+					$(this).val(thisVal.slice(0, thisVal.length - 2))
+				});
+				
+				
+				//search Check show and hide
+				$(".main-search button").click(function(){
+					var btnId = $(this).attr("id");
+					var boxId = btnId + "Box";
+					if($("#" + boxId).is(":visible")){
+						$("#" + boxId).hide();
+						mainSearch();
+					}else{
+						$("#" + boxId).show();
+						$("#" + boxId).siblings(".hide-li").hide();
+						mainSearch();
+					}
+				})
+			});
+		</script>
+	</body>
+</html>

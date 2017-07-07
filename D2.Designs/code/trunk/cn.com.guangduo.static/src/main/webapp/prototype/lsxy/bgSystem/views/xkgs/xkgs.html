@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>许可公示</title>
+		<link rel="stylesheet" type="text/css" href="../../../../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" href="../../../../../thirdparty/artDialog/ui-dialog.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../../css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/layout.css">
+		<link rel="stylesheet" type="text/css" href="../../css/dataGrid.layout.css"/>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<!-- 头部 -->
+			<div class="nav-outer">
+				<div class="nav-inner">
+					<h1 class="logo"></h1>
+					<span class="fi-menu"></span>
+					<ul class="nav" id="nav">
+						<li>
+							<a href="###">
+								系统首页
+							</a>
+						</li>
+						<li>
+							<a href="../../dataDirectory.html">
+								数据管理系统
+							</a>
+						</li>
+						<li>
+							<a href="../sjwj.qy/qyDataMining.html">
+								数据挖掘系统
+							</a>
+						</li>
+						<li>
+							<a href="../zrr/zrrCredit.html">
+								数据查询系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								报告管理系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								行业应用系统
+							</a>
+						</li>
+						<li class="cur">
+							<a href="../cfgs/cfgs.html">
+								信用双公示
+							</a>
+						</li>
+						<li>
+							<a href="../xypj/gCreditRating.html">
+								信用评价
+							</a>
+						</li>
+					</ul>
+					<div class="overflow-hidden">
+						<ul class="top-info right">
+							<li class="relative">
+								<a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+								
+								<div class="user-control">
+									<a href="###">
+										<span class="fi-key"></span>
+										修改密码
+									</a>
+									<a href="###">
+										<span class="fi-envelop"></span>
+										消息
+									</a>
+									<a href="###">
+										<span class="fi-cog"></span>
+										设置
+									</a>
+								</div>
+							</li>
+							<li>
+								<a href="###">
+									<span class="fi-exit"></span>退出
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 侧边栏 -->
+			<div class="sub-nav-outer">
+				<div class="scroll">
+					<div class="sub-nav-inner">
+						<div>
+							<h4><a href="../cfgs/cfgs.html">处罚公示</a></h4>
+							<h4 class="cur"><a href="xkgs.html">许可公示</a></h4>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- 主体 -->
+			<div class="main">
+				<form  method="post" id="searchForm">
+					<!-- 面包屑 -->
+					<div class="main-bread-crumb">
+						<div class="breadcrumb-hidden">
+							<span class="fi-breadcrumb left"></span>
+							<ol class="left">
+								<li>
+									<span>您的位置：</span>
+									<a href="###">信用双公示</a>
+								</li>
+								<li>
+									<span class="breadcrumb-line breadcrumb-arrow"></span><a href="###">许可公示</a>
+								</li>
+							</ol>
+							<div class="right relative">
+								<p class="fi-search absolute"></p>
+								<input type="text" placeholder="输入关键字" class="search-input left" />
+							</div>
+						</div>
+					</div>
+					<!-- 搜索栏 -->
+					<div class="main-search">
+						<div class="overflow-hidden hide-li">
+							<ul>
+								<li>
+									<label class="query-label">许可机构</label>
+									<input type="text">
+								</li>
+								<li>
+									<label class="query-label">许可部门</label>
+									<input type="text"/>
+								</li>
+								<li>
+									<label class="query-label">所属地区</label>
+									<input type="text" />
+								</li>
+								<li>
+									<label class="query-label">行政相对人名称</label>
+									<input type="text"/>
+								</li>
+								<li>
+									<label class="query-label">许可内容</label>
+									<input type="text"/>
+								</li>
+							</ul>
+								
+							<div class="search-btn-group left">
+								<input type="button" class="theme-btn" value="查询">
+							</div>
+						</div>
+						<div class="more-text clearfix">
+							<!--显示更多查询条件-->
+							<p><span class="fi-arrow-down"></span>显示更多查询条件</p>
+						</div>
+					</div>
+				</form>
+				<!-- 按钮操作栏 -->
+				<div class="main-control">
+					<div class="btns-outer">
+						<a href="xkgsAdd.html" class="theme-btn">新增</a>
+					</div>
+				</div>				
+				<!-- 表格 -->
+				<div class="main-table-outer">
+					<table id="datagrid" class="user-datagrid easyui-datagrid clearfix" style="height:100%;width:100%;">
+						<tr>
+							<td></td>
+							<td><span class="cause-title">丽水市缙云县</span></td>
+							<td><span class="cause-title">县工商局</span></td>
+							<td><span class="cause-title">有限责任公司设立登记</span></td>
+							<td><span class="cause-title">缙云迦福鞋材有限公司</span></td>
+							<td>2016-09-17</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><span class="cause-title">丽水市龙全县</span></td>
+							<td><span class="cause-title">县卫生局</span></td>
+							<td><span class="cause-title">医师执业许可变更</span></td>
+							<td><span class="cause-title">张素芳</span></td>
+							<td>2016-09-17</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><span class="cause-title">丽水市松阳县</span></td>
+							<td><span class="cause-title">松北房管窗口</span></td>
+							<td><span class="cause-title">房屋转让登记</span></td>
+							<td><span class="cause-title">刘奇</span></td>
+							<td>2016-09-17</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><span class="cause-title">丽水市遂昌县</span></td>
+							<td><span class="cause-title">县国土局</span></td>
+							<td><span class="cause-title">农村村民住宅用地审核</span></td>
+							<td><span class="cause-title">郑建群 郑建勋 郑建旺 三仁乡小忠村</span></td>
+							<td>2016-09-15</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+		</div>
+
+		<script type="text/javascript" src="../../../../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+		<!--slimScroll-->
+		<script type="text/javascript" src="../../../../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+		<!--My97日期插件-->
+		<script type="text/javascript" src="../../../../../thirdparty/My97DatePicker/WdatePicker.js"></script>
+		
+		<!--dialog-->
+		<script type="text/javascript" src="../../../../../thirdparty/artDialog/dialog-min.js"></script>
+		<script type="text/javascript" src="../../../../../thirdparty/artDialog/dialog-plus-min.js"></script>
+		
+		<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/layout.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+			$(function() {
+				//my97
+				$(".date").click(function() {
+					WdatePicker()
+				});
+				$(".time").click(function() {
+					WdatePicker({
+						skin: 'whyGreen',
+						dateFmt: 'H:mm:ss'
+					});
+				});
+				//禁止输入
+				$(".time,.date").keyup(function() {
+					var thisVal = $(this).val();
+					$(this).val(thisVal.slice(0, thisVal.length - 2))
+				});
+			});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$('#datagrid').datagrid({
+//					url: "datagrid_data1.json",
+					columns: [
+						[
+							{field: 'area',title: '所属地区',width: 15,halign:"center"},
+							{field: 'licensingAuthority',title: '许可机构',width: 15,align:"center"},
+							{field: 'licensedContent',title: '许可内容',width: 50,align:"center"},
+							{field: 'name',title: '行政相对人名称',width: 50,align:"center"},
+							{field: 'effectiveDate',title: '生效日期',width: 10,align:"center"},
+						]
+					],
+					frozenColumns: [
+						[
+							{field: 'opt',title: "操作",width: 50,align:"center",
+								formatter: function(value, row, index) {
+									if(index == 0 || index == 1){
+										return '<a href="javascript:" class="gs-check" id="cfgsCheck'+ index +'">校验</a>'
+									}else{
+										return '<a href="javascript:" class="report" onclick="report()">上报</a>'
+									}
+								}
+							}
+						]
+					],
+					fitColumns: true,//True 就会自动扩大或缩小列的尺寸以适应表格的宽度并且防止水平滚动。
+					striped:true,//斑马线
+					pageSize: 10,
+					rownumbers: true,
+					pagination: true,
+					collapsible: true,
+
+					singleSelect: true, // 复选
+
+					sortName: 'effectiveDate',
+					sortOrder: 'desc',
+					queryParams: {} // 查询条件
+				});
+				
+			});
+			
+			
+			$(document).on('click','.share-state.color-blue',function(){
+				var sId = $(this).attr("id");
+				$.GD.bubbles({
+					id: sId, 
+					msg: "已于2016年9月18日09时32分,<br/>发送至省级区县平台"
+				});
+			});
+			
+			//查看详情
+			$(document).on('click','.cause-title',function(){
+				//var $title = $(this).text();
+				var $title = $($(this).parents('tr').find('td')[2]).text();
+				var $index = $(this).parents('tr').index();
+				$.GD.dialog({
+					id: 'cfgs' + $index,
+			        title: $title,
+			        url: 'xkgsDetail'+ ($index + 1) +'.html',
+			        width: '900px',
+			        height: '600px',
+		    	});
+				
+			});
+			
+			//校验
+			$(document).on('click','.gs-check',function(){
+				var $index = $(this).parents('tr').index();
+				$.GD.dialog({
+					id: 'checkCfgss',
+			        title: '校验',
+			        url: 'xkgsVerify' + ($index + 1) + '.html',
+			        width: '900px',
+			        height: '600px',
+		    	});
+			});
+			
+			//上报
+			function report(){
+				$.GD.confirm({
+					msg: '确认上报？',
+					oktext: '确定',
+					canceltext: '关闭',
+					fixed: true,
+					ok: function() {
+						window.location.href="xkgs.html";
+					}
+				});
+			}
+		</script>
+	</body>
+
+</html>

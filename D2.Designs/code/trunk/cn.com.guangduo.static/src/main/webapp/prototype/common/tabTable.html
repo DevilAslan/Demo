@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>在Tab里的table-同一页面</title>
+	<link rel="stylesheet" type="text/css" href="../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/icon.font.css"/>
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/dataGrid.layout.css"/>
+</head>
+<body>
+	<div class="wrapper">
+		<!-- 头部 -->
+		<div class="nav-outer">
+			<div class="nav-inner">
+				<div class="overflow-hidden">
+					<ul class="top-info right">
+						<li>
+							<a href="###">您好，李玉东（cxy）</a>
+						</li>
+						<li>
+							<a href="###">
+								<span class="head-icon message-icon"></span>
+								<span class="orange-point">19</span>
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								<span class="head-icon remind-icon"></span>
+								<span class="blue-point">5</span>
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								<span class="head-icon set-icon"></span>设置
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								<span class="head-icon exit-icon"></span>退出
+							</a>
+						</li>
+					</ul>
+				</div>
+				<h1 class="logo"></h1>
+				<ul class="nav" id="nav">
+					<li>
+						<a href="index.html">
+							<span class="index-icon"></span>系统首页
+						</a>
+						<span class="nav-cur-icon"></span>
+					</li>
+					<li class="cur">
+						<a href="report.html">
+							<span class="project-icon"></span>项目管理
+						</a>
+						<span class="nav-cur-icon"></span>
+					</li>
+					<li>
+						<a href="###">
+							<span class="statistics-icon"></span>统计分析
+						</a>
+						<span class="nav-cur-icon"></span>
+					</li>
+					<li>
+						<a href="###">
+							<span class="map-icon"></span>电子地图
+						</a>
+						<span class="nav-cur-icon"></span>
+					</li>
+					<li>
+						<a href="###">
+							<span class="public-info-icon"></span>公共信息
+						</a>
+						<span class="nav-cur-icon"></span>
+					</li>
+					<li>
+						<a href="###">
+							<span class="system-icon"></span>系统管理
+						</a>
+						<span class="nav-cur-icon"></span>
+					</li>
+					<li>
+						<a href="###">
+							<span class="performance-icon"></span>绩效管理
+						</a>
+						<span class="nav-cur-icon"></span>
+					</li>
+				</ul>
+			</div>
+			<div class="nav-line-vertical"></div>
+		</div>
+		<!-- 侧边栏 -->
+		<div class="sub-nav-outer">
+			<div class="scroll">
+				<div class="sub-nav-inner">
+					<dl>
+						<dt class="cur"><i class="fi-record"></i>项目填报<span class="fi-arrow-down"></span></dt>
+						<dd>
+							<div>
+								<a href="###">项目填报1</a>
+								<a href="###" class="cur-a">项目填报2</a>
+								<a href="###">项目填报3</a>
+								<a href="###">项目填报4</a>
+							</div>
+						</dd>
+						<dt><i class="fi-record"></i>项目变更<span class="fi-arrow-right"></span></dt>
+						<dd>
+							<div>
+								<a href="###">项目变更1</a>
+								<a href="###">项目变更2</a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+								<a href="###">项目变更3</a>
+								<a href="###">项目变更4</a>
+							</div>
+						</dd>
+						<dt><i class="fi-record"></i>项目年报<span class="fi-arrow-right"></span></dt>
+						<dd>
+							<div>
+								<a href="###">项目年报1</a>
+								<a href="###">项目年报2</a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+								<a href="###">项目年报3</a>
+							</div>
+						</dd>
+						<dt><i class="fi-record"></i>项目库<span class="fi-arrow-right"></span></dt>
+						<dd>
+							<div>
+								<a href="###">项目库1</a>
+								<a href="###">项目库2</a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			
+		</div>
+		<!-- 主体 -->
+		<div class="main">
+			<!-- 面包屑 -->
+			<div class="main-bread-crumb">
+				<div class="breadcrumb-hidden">
+					<span class="breadcrumb-icon"></span>
+					<ol>
+						<li><span class="breadcrumb-line"></span><a href="###">项目管理</a>
+						</li>
+						<li><span class="breadcrumb-line breadcrumb-arrow"></span><a href="###">项目填报</a>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!-- 搜索栏 -->
+			<div class="main-search">
+				<form>
+					<div class="overflow-hidden">
+						<input type="text" placeholder="输入项目名称查询" class="search-input left" />
+						<ul class="hide-li">
+								<li>
+									<label class="query-label">项目名称</label>
+									<input type="text">
+								</li>
+								<li>
+									<label class="query-label">项目类别</label>
+									<input type="text" />
+								</li>
+								<li>
+									<label class="query-label">添加时间</label>
+									<input type="text" class="date Wdate" />
+									<span>-</span>
+									<input type="text" class="date Wdate" />
+								</li>
+								<li>
+									<label class="query-label">项目类型</label>
+									<div class="position-relative">
+										<select>
+											<option value="0">未开工</option>
+											<option value="1">谋划</option>
+											<option value="2">待开工</option>
+											<option value="3">建设初期</option>
+											<option value="4">建设中期</option>
+										</select>
+										<span class="select-ico"></span>
+									</div>
+								</li>
+								<li>
+									<label class="query-label">项目级别</label>
+									<input type="text" />
+								</li>
+								<li>
+									<label class="query-label">建设性质</label>
+									<input type="text" />
+								</li>
+								<li>
+									<label class="query-label">项目区域</label>
+									<input type="text" />
+								</li>
+							</ul>
+						<div class="search-btn-group left">
+							<input type="submit" class="theme-btn black-btn" value="查询">
+							<p class="theme-btn more-text">高级查询</p>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- 内容 -->
+	    	<div class="main-table-outer tab-outer" id="tab">
+				<div class="tab-title-box">
+					<div class="cur" id="info1" onclick="setContentTab('info',1,9)">
+						<h3>基本信息</h3>
+					</div>
+					<div id="info2" onclick="setContentTab('info',2,9)">
+						<h3>投资信息</h3>
+					</div>
+					<div id="info3" onclick="setContentTab('info',3,9)">
+						<h3>用地信息</h3>
+					</div>
+					<div id="info4" onclick="setContentTab('info',4,9)">
+						<h3>业主信息</h3>
+					</div>
+					<div id="info5" onclick="setContentTab('info',5,9)">
+						<h3>审批信息</h3>
+					</div>
+					<div id="info6" onclick="setContentTab('info',6,9)">
+						<h3>附件信息</h3>
+					</div>
+					<div id="info7" onclick="setContentTab('info',7,9)">
+						<h3>年报记录</h3>
+					</div>
+					<div id="info8" onclick="setContentTab('info',8,9)">
+						<h3>月报记录</h3>
+					</div>
+					<div id="info9" onclick="setContentTab('info',9,9)">
+						<h3>变更记录</h3>
+					</div>
+				</div>
+				<div class="tab-content block" id="con_info_1">
+					<!-- 按钮操作栏 -->
+		    		<div class="main-control">
+		    			<div class="btns-outer">
+							<a href="###" class="add-btn green-btn">新增</a>
+							<a href="###" class="green-btn">查看</a>
+							<a href="###" class="able-btn green-btn">启用</a>
+							<a href="###" class="blue2-btn">提交</a>
+							<a href="###" class="blue2-btn">保存</a>
+						</div>
+		    		</div>
+		    		<!-- 表格 -->
+		    		<div class="tab-table-inner">
+						<table id="datagrid1" class="user-datagrid easyui-datagrid" style="height:100%;width:100%;"></table>
+					</div>
+				</div>
+				<div class="tab-content" id="con_info_2">
+					<!-- 按钮操作栏 -->
+		    		<div class="main-control">
+		    			<div class="btns-outer">
+							<a href="###" class="sure-btn blue2-btn">确定</a>
+							<a href="###" class="blue2-btn">关联</a>
+							<a href="###" class="blue2-btn">通过</a>
+							<a href="###" class="detail-btn blue2-btn">详情</a>
+							<a href="###" class="delete-btn red2-btn">删除</a>
+						</div>
+		    		</div>
+		    		<!-- 表格 -->
+		    		<div class="tab-table-inner">
+						<table id="datagrid2" class="user-datagrid easyui-datagrid" style="height:100%;width:100%;"></table>
+					</div>
+				</div>
+				<div class="tab-content" id="con_info_3">
+					<div class="tab-table-inner tab-form">
+						<div class="main-form-outer">
+		    				<div class="form-inner relative overflow-auto">
+								<div class="form-content absolute">
+									<div class="form-table">
+										<table>
+											<tr>
+												<th>
+													<label class="query-label">项目编号</label>
+												</th>
+												<td>
+													<p>12345646677</p>
+												</td>
+												<th>
+													<label class="query-label">项目名称</label>
+												</th>
+												<td>
+													<input type="text" />
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<label class="query-label">建设地址</label>
+												</th>
+												<td colspan="3" class="multi">
+													<select>
+														<option value="wenzhou">温州市</option>
+														<option value="ningbo">宁波市</option>
+														<option value="hangzhou">杭州市</option>
+														<option value="quzhou">衢州市</option>
+														<option value="huzhou">湖州市</option>
+														<option value="jiaxing">嘉兴市</option>
+														<option value="jinhua">金华市</option>
+														<option value="zhoushan">舟山市</option>
+													</select>
+													<select>
+														<option value="wenzhou">温州市</option>
+														<option value="ningbo">宁波市</option>
+														<option value="hangzhou">杭州市</option>
+														<option value="quzhou">衢州市</option>
+														<option value="huzhou">湖州市</option>
+														<option value="jiaxing">嘉兴市</option>
+														<option value="jinhua">金华市</option>
+														<option value="zhoushan">舟山市</option>
+													</select>
+													<select>
+														<option value="wenzhou">温州市</option>
+														<option value="ningbo">宁波市</option>
+														<option value="hangzhou">杭州市</option>
+														<option value="quzhou">衢州市</option>
+														<option value="huzhou">湖州市</option>
+														<option value="jiaxing">嘉兴市</option>
+														<option value="jinhua">金华市</option>
+														<option value="zhoushan">舟山市</option>
+													</select>
+													<input type="text" />
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<label class="query-label">项目类型</label>
+												</th>
+												<td>
+													<select>
+														<option value="0">未开工</option>
+														<option value="1">谋划</option>
+														<option value="2">待开工</option>
+														<option value="3">建设初期</option>
+														<option value="4">建设中期</option>
+													</select>
+												</td>
+												<th>
+													<label class="query-label">项目级别</label>
+												</th>
+												<td>
+													<select>
+														<option value="wenzhou">温州市</option>
+														<option value="ningbo">宁波市</option>
+														<option value="hangzhou">杭州市</option>
+														<option value="quzhou">衢州市</option>
+														<option value="huzhou">湖州市</option>
+														<option value="jiaxing">嘉兴市</option>
+														<option value="jinhua">金华市</option>
+														<option value="zhoushan">舟山市</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<label class="query-label">项目属性</label>
+												</th>
+												<td colspan="3">
+													<div class="radio-outer">
+														<label>
+																	<input type="checkbox" name="property" />411项目</label>
+														<label>
+																	<input type="checkbox" name="property" />市重点项目</label>
+														<label>
+																	<input type="checkbox" name="property" />省重大工业项目</label>
+														<label>
+																	<input type="checkbox" name="property" />PPP项目</label>
+														<label>
+																	<input type="checkbox" name="property" />中央投资项目</label>
+														<label>
+																	<input type="checkbox" name="property" />省重点项目</label>
+														<label>
+																	<input type="checkbox" name="property" />省重大产业项目</label>
+														<label>
+																	<input type="checkbox" name="property" />省重大服务业项目</label>
+														<label>
+																	<input type="checkbox" name="property" />外资项目</label>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<label class="query-label">主管科室</label>
+												</th>
+												<td colspan="3">
+													<div class="radio-outer">
+														<label>
+																	<input type="checkbox" name="sectionOffice" />政策法规处</label>
+														<label>
+																	<input type="checkbox" name="sectionOffice" />发展规划处</label>
+														<label>
+																	<input type="checkbox" name="sectionOffice" />体制改革处</label>
+														<label>
+																	<input type="checkbox" name="sectionOffice" />工高处</label>
+														<label>
+																	<input type="checkbox" name="sectionOffice" />农村经济发展处</label>
+														<label>
+																	<input type="checkbox" name="sectionOffice" />办公室</label>
+														<label>
+																	<input type="checkbox" name="sectionOffice" />国外资金利用处</label>
+														<label>
+																	<input type="checkbox" name="sectionOffice" />基本建设综合处</label>
+														<label>
+																	<input type="checkbox" name="sectionOffice" />人事处</label>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<label class="query-label">建设性质</label>
+												</th>
+												<td>
+													<select>
+														<option value="wenzhou">温州市</option>
+														<option value="ningbo">宁波市</option>
+														<option value="hangzhou">杭州市</option>
+														<option value="quzhou">衢州市</option>
+														<option value="huzhou">湖州市</option>
+														<option value="jiaxing">嘉兴市</option>
+														<option value="jinhua">金华市</option>
+														<option value="zhoushan">舟山市</option>
+													</select>
+												</td>
+												<th>
+													<label class="query-label">建设阶段</label>
+												</th>
+												<td>
+													<select>
+														<option value="wenzhou">温州市</option>
+														<option value="ningbo">宁波市</option>
+														<option value="hangzhou">杭州市</option>
+														<option value="quzhou">衢州市</option>
+														<option value="huzhou">湖州市</option>
+														<option value="jiaxing">嘉兴市</option>
+														<option value="jinhua">金华市</option>
+														<option value="zhoushan">舟山市</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<label class="query-label">项目区域</label>
+												</th>
+												<td>
+													<select>
+														<option value="wenzhou">温州市</option>
+														<option value="ningbo">宁波市</option>
+														<option value="hangzhou">杭州市</option>
+														<option value="quzhou">衢州市</option>
+														<option value="huzhou">湖州市</option>
+														<option value="jiaxing">嘉兴市</option>
+														<option value="jinhua">金华市</option>
+														<option value="zhoushan">舟山市</option>
+													</select>
+												</td>
+												<th>
+													<label class="query-label">建设工期</label>
+												</th>
+												<td>
+													<div class="unit-font-box">
+														<input type="text" />
+														<span class="unit-font">月</span>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<label class="query-label">计划开工时间</label>
+												</th>
+												<td>
+													<input type="text" class="date Wdate" />
+													<!--<label class="error" for="name">请填写计划开工时间</label>-->
+												</td>
+												<th>
+													<label class="query-label">计划竣工时间</label>
+												</th>
+												<td>
+													<input type="text" class="date Wdate" />
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<label class="query-label">申报单位</label>
+												</th>
+												<td>
+													<input type="text" id="groupIdName" />
+													<input type="hidden" id="groupIds" name="sysGroupIds" />
+												</td>
+												<th>
+													<label class="query-label">项目总投资</label>
+												</th>
+												<td>
+													<div class="unit-font-box">
+														<input type="text" />
+														<span class="unit-font">万元</span>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>
+													<label class="query-label">申报单位联系人</label>
+												</th>
+												<td>
+													<input type="text" />
+												</td>
+												<th>
+													<label class="query-label">申报单位联系电话</label>
+												</th>
+												<td>
+													<input type="text" />
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div class="btn-row fixed">
+									<input type="submit" class="blue2-btn" value="保存">
+									<a href="###" class="blue2-btn" id="instorage">提交</a>
+									<a href="###" class="cancel-input red2-btn">取消</a>
+								</div>
+							</div>
+		    			</div>
+					</div>
+				</div>
+				<div class="tab-content" id="con_info_4">
+					<!-- 按钮操作栏 -->
+		    		<div class="main-control">
+		    			<div class="btns-outer">
+			    			<a href="###" class="cancel-btn red2-btn">取消</a>
+							<a href="###" class="return-btn red2-btn">返回</a>
+							<a href="###" class="red2-btn">不通过</a>
+							<a href="###" class="disable-btn red2-btn">禁用</a>
+							<a href="###" class="edit-btn orange-btn">修改</a>
+		    			</div>
+		    		</div>
+		    		<!-- 表格 -->
+		    		<div class="tab-table-inner">
+						<table id="datagrid3" class="user-datagrid easyui-datagrid" style="height:100%;width:100%;"></table>
+					</div>
+				</div>
+				<div class="tab-content" id="con_info_5">
+				</div>
+				<div class="tab-content" id="con_info_6">
+				</div>
+				<div class="tab-content" id="con_info_7">
+				</div>
+				<div class="tab-content" id="con_info_8">
+				</div>
+				<div class="tab-content" id="con_info_9">
+				</div>
+	    	</div>
+		</div>
+		<!-- 尾部 -->
+		<div class="footer-outer">
+			<div class="footer-inner">
+				<div class="null-div"></div>
+				<div class="foot-infos">
+					<p>技术支持：广多科技有限公司</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="../../thirdparty/My97DatePicker/WdatePicker.js"></script>
+	<!--slimScroll-->
+	<script type="text/javascript" src="../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="js/layout.js"></script>
+	<script type="text/javascript">
+		/*tab*/
+		function setContentTab(name, curr, n) {
+			for (i = 1; i <= n; i++) {
+				var menu = document.getElementById(name + i);
+				var cont = document.getElementById("con_" + name + "_" + i);
+				menu.className = i == curr ? "cur" : "";
+				if (i == curr) {
+					cont.style.display = "block";
+				} else {
+					cont.style.display = "none";
+				}
+			}
+		};
+		$(function() {
+			//my97
+			$(".date").click(function() {
+				WdatePicker()
+			});
+			$(".time").click(function() {
+				WdatePicker({
+					skin: 'whyGreen',
+					dateFmt: 'H:mm:ss'
+				});
+			});
+			//禁止输入
+			$(".time,.date").keyup(function() {
+				var thisVal = $(this).val();
+				$(this).val(thisVal.slice(0, thisVal.length - 2))
+			});
+		})
+	</script>
+	<script type="text/javascript">
+	
+		$(function(){
+			$('#datagrid1').datagrid({
+				url:"getListData1.json",
+				columns:[[
+			          {field:'id',title:'ID',width:100},
+			          {field:'name',title:'Name',width:100}
+			    ]],
+			    frozenColumns:[[
+					{field:'ck',checkbox:true},// 复选框列
+					{field:'opt', title: "操作", width:100, formatter: function(value,row,index){
+						  return '<a href="###">删除</a>'
+					}}
+			    ]],
+				method:"post",
+				pageSize:10,
+				rownumbers:true,
+				pagination:true,
+				collapsible:true,
+				
+				singleSelect:false,// 复选
+				selectOnCheck:true,
+				checkOnSelect: true,
+				
+				
+			    sortName:'id,     name',
+			    sortOrder:'desc   ,asc,asc   ',
+			   	queryParams:{}// 查询条件
+			});
+			
+			$('#datagrid2').datagrid({
+				url:"getListData2.json",
+				columns:[[
+			          {field:'id',title:'ID',width:100},
+			          {field:'name',title:'Name',width:100},
+			          {field:'email',title:'E-mail',width:120}
+			    ]],
+			    frozenColumns:[[
+					{field:'ck',checkbox:true},// 复选框列
+					{field:'opt', title: "操作", width:100, formatter: function(value,row,index){
+						  return '<a href="###">删除</a>'
+					}}
+			    ]],
+				method:"post",
+				pageSize:10,
+				rownumbers:true,
+				pagination:true,
+				collapsible:true,
+				
+				singleSelect:false,// 复选
+				selectOnCheck:true,
+				checkOnSelect: true,
+				
+				
+			    sortName:'id,     name',
+			    sortOrder:'desc   ,asc,asc   ',
+			   	queryParams:{}// 查询条件
+			});
+			$('#datagrid3').datagrid({
+				url:"getListData3.json",
+				columns:[[
+			          {field:'id',title:'ID',width:100},
+			          {field:'name',title:'Name',width:100},
+			          {field:'address',title:'地址',width:'20%'},
+			          {field:'tel',title:'联系电话',width:100}
+			    ]],
+			    frozenColumns:[[
+					{field:'ck',checkbox:true},// 复选框列
+					{field:'opt', title: "操作", width:100, formatter: function(value,row,index){
+						  return '<a href="###">删除</a>'
+					}}
+			    ]],
+				method:"post",
+				pageSize:10,
+				rownumbers:true,
+				pagination:true,
+				collapsible:true,
+				
+				singleSelect:false,// 复选
+				selectOnCheck:true,
+				checkOnSelect: true,
+				
+				
+			    sortName:'id,     name',
+			    sortOrder:'desc   ,asc,asc   ',
+			   	queryParams:{}// 查询条件
+			});
+		});
+	</script>
+</body>
+</html>

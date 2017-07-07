@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>弹窗内界面--底部有按钮</title>
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<link rel="stylesheet" type="text/css" href="css/dataGrid.layout.css"/>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<!-- 主体 -->
+			<form  method="post" id="searchForm">
+				<!-- 搜索栏 -->
+				<div class="relative display-b dialog-search">
+					<p class="fi-search absolute"></p>
+					<input type="text" placeholder="输入关键字" class="search-input left">
+				</div>
+				<div class="main-search clearfix">
+					<div class="overflow-hidden hide-li">
+						<ul>
+							<li class="been-elected-outer">
+								<label class="query-label">项目类别</label>
+								<div class="been-elected-box">
+									<ul>
+										<li>
+											<span>政策法规处</span>
+											<i class="cancel-ico"></i>
+										</li>
+										<li>
+											<span>发展规划处</span>
+											<i class="cancel-ico"></i>
+										</li>
+										<li>
+											<span>体制改革处</span>
+											<i class="cancel-ico"></i>
+										</li>
+										<li>
+											<span>工高处</span>
+											<i class="cancel-ico"></i>
+										</li>
+										<li>
+											<span>农村经济发展处</span>
+											<i class="cancel-ico"></i>
+										</li>
+										<li>
+											<span>办公室</span>
+											<i class="cancel-ico"></i>
+										</li>
+										<li>
+											<span>国外资金利用处</span>
+											<i class="cancel-ico"></i>
+										</li>
+										<li>
+											<span>基本建设综合处</span>
+											<i class="cancel-ico"></i>
+										</li>
+									</ul>
+									<a href="###" class="theme-btn">选择</a>
+								</div>
+							</li>
+							<li>
+								<label class="query-label">项目名称</label>
+								<input type="text">
+							</li>
+							<li class="date-outer">
+								<label class="query-label">添加时间</label>
+								<input type="text" class="date Wdate" />
+								<span>至</span>
+								<input type="text" class="date Wdate" />
+							</li>
+							<li>
+								<label class="query-label">项目类型</label>
+								<select>
+									<option value="0">未开工</option>
+									<option value="1">谋划</option>
+									<option value="2">待开工</option>
+									<option value="3">建设初期</option>
+									<option value="4">建设中期</option>
+								</select>
+							</li>
+							<li>
+								<label class="query-label">单选</label>
+								<div class="radio-checkbox-outer">
+									<label><input type="radio" name="levelRadio" value="one" />级别一</label>
+									<label><input type="radio" name="levelRadio" value="two" />级别二</label>
+								</div>
+							</li>
+							<li>
+								<label class="query-label">复选</label>
+								<div class="radio-checkbox-outer">
+									<label><input type="checkbox" name="levelCheck" value="first" />级别一</label>
+									<label><input type="checkbox" name="levelCheck" value="second" />级别二</label>
+								</div>
+							</li>
+							<li>
+								<label class="query-label">项目区域</label>
+								<input type="text" />
+							</li>
+						</ul>
+							
+						<div class="search-btn-group left">
+							<input type="submit" class="theme-btn black-btn" value="查询">
+						</div>
+					</div>
+					<div class="more-text clearfix">
+						<!--显示更多查询条件-->
+						<p><span class="fi-arrow-down"></span>显示更多查询条件
+						</p>
+					</div>
+				</div>
+			</form>
+			<!-- 表格 -->
+			<div class="main-table-outer dialog-table-outer">
+				<table id="datagrid" class="user-datagrid easyui-datagrid clearfix" style="height:100%;width:100%;">
+					<tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr><tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr><tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr><tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr><tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>11</td>
+						<td>111</td>
+					</tr>
+				</table>
+			</div>
+			<div class="btn-row fixed">
+				<input type="submit" class="theme-btn" value="保存">
+				<a href="###" class="theme-btn2" id="yes">提交</a>
+				<a href="###" class="theme-btn">取消</a>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+		<!--dialog-->
+		<script type="text/javascript" src="../../thirdparty/artDialog/dialog-min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/artDialog/dialog-plus-min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script src="js/layout.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				var dialog = top.dialog.get(window);
+				var d = dialog.data;
+				$.GD.msg("我是页面传过来的参数：" + d.name);
+				
+				$("#yes").on("click", function() {
+					dialog.close("我是弹窗返回的信息");
+				});
+			});
+			$(function() {
+				$('#datagrid').datagrid({
+					url: "datagrid_data1.json",
+					columns: [
+						[
+							{field: 'id',title: 'ID',width: 100},
+							{field: 'name',title: 'Name',width: 100}
+						]
+					],
+					frozenColumns: [
+						[
+							{field: 'ck',checkbox: true}, // 复选框列
+							{field: 'opt',title: "操作",width: 100,
+								formatter: function(value, row, index) {
+									return '<a href="###">删除</a>'
+								}
+							}
+						]
+					],
+					striped:true,//斑马线
+					method: "post",
+					pageSize: 10,
+					rownumbers: true,
+					pagination: true,
+					collapsible: true,
+
+					singleSelect: false, // 复选
+					selectOnCheck: true,
+					checkOnSelect: true,
+
+					sortName: 'id,     name',
+					sortOrder: 'desc   ,asc,asc   ',
+					queryParams: {} // 查询条件
+				});
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>消息群发</title>
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" href="../../thirdparty/artDialog/ui-dialog.css" />
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/ztree/css/zTreeStyle/zTreeStyle.css">
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/uploadify/uploadify.css" />
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/Swiper-3.4.2/dist/css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layout.css">		
+		<style type="text/css">
+			.bg-gray{margin-bottom: 10px;padding: 4px 10px;line-height: 26px;background-color: #f5f5f5;}
+			.images_hidden{
+		         display:none;/* 隐藏file */
+		     }
+		    .images_big{
+		        width:80px;
+		        height:80px;
+		        cursor:pointer;
+		     }
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- 头部 -->
+			<div class="nav-outer">
+				<div class="nav-inner">
+					<div class="nav-box">
+						<h1 class="logo"></h1>
+						<div class="nav-slider">
+							<!-- Add Arrows -->
+							<div class="fi-arrow-left"></div>
+							<div class="fi-arrow-right"></div>
+							<div class="swiper-container">
+								<ul class="nav swiper-wrapper" id="nav">
+									<li class="swiper-slide">
+										<a href="index.html">
+											首页
+										</a>
+									</li>
+									<li class="cur swiper-slide">
+										<a href="report.html">
+											数据管理系统
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="###">
+											数据查询系统
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="###">
+											报告管理系统
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="###">
+											数据挖掘系统
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="###">
+											应用支撑系统
+										</a>
+									</li>
+								</ul>
+	
+							</div>
+						</div>
+						<div class="overflow-hidden">
+							<ul class="top-info right">
+								<li class="relative">
+									<a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+	
+									<div class="user-control">
+										<a href="###">
+											<span class="fi-key"></span> 修改密码
+										</a>
+										<a href="###">
+											<span class="fi-envelop"></span> 消息
+										</a>
+										<a href="###">
+											<span class="fi-cog"></span> 设置
+										</a>
+									</div>
+								</li>
+								<li>
+									<a href="###">
+										<span class="fi-exit"></span>退出
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+	
+				<div class="vertical-shadow"></div>
+			</div>
+	
+			<!-- 侧边栏 -->
+			<div class="sub-nav-outer">
+				<div class="sub-nav-box clearfix">
+					<div class="left sub-nav-scroll">
+						<div class="scroll">
+							<div class="sub-nav-inner">
+								<div>
+									<h3><i class="fi-bell"></i>表格</h3>
+									<ul>
+										<li>
+											<a href="base.html">dG基础结构</a>
+										</li>
+										<li>
+											<a href="base2-noControlBtn.html">dG基础结构-无</a>
+										</li>
+										<li>
+											<a href="doubleTable.html">双表格1</a>
+										</li>
+										<li>
+											<a href="doubleTable2.html">双表格2</a>
+										</li>
+										<li>
+											<a href="tabTable.html">tab同页</a>
+										</li>
+										<li>
+											<a href="tabTable-differentPage1.html">tab不同页</a>
+										</li>
+										<li>
+											<a href="tabTable-nesting-mix.html">tab嵌套-同页不同页混合</a>
+										</li>
+										<li>
+											<a href="treeAndTable.html">树和表格</a>
+										</li>
+										<li>
+											<a href="treeAndTable2.html">树,表格,查询栏</a>
+										</li>
+										<li>
+											<a href="doubleTableAndForm.html">上:表单,下:并列表格</a>
+										</li>
+										<li>
+											<a href="treeAndTableAndForm.html">树\表格\表单</a>
+										</li>
+										<li>
+											<a href="pureTable.html">纯表格</a>
+										</li>
+									</ul>
+									<h4><a href="widget.html"><i class="fi-bell"></i>小部件</a></h4>
+									<h3><i class="fi-bell"></i>表单</h3>
+									<ul>
+										<li>
+											<a href="formAccordion.html">折叠表单</a>
+										</li>
+										<li>
+											<a href="formAccordion-iframe.html">折叠表单-iframe</a>
+										</li>
+										<li>
+											<a href="formModule.html">分块表单</a>
+										</li>
+										<li>
+											<a href="formSimple.html">基本表单</a>
+										</li>
+										<li>
+											<a href="formSimple-detail.html">基本表单-详情</a>
+										</li>
+										<li>
+											<a href="formEdit-detail.html">可编辑-详情</a>
+										</li>
+									</ul>
+									<h4><a href="searchAndCharts.html"><i class="fi-bell"></i>搜索和图表</a></h4>
+									<h3><i class="fi-bell"></i>数据归集目录</h3>
+									<ul>
+										<li>
+											<a href="dataDirectory.html">版本一</a>
+										</li>
+										<li>
+											<a href="dataDirectory2.html">版本二</a>
+										</li>
+									</ul>
+									<h3><i class="fi-bell"></i>数据挖掘</h3>
+									<ul>
+										<li><a href="dataMiningSearch1.html">查询一</a></li>
+										<li><a href="dataMiningSearch2.html">查询二</a></li>
+										<li><a href="dataMiningSearch3.html">查询三</a></li>
+										<li><a href="dataMiningSearch4-v1.html">查询四</a></li>
+										<li><a href="dataMiningSearch5-v1.html">查询五</a></li>
+										<li>
+											<a href="dataMiningSearchDetail1.html">查询详情一</a>
+										</li>
+										<li>
+											<a href="dataMiningSearchDetail2.html">查询详情二</a>
+										</li>
+										<li>
+											<a href="dataMiningLayout1.html">布局-左一右上一右下二</a>
+										</li>
+										<li>
+											<a href="dataMiningLayout2.html">布局-左二右一</a>
+										</li>
+										<li>
+											<a href="dataMiningLayout3.html">布局-田字</a>
+										</li>
+										<li>
+											<a href="dataMiningLayout4.html">布局-查询栏下田字</a>
+										</li>
+										<li>
+											<a href="dataMiningLayout5.html">布局-左右</a>
+										</li>
+										<li>
+											<a href="dataMiningCharts1.html">关系图1</a>
+										</li>
+										<li>
+											<a href="dataMiningCharts2.html">关系图2</a>
+										</li>
+										<li>
+											<a href="dataMiningCharts3.html">树图</a>
+										</li>
+									</ul>
+									<h3><i class="fi-bell"></i>列表</h3>
+									<ul>
+										<li>
+											<a href="list.html">列表1</a>
+										</li>
+										<li>
+											<a href="list2.html">列表2</a>
+										</li>
+									</ul>
+									<h3 class="cur"><i class="fi-bell"></i>微信</h3>
+									<ul>
+										<li>
+											<a href="wxMaterialManagement-pic.html">素材管理-图片</a>
+										</li>
+										<li>
+											<a href="wxMaterialManagement-graphic.html">素材管理-图文</a>
+										</li>
+										<li>
+											<a href="wxManySend.html" class="cur-a">消息群发</a>
+										</li>
+									</ul>
+									<h4><a href="ranking.html"><i class="fi-bell"></i>排行</a></h4>
+									<h4><a href="icon.html"><i class="fi-bell"></i>图标</a></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="left horizontal-shadow relative nav-control">
+						<i class="absolute icon-arrow-left"></i>
+					</div>
+				</div>
+			</div>
+	
+			<!--内容-->
+			<div class="main">
+				<form id="searchForm1" name="searchForm1">
+					<!-- 面包屑 Start -->
+					<div class="main-bread-crumb">
+						<div class="breadcrumb-hidden">
+							<span class="fi-breadcrumb left"></span>
+							<ol class="left">
+								<li>
+									<span>您的位置：</span>
+									<a href="###">系统管理</a>
+								</li>
+								<li>
+									<span class="breadcrumb-line breadcrumb-arrow"></span>
+									<a href="###">微信公众号管理</a>
+								</li>
+							</ol>
+	
+						</div>
+					</div>
+					<!-- 面包屑 End -->
+				</form>
+	
+				<div class="main-table-outer tab-outer">
+					<div class="tab-title-box">
+						<div>
+							<a href="${path}wxUser/list.htm">
+								<h3>用户</h3></a>
+						</div>
+						<div>
+							<a href="${path}wxMaterials/list.htm">
+								<h3>素材</h3></a>
+						</div>
+						<div>
+							<a href="${path}msgText/list.htm">
+								<h3>自动回复</h3></a>
+						</div>
+						<div>
+							<a href="${path}wxUser/userList.htm">
+								<h3>消息发送</h3></a>
+						</div>
+						<div class="cur">
+							<a href="${path}wxUser/toInfoList.htm">
+								<h3>消息群发</h3></a>
+						</div>
+						<div>
+							<a href="${path}wxMenu/list.htm">
+								<h3>菜单</h3></a>
+						</div>
+						<div>
+							<a href="${path}wxGroup/list.htm">
+								<h3>用户组</h3></a>
+						</div>
+					</div>
+	
+					<div class="tab-content block nested-tab">
+						<div class="tab-outer">
+							<div class="tab-title-box">
+								<div class="cur" id="info1" type="text" onclick="setContentTab('info',1,3)">
+									<h3>文本回复</h3>
+								</div>
+								<div id="info2" type="news" onclick="setContentTab('info',2,3)">
+									<h3>多图文回复</h3>
+								</div>
+								<div id="info3" type="mpnews" onclick="setContentTab('info',3,3)">
+									<h3>多图文回复（素材库）</h3>
+								</div>
+								<p class="tab-select-outer">
+									<label>用户：</label>
+									<select id="groupid" name="groupId">
+										<option value="all" >--全部--</option>
+										<option value="0" >黑名单</option>
+										<option value="1" >星标组</option>
+										<option value="2" >我的好友</option>
+										<option value="3" >陌生人</option>
+										<option value="4" >我的好友2</option>
+										<option value="5" >我的好友3</option>
+										<option value="6" >我的好友4</option>
+									</select>
+								</p>
+							</div>
+							
+							<div class="tab-content block" id="con_info_1">
+								<div class="tab-table-inner tab-form">
+									<div class="form-inner relative overflow-auto">
+										<div class="form-content absolute">
+											<div class="form-table">
+												<div id="texts" class="items">
+													<table>
+														<tr>
+															<th>
+																<label class="query-label">内容</label>
+															</th>
+															<td colspan="3">
+																<textarea name="body" rows="5"></textarea>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+	
+							<div class="tab-content overflow-auto" id="con_info_2">
+								<div class="tab-table-inner tab-form">
+									<div class="graphic-box">
+										<div class="scroll">
+											<div class="wx-content-box clearfix">
+												<div class="wx-left relative" id="addNewsTemp">
+													<!--<p class="left-title">图文列表</p>-->
+													<div class="nothing-text" style="position: static;padding-top: 50%;">
+														<p class="fi-dm-objection-complaints font-size18"></p>
+														<p>暂无内容</p>
+													</div>
+												</div>
+												
+												<div class="wx-right" id="news" style="min-height: 100%;border-left: 1px solid #e8e8e8;">
+													<!-- 多图文 -->
+													<div class="h-per100">
+														<table class="form-table h-per100 w-per100">
+															<tr>
+																<th>
+																	<label class="query-label">标题</label>
+																</th>
+																<td>
+																	<input id="titleTmp" type="text" name="title" />
+																</td>
+															</tr>
+															<tr>
+																<th>
+																	<label class="query-label">素材</label>
+																</th>
+																<td>
+																	<div id="home">
+																		<input class="images_hidden" id="banner_website_0" name="medias" type="file" onchange="javascript:onSelectPic(this)">
+																		<img class="images_big" id="banner_website_pic_0" src="" onclick="javascript:onClickPic(this)">
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<th>
+																	<label class="query-label">作者</label>
+																</th>
+																<td>
+																	<input id="author_tmp" type="text" name="author" />
+																</td>
+															</tr>
+															<tr>
+																<th>
+																	<label class="query-label">摘要</label>
+																</th>
+																<td>
+																	<input id="digest_tmp" type="text" name="digest" />
+																</td>
+															</tr>
+															<tr>
+																<th>
+																	<label class="query-label">是否显示封面</label>
+																</th>
+																<td>
+																	<select id="show_cover_pic_tmp" name="show_cover_pic">
+																		<option value="1">是</option>
+																		<option value="0">否</option>
+																	</select>
+																</td>
+															</tr>
+															<tr>
+																<th>
+																	<label class="query-label">内容</label>
+																</th>
+																<td>
+																	<textarea id="content_tmp" name="content" style="width: 100%;"></textarea>
+																</td>
+															</tr>
+															<tr>
+																<th>
+																	<label class="query-label">原文地址</label>
+																</th>
+																<td>
+																	<input id="content_source_url_tmp" type="text" name="content_source_url" />
+																</td>
+															</tr>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+	
+							<div class="tab-content" id="con_info_3">
+								<div class="tab-table-inner tab-form">
+									<div class="form-inner relative overflow-auto">
+										<div class="form-content absolute">
+											<!-- 多图文 来自素材库 -->
+											<div class="bg-gray"><span>请选择要发送的内容</span></div>
+											<input id="mediaIdHid" type="hidden" name="mediaId" />
+											<div class="absolute" style="top: 44px;bottom: 30px;left: 0;right: 0;">
+												<div class="scroll">
+													<div id="masonry" class="weixin-outer">
+														<div class="wx-box">
+															<input class="mediaIdHid" type="hidden" value="${item.mediaId}" />
+															<div class="img-box">
+																<img src="images/waterwall-test.png" />
+																<p>标题</p>
+															</div>
+															<ul>
+																<li>
+																	<a href="###" class="left">标题</a>
+																	<img src="images/waterwall-test.png" class="right">
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div id="pageBox" class="page-box absolute" style="bottom: 0;left: 0;right: 0;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="btn-row fixed btn-bottom">
+								<input type="hidden" id="token" name="token" value="${token}" />
+								<input type="hidden" id="msgtype" name="msgtype" value="text" />
+								<input type="hidden" name="openid" value="${openid}" />
+								<input type="hidden" id="articles" name="articles" value="" />
+								<input id="save" style="display:none;" type="button" class="theme-btn" value="保存" />
+								<input id="submitBtn" type="submit" class="theme-btn" value="发送">
+								<a href="javascript:reset();" class="theme-btn">重置</a>
+								<div id="files"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="../../thirdparty/jquery-easyui-1.4.5/locale/easyui-lang-zh_CN.js"></script>
+	<!--slimScroll-->
+	<script type="text/javascript" src="../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+	<!--dialog-->
+	<script type="text/javascript" src="../../thirdparty/artDialog/dialog-min.js"></script>
+	<script type="text/javascript" src="../../thirdparty/artDialog/dialog-plus-min.js"></script>
+	<!--ztree-->
+	<script type="text/javascript" src="../../thirdparty/ztree/js/jquery.ztree.core-3.5.min.js"></script>
+	<script type="text/javascript" src="../../thirdparty/ztree/js/jquery.ztree.excheck-3.5.min.js"></script>
+	<!--uploadify-->
+	<script type="text/javascript" src="../../thirdparty/uploadify/jquery.uploadify.min.js"></script>
+	<!-- Swiper JS -->
+	<script src="../../thirdparty/Swiper-3.4.2/dist/js/swiper.min.js"></script>
+	<!--masonry-->
+	<script src="../../thirdparty/masonry.pkgd.min.js" type="text/javascript"></script>
+	<!-- ueditor配置文件 -->
+    <script type="text/javascript" src="js/ueditor/ueditor.config.js"></script>
+    <!-- ueditor编辑器源码文件 -->
+    <script type="text/javascript" src="js/ueditor/ueditor.all.min.js"></script>
+	
+	<script type="text/javascript" src="js/common.js"></script>
+	<script src="js/layout.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+		//nav slider
+		var curNavIndex = $(".nav .cur").index();
+		var swiper = new Swiper('.swiper-container', {
+	//  	pagination: '.swiper-pagination',
+	        nextButton: '.fi-arrow-right',//前进按钮的css选择器或HTML元素。
+	        prevButton: '.fi-arrow-left',//后退按钮的css选择器或HTML元素
+	        slidesPerView: 'auto', //(number 或 'auto')设置slider容器能够同时显示的slides数量,默认1
+	        mousewheelControl: true,
+	        initialSlide :curNavIndex,//设定初始化时slide的索引 ,默认0
+	        onInit: function(swiper){//Swiper初始化了
+	        	var winWidth = $(window).width();
+			    if( winWidth < 1295){
+		    		$(".fi-arrow-right,.fi-arrow-left").show();
+		    	}else{
+		    		$(".fi-arrow-right,.fi-arrow-left").hide();
+		    	}
+		    },
+	        onBeforeResize: function(swiper){//当swiper跟随windows变化尺寸时触发。
+	        	var winWidth = $(window).width();
+		    	if( winWidth < 1295){
+		    		$(".fi-arrow-right,.fi-arrow-left").show();
+		    	}else{
+		    		$(".fi-arrow-right,.fi-arrow-left").hide();
+		    	}
+		    }
+	    });
+	    
+	    /*tab*/
+		function setContentTab(name, curr, n) {
+			for (i = 1; i <= n; i++) {
+				var menu = document.getElementById(name + i);
+				var cont = document.getElementById("con_" + name + "_" + i);
+				menu.className = i == curr ? "cur" : "";
+				if (i == curr) {
+					cont.style.display = "block";
+				} else {
+					cont.style.display = "none";
+				}
+			}
+		};
+		 //瀑布流插件
+	    var $masonry =  $('.weixin-outer').masonry({
+			// options
+			itemSelector: '.wx-box',
+			columnWidth: 268,
+			//percentPosition: true,
+			horizontalOrder: true
+		});	
+		$('#info3').click(function(){
+			//masonry refresh
+			$masonry.masonry();
+			//分页
+			var _total =$(".weixin-outer .wx-box").length;
+			var pageIndex = 1; //页面索引初始值 
+		    var pageSize = 10; //每页显示条数初始化
+		    $('#pageBox').pagination({ 
+		    	total:_total,//总数
+		     	pageSize: 10,//每页显示的最大记录数
+	            pageNumber: 1,//创建分页（pagination）时显示的页码。
+	            pageList: [5, 10, 15, 20],
+	            onSelectPage: function (pageNumber, pageSize) {
+	            	/*当用户选择新的页面时触发。回调函数包含两个参数： pageNumber：新的页码 pageSize：新的页面尺寸*/
+	                $(this).pagination('loading');
+	                $(this).pagination('loaded');
+	               // initTable(pageNumber, pageSize); 
+	            }
+		    });
+		   
+		});
+	    $(window).resize(function(){
+	    	//masonry refresh
+			$masonry.masonry();
+			//nav swiper
+	    	swiper.onResize();
+	    	swiper.slideTo(curNavIndex, 1000, false);
+	    	$(".swiper-button-prev").hide();
+	    	//Swiper切换到指定slide。index:必选，num，指定将要切换到的slide的索引。speed:可选，num(单位ms)，切换速度runCallbacks:可选，boolean，设置为false时不会触发onSlideChange回调函数。
+	    	
+    		$(".wx-left").height($(".wx-right").height() - 2);
+	    });
+	</script>
+	<script type="text/javascript">
+		var ue = UE.getEditor('content_tmp', {
+				initialFrameWidth:null,
+				initialFrameHeight :300,
+				enableAutoSave: false, //启用自动保存
+				maximumWords: 800,//允许的最大字符数
+				wordCountMsg:'{#count} / {#leave}', //字数统计提示
+				enableContextMenu: false, //打开右键菜单功能
+			});
+		$('#info2').click(function() {
+	    	if ($(".wx-left").height() < $(".wx-right").height()){
+	    		$(".wx-left").height($(".wx-right").height() - 2)
+	    	}else{
+	    		$(".wx-left").height('100%')
+	    	};
+       	});
+	    var articles = [];
+	    var medias = []; //临时文件
+	    var imageSuffix = 'http://read.html5.qq.com/image?src=forum&q=5&r=0&imgflag=7&imageUrl=';
+		$('.weixin-outer').masonry({
+			// options
+			itemSelector: '.wx-box',
+			percentPosition: true,
+			gutter: 10
+		});
+		$(".wx-box").click(function(){
+			$(".weixin-outer").find('.bg').remove();
+			$(".weixin-outer").find('.wx-box').removeClass('cur');
+			$(this).addClass('cur').append('<div class="bg"><i class="checked-icon"></i></div>');
+			var mediaIdHid = $(this).find(".mediaIdHid").val();
+			$("#mediaIdHid").val(mediaIdHid);
+		});
+		//控制底部按钮显示
+		$(".tab-title-box > div").click(function(){
+			if(($(this).index()==1) && ($(this).hasClass('cur'))){
+				$("#save").show();
+				$("#msgtype").val("news");
+				$("#submitBtn").hide();
+				$(".btn-bottom").insertAfter('#con_info_3').addClass('btn-row fixed').removeClass('btns-outer');
+				$('.tab-form').css('bottom',34);
+			}else if(($(this).index()==0) && ($(this).hasClass('cur'))){
+				$("#save").hide();
+				$("#msgtype").val("text");
+				$("#submitBtn").show();
+				$(".btn-bottom").insertAfter('#con_info_3').addClass('btn-row fixed').removeClass('btns-outer');
+				$('.tab-form').css('bottom',34);
+			}else if(($(this).index()==2) && ($(this).hasClass('cur'))){
+				$("#save").hide();
+				$("#msgtype").val("mpnews");
+				$("#submitBtn").show();
+				$(".btn-bottom").appendTo('.bg-gray').addClass('btns-outer').removeClass('btn-row fixed');
+				$('.tab-form').css('bottom',0);
+			}
+		});
+		//保存
+		$("#save").click(function(){
+			var title = $("#titleTmp").val();
+			var digest = $("#digest_tmp").val();
+			var ue = UE.getEditor('content_tmp');
+			ue.ready(function() {
+				var html = ue.getContent();
+				$("#content_tmp").val(html);
+			});
+			var show_cover_pic= $("#show_cover_pic_tmp").val();
+			var content = $("#content_tmp").val();
+			var content_source_url = $("#content_source_url_tmp").val();
+			
+			//快到碗里来
+			/*var content_source_url_tmp = $("#banner_website_pic_0").attr("src");
+			var media_file = $("#banner_website_0")[0].files[0];//注意：这是附件
+			var media_file_name = $("#banner_website_0")[0].files[0].name;*/
+			
+			//展示预览
+			if(articles.length==0){
+				showPic(title,content_source_url_tmp,true);
+			}else{
+				showPic(title,content_source_url_tmp,false);
+			}
+			
+			//临时保存数据
+			
+			//var json_data = JSON.stringify({"title":title,"description":digest,"url":content_source_url,"picurl":""});
+			/*  "thumb_media_id":"qI6_Ze_6PtV7svjolgs-rN6stStuHIjs9_DidOHaj0Q-mwvBelOXCFZiq2OsIU-p",
+	         "author":"xxx",
+	         "title":"Happy Day",
+	         "content_source_url":"www.qq.com",
+	         "content":"content",
+	         "digest":"digest" */
+	         var json_data = JSON.stringify({"title":title,"content":content,"digest":digest,"content_source_url":content_source_url,"show_cover_pic":show_cover_pic,"thumb_media_id":""});
+			articles.push(json_data);
+			//实在没有办法了,只能反着来
+			$("#banner_website_0").appendTo("#files");
+			
+			$("#home").append($("#banner_website_0").clone());
+			
+			//清空表单
+			clean();
+			//$("#medias").val(medias);
+			$("#articles").val(articles);
+		});
+		
+		function clean(){
+			$("#titleTmp").val("");
+			$("#content_tmp").val();
+			var ue = UE.getEditor('content_tmp');
+			ue.ready(function() {
+				ue.setContent("");
+				$("#content_tmp").val("");
+			});
+			$("#digest_tmp").val("");
+			$("#show_cover_pic_tmp").get(0).selectedIndex;
+			$("#content_tmp").val("");
+			$("#content_source_url_tmp").val("");
+			
+			$("#banner_website_pic_0").attr("src","");
+		}
+		//展示内容
+		function showPic(title,thumb_media_src,isIndex){
+			if(isIndex){//表示第一个
+				var html_str = "<div id='news_view' class='wx-box mg-t-10'>";
+				    html_str += "<div class='img-box'>";
+				    html_str +=	"<img src='"+thumb_media_src+"' />";
+				    html_str +=	"<p>"+title+"</p>";
+				    html_str +=	"</div>";
+				html_str += "</div>";
+				$("#addNewsTemp").append(html_str);
+				$("#addNewsTemp").append("<p class='btn-row'><input type='submit' class='theme-btn' value='发送'></p>");
+				$(".nothing-text").hide();
+			}else{
+				var item ="";
+				//如果当前是第一个元素
+				if(articles.length==1){
+					var ul = '<div id="new_ul_view" class="wx-box other-box">'
+							+'<p class="left">'+title+'</p>'
+							+'<div class="right img-box">'
+							+'<img src="' +thumb_media_src + '">'
+							+'</div></div>'
+				 	$("#news_view").after(ul);
+				}else{
+					var li = "<li>";
+					    li += "<a href='###' class='left'>"+title+"</a>";
+					    li += "<img src='"+thumb_media_src+"' class='right'/>";
+					    li += "</li>";
+					    $("#new_ul_view").append(li);
+				}
+			}
+		}
+	    function onSelectPic(input) {
+	        var obj_id = input.id;
+	        var last_char = obj_id.charAt(obj_id.length - 1);
+	        if (window.FileReader) {
+	            var file = input.files[0];
+	            filename = file.name.split(".")[0];
+	            var reader = new FileReader();
+	            reader.onload = function(e) {
+	                document.getElementById("banner_website_"+"pic_"+last_char).src = e.target.result; /* 显示图片缩略图 */
+	            }
+	            reader.readAsDataURL(file);
+	        } else {
+	            alert('你的浏览器不支持图片预览功能');
+	        }
+	    }
+	    function onClickPic(obj){
+	        var obj_id = obj.id;
+	        var last_char = obj_id.charAt(obj_id.length - 1);
+	        var first_index = obj_id.indexOf("_",0);
+	        var second_index = obj_id.indexOf("_",first_index+1);
+	        var pre_str = obj_id.substr(0,second_index);
+	
+	        /* 点击图片，触发file选择文件操作 */
+	        document.getElementById(pre_str+"_"+last_char).click();
+	    }	
+	</script>
+	
+	<script type="text/javascript">
+		/**
+		 * 展示微信图文列表
+		 */
+		/*function showNewsList() {
+			var content = {
+				"articles" : [
+						{
+							"content" : "11111",
+							"author" : "12",
+							"title" : "111",
+							"thumb_media_id" : "yt44HjQkmJj8THXiujOsXwebn-UhbS2618cAzBt6eMA",
+							"content_source_url" : "www.baidu.com",
+							"show_cover_pic" : 1,
+							"digest" : "111"
+						},
+						{
+							"content" : "11111fsff",
+							"author" : "fsfesf",
+							"title" : "fwwfw",
+							"thumb_media_id" : "yt44HjQkmJj8THXiujOsXzOkJchFMwQpmySEObKL7uE",
+							"content_source_url" : "www.baidu.com",
+							"show_cover_pic" : 0,
+							"digest" : "fsfs"
+						} ]
+			};
+			var html = createHtmlByContent(content);
+			$("#masonry").empty();
+			$("#masonry").append(html);
+			$("#masonry").append(html);
+			$("#masonry").append(html);
+			$("#masonry").append(html);
+			bindClick();
+		}*/
+		/**
+		 *根据图文素材的内容生成展示的html
+		 */
+		function createHtmlByContent(content) {
+			var html = '';
+			html += '<div class="wx-box">';
+			for (i = 0; i < content.articles.length; i++) {
+				var article = content.articles[i];
+				var thumb_media_id = article.thumb_media_id;
+				var imageUrl = imageMap[thumb_media_id];
+				if (i == 0) {//第一条图文
+					html += '<div class="img-box">';
+					html += '<img src="'
+							+ imageSuffix
+							+ imageUrl+'"/>';
+					html += '<p>'+article.title+'</p>';
+					html += '</div>';
+				} else {
+					//后续图文以li菜单显示
+					if (i == 1) {//只在第二条图文添加菜单标签
+						html += '<ul>';
+					}
+					html += '<li>';
+					html += '<a href="###" class="left">' + article.title
+							+ '</a>';
+					html += '<img src="'
+							+ imageSuffix
+							+ imageUrl+'"/>';
+					html += '</li>';
+				}
+			}
+			if (content.articles.length > 1) {
+				html += '</ul>';
+			}
+			html += '</div>';
+			return html;
+		}
+		/**
+		 *绑定图文列表选中效果
+		 */
+		function bindClick(){
+			//masonry refresh
+			$masonry.masonry();
+			$(".wx-box").click(
+				function() {
+					$(".weixin-outer").find('.bg').remove();
+					$(".weixin-outer").find('.wx-box').removeClass('cur');
+					$(this).addClass('cur').append(
+						'<div class="bg"><i class="checked-icon"></i></div>');
+				});
+		};
+		$(document).on('click','.nav-control',function(){
+			//masonry refresh
+			$masonry.masonry();
+		});
+	</script>
+</html>

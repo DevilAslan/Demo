@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>出错</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/icon.font.css"/>
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+</head>
+<body>
+	<div class="wrapper home error-outer">
+		<!-- 头部 -->
+		<div class="nav-outer">
+				<div class="nav-inner">
+					<div class="nav-box">
+						<h1 class="logo"></h1>
+						<ul class="nav" id="nav">
+							<li>
+								<a href="index.html">
+									首页
+								</a>
+								
+							</li>
+							<li class="cur">
+								<a href="report.html">
+									数据管理系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									数据查询系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									报告管理系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									数据挖掘系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									应用支撑系统
+								</a>
+							</li>
+						</ul>
+						<div class="overflow-hidden">
+							<ul class="top-info right">
+								<li class="relative">
+									<a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+									
+									<div class="user-control">
+										<a href="###">
+											<span class="fi-key"></span>
+											修改密码
+										</a>
+										<a href="###">
+											<span class="fi-envelop"></span>
+											消息
+										</a>
+										<a href="###">
+											<span class="fi-cog"></span>
+											设置
+										</a>
+									</div>
+								</li>
+								<li>
+									<a href="###">
+										<span class="fi-exit"></span>退出
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			
+				<div class="vertical-shadow"></div>
+			</div>
+		<!-- 主体 -->
+		<div class="main">
+			<div class="error-info error-info2">
+				<img src="images/error.png" />
+				<p>页面错误!</p>
+			</div>
+			<div class="error-text">
+					org.springframework.jdbc.BadSqlGrammarException: 
+					### Error updating database.  Cause: java.sql.SQLException: Column count doesn't match value count at row 1
+					### The error may involve com.bill.biz.dao.UserRegistDao.insert-Inline
+					### The error occurred while setting parameters
+					### SQL: insert into user_regist   (   id,create_time, imsi,imei, mobile_phone, token,sid,appid,channel,brand,model,osver   )   values   (   ?, sysdate(),?,   ?, ?,   ?,?,   ?,   ?,?,   ?,?,      ?,?   )
+					### Cause: java.sql.SQLException: Column count doesn't match value count at row 1
+					; bad SQL grammar []; nested exception is java.sql.SQLException: Column count doesn't match value count at row 1
+					at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:98)
+					at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+					at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+					at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:80)
+					at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+					at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:371)
+					at com.sun.proxy.$Proxy5.insert(Unknown Source)
+					at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:240)
+					at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:46)
+					at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:43)
+					at com.sun.proxy.$Proxy6.insert(Unknown Source)
+					at com.bill.biz.service.BillService.regist(BillService.java:91)
+					at com.bill.api.action.BillAction.regist(BillAction.java:71)
+					at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+					at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+					at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+					at Java.lang.reflect.Method.invoke(Method.java:597)
+				</div>
+			<div class="btn-row fixed">
+				<a href="###" class="theme-btn">返回</a>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+	<script src="js/layout.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

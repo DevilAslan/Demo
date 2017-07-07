@@ -1,0 +1,25 @@
+*{box-sizing: border-box;}
+*:after, *:before{box-sizing: border-box;}
+html,body{margin: 0; padding: 0;height: 100%;}
+body{overflow-x: hidden;overflow-y: auto;font-weight: 400;background-color: #F5F5F5;font:12px/1.5 'simsun';color:#888;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
+th,td{margin:0; padding:0;}
+table{border-collapse:collapse; border-spacing:0;}
+img{border:0;}
+caption,em,strong,th{font-style:normal; font-weight:normal;}
+ol,ul{list-style:none outside none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:normal;}
+a{text-decoration: none;}
+/*checkbox  radio*/
+input[type="checkbox"], input[type="radio"]{vertical-align: middle;margin:-2px 2px 0 auto;}
+.datagrid input[type="checkbox"],.datagrid input[type="radio"]{margin: 0;}
+input[type="button"]{cursor: pointer;}
+input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance: none;-moz-appearance: none;border: 0 none;}
+input:focus,textarea:focus,a:focus{outline:none;}
+input[type="text"], input[type="password"]{padding: 2px 5px;vertical-align: middle;border: 1px solid #d2d2d2;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius:2px;height: 22px;color: #666;}
+input:focus,textarea:focus,select:focus{border-color:#2275bb;}
+
+/* 清除浮动*/
+.clearfix{*zoom:1;}
+.clearfix:before,.clearfix:after{display:table; content:''; clear:both;}

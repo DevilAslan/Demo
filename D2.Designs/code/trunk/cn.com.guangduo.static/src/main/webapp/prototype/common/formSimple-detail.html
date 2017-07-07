@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>简单表单</title>
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<!-- 头部 -->
+			<div class="nav-outer">
+				<div class="nav-inner">
+					<div class="overflow-hidden">
+						<ul class="top-info right">
+							<li>
+								<a href="###">您好，李玉东（cxy）</a>
+							</li>
+							<li>
+								<a href="###">
+									<span class="head-icon message-icon"></span>
+									<span class="orange-point">19</span>
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<span class="head-icon remind-icon"></span>
+									<span class="blue-point">5</span>
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<span class="head-icon set-icon"></span>设置
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<span class="head-icon exit-icon"></span>退出
+								</a>
+							</li>
+						</ul>
+					</div>
+					<h1 class="logo"></h1>
+					<ul class="nav" id="nav">
+						<li>
+							<a href="index.html">
+								<span class="index-icon"></span>系统首页
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+						<li class="cur">
+							<a href="report.html">
+								<span class="project-icon"></span>项目管理
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+						<li>
+							<a href="###">
+								<span class="statistics-icon"></span>统计分析
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+						<li>
+							<a href="###">
+								<span class="map-icon"></span>电子地图
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+						<li>
+							<a href="###">
+								<span class="public-info-icon"></span>公共信息
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+						<li>
+							<a href="###">
+								<span class="system-icon"></span>系统管理
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+						<li>
+							<a href="###">
+								<span class="performance-icon"></span>绩效管理
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="nav-line-vertical"></div>
+			</div>
+			<!-- 侧边栏 -->
+			<div class="sub-nav-outer">
+				<div class="scroll">
+					<div class="sub-nav-inner">
+						<dl>
+							<dt class="cur"><i class="fi-record"></i>项目填报<span class="fi-arrow-down"></span></dt>
+							<dd>
+								<div>
+									<a href="###">项目填报1</a>
+									<a href="###" class="cur-a">项目填报2</a>
+									<a href="###">项目填报3</a>
+									<a href="###">项目填报4</a>
+								</div>
+							</dd>
+							<dt><i class="fi-record"></i>项目变更<span class="fi-arrow-right"></span></dt>
+							<dd>
+								<div>
+									<a href="###">项目变更1</a>
+									<a href="###">项目变更2</a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+									<a href="###">项目变更3</a>
+									<a href="###">项目变更4</a>
+								</div>
+							</dd>
+							<dt><i class="fi-record"></i>项目年报<span class="fi-arrow-right"></span></dt>
+							<dd>
+								<div>
+									<a href="###">项目年报1</a>
+									<a href="###">项目年报2</a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+									<a href="###">项目年报3</a>
+								</div>
+							</dd>
+							<dt><i class="fi-record"></i>项目库<span class="fi-arrow-right"></span></dt>
+							<dd>
+								<div>
+									<a href="###">项目库1</a>
+									<a href="###">项目库2</a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				
+			</div>
+			<!-- 主体 -->
+			<div class="main overflow-auto">
+				<!-- 面包屑 -->
+				<div class="main-bread-crumb">
+					<div class="breadcrumb-hidden">
+						<span class="breadcrumb-icon"></span>
+						<ol>
+							<li><span class="breadcrumb-line"></span><a href="###">项目管理</a>
+							</li>
+							<li><span class="breadcrumb-line breadcrumb-arrow "></span><a href="###" class="normal-weight">项目填报</a>
+							</li>
+							<li><span class="breadcrumb-line breadcrumb-arrow"></span><a href="###">增加</a>
+							</li>
+						</ol>
+					</div>
+				</div>
+				<!-- 表格 -->
+				<div class="main-form-outer">
+					<div class="form-inner relative overflow-auto">
+						<div class="form-content absolute">
+							<div class="form-table">
+								<table>
+									<tr>
+										<th>
+											<label class="query-label">项目编号</label>
+										</th>
+										<td>
+											<p>12345646677</p>
+										</td>
+										<th>
+											<label class="query-label">项目名称</label>
+										</th>
+										<td>
+											<p>1dddd</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<label class="query-label">建设地址</label>
+										</th>
+										<td colspan="3">
+											<p>浙江省温州市瓯海区创新路/高新路(路口)</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<label class="query-label">项目类型</label>
+										</th>
+										<td>
+											<p>农业</p>
+										</td>
+										<th>
+											<label class="query-label">项目级别</label>
+										</th>
+										<td>
+											<p>市本级项目</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<label class="query-label">项目属性</label>
+										</th>
+										<td colspan="3">
+											<p>市重点项目</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<label class="query-label">主管科室</label>
+										</th>
+										<td colspan="3">
+											<p>主管科室,政策法规处</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<label class="query-label">建设性质</label>
+										</th>
+										<td>
+											<p>新建</p>
+										</td>
+										<th>
+											<label class="query-label">是否已读</label>
+										</th>
+										<td>
+											<p>已读</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<label class="query-label">项目区域</label>
+										</th>
+										<td>
+											<p>苍南县</p>
+										</td>
+										<th>
+											<label class="query-label">建设工期</label>
+										</th>
+										<td>
+											<p>10个月</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<label class="query-label">计划开工时间</label>
+										</th>
+										<td>
+											<p>2016-06</p>
+										</td>
+										<th>
+											<label class="query-label">计划竣工时间</label>
+										</th>
+										<td>
+											<p>2017-04</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<label class="query-label">申报单位</label>
+										</th>
+										<td>
+											<p>0</p>
+										</td>
+										<th>
+											<label class="query-label">项目总投资</label>
+										</th>
+										<td>
+											<p>10万元</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											<label class="query-label">申报单位联系人</label>
+										</th>
+										<td>
+											<p>阿达</p>
+										</td>
+										<th>
+											<label class="query-label">申报单位联系电话</label>
+										</th>
+										<td>
+											<p>456888120</p>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="btn-row fixed">
+							<a href="###" class="red2-btn">返回</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/My97DatePicker/WdatePicker.js"></script>
+		<!--slimScroll-->
+		<script type="text/javascript" src="../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+		<script type="text/javascript" src="js/layout.js"></script>
+	</body>
+
+</html>

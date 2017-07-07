@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../../../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" href="../../../../../thirdparty/artDialog/ui-dialog.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../../css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/layout.css">
+	</head>
+
+	<body>
+
+		<div class="main-form-outer dialog-table-outer">
+			<div class="form-inner relative overflow-auto">
+				<form action="" method="post">
+					<div class="form-content absolute">
+						<div class="form-table">
+							<table>
+								<colgroup>
+									<col span="1" style="width: 20%;" />
+									<col span="1" style="width: 80%;" />
+								</colgroup>
+								<tr>
+									<th><label class="query-label">办件编码</label></th>
+									<td>330324181608091000025</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">行政许可决定书文号</label></th>
+									<td></td>
+								</tr>
+								<tr>
+									<th><label class="query-label">项目名称（申报名称）</label></th>
+									<td>医师执业许可变更</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">审批类别</label></th>
+									<td>行政许可</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">许可内容</label></th>
+									<td>医师执业许可变更</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">行政相对人名称</label></th>
+									<td>张素芳</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">行政相对人证件类型</label></th>
+									<td></td>
+								</tr>
+								<tr>
+									<th><label class="query-label">行政相对人代码</label></th>
+									<td></td>
+								</tr>
+								<tr>
+									<th><label class="query-label">行政相对人姓名</label></th>
+									<td></td>
+								</tr>
+								<tr>
+									<th><label class="query-label">许可机构</label></th>
+									<td>县卫生局</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">许可机构组织机构代码</label></th>
+									<td>2533767</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">许可部门</label></th>
+									<td>县卫生局</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">许可生效期</label></th>
+									<td>2016-09-17</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">许可截止期</label></th>
+									<td></td>
+								</tr>
+								<tr>
+									<th><label class="query-label">所属地区</label></th>
+									<td>丽水市龙全县</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">所属区代码</label></th>
+									<td>323700</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">当前状态</label></th>
+									<td></td>
+								</tr>
+								<tr>
+									<th><label class="query-label">数据更新时间</label></th>
+									<td></td>
+								</tr>
+								<tr>
+									<th><label class="query-label">备注</label></th>
+									<td></td>
+								</tr>
+							</table>
+
+						</div>
+					</div>
+					<div class="btn-row fixed">
+						<button type="button" class="theme-btn" id="return" value="确定">返回</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+		<!--slimScroll-->
+		<script type="text/javascript" src="../../../../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+		<!--My97日期插件-->
+		<script type="text/javascript" src="../../../../../thirdparty/My97DatePicker/WdatePicker.js"></script>
+		
+		<!--dialog-->
+		<script type="text/javascript" src="../../../../../thirdparty/artDialog/dialog-min.js"></script>
+		<script type="text/javascript" src="../../../../../thirdparty/artDialog/dialog-plus-min.js"></script>
+		
+		<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/layout.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				var dialog = top.dialog.get(window);
+				$("#return").on("click", function() {
+					dialog.close();
+				});
+			});
+		</script>
+	</body>
+
+</html>
