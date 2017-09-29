@@ -9,7 +9,7 @@ import java.util.Date;
 public class BaseModel implements Serializable {
 
 	/**
-	 * 
+	 * Base
 	 */
 	private static final long serialVersionUID = 1L;
 

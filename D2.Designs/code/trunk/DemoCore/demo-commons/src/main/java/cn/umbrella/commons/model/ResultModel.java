@@ -2,6 +2,8 @@ package cn.umbrella.commons.model;
 
 import java.io.Serializable;
 
+import org.apache.commons.lang3.StringUtils;
+
 /**
  * Created by Aslan
  */
@@ -27,36 +29,38 @@ public class ResultModel<T> implements Serializable {
         this.errorcode = errorcode;
         this.data = data;
     }
-
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public static ResultModel<?> success() {
         return new ResultModel(SUCCESS, StringUtils.EMPTY, 0, null);
     }
-
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public static ResultModel<?> success(Object data) {
         return new ResultModel(SUCCESS, StringUtils.EMPTY, 0, data);
     }
-
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public static ResultModel<?> success(String errordesc) {
         return new ResultModel(SUCCESS, errordesc, 0, null);
     }
-
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public static ResultModel<?> success(String errordesc, Object data) {
         return new ResultModel(SUCCESS, errordesc, 0, data);
     }
-
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public static ResultModel<?> error(Integer errorcode) {
         return new ResultModel(ERROR, StringUtils.EMPTY, errorcode, null);
     }
-
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public static ResultModel<?> error(Integer errorcode, Object data) {
         return new ResultModel(ERROR, StringUtils.EMPTY, errorcode, data);
     }
 
-    public static ResultModel<?> error(String message, Integer errorcode) {
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+	public static ResultModel<?> error(String message, Integer errorcode) {
         return new ResultModel(ERROR, message, errorcode, null);
     }
 
-    public static ResultModel<?> error(String message, Integer errorcode, Object data) {
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+	public static ResultModel<?> error(String message, Integer errorcode, Object data) {
         return new ResultModel(ERROR, message, errorcode, data);
     }
 

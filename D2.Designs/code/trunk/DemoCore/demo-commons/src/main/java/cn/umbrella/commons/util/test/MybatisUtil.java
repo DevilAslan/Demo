@@ -1,4 +1,4 @@
-package cn.com.dhcc.common.util;
+package cn.umbrella.commons.util.test;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -14,7 +14,7 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-import org.jboss.logging.Logger;
+import org.apache.log4j.Logger;
 
 public class MybatisUtil {
 	protected static Logger logger = Logger.getLogger(MybatisUtil.class);

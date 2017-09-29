@@ -1,20 +1,7 @@
 package cn.umbrella.commons.controller;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileFilter;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * Controller
@@ -24,5 +11,5 @@ import com.alibaba.fastjson.JSONObject;
 @Controller
 @RequestMapping(IBaseController.ACTION_PATH)
 public class IBaseController {
-	protected static final String ACTION_PATH = "/wxApi/creditEncyclopedia/";
+	protected static final String ACTION_PATH = "/base";
 }
