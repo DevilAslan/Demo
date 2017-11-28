@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>树和表格</title>
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/ztree/css/zTreeStyle/zTreeStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<link rel="stylesheet" type="text/css" href="css/dataGrid.layout.css"/>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<!-- 头部 -->
+			<div class="nav-outer">
+				<div class="nav-inner">
+					<div class="overflow-hidden">
+						<ul class="top-info right">
+							<li>
+								<a href="###">您好，李玉东（cxy）</a>
+							</li>
+							<li>
+								<a href="###">
+									<span class="head-icon message-icon"></span>
+									<span class="orange-point">19</span>
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<span class="head-icon remind-icon"></span>
+									<span class="blue-point">5</span>
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<span class="head-icon set-icon"></span>设置
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<span class="head-icon exit-icon"></span>退出
+								</a>
+							</li>
+						</ul>
+					</div>
+					<h1 class="logo"></h1>
+					<ul class="nav" id="nav">
+						<li>
+							<a href="index.html">
+								<span class="index-icon"></span>系统首页
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+						<li class="cur">
+							<a href="report.html">
+								<span class="project-icon"></span>项目管理
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+						<li>
+							<a href="###">
+								<span class="statistics-icon"></span>统计分析
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+						<li>
+							<a href="###">
+								<span class="map-icon"></span>电子地图
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+						<li>
+							<a href="###">
+								<span class="public-info-icon"></span>公共信息
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+						<li>
+							<a href="###">
+								<span class="system-icon"></span>系统管理
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+						<li>
+							<a href="###">
+								<span class="performance-icon"></span>绩效管理
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="nav-line-vertical"></div>
+			</div>
+			<!-- 侧边栏 -->
+			<div class="sub-nav-outer">
+				<div class="scroll">
+					<div class="sub-nav-inner">
+						<dl>
+							<dt class="cur"><i class="fi-record"></i>项目填报<span class="fi-arrow-down"></span></dt>
+							<dd>
+								<div>
+									<a href="###">项目填报1</a>
+									<a href="###" class="cur-a">项目填报2</a>
+									<a href="###">项目填报3</a>
+									<a href="###">项目填报4</a>
+								</div>
+							</dd>
+							<dt><i class="fi-record"></i>项目变更<span class="fi-arrow-right"></span></dt>
+							<dd>
+								<div>
+									<a href="###">项目变更1</a>
+									<a href="###">项目变更2</a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+									<a href="###">项目变更3</a>
+									<a href="###">项目变更4</a>
+								</div>
+							</dd>
+							<dt><i class="fi-record"></i>项目年报<span class="fi-arrow-right"></span></dt>
+							<dd>
+								<div>
+									<a href="###">项目年报1</a>
+									<a href="###">项目年报2</a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+									<a href="###">项目年报3</a>
+								</div>
+							</dd>
+							<dt><i class="fi-record"></i>项目库<span class="fi-arrow-right"></span></dt>
+							<dd>
+								<div>
+									<a href="###">项目库1</a>
+									<a href="###">项目库2</a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				
+			</div>
+			<!-- 主体 -->
+			<div class="main">
+				<!-- 面包屑 -->
+				<div class="main-bread-crumb">
+					<div class="breadcrumb-hidden">
+						<span class="breadcrumb-icon"></span>
+						<ol>
+							<li><span class="breadcrumb-line"></span><a href="###">项目管理</a>
+							</li>
+							<li><span class="breadcrumb-line breadcrumb-arrow"></span><a href="###">项目填报</a>
+							</li>
+						</ol>
+					</div>
+				</div>
+				<!-- 表格 -->
+				<div  class="main-table-outer tree-and-table fix">
+					<div class="tree-and-table-small left relative">
+						<!-- 搜索栏 -->
+						<div class="main-search relative">
+							<input type="text" name="categoryName" class="small-search absolute" placeholder="请输入关键字">
+							<input type="button" class="small-search-btn absolute">
+						</div>
+						<!-- 表格 -->
+						<div class="ztree-module absolute">
+							<div class="ztree-outer">
+								<ul id="treeDemo" class="ztree"></ul>
+							</div>
+						</div>
+							
+					</div>
+					<div class="tree-and-table-big display-table left">
+						<div class="display-tr">
+							<div class="display-td h-per100">
+								<div class="display-table relative">
+									<!-- 搜索栏 -->
+									<div class="main-search">
+										<form>
+											<div class="overflow-hidden">
+												<input type="text" placeholder="输入项目名称查询" class="search-input left" />
+												<div class="search-btn-group left">
+													<input type="submit" class="theme-btn black-btn" value="查询">
+												</div>
+											</div>
+										</form>
+									</div>
+									<!-- 按钮操作栏 -->
+									<div class="main-control">
+										<div class="btns-outer">
+											<a href="###" class="add-btn green-btn">新增</a>
+											<a href="###" class="delete-btn red2-btn">删除</a>
+										</div>
+									</div>
+									<!-- 表格 -->
+									<div class="display-tr tree-and-table-inner">
+										<table id="datagrid2" class="user-datagrid easyui-datagrid" style="height:100%;width:100%;"></table>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+
+				</div>
+				
+			</div>
+			
+		</div>
+
+		<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/ztree/js/jquery.ztree.core-3.5.min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/ztree/js/jquery.ztree.excheck-3.5.min.js"></script>
+		<!--slimScroll-->
+		<script type="text/javascript" src="../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+		<script src="js/layout.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var setting = {	};
+
+			var zNodes =[
+				{ name:"父节点1 - 展开", open:true,
+					children: [
+						{ name:"父节点11 - 折叠",
+							children: [
+								{ name:"叶子节点111"},
+								{ name:"叶子节点112"},
+								{ name:"叶子节点113"},
+								{ name:"叶子节点114"}
+							]},
+						{ name:"父节点12 - 折叠", open:true,
+							children: [
+								{ name:"叶子节点121"},
+								{ name:"叶子节点122"},
+								{ name:"叶子节点123"},
+								{ name:"叶子节点124"}
+							]},
+						{ name:"父节点13 - 没有子节点", isParent:true}
+					]},
+				{ name:"父节点2 - 折叠", open:true,
+					children: [
+						{ name:"父节点21 - 展开", open:true,
+							children: [
+								{ name:"叶子节点211"},
+								{ name:"叶子节点212"},
+								{ name:"叶子节点213"},
+								{ name:"叶子节点214"}
+							]},
+						{ name:"父节点22 - 折叠", open:true,
+							children: [
+								{ name:"叶子节点221"},
+								{ name:"叶子节点222"},
+								{ name:"叶子节点223"},
+								{ name:"叶子节点224"}
+							]},
+						{ name:"父节点23 - 折叠", open:true,
+							children: [
+								{ name:"叶子节点231"},
+								{ name:"叶子节点232"},
+								{ name:"叶子节点233"},
+								{ name:"叶子节点234"}
+							]}
+					]},
+				{ name:"父节点3 - 没有子节点", isParent:true},
+				{ name:"父节点4 - 折叠", open:true,
+					children: [
+						{ name:"父节点41 - 展开", open:true,
+							children: [
+								{ name:"叶子节点411"},
+								{ name:"叶子节点412"},
+								{ name:"叶子节点413"},
+								{ name:"叶子节点414"}
+							]},
+						{ name:"父节点42 - 折叠", open:true,
+							children: [
+								{ name:"叶子节点421"},
+								{ name:"叶子节点422"},
+								{ name:"叶子节点423"},
+								{ name:"叶子节点424"}
+							]},
+						{ name:"父节点43 - 折叠", open:true,
+							children: [
+								{ name:"叶子节点431"},
+								{ name:"叶子节点432"},
+								{ name:"叶子节点433"},
+								{ name:"叶子节点434"}
+							]}
+					]}
+
+			];
+
+			$(document).ready(function(){
+				$.fn.zTree.init($("#treeDemo"), setting, zNodes);
+			});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$('#datagrid1').datagrid({
+					url:"getListData1.json",
+					columns:[[
+				          {field:'id',title:'ID',width:100},
+				          {field:'name',title:'Name',width:100}
+				    ]],
+				    frozenColumns:[[
+						{field:'ck',checkbox:true},// 复选框列
+						{field:'opt', title: "操作", width:100, formatter: function(value,row,index){
+							  return '<a href="###">删除</a>'
+						}}
+				    ]],
+					method:"post",
+					pageSize:10,
+					rownumbers:true,
+					pagination:true,
+					collapsible:true,
+					
+					singleSelect:false,// 复选
+					selectOnCheck:true,
+					checkOnSelect: true,
+					
+					
+				    sortName:'id,     name',
+				    sortOrder:'desc   ,asc,asc   ',
+				   	queryParams:{}// 查询条件
+				});
+				
+				$('#datagrid2').datagrid({
+					url:"getListData2.json",
+					columns:[[
+				          {field:'id',title:'ID',width:100},
+				          {field:'name',title:'Name',width:100},
+				          {field:'email',title:'E-mail',width:120}
+				    ]],
+				    frozenColumns:[[
+						{field:'ck',checkbox:true},// 复选框列
+						{field:'opt', title: "操作", width:100, formatter: function(value,row,index){
+							  return '<a href="###">删除</a>'
+						}}
+				    ]],
+					method:"post",
+					pageSize:10,
+					rownumbers:true,
+					pagination:true,
+					collapsible:true,
+					
+					singleSelect:false,// 复选
+					selectOnCheck:true,
+					checkOnSelect: true,
+					
+					
+				    sortName:'id,     name',
+				    sortOrder:'desc   ,asc,asc   ',
+				   	queryParams:{}// 查询条件
+				});
+
+			});
+		</script>
+	</body>
+
+</html>

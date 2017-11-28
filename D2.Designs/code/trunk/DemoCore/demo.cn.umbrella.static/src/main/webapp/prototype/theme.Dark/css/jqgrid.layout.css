@@ -1,0 +1,33 @@
+.ui-jqgrid .ui-pg-input, .ui-jqgrid .ui-jqgrid-toppager .ui-pg-input,.ui-jqgrid .ui-pg-selbox, .ui-jqgrid .ui-jqgrid-toppager .ui-pg-selbox,.ui-jqgrid .ui-jqgrid-pager{font-size: 12px;line-height: normal;}
+.tables-outer .ui-corner-all,.tables-outer .ui-corner-top,.tables-outer .ui-corner-left,.tables-outer .ui-corner-tl ,.tables-outer .ui-corner-right,.tables-outer .ui-corner-tr ,.tables-outer .ui-corner-bottom,.tables-outer .ui-corner-bl ,.tables-outer .ui-corner-br{-webkit-border-radius:0;-moz-border-radius: 0;border-radius:0;}
+.tables-outer .ui-jqgrid{background-color:#fff;}
+
+.ui-jqgrid .ui-jqgrid-htable{border-right: 1px solid #aaa;border-top: 1px solid #aaa;}
+.ui-jqgrid .ui-jqgrid-htable th,.ui-jqgrid .ui-jqgrid-sortable{line-height:38px ;height: 38px;}
+.ui-jqgrid .ui-jqgrid-htable th div[class]{margin-left: 12px;}
+.ui-jqgrid .ui-icon-asc{margin-top: 8px;}
+.ui-jqgrid .ui-icon-desc{margin-top: 14px;}
+.ui-jqgrid tr.jqgrow td{padding:2px 8px;text-overflow : ellipsis;}
+.ui-jqgrid .ui-jqgrid-pager .ui-paging-info{color: #666;}
+.map-box #jqGridPager_center {padding-left: 60px;}
+
+.tables-outer.ui-state-highlight a,.tables-outer .ui-widget-content .ui-state-highlight a{color: #01a1ff;}
+.ui-state-highlight[aria-selected="true"], .ui-widget-content .ui-state-highlight[aria-selected="true"]{background-color:#e1e1e1;}/*选中的背景色*/
+.tables-outer .ui-state-default,.tables-outer .ui-widget-content,.ui-widget-content .ui-state-default{background-color: #FFF0E8;background: none;}
+.table-sim .ui-priority-secondary,.table-sim .ui-widget-content .ui-priority-secondary{background-color:#F5F5F5;opacity: 1;}/*斑马线*/
+.tables-outer .ui-state-default,.ui-widget-content .ui-state-default{border: 0 none;}
+.tables-outer .ui-jqgrid .ui-jqgrid-htable th{color: #000000; font-weight: bold;font:12px simsun;border-bottom: 1px solid #aaa;border-left: 1px solid #aaa;white-space:nowrap;font-weight: bold;}
+tbody .ui-state-hover,.ui-widget-content tbody .ui-state-hover{background-color: #e1e1e1;color:#000 ;}/*hover的背景颜色*/
+.ui-pg-table .ui-state-hover,.ui-widget-content.ui-pg-table .ui-state-hover{border: 0 none;}
+.ui-jqgrid .ui-pg-button:hover{padding: 0 1px;}
+.ui-jqgrid .ui-jqgrid-resize-ltr{margin: 0;}
+.map-box .form-table .ui-pg-table td input[type="text"]{width:30px;}
+.tables-outer .ui-widget-content{border: 0 none;}
+.tables-outer .ui-jqgrid .table-sim{border-left:  1px solid #aaa;}
+.ui-jqgrid tr.ui-row-ltr td{border-color:#aaa;}
+.ui-jqgrid tbody td{border:0 none;}
+.ui-dialog .form-table input{width: 92.4%;*width:auto;}
+.ui-dialog .form-table table,.ui-dialog .form-table th,.ui-dialog .form-table td,.ui-dialog .form-table tr{border:0 none;}
+.ui-dialog .form-table td select{width: 100%;*width: 94%;}
+.ui-dialog .form-table td .select-ico{bottom:3px;right: 1px;}
+.ui-dialog .form-table td textarea{width: 98.5%;}

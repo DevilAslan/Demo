@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>统计分析</title>
+		<link rel="stylesheet" type="text/css" href="../../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../../../thirdparty/Swiper-2.7.6/dist/idangerous.swiper.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bco.layout.css" />
+	</head>
+
+	<body>
+		<div class="wrapper home">
+			<!-- 头部 -->
+			<div class="nav-outer">
+				<div class="nav-inner">
+					<div class="nav-box">
+						<h1 class="logo"></h1>
+						<div class="nav-slider">
+							<!-- Add Arrows -->
+							<div class="fi-arrow-left"></div>
+							<div class="fi-arrow-right"></div>
+							<div class="swiper-container">
+								<ul class="nav swiper-wrapper" id="nav">
+									<li class="swiper-slide">
+										<a href="sb-detail-qy.html">数据查询</a>
+									</li>
+									<li class="cur swiper-slide">
+										<a href="javascript:void(0);">统计分析</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="sb-creditWarning.html">信用预警</a>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+						<div class="overflow-hidden">
+							<ul class="top-info right">
+								<li class="relative">
+									<a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+
+									<div class="user-control">
+										<a href="###">
+											<span class="fi-key"></span>
+											修改密码
+										</a>
+										<a href="###">
+											<span class="fi-envelop"></span>
+											消息
+										</a>
+										<a href="###">
+											<span class="fi-cog"></span>
+											设置
+										</a>
+									</div>
+								</li>
+								<li>
+									<a href="###">
+										<span class="fi-exit"></span>退出
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="vertical-shadow"></div>
+			</div>
+			<!-- 主体 -->
+			<div class="main">
+				<!-- 面包屑 -->
+				<div class="main-bread-crumb">
+					<div class="breadcrumb-hidden">
+						<span class="fi-breadcrumb left"></span>
+						<ol class="left">
+							<li>
+								<span>您的位置：</span><a href="###">统计分析</a>
+							</li>
+							<!--<li>
+								<span class="breadcrumb-line breadcrumb-arrow"></span><a href="###">驾驶员详情</a>
+							</li>-->
+						</ol>
+					</div>
+				</div>
+				<!-- 内容 -->
+				<div class="main-form-outer">
+					<div class="form-inner relative overflow-auto">
+						<div class="sanban-detail-content">
+							<div class="form-content work-list">
+								<dl class="sliderbox" id="slider2">
+									<dt class="open"><span class="title">整体运行状况</span><s class="title-arrow fi-arrow-up"></s></dt>
+									<dd>
+										<div class="text clearfix">
+											<div class="left relative w-per65">
+												<div class="chart-control chart-select-outer">
+													<select id="year" class="select">
+														<option value="2017">2017</option>
+														<option value="2016">2016</option>
+														<option value="2015">2015</option>
+														<option value="2014">2014</option>
+														<option value="2013">2013</option>
+													</select>
+													<select id="month" class="select">
+														<option value="请选择">请选择</option>
+														<option value="1月">1月</option>
+														<option value="2月">2月</option>
+														<option value="3月">3月</option>
+														<option value="4月">4月</option>
+														<option value="5月">5月</option>
+													</select>
+												</div>
+												<div id="securitySituationBar" style="width: 100%;height: 400px;"></div>
+											</div>
+											<div class="left relative w-per35">
+												<div id="onlineRate" style="width: 100%;height: 400px;"></div>
+											</div>
+										</div>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<script type="text/javascript" src="../../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="../../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+		<!--slimScroll-->
+		<script type="text/javascript" src="../../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+		<!-- Swiper JS -->
+		<script type="text/javascript" src="../../../thirdparty/Swiper-2.7.6/dist/idangerous.swiper.min.js"></script>
+		<!--echarts-->
+		<script type="text/javascript" src="../../../thirdparty/echarts-3.5.2/echarts.min.js"></script>
+
+		<script src="../js/layout.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+            //nav slider
+            var curNavIndex = $(".nav .cur").index();
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 'auto', //(number 或 'auto')设置slider容器能够同时显示的slides数量,默认1
+                mousewheelControl: true,
+                resizeReInit: true,
+                initialSlide :curNavIndex,//设定初始化时slide的索引 ,默认0
+                onFirstInit: function(swiper){
+                    setcontrol();
+                },
+                onInit: function(swiper){
+                    setcontrol();
+                }
+            });
+            $('.fi-arrow-left').on('click', function(e){
+                e.preventDefault();
+                swiper.swipePrev();
+            });
+            $('.fi-arrow-right').on('click', function(e){
+                e.preventDefault();
+                swiper.swipeNext();
+            });
+            function setcontrol(){
+                var liWidth = 0;
+                $('.nav li').each(function () {
+                    liWidth += $(this).width();
+                })
+                if(liWidth >$('.swiper-container').width()){
+                    $('.fi-arrow-right').show();
+                    $('.fi-arrow-left').show();
+                }else{
+                    $('.fi-arrow-right').hide();
+                    $('.fi-arrow-left').hide();
+                }
+            };
+
+            //折叠
+            $(document).on("click",".sliderbox dt",function(){
+                var $this = $(this);
+                if ($this.hasClass('open')) {
+                    $this.removeClass('open');
+					$this.next("dd").slideUp();
+                    $this.find('.title-arrow').removeClass('fi-arrow-up').addClass('fi-arrow-down');
+                }else{
+                    $this.addClass('open');
+                    $this.next("dd").slideDown();
+                    $this.find('.title-arrow').removeClass('fi-arrow-down').addClass('fi-arrow-up');
+                }
+            });
+
+		</script>
+		<script type="text/javascript">
+				//柱状图
+				var optionSecuritySituationBar = {
+                    title: {
+                        text: '车辆安全情况',
+						x: 'center'
+                    },
+                    tooltip: {
+                        trigger: 'axis',
+                        axisPointer: { // 坐标轴指示器，坐标轴触发有效
+                            type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+                        }
+                    },
+                    legend: {
+                        data: ['超速', '伤亡事故', '闯红灯'],
+                        right: 'center',
+                        bottom:0
+                    },
+                    grid: {
+                        top: 50,
+                        left: 10,
+                        right: 10,
+                        bottom: 35,
+                        containLabel: true
+                    },
+                    color:['#039be5','#f44336','#ffd740'],
+                    xAxis: [{
+                        type: 'category',
+                       /* axisLabel:{
+                          show: true
+						},*/
+                        data: ['鹿城区', '龙湾区', '瓯海区', '洞头区','瑞安市', '乐清市', '永嘉县', '平阳县', '苍南县', '文成县', '泰顺县', '经开区', '瓯江口'],
+
+                    }],
+                    yAxis: [{
+                        type: 'value',
+                        // name: '总价(万元)',
+                        splitLine: {show: false},
+                        axisLabel: {
+                            formatter: '{value}'
+                        }
+                    }],
+                    series: [{
+                        name: '超速',
+                        type: 'bar',
+                        barWidth:  '22%',
+                        barGap: 0,
+                        label:{
+                            normal:{
+                                show:true,
+                                position: 'top',
+								textStyle:{
+                                    color: '#000'
+								},
+                            }
+						},
+                        data: [20, 12, 21, 24, 31,10, 20, 5, 21, 24, 21, 20,25]
+                    }, {
+                        name: '伤亡事故',
+                        type: 'bar',
+                        barWidth:  '22%',
+                        barGap: 0,
+                        label:{
+                            normal:{
+                                show:true,
+                                position: 'top',
+                                textStyle:{
+                                    color: '#000'
+                                },
+                            }
+                        },
+                        data: [10, 20, 5, 9, 3, 12, 21, 24, 21, 10, 20, 16,22]
+                    }, {
+                        name: '闯红灯',
+                        type: 'bar',
+                        barWidth:  '22%',
+                        label:{
+                            normal:{
+                                show:true,
+                                position: 'top',
+                                textStyle:{
+                                    color: '#000'
+                                },
+                            }
+                        },
+                        data: [1, 1, 2, 3, 1,5, 9, 3, 12, 26, 22, 10,23]
+                    }]
+				};
+				var securitySituationBar = echarts.init(document.getElementById('securitySituationBar'));
+                securitySituationBar.setOption(optionSecuritySituationBar);// 柱状图
+
+				//pie
+				var optionOnlineRate = {
+                    title: {
+                        text: '车辆上线率',
+                        left: 'center',
+                        bottom: 20,
+						textStyle:{
+                            color:['#8bc34a']
+						}
+                    },
+                    tooltip : {
+                        trigger: 'item',
+                        formatter: "{a} <br/>{b} : {c} ({d}%)"
+                    },
+                    visualMap: {
+                        show: false,
+                        min: 80,
+                        max: 600,
+                        inRange: {
+                            colorLightness: [0, 1],
+                            color:['#8bc34a']
+                        }
+                    },
+                    series : [
+                        {
+                            name:'车辆上线率',
+                            type:'pie',
+                            radius : '55%',
+                            center: ['50%', '50%'],
+                            data:[
+                                {value:335, name:'鹿城区'},
+                                {value:310, name:'龙湾区'},
+                                {value:274, name:'瓯海区'},
+                                {value:235, name:'洞头区'},
+                                {value:400, name:'瑞安市'},
+                                {value:300, name:'乐清市'},
+                                {value:210, name:'永嘉县'},
+                                {value:204, name:'平阳县'},
+                                {value:155, name:'苍南县'},
+                                {value:120, name:'文成县'},
+                                {value:204, name:'泰顺县'},
+                                {value:155, name:'经开区'},
+                                {value:120, name:'瓯江口'}
+                            ].sort(function (a, b) { return a.value - b.value}),
+                            roseType: 'area',
+                            label: {
+                                normal: {
+                                    textStyle: {
+                                        color: '#000'
+                                    }
+                                }
+                            },
+                            labelLine: {
+                                normal: {
+                                    lineStyle: {
+                                        color: '#aaa'
+                                    },
+                                    smooth: 0.2,
+                                    length: 10,
+                                    length2: 20
+                                }
+                            },
+                            itemStyle: {
+                                normal: {
+                                    color: '#c23531',
+                                   /* shadowBlur: 200,
+                                    shadowColor: 'rgba(0, 0, 0, 0.5)'*/
+                                }
+                            },
+
+                            animationType: 'scale',
+                            animationEasing: 'elasticOut',
+                            animationDelay: function (idx) {
+                                return Math.random() * 200;
+                            }
+                        }
+                    ]
+				};
+                var onlineRate = echarts.init(document.getElementById('onlineRate'));
+                onlineRate.setOption(optionOnlineRate);// 饼图
+
+			$(window).resize(function () {
+                //自适应
+                securitySituationBar.resize();
+                onlineRate.resize();
+
+            });
+		</script>
+	</body>
+
+</html>

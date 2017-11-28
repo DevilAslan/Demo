@@ -1,0 +1,28 @@
+@media print {
+	img{page-break-inside: avoid;}
+	.overflow-auto{overflow: auto;}
+	.relative{position: relative;}
+	.h-per100{height: 100% !important;height: 100%;}
+	.btn-row{padding: 4px 0;text-align: center;background: #fff;}
+	.btn-row > *{vertical-align: middle;}
+	.detail-form-content{margin-top: 10px;padding-left: 8px;padding-right: 8px;border: 1px solid #e5e5e5;page-break-inside:avoid;}
+	.form-main-title{line-height: 30px;}
+	.form-main-title h3{font-size: 20px;font-weight: bold;text-align: center;}
+	.form-main-title span{margin-right: 30px;color: #333;}
+	.code-box{position: absolute;top: 2px;right: 0;height: 70px;border: 1px solid #e5e5e5;}
+	.code-box img{height: 100%;}
+	.form-child-title{border-bottom: 1px solid #e5e5e5;}
+	.form-child-title h4{float: left;height: 30px;margin: 0;font-size: 14px;line-height: 30px;color: #333;}
+	.form-child-content,.div-version-info{font-size: 12px;color: #666;}
+	.form-child-content + .form-child-content{border-top: 1px dashed #e9e9e9;}
+	.form-child-table{width: 100%;}
+	.div-version-info{padding: 0 0 10px;}
+	.div-version-info div{display: inline-block;padding-top: 10px;}
+	.div-version-info label{width: 37%;padding-left: 4px;text-align: right;}
+	.div-version-info span{width: 60%;color: #333;word-break: break-all;vertical-align: text-top;vertical-align: text-top\9;}
+	.div-version-info > div{width: 32%;position: relative;}
+	.div-version-info > div *{display: inline-block;line-height: 22px;vertical-align: top;}
+	.div-version-info .address-text{width: 100%;}
+	.div-version-info .address-text label{width: 12.2%;}
+	.div-version-info .address-text span{width: 80%;}
+}

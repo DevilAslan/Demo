@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	samp{display: block;margin-top: 6px;margin-left: 20px;color: #999;}
+	samp a{line-height: 30px;color: #6EAEE5;}
+	a{/*display: block;*/margin: 0;}
+	a + span{color: #222;}
+	dd{margin: 8px 0;}
+	fieldset{margin-bottom: 10px;}
+	.menu{position:fixed;top: 0;right: 0;height: 100%;width: 100px;background: #ddd;}
+	.menu h4{margin-top: 5px;margin-bottom: 5px;text-align: center;}
+	.menu a{line-height: 2;text-decoration: none;color: #444;}
+	.menu a:hover{text-decoration: underline;color: #1B67E0;}
+	.number{display: inline-block;margin-right: 4px;}
+	.red{color: #ff4040;}
+</style>
+</head>
+<body>
+<!--	<div class="menu">
+		<h4>定位</h4>
+		<a href="#layout1">样式一</a>
+		<a href="#layout2">样式二(温州)</a>
+	</div>-->
+	<br />
+	
+	<fieldset id="layout2">
+		<legend style="color: #62c7b9; font-weight: bold;">样式二:</legend>
+		<dl>
+			<dd>
+				<a href="prototype/theme.Dark/resetingPassword.html">修改密码</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/widget.html">其他小部件样式</a>
+				<samp>
+					包含：按钮、标签、字体颜色、提示
+				</samp>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/icon.html">图标</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/home2-0.html">首页--样式一</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/home2-1qxyyb.html">首页--样式二</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/home2-2.html">首页--样式三</a>
+				<samp>含有右下角弹窗 </samp>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/home2-3.html">首页--样式四</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/base2-noContrdlBtn.html">dataGrid基础结构——无按钮栏</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/base.html">dataGrid基础结构——有按钮栏</a>
+				<samp>
+					1. 包含：几个弹窗【需要点击“显示更多查询条件”看到】
+				</samp>
+				<samp>底部有按钮 、底部无按钮 、  含有两个tree 、不使用iframe </samp>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/tabTable.html">tab：里有dataGrid和form——在同一页面</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/tabTable-differentPage1.html">tab：里有dataGrid和form——在不同页面</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/tabTable-differentPage5.html">tab：评估——在不同页面</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/tabTable-nesting-mix.html">tab：嵌套-同页和不同页混合</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/doubleTable.html">双表格——无中间按钮</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/doubleTable2.html">双表格——有中间按钮</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/treeAndTable.html">左侧树右侧dataGrid</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/treeAndTable2.html">树,表格,查询栏</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/treeAndTableAndForm.html">左侧树右上form右下dataGrid</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/pureTable.html">纯表格</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/doubleTableAndForm.html">上:表单,下:并列表格</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/formSimple-detail.html">基本表单————详情</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/formSimple.html">基本表单</a>
+				<samp>
+					1. 下拉框中含有ztree——>例子：项目区域、项目级别这两个的文本框
+				</samp>
+				<samp>
+					2. 建设地址——>有下拉联动效果
+				</samp>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/formModule.html">分块表单</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/formAccordion.html">折叠表单</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/formAccordion-iframe.html">折叠表单-iframe</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/formEdit-detail.html">可编辑表单-详情</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/cns-detail.html">承诺书-详情</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/searchAndCharts.html">图表——上:搜索  中:条形图  下:饼图</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataDirectory.html">数据归集目录页面</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/ddmits.html">没有操作权限</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/error.html">出错</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataMiningSearch1.html">数据挖掘-搜索-样式一</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataMiningSearch2.html">数据挖掘-搜索-样式二</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataMiningSearch3.html">数据挖掘-搜索-找关系</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataMiningSearch4-v1.html">信用档案查询</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataMiningSearchDetail1.html">数据挖掘-搜索-企业详情</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataMiningSearchDetail2.html">数据挖掘-搜索-自然人详情</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataMiningSearchDetail2.html">数据挖掘-系统日志挖掘-后台日志</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataMiningSearchDetail4-v1.html">信用档案查询 - 企业信用查询</a><span>【20170526修改】</span>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataMiningSearchDetail4-v2.html">信用档案查询 - 企业信用查询2</a><span>【20170526新增】</span>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataMiningSearchDetail5-v1.html">信用档案查询 - 个人信用查询</a><span>【20170526修改】</span>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataMiningSearchDetail6-v1.html">信用档案查询 - 其他组织信用查询</a><span>【20170526新增】</span>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataMiningLayout1.html">结构一-左一右上一右下二</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataMiningLayout2.html">结构二-左二右一</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataMiningLayout3.html">结构三-田字</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataMiningLayout4.html">结构四-查询栏下田字</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataMiningLayout5.html">结构四-左右[当前是左60%,右40%,可以改成左右各50%的]</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataMiningCharts1.html">关系图1</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataMiningCharts2.html">关系图2</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/dataMiningCharts3.html">架构图</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/ddst.html">列表1</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/ddst2.html">列表2</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/ranking.html">排行</a>
+			</dd>
+			<!--<dd>
+				<a href="prototype/theme.Dark/infoATable.html">评估-信息-表格</a>
+			</dd>-->
+			<dt>【20170407新增 - 二期】</dt>
+			<dd>
+				<a href="prototype/theme.Dark/tabTable-differentPage7-compositeAnalysis.html">综合分析</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/credit-evaluate-charts.html">信用评估--图表</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/credit-evaluate-details.html">信用评估--详情</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/report-qy.html">报告打印--企业</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/report-gr.html">报告打印--个人</a>
+			</dd>
+			<dt>【20170426新增 - 微信后台】</dt>
+			<dd>
+				<a href="prototype/theme.Dark/wxMaterialManagement-pic.html">微信--图片</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/wxMaterialManagement-graphic.html">微信--图文</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/wxMaterialManagement-graphicDetail-layout1.html">微信--图文--编辑--样式一</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/wxMaterialManagement-graphicDetail-layout2.html">微信--图文--编辑--样式二</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/wxMaterialManagement-graphicDetail-layout3.html">微信--图文--编辑--样式三</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/wxManySend.html">微信--消息群发</a>
+			</dd>
+			<dt>【20170521修改 - 微信后台-创建图文】</dt>
+			<dd>
+				<a href="prototype/theme.Dark/wxMaterialManagement-graphicDetail-layout1-2.html">微信--图文--编辑--样式一-改</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/wxMaterialManagement-graphicDetail-layout1-2-pic.html">微信--图文--编辑--样式一-dialog</a>
+			</dd>
+			<dt>【20170515新增 - 散办】</dt>
+			<dd>
+				<a href="prototype/theme.Dark/sanban/sb-detail-qy.html">散办--查询详情--企业</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/sanban/sb-detail-jsy.html">散办--查询详情--驾驶员</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/sanban/sb-detail-cl.html">散办--查询详情--车辆</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/sanban/sb-statisticalAnalysis.html">散办--统计分析</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/sanban/sb-creditWarning.html">散办--信用预警</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/sanban/sb-creditWarning-set.html">散办--信用预警--设置</a>
+			</dd>
+			<dt class="red">【20170615修改】</dt>
+			<dd>
+				<a href="prototype/theme.Dark/specialApplication.html">信用专项应用</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/specialApplication2.html">信用专项应用2--商务诚信</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/specialApplication3.html">信用专项应用3--社会诚信</a>
+			</dd>
+			<dd>
+				<a href="prototype/theme.Dark/specialApplication4.html">信用专项应用4--司法公信</a>
+			</dd>
+		</dl>
+	</fieldset>
+	
+	<fieldset id="layout1">
+		<legend style="color: #2275bb; font-weight: bold;">样式一:</legend>
+		<dl>
+			<dd>
+				<a href="prototype/common/home.html">首页</a>
+			</dd>
+			<dd>
+				<a href="prototype/common/base2-noContrdlBtn.html">dataGrid基础结构——无按钮栏</a>
+			</dd>
+			<dd>
+				<a href="prototype/common/base.html">dataGrid基础结构——有按钮栏</a>
+				<samp>
+					包含：几个弹窗<br />
+					<samp>底部有按钮 、底部无按钮 、  含有两个tree 、不使用iframe </samp>
+				</samp>
+			</dd>
+			<dd>
+				<a href="prototype/common/tabTable.html">tab：里有dataGrid和form——在同一页面</a>
+			</dd>
+			<dd>
+				<a href="prototype/common/tabTable-differentPage1.html">tab：里有dataGrid和form——在不同页面</a>
+			</dd>
+			<dd>
+				<a href="prototype/common/doubleTable.html">双表格——无中间按钮</a>
+			</dd>
+			<dd>
+				<a href="prototype/common/doubleTable2.html">双表格——有中间按钮</a>
+			</dd>
+			<dd>
+				<a href="prototype/common/treeAndTable.html">左侧树右侧dataGrid</a>
+			</dd>
+			<dd>
+				<a href="prototype/common/treeAndTableAndForm.html">左侧树右上form右下dataGrid</a>
+			</dd>
+			<dd>
+				<a href="prototype/common/formSimple-detail.html">基本表单————详情</a>
+			</dd>
+			<dd>
+				<a href="prototype/common/formSimple.html">基本表单</a>
+				<samp>
+					下拉框中含有ztree——>例子：项目区域、项目级别这两个的文本框
+				</samp>
+			</dd>
+			<dd>
+				<a href="prototype/common/formModule.html">分块表单</a>
+			</dd>
+			<dd>
+				<a href="prototype/common/formAccordion.html">折叠表单</a>
+			</dd>
+		</dl>
+	</fieldset>
+	<script type="text/javascript" src="thirdparty/jquery-1.11.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('dl').each(function(){
+				var n = 1;
+				$(this).children('dd').each(function(){
+
+					$(this).prepend('<i class="number">'+ n +'.</i>');
+					n++;
+				});
+			});
+		});
+	</script>
+</body>
+</html>

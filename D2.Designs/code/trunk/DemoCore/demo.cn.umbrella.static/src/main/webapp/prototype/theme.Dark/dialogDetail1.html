@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>详情1</title>
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" href="../../thirdparty/artDialog/ui-dialog.css" />
+		<link rel="stylesheet" type="text/css" href="css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<div id="loading" class="loading-box">
+			<div class="loading-content">
+				<img src="images/loading-img.gif" mce_src="images/loading-img.gif" alt="loading.." />  
+				<p>正在加载，请稍候..  </p>
+			</div>
+		</div>
+		<div class="clearfix loading" id="content">
+			<div class="wrapper">
+				<div class="main-table-outer dialog-table-outer">
+					<div class="overflow-auto h-per100">
+						<div class="detail-form-content">
+							<div class="form-main-title">
+								<h3>陈景润</h3>
+								<p><span>数据更新时间：2016-08-15</span><span>查询人:李明启</span><span>数据来源单位:25个</span></p>
+							</div>
+						</div>
+						
+						<div class="detail-form-content base-info">
+							<div class="form-child-title clearfix">
+								<h4>基础信息</h4>
+							</div>
+							<div class="form-child-content div-version-info">
+								<div>
+									<label>身份证号码：</label>
+									<span>411425******238110</span>
+								</div>
+								<div>
+									<label>性别：</label>
+									<span>男</span>
+								</div>
+								<div>
+									<label>民族：</label>
+									<span>汉</span>
+								</div>
+								
+								<div>
+									<label>籍贯：</label>
+									<span>-</span>
+								</div>
+								<div>
+									<label>政治面貌：</label>
+									<span>党员</span>
+								</div>
+								<div>
+									<label>人员状态：</label>
+									<span>-</span>
+								</div>
+								<div>
+									<label>工作单位：</label>
+									<span>XXX有限公司</span>
+								</div>
+								
+								<div>
+									<label>手机号码：</label>
+									<span>156****8147</span>
+								</div>
+								<div>
+									<label>邮箱：</label>
+									<span>chenjingrun0913@126.com</span>
+								</div>
+								<div class="address-text">
+									<label>户籍地址：</label>
+									<span>浙江省温州市鹿城区秀山路126号发展大楼8705室</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="detail-form-content base-info">
+							<div class="form-child-title clearfix">
+								<h4>资质信息</h4>
+							</div>
+							<div class="form-child-content div-version-info">
+								<div>
+									<label>证书名称：</label>
+									<span>软件工程师</span>
+								</div>
+								<div>
+									<label>证书编号：</label>
+									<span>8273****7892</span>
+								</div>
+								<div>
+									<label>有限期：</label>
+									<span>2016-09-12 至 2020-09-12</span>
+								</div>
+								<div>
+									<label>认定时间：</label>
+									<span>2016-09-12</span>
+								</div>
+								<div>
+									<label>核发单位：</label>
+									<span>温州市劳动局</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="detail-form-content">
+							<div class="form-child-title clearfix">
+								<h4>知识产权信息</h4>
+							</div>
+							<div class="form-child-content div-version-info">
+								<div>
+									<label>商标名：</label>
+									<span>企鹅</span>
+								</div>
+								<div>
+									<label>注册号：</label>
+									<span>213341</span>
+								</div>
+								<div>
+									<label>申请日期：</label>
+									<span>2014-08-14</span>
+								</div>
+							</div>
+							<div class="form-child-content div-version-info">
+								<div>
+									<label>商标名：</label>
+									<span>企鹅</span>
+								</div>
+								<div>
+									<label>注册号：</label>
+									<span>213341</span>
+								</div>
+								<div>
+									<label>申请日期：</label>
+									<span>2014-08-14</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btn-row fixed">
+					<button type="button" class="theme-btn">返回</button>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+		<!--dialog-->
+		<script type="text/javascript" src="../../thirdparty/artDialog/dialog-min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/artDialog/dialog-plus-min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script src="js/layout.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// Loading
+			$(window).load(function() {
+			    $("#loading").fadeOut('500',function() {
+			        $(this).remove();
+			        $("#content").removeClass("loading")
+			    });
+			});
+		</script>
+	</body>
+</html>

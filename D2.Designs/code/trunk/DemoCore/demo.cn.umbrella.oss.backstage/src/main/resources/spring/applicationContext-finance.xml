@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+   	
+   	
+ 	<!-- 支付宝支付退款流水 start -->
+	<bean id="alipayPayTradeNoMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.finance.mapper.alipay.AlipayPayTradeNoMapper" />
+		<property name="sqlSessionFactory" ref="sqlSessionFactoryCoaches" />
+	</bean>
+	<bean id="alipayRefundNoMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.finance.mapper.alipay.AlipayRefundNoMapper" />
+		<property name="sqlSessionFactory" ref="sqlSessionFactoryCoaches" />
+	</bean>
+	<!-- 支付宝支付退款流水 end -->
+ 	
+ 	<bean id="alipayUtil" class="com.finance.util.alipay.pay.AlipayUtil">
+		<constructor-arg name="partner" value="${alipay.partner}" />
+		<constructor-arg name="app_id" value="${alipay.app_id}" />
+		<constructor-arg name="seller_id" value="${alipay.partner}" />
+		<constructor-arg name="key" value="${alipay.key}" />
+		<constructor-arg name="private_key" value="${alipay.private.key}" />
+		<constructor-arg name="alipay_public_key" value="${alipay.alipay.public.key}" />
+		<constructor-arg name="pay_notify_url" value="${alipay.pay.notify.url}" />
+		<constructor-arg name="refund_notify_url" value="${alipay.refund.notify.url}" />
+		<constructor-arg name="input_charset" value="${alipay.input.charset}" />
+		<constructor-arg name="payment_type" value="${alipay.payment.type}" />
+		<constructor-arg name="webPayType" value="${alipay.web.type}" />
+		<constructor-arg name="appPayType" value="${alipay.app.type}" />
+		<constructor-arg name="tarde_time" value="${alipay.tarde.time}" />
+		<constructor-arg name="show_url" value="${alipay.pay.show.url}" />
+		<constructor-arg name="alipayPayTradeNoMapper" ref="alipayPayTradeNoMapper" />
+		<constructor-arg name="alipayRefundNoMapper" ref="alipayRefundNoMapper" />
+	</bean>
+	
+<!-- 	<bean id="alipayNtifyUtil" class="com.business.util.alipay.AlipayNtifyUtil"> -->
+<!-- 		<constructor-arg name="commonStudentService" ref="commonStudentService"/> -->
+<!-- 	</bean> -->
+	
+<!-- 	<bean id="commonStudentService" class="com.business.service.impl.CommonStudentServiceImpl"/> -->
+</beans>

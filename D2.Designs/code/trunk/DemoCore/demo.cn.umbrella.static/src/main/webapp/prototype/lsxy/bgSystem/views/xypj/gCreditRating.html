@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>个人信用评估</title>
+		<link rel="stylesheet" type="text/css" href="../../../../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../../css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/layout.css">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<!-- 头部 -->
+			<div class="nav-outer">
+				<div class="nav-inner">
+					<h1 class="logo"></h1>
+					<span class="fi-menu"></span>
+					<ul class="nav" id="nav">
+						<li>
+							<a href="###">
+								系统首页
+							</a>
+						</li>
+						<li>
+							<a href="../../dataDirectory.html">
+								数据管理系统
+							</a>
+						</li>
+						<li>
+							<a href="../sjwj.qy/qyDataMining.html">
+								数据挖掘系统
+							</a>
+						</li>
+						<li>
+							<a href="../zrr/zrrCredit.html">
+								数据查询系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								报告管理系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								行业应用系统
+							</a>
+						</li>
+						<li>
+							<a href="../cfgs/cfgs.html">
+								信用双公示
+							</a>
+						</li>
+						<li class="cur">
+							<a href="gCreditRating.html">
+								信用评价
+							</a>
+						</li>
+					</ul>
+					<div class="overflow-hidden">
+						<ul class="top-info right">
+							<li class="relative">
+								<a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+								
+								<div class="user-control">
+									<a href="###">
+										<span class="fi-key"></span>
+										修改密码
+									</a>
+									<a href="###">
+										<span class="fi-envelop"></span>
+										消息
+									</a>
+									<a href="###">
+										<span class="fi-cog"></span>
+										设置
+									</a>
+								</div>
+							</li>
+							<li>
+								<a href="###">
+									<span class="fi-exit"></span>退出
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 侧边栏 -->
+			<div class="sub-nav-outer">
+				<div class="scroll">
+					<div class="sub-nav-inner">
+						<div>
+							<h4 class="cur"><a href="gCreditRating.html">个人信用评估</a></h4>
+							<h4><a href="qCreditRating.html">企业信用评估</a></h4>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- 主体 -->
+			<div class="main">
+				<!-- 面包屑 -->
+				<div class="main-bread-crumb">
+					<div class="breadcrumb-hidden">
+						<span class="fi-breadcrumb left"></span>
+						<ol class="left">
+							<li>
+								<span>您的位置：</span>
+								<a href="###">信用评价</a>
+							</li>
+							<li>
+								<span class="breadcrumb-line breadcrumb-arrow"></span><a href="###">个人信用评估</a>
+							</li>
+						</ol>
+					</div>
+				</div>
+				<!-- 内容 -->
+		    	<div class="main-form-outer">
+					<div class="form-inner relative overflow-auto">
+						<form action="" method="post">
+							<div class="form-content absolute rating-form">
+								<div class="rating-form-head">
+									<table>
+										<colgroup>
+											<col style="width: 10%;"/>
+											<col style="width: 5%;"/>
+											<col style="width: 5%;"/>
+											<col style="width: 80%;"/>
+										</colgroup>
+										<tr>
+											<th>评估维度</th>
+											<th>占比</th>
+											<th>分值</th>
+											<td>
+												<div class="">
+													<table>
+														<colgroup>
+															<col style="width: 20%;"/>
+															<col style="width: 7%;"/>
+															<col style="width: 7%;"/>
+															<col style="width: 50%;"/>
+															<col style="width: 16%;"/>
+														</colgroup>
+														<tr>
+															<th>指标</th>
+															<th>占比</th>
+															<th>分值</th>
+															<th>说明</th>
+															<th>操作</th>
+														</tr>
+													</table>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="rating-form-body">
+									<!--基础素质-->
+									<table>
+										<colgroup>
+											<col style="width: 10%;"/>
+											<col style="width: 5%;"/>
+											<col style="width: 5%;"/>
+											<col style="width: 80%;"/>
+										</colgroup>
+										<tr>
+											<th>
+												<span class="category-name">基础素质</span>
+											</th>
+											<th>
+												<span class="total-per">20%</span>
+											</th>
+											<th>
+												<span class="total-score">200</span>
+											</th>
+											<td>
+												<div class="">
+													<table id="tableAct1">
+														<colgroup>
+															<col style="width: 10%;"/>
+															<col style="width: 10%;"/>
+															<col style="width: 7%;"/>
+															<col style="width: 7%;"/>
+															<col style="width: 50%;"/>
+															<col style="width: 16%;"/>
+														</colgroup>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="姓名"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="姓名"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="0"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="0"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true"></textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+																
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="性别"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="性别"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="0"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="0"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true"></textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="年龄"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="年龄"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="5"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="10"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">30岁到40岁之间的得分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr><td>
+																<input type="text" class="criteria-text1" value="工作单位"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="工作单位"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="5"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="10"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">公务员、事业单位</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="电话号码"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="电话号码"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="5"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="10"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true"></textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="文化水平"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="文化水平"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="15"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="30"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">大学本科以上得分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="政治面貌"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="政治面貌"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="20"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="40"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">党员30分、预备党员20分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="是否有车辆"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="是否有车辆"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="30"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="60"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">有一定资产能力的人员相对来讲信用层级会相对高一些，都达标的30分，一项达标的10分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="公积金信息"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="公积金信息"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="20"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="40"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">定期缴纳公积金的加分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																	<input type="button" class="color-blue add-row" value="新增" />
+																</div>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</td>
+										</tr>
+									</table>
+									<!--合规度-->
+									<table>
+										<colgroup>
+											<col style="width: 10%;"/>
+											<col style="width: 5%;"/>
+											<col style="width: 5%;"/>
+											<col style="width: 80%;"/>
+										</colgroup>
+										<tr>
+											<th>
+												<span class="category-name">合规度</span>
+											</th>
+											<th>
+												<span class="total-per">50%</span>
+											</th>
+											<th>
+												<span class="total-score">500</span>
+											</th>
+											<td>
+												<div class="">
+													<table id="tableAct2">
+														<colgroup>
+															<col style="width: 10%;"/>
+															<col style="width: 10%;"/>
+															<col style="width: 7%;"/>
+															<col style="width: 7%;"/>
+															<col style="width: 50%;"/>
+															<col style="width: 16%;"/>
+														</colgroup>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="刑事判决"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="刑事判决"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="42"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="210"/>
+															</td>
+															<td>
+																<textarea autoHeight="true">刑事判决扣180分，民事判决扣150分，判决未履行加扣30分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+																
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="民事判决"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="民事判决"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="42"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="210"/>
+															</td>
+															<td>
+																<textarea autoHeight="true">刑事判决扣180分，民事判决扣150分，判决未履行加扣30分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="判决未履行"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="判决未履行"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="42"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="210"/>
+															</td>
+															<td>
+																<textarea autoHeight="true">刑事判决扣180分，民事判决扣150分，判决未履行加扣30分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="黑名单"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="黑名单"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="24"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="120"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">黑名单一次扣60分，二次扣90分，三次以上（含三次）扣120分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="部门行政处罚"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="部门行政处罚"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="16"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="80"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">行政处罚一次扣40分，二次扣60分，三次以上（含三次）扣80分	</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="考试违纪"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="考试违纪"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="12"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="60"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">不良记录一次扣30分，二次扣45分，三次以上（含三次）扣60分，影响重大一次扣60分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="车辆违章"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="车辆违章"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="12"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="60"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">不良记录一次扣30分，二次扣45分，三次以上（含三次）扣60分，影响重大一次扣60分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="违法生育"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="违法生育"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="12"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="60"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">不良记录一次扣30分，二次扣45分，三次以上（含三次）扣60分，影响重大一次扣60分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="其他不良记录"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="其他不良记录"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="12"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="60"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">不良记录一次扣30分，二次扣45分，三次以上（含三次）扣60分，影响重大一次扣60分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="欠税记录"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="欠税记录"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="6"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="30"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">欠税记录一次扣15分，二次扣20分，三次以上（含三次）扣30分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																	<input type="button" class="color-blue add-row" value="新增" />
+																</div>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</td>
+										</tr>
+									</table>
+									<!--践约度-->
+									<table>
+										<colgroup>
+											<col style="width: 10%;"/>
+											<col style="width: 5%;"/>
+											<col style="width: 5%;"/>
+											<col style="width: 80%;"/>
+										</colgroup>
+										<tr>
+											<th>
+												<span class="category-name">践约度</span>
+											</th>
+											<th>
+												<span class="total-per">20%</span>
+											</th>
+											<th>
+												<span class="total-score">200</span>
+											</th>
+											<td>
+												<div class="">
+													<table id="tableAct3">
+														<colgroup>
+															<col style="width: 10%;"/>
+															<col style="width: 10%;"/>
+															<col style="width: 7%;"/>
+															<col style="width: 7%;"/>
+															<col style="width: 50%;"/>
+															<col style="width: 16%;"/>
+														</colgroup>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="移动欠费"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="移动欠费"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="8"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="16"/>
+															</td>
+															<td>
+																<textarea autoHeight="true">欠费记录一次扣8分，二次扣12分，三次以上（含三次）扣16分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+																
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="联通欠费"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="联通欠费"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="8"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="16"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">欠费记录一次扣8分，二次扣12分，三次以上（含三次）扣16分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="电信欠费"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="电信欠费"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="8"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="16"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">欠费记录一次扣8分，二次扣12分，三次以上（含三次）扣16分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="自来水欠费"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="自来水欠费"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="8"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="16"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">欠费记录一次扣8分，二次扣12分，三次以上（含三次）扣16分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="天然气欠费"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="天然气欠费"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="8"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="16"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">欠费记录一次扣8分，二次扣12分，三次以上（含三次）扣16分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="用电欠费"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="用电欠费"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="8"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="16"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">欠费记录一次扣8分，二次扣12分，三次以上（含三次）扣16分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="公共泊位欠费"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="公共泊位欠费"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="8"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="16"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">欠费记录一次扣8分，二次扣12分，三次以上（含三次）扣16分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="有线电视欠费"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="有线电视欠费"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="8"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="16"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">欠费记录一次扣8分，二次扣12分，三次以上（含三次）扣16分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="银行逾期"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="银行逾期"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="18"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="36"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">银行逾期一次扣18分，二次扣25分，三次以上（含三次）扣36分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="借贷逾期"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="借贷逾期"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="18"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="36"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">银行逾期一次扣18分，二次扣25分，三次以上（含三次）扣36分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																	<input type="button" class="color-blue add-row" value="新增" />
+																</div>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</td>
+										</tr>
+									</table>
+									<!--其他属性-->
+									<table>
+										<colgroup>
+											<col style="width: 10%;"/>
+											<col style="width: 5%;"/>
+											<col style="width: 5%;"/>
+											<col style="width: 80%;"/>
+										</colgroup>
+										<tr>
+											<th>
+												<span class="category-name">其他属性</span>
+											</th>
+											<th>
+												<span class="total-per">10%</span>
+											</th>
+											<th>
+												<span class="total-score">100</span>
+											</th>
+											<td>
+												<div class="">
+													<table id="tableAct4">
+														<colgroup>
+															<col style="width: 10%;"/>
+															<col style="width: 10%;"/>
+															<col style="width: 7%;"/>
+															<col style="width: 7%;"/>
+															<col style="width: 50%;"/>
+															<col style="width: 16%;"/>
+														</colgroup>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="市级以上荣誉"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="市级以上荣誉"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="20"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="20"/>
+															</td>
+															<td>
+																<textarea autoHeight="true">部门荣誉市级以上加10分，省级以上加15分，国家级加20分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+																
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="良好行为"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="良好行为"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="15"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="15"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">良好行为一次加7分，二次加10分，三次以上（含三次）加15分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="财物"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="财物"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="10"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="10"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">捐赠财物一次加5分，二次加7分，三次以上（含三次）加10分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="献血"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="献血"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="25"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="25"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">有过记录加25分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="志愿者服务"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="志愿者服务"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="15"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="15"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">志愿者服务一次加7分，二次加10分，三次以上（含三次）加15分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<input type="text" class="criteria-text1" value="各部门对个人评级"/>
+															</td>
+															<td>
+																<input type="text" class="criteria-text" value="各部门对个人评级"/>
+															</td>
+															<td>
+																<input type="text" class="percentage-text" value="15"/>
+															</td>
+															<td>
+																<input type="text" class="score-text" value="15"/>
+															</td>
+															
+															<td>
+																<textarea autoHeight="true">评定等级在部门评级中属于一等的加15分</textarea>
+															</td>
+															<td>
+																<div class="btn-group">
+																	<input type="button" class="color-blue edit-row" value="编辑" />
+																	<input type="button" class="color-blue delete-row" value="删除" />
+																	<input type="button" class="color-blue add-row" value="新增" />
+																</div>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<script type="text/javascript" src="../../../../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<!--slimScroll-->
+		<script type="text/javascript" src="../../../../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+		<script src="../../js/layout.js" type="text/javascript" charset="utf-8"></script>
+       	<script src="../../js/table.js" type="text/javascript"></script>
+       	<script type="text/javascript">
+				$(function(){
+					table_rowspan("#tableAct2",2);
+					table_rowspan("#tableAct2",4);
+					table_rowspan("#tableAct2",5);
+					
+					//合并列
+					var tableLen = $('table[id]').length;
+					var $tableID;
+					for( var i = 0;i < tableLen;i++){
+						$tableID = 'tableAct' + (i+1);
+						var colLen = $('#' + $tableID).find('tr').length;
+						for(var m = 0;m < colLen;m++){
+							table_colspan('#' + $tableID,m + 1,1);
+						}
+					};
+				});
+				
+       	</script>
+	</body>
+
+</html>

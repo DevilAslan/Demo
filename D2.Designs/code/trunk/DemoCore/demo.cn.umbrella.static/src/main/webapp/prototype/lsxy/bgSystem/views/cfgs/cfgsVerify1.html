@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>处罚公示校验</title>
+		<link rel="stylesheet" type="text/css" href="../../../../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" href="../../../../../thirdparty/artDialog/ui-dialog.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../../css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/layout.css">
+	</head>
+	<body>
+		
+		<div class="main-form-outer dialog-table-outer">
+			<div class="form-inner relative overflow-auto">
+				<form action="" method="post">
+					<div class="form-content absolute">
+						<div class="form-table">
+							<table>
+								<colgroup>
+									<col span="1" style="width: 20%;" />
+									<col span="1" style="width: 70%;" />
+									<col span="1" style="width: 10%;" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th></th>
+										<th></th>
+										<th>校验结果</th>
+									</tr>
+								</thead>
+								<tr>
+									<th><label class="query-label">行政区划编码</label></th>
+									<td>330303</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup1" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup1" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">所属地区名称</label></th>
+									<td>温州市龙湾区市场监督管理局</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup2" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup2" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">执法部门名称</label></th>
+									<td>温州市龙湾区区市场监管局</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup3" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup3" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">执法部门组织编码</label></th>
+									<td>001008003002028</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup4" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup4" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">行政处罚决定书文号</label></th>
+									<td>温龙市监处字〔2015〕260号</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup5" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup5" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">案件名称</label></th>
+									<td>任美英生产、销售不符合保障人体健康和人身、财产安全的国家标准、行业标准的产品案</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup6" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup6" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">被处罚对象类别</label></th>
+									<td>法人</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup7" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup7" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">被处罚对象名称</label></th>
+									<td>任美英</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup8" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup8" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">被处罚对象证件类型</label></th>
+									<td>身份证</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup9" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup9" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">被处罚对象证件号码</label></th>
+									<td>330303603020250</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup10" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup10" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">涉案金额</label></th>
+									<td>元</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup11" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup11" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<!--<tr>
+									<th><label class="query-label">实际填报时间</label></th>
+									<td></td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup12" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup12" />错误
+											</label>
+										</div>
+									</td>
+								</tr>-->
+								<tr>
+									<th><label class="query-label">公开时间</label></th>
+									<td>2016-03-11 20:17:27</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup13" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup13" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">被处罚单位法定代表人姓名</label></th>
+									<td>1111未录入</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup14" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup14" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">被处罚单位法定代表人身份证号码</label></th>
+									<td>未录入</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup15" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup15" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">行政处罚权利事项名称</label></th>
+									<td></td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup16" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup16" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">权利内部编码</label></th>
+									<td></td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup17" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup17" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">对外公开的行政处罚决定书全文或者摘要</label></th>
+									<td>
+										行政处罚决定书文号：温龙市监处字〔2015〕260号；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;案件名称：任美英生产、销售不符合保障人体健康和人身、财产安全的国家标准、行业标准的产品案；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;被处罚对象名称：任美英；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;被处罚单位法定代表人姓名：未录入；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主要违法事实：本局在开展食品安全监测专项行动中，对位于温州市龙湾区永中街道永中农贸市场的温州市龙湾永中任美英熟食摊销售的烧鹅（熟肉制品）、鸭掌（熟肉制品）进行抽样检验，上述两种食品各抽取0.75kg作抽样样品，抽取0.25kg作备份样品。在当事人收到上述二种食品的检验报告之前，上述二种同批次食品已经销售完毕，其中烧鹅（熟肉制品）购进5kg，进货单价46元/kg，销售单价50元/kg（其抽样样品与备份样品以进货单价销售），销售5kg，经营额为246元，获利16元；鸭掌（熟肉制品）购进3kg，进货单价46元/kg,销售单价50元/kg（其抽样样品与备份样品以进货单价销售），销售3kg，经营额为146元，获利8元。上述二种食品的经营额合计为392元，获利合计为24元。上述食品经温州市质量技术监督检测院抽样检验，结论显示：烧鹅（熟肉制品）的“菌落总数”、“大肠菌群”项目、鸭掌（熟肉制品）的“大肠菌群”项目实测结果不符合标准要求。 ；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行政处罚种类、依据：生产、销售不符合保障人体健康和人身、财产安全的国家标准、行业标准的产品；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行政处罚履行方式：处罚决定；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行政处罚履行期限：2016-01-21 00:00:00.0；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行政处罚机关名称：温州市龙湾区区市场监管局；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行政处罚日期：2016-03-29
+									</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup18" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup18" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">作出行政处罚的日期</label></th>
+									<td>2016-03-29 00:00:00</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup19" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup19" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">是否公开</label></th>
+									<td>公开</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup20" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup20" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">不公开依据</label></th>
+									<td></td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup21" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup21" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<!--<tr>
+									<th><label class="query-label">状态标记</label></th>
+									<td>正常</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup22" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup22" />错误
+											</label>
+										</div>
+									</td>
+								</tr>-->
+								<tr>
+									<th><label class="query-label">撤销处罚的原因说明</label></th>
+									<td></td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup23" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup23" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">信息版本号</label></th>
+									<td>1</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup24" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup24" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<!--<tr>
+									<th><label class="query-label">排序时间</label></th>
+									<td>2016-03-29 00:00:00</td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup22" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup22" />错误
+											</label>
+										</div>
+									</td>
+								</tr>-->
+								<tr>
+									<th><label class="query-label">处罚立案时间</label></th>
+									<td></td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup25" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup25" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">执法部门主体编码</label></th>
+									<td></td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup26" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup26" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label class="query-label">处罚案件流水号</label></th>
+									<td></td>
+									<td>
+										<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup27" checked/>正确
+											</label>
+											<label>
+												<input type="radio" name="radioGroup27" />错误
+											</label>
+										</div>
+									</td>
+								</tr>
+							</table>
+							
+						</div>
+					</div>
+					<div class="btn-row fixed">
+						<input type="button" class="theme-btn" value="提交" onclick="confirm();"/>
+						<a href="cfgs.html" class="theme-btn">取消</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+		<!--slimScroll-->
+		<script type="text/javascript" src="../../../../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+		<!--My97日期插件-->
+		<script type="text/javascript" src="../../../../../thirdparty/My97DatePicker/WdatePicker.js"></script>
+		
+		<!--dialog-->
+		<script type="text/javascript" src="../../../../../thirdparty/artDialog/dialog-min.js"></script>
+		<script type="text/javascript" src="../../../../../thirdparty/artDialog/dialog-plus-min.js"></script>
+		
+		<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/layout.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(function() {
+					//my97
+					$(".date").click(function() {
+						WdatePicker()
+					});
+					$(".time").click(function() {
+						WdatePicker({
+							dateFmt: 'yyyy-MM-dd HH:mm'
+						});
+					});
+					//禁止输入
+					$(".time,.date").keyup(function() {
+						var thisVal = $(this).val();
+						$(this).val(thisVal.slice(0, thisVal.length - 2))
+					});
+				});
+			});
+			
+			function confirm() {
+				$.GD.confirm({
+					//title: '确认提交？',
+					msg: '确认提交？',
+					oktext: '提交',
+					canceltext: '关闭',
+					fixed: true,
+					ok: function() {
+    					top.location.href="cfgs.html"
+					}
+				});
+			};
+		</script>
+	</body>
+</html>

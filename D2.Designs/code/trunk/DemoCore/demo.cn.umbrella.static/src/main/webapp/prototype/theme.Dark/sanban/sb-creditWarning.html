@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>信用预警</title>
+    <link rel="stylesheet" type="text/css" href="../../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../../thirdparty/Swiper-2.7.6/dist/idangerous.swiper.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/icon.font.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/bco.layout.css" />
+    <link rel="stylesheet" type="text/css" href="../css/dataGrid.layout.css" />
+</head>
+
+<body>
+    <div class="wrapper home">
+        <!-- 头部 -->
+        <div class="nav-outer">
+            <div class="nav-inner">
+                <div class="nav-box">
+                    <h1 class="logo"></h1>
+                    <div class="nav-slider">
+                        <!-- Add Arrows -->
+                        <div class="fi-arrow-left"></div>
+                        <div class="fi-arrow-right"></div>
+                        <div class="swiper-container">
+                            <ul class="nav swiper-wrapper" id="nav">
+                                <li class="swiper-slide">
+                                    <a href="sb-detail-qy.html">数据查询</a>
+                                </li>
+                                <li class=" swiper-slide">
+                                    <a href="sb-statisticalAnalysis.html">统计分析</a>
+                                </li>
+                                <li class="cur swiper-slide">
+                                    <a href="javascript:void(0);">信用预警</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="overflow-hidden">
+                        <ul class="top-info right">
+                            <li class="relative">
+                                <a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+
+                                <div class="user-control">
+                                    <a href="###">
+                                        <span class="fi-key"></span>
+                                        修改密码
+                                    </a>
+                                    <a href="###">
+                                        <span class="fi-envelop"></span>
+                                        消息
+                                    </a>
+                                    <a href="###">
+                                        <span class="fi-cog"></span>
+                                        设置
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="###">
+                                    <span class="fi-exit"></span>退出
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vertical-shadow"></div>
+        </div>
+        <!-- 主体 -->
+        <div class="main">
+            <!-- 面包屑 -->
+            <div class="main-bread-crumb">
+                <div class="breadcrumb-hidden">
+                    <span class="fi-breadcrumb left"></span>
+                    <ol class="left">
+                        <li>
+                            <span>您的位置：</span><a href="###">信用预警</a>
+                        </li>
+                        <!--<li>
+                            <span class="breadcrumb-line breadcrumb-arrow"></span><a href="###">设置</a>
+                        </li>-->
+                    </ol>
+                </div>
+            </div>
+            <!-- 内容 -->
+            <div class="main-table-outer tab-outer">
+                <div class="tab-title-box">
+                    <div class="cur">
+                        <a href="javascript:void(0)"><h3>区域排名</h3></a>
+                    </div>
+                    <div>
+                        <a href="###"><h3>企业排名</h3></a>
+                    </div>
+                    <div>
+                        <a href="###"><h3>驾驶员排名</h3></a>
+                    </div>
+                    <div>
+                        <a href="###"><h3>车辆排名</h3></a>
+                    </div>
+                    <p class="tab-select-outer">
+                        <a href="sb-creditWarning-set.html" class="fi-cog set-btn" title="设置"></a>
+                    </p>
+                </div>
+                <div class="tab-content block">
+                    <form id="searBox">
+                        <!-- 搜索栏 -->
+                        <div class="main-search">
+                            <div class="overflow-hidden">
+                                <ul>
+                                    <li class="no-set-width">
+                                        <label class="query-label">时间</label>
+                                        <select id="selectDate">
+                                            <option value="年">年</option>
+                                            <option value="季度">季度</option>
+                                            <option value="月">月</option>
+                                        </select>
+                                    </li>
+
+                                    <li id="year" class="date-select no-set-width">
+                                        <select name="currentYear">
+                                              <option value="2017">2017年</option>
+                                             <option value="2016">2016年</option>
+                                             <option value="2015">2015年</option>
+                                        </select>
+                                    </li>
+                                    <li id="quarter" class="date-select no-set-width" style="display:none;">
+                                        <select name="quarter">
+                                            <option value="">---全部---</option>
+                                            <option value="firstQuarter">第一季度</option>
+                                            <option value="secondQuarter">第二季度</option>
+                                            <option value="thirdQuarter">第三季度</option>
+                                            <option value="fourthQuarter">第四季度</option>
+                                        </select>
+                                    </li>
+
+                                    <li id="month" class="date-select no-set-width" style="display:none;" >
+                                        <select name="currentMonth">
+                                            <option value="">---全部---</option>
+                                            <option value="1">一月</option>
+                                            <option value="2">二月</option>
+                                            <option value="3">三月</option>
+                                            <option value="4">四月</option>
+                                            <option value="5">五月</option>
+                                            <option value="6">六月</option>
+                                            <option value="7">七月</option>
+                                            <option value="8">八月</option>
+                                            <option value="9">九月</option>
+                                            <option value="10">十月</option>
+                                            <option value="11">十一月</option>
+                                            <option value="12">十二月</option>
+                                        </select>
+                                    </li>
+                                    <li class="no-set-width">
+                                        <label class="query-label">区域</label>
+                                        <select name="regionName">
+                                            <option value="">-----全部-----</option>
+                                            <option value="鹿城区">鹿城区</option>
+                                            <option value="龙湾区">龙湾区</option>
+                                            <option value="瓯海区">瓯海区</option>
+                                            <option value="洞头区">洞头区</option>
+                                            <option value="瑞安市">瑞安市</option>
+                                            <option value="乐清市">乐清市</option>
+                                            <option value="永嘉县">永嘉县</option>
+                                            <option value="平阳县">平阳县</option>
+                                            <option value="苍南县">苍南县</option>
+                                            <option value="文成县">文成县</option>
+                                            <option value="泰顺县">泰顺县</option>
+                                            <option value="经开区">经开区</option>
+                                            <option value="瓯江口">瓯江口</option>
+                                        </select>
+                                    </li>
+                                    <li class="no-set-width">
+                                        <label class="query-label">请输入关键字</label>
+                                        <input type="text" id="keyword" name="keyword" />
+                                    </li>
+                                    <li class="no-set-width">
+                                        <input type="button" class="mySearch theme-btn" value="查询">
+                                    </li>
+                                    <!--<li class="no-set-width">
+                                        <a href="${path}cement/warning/update.htm" class="theme-btn">设置</a>
+                                    </li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="tab-table-inner">
+                        <table id="datagrid" class="user-datagrid easyui-datagrid" style="height:100%;width:100%;"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="../../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+    <!--slimScroll-->
+    <script type="text/javascript" src="../../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+    <!-- Swiper JS -->
+    <script type="text/javascript" src="../../../thirdparty/Swiper-2.7.6/dist/idangerous.swiper.min.js"></script>
+
+    <script src="../js/layout.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        //nav slider
+        var curNavIndex = $(".nav .cur").index();
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto', //(number 或 'auto')设置slider容器能够同时显示的slides数量,默认1
+            mousewheelControl: true,
+            resizeReInit: true,
+            initialSlide :curNavIndex,//设定初始化时slide的索引 ,默认0
+            onFirstInit: function(swiper){
+                setcontrol();
+            },
+            onInit: function(swiper){
+                setcontrol();
+            }
+        });
+        $('.fi-arrow-left').on('click', function(e){
+            e.preventDefault();
+            swiper.swipePrev();
+        });
+        $('.fi-arrow-right').on('click', function(e){
+            e.preventDefault();
+            swiper.swipeNext();
+        });
+        function setcontrol(){
+            var liWidth = 0;
+            $('.nav li').each(function () {
+                liWidth += $(this).width();
+            })
+            if(liWidth >$('.swiper-container').width()){
+                $('.fi-arrow-right').show();
+                $('.fi-arrow-left').show();
+            }else{
+                $('.fi-arrow-right').hide();
+                $('.fi-arrow-left').hide();
+            }
+        };
+
+
+        //年,月,季度
+        $('#selectDate').change(function(){
+            var selected = $(this).children('option:selected');
+            var index = selected.index();
+            switch(index)
+            {
+                case 0:
+                    $('#quarter').hide();
+                    $("select[name=quarter]").empty();
+                    $('#month').hide();
+                    $("select[name=month]").empty();
+                    break;
+                case 1:
+                    $('#quarter').show();
+                    $('#month').hide();
+                    $("select[name=month]").empty();
+                    break;
+                case 2:
+                    $('#quarter').hide();
+                    $("select[name=quarter]").empty();
+                    $('#month').show();
+                    break;
+            };
+        });
+    </script>
+    <script type="text/javascript">
+        //datagrid
+        var datas = [
+            {"companyid":"company01","companyname":"瑞安市运输公司汽配分公司","codes":"12346662",'editDate':'-',"companyname2":"瑞安市运输公司汽配分公司"},
+            {"companyid":"company02","companyname":"温州市烟草公司瑞安分公司","codes":"95770125",'editDate':'-',"companyname2":"瑞安市运输公司汽配分公司"},
+            {"companyid":"company03","companyname":"乐清市益发石化销售公司","codes":"56887410",'editDate':'-',"companyname2":"瑞安市运输公司汽配分公司"},
+            {"companyid":"company04","companyname":"瑞安市红旗工业供销公司室内装璜材料门市部瑞安市红旗工业供销公司室内装璜材料门市部瑞安市红旗工业供销公司室内装璜材料门市部","codes":"35682211",'editDate':'-',"companyname2":"瑞安市运输公司汽配分公司"},
+            {"companyid":"company05","companyname":"平阳县联运公司麻步售票处","codes":"75462344",'editDate':'-',"companyname2":"瑞安市运输公司汽配分公司"},
+            {"companyid":"company06","companyname":"温州市汽运劳动服务公司第三营业处","codes":"55320185",'editDate':'-',"companyname2":"瑞安市运输公司汽配分公司"},
+            {"companyid":"company07","companyname":"温州市第三汽车运输公司综合服务站","codes":"46589902",'editDate':'-',"companyname2":"瑞安市运输公司汽配分公司"},
+            {"companyid":"company08","companyname":"泛华工程有限公司中南公司驻钱办事处","codes":"20149590",'editDate':'-',"companyname2":"瑞安市运输公司汽配分公司"},
+            {"companyid":"company09","companyname":"浙江中宇建设工程有限责任公司第二分公司","codes":"65258843",'editDate':'-',"companyname2":"瑞安市运输公司汽配分公司"},
+            {"companyid":"company10","companyname":"平阳县益发石化公司宏烈液化气供应店","codes":"85647701",'editDate':'-',"companyname2":"瑞安市运输公司汽配分公司"}
+
+        ];
+        $(function() {
+            $('#datagrid').datagrid({
+                //					url: "js/datagrid_data1.json",
+                data:datas,
+                columns: [
+                    [
+                        {field: 'companyid' , title: '企业ID',align:'center'},
+                        {field: 'companyname',title: '企业名称',width: 200,
+                            formatter: function(value) {
+                                return '<p title="'+ value + '">'+ value +'</p>'
+                            }
+                        },
+                        {field: 'codes',title: '统一信用社会代码',width: 100,align:'center'},
+                        {field: 'editDate', title: '最后修改时间',width: 120,align:'center'},
+                        {field: 'companyname2',title: '企业名称2',width: 200,halign:'center'}
+                    ]
+                ],
+                fitColumns: true,//True 就会自动扩大或缩小列的尺寸以适应表格的宽度并且防止水平滚动。
+                //nowrap:false,//当true时，显示数据在同一行上。默认true
+                striped:true,//斑马线
+                scrollbarSize : 0,//滚动条宽度
+                //					method: "get",
+                pageSize: 10,
+                rownumbers: true,
+                pagination: true,
+                collapsible: true,
+
+                singleSelect: false, // 复选
+                selectOnCheck: true,
+                checkOnSelect: true,
+
+                onLoadSuccess:function(){
+                    //序号列宽
+                    //序号列标题
+                    $(".datagrid-header-rownumber").text('序号').addClass('datagrid-cell');
+                },
+                queryParams: {}, // 查询条件
+            });
+        });
+    </script>
+</body>
+
+</html>

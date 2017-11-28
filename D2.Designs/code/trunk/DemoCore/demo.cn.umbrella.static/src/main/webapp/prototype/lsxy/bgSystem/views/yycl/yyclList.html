@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>异议处理</title>
+		<link rel="stylesheet" type="text/css" href="../../../../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" href="../../../../../thirdparty/artDialog/ui-dialog.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../../css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/layout.css">
+		<link rel="stylesheet" type="text/css" href="../../css/dataGrid.layout.css"/>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<!-- 头部 -->
+			<div class="nav-outer">
+				<div class="nav-inner">
+					<h1 class="logo"></h1>
+					<span class="fi-menu"></span>
+					<ul class="nav" id="nav">
+						<li>
+							<a href="###">
+								系统首页
+							</a>
+						</li>
+						<li class="cur">
+							<a href="../../dataDirectory.html">
+								数据管理系统
+							</a>
+						</li>
+						<li>
+							<a href="../sjwj.qy/qyDataMining.html">
+								数据挖掘系统
+							</a>
+						</li>
+						<li>
+							<a href="../zrr/zrrCredit.html">
+								数据查询系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								报告管理系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								行业应用系统
+							</a>
+						</li>
+						<li>
+							<a href="../cfgs/cfgs.html">
+								信用双公示
+							</a>
+						</li>
+						<li>
+							<a href="../xypj/gCreditRating.html">
+								信用评价
+							</a>
+						</li>
+					</ul>
+					<div class="overflow-hidden">
+						<ul class="top-info right">
+							<li class="relative">
+								<a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+								
+								<div class="user-control">
+									<a href="###">
+										<span class="fi-key"></span>
+										修改密码
+									</a>
+									<a href="###">
+										<span class="fi-envelop"></span>
+										消息
+									</a>
+									<a href="###">
+										<span class="fi-cog"></span>
+										设置
+									</a>
+								</div>
+							</li>
+							<li>
+								<a href="###">
+									<span class="fi-exit"></span>退出
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 侧边栏 -->
+			<div class="sub-nav-outer">
+				<div class="scroll">
+					<div class="sub-nav-inner">
+						<div>
+							<h4><a href="../../dataDirectory.html">数据归集目录</a></h4>
+							<h4><a href="###">数据上传管理</a></h4>
+							<h4 class="cur"><a href="yyclList.html">异议处理</a></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 主体 -->
+			<div class="main">
+				<form  method="post" id="searchForm">
+					<!-- 面包屑 -->
+					<div class="main-bread-crumb">
+						<div class="breadcrumb-hidden">
+							<span class="fi-breadcrumb left"></span>
+							<ol class="left">
+								<li>
+									<span>您的位置：</span>
+									<a href="###">数据管理系统</a>
+								</li>
+								<li>
+									<span class="breadcrumb-line breadcrumb-arrow"></span><a href="###">异议处理</a>
+								</li>
+							</ol>
+							<div class="right relative">
+								<p class="fi-search absolute"></p>
+								<input type="text" placeholder="输入关键字" class="search-input left" />
+							</div>
+						</div>
+					</div>
+					<!-- 搜索栏 -->
+					<div class="main-search">
+						<div class="overflow-hidden hide-li">
+							<ul>
+								<li>
+									<label class="query-label">异议单编号</label>
+									<input type="text">
+								</li>
+								<li>
+									<label class="query-label">提交账户</label>
+									<input type="text">
+								</li>
+								<li>
+									<label class="query-label">提交人</label>
+									<input type="text">
+								</li>
+								<li>
+									<label class="query-label">联系方式</label>
+									<input type="text">
+								</li>
+								<li>
+									<label class="query-label">异议报告版本</label>
+									<input type="text">
+								</li>
+								<li>
+									<label class="query-label">异议类型</label>
+									<select>
+										<option value="0">信息缺失</option>
+										<option value="1">信息异常</option>
+									</select>
+								</li>
+								<li>
+									<label class="query-label">提交时间</label>
+									<input type="text" class="date Wdate" />
+									<span>-</span>
+									<input type="text" class="date Wdate" />
+								</li>
+							</ul>
+								
+							<div class="search-btn-group left">
+								<input type="button" class="theme-btn" value="查询">
+							</div>
+						</div>
+						<div class="more-text clearfix">
+							<!--显示更多查询条件-->
+							<p><span class="fi-arrow-down"></span>显示更多查询条件</p>
+						</div>
+					</div>
+				</form>
+				<!-- 表格 -->
+				<div class="main-table-outer">
+					<table id="datagrid" class="user-datagrid easyui-datagrid clearfix" style="height:100%;width:100%;">
+						<tr>
+							<td></td>
+							<td>YY20160917201125</td>
+							<td>dengDLin</td>
+							<td>邓大林</td>
+							<td>130****4752</td>
+							<td>东华软件股份公司</td>
+							<td>6097****88408</td>
+							<td>信息缺失</td>
+							<td>2016-09-17 20:11</td>
+							<td>未审核</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>YY20160917155509</td>
+							<td>cyd</td>
+							<td>陈一丹</td>
+							<td>186****0977</td>
+							<td>温州有未众泰集团科技有限公司</td>
+							<td>6097****68402</td>
+							<td>信息异常</td>
+							<td>2016-09-17 15:55</td>
+							<td>已审核</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>YY20160917150011</td>
+							<td>liYudong</td>
+							<td>李禹东</td>
+							<td>188****5922</td>
+							<td>温州市众泰机械制造厂</td>
+							<td>6097****69813</td>
+							<td>信息异常</td>
+							<td>2016-09-17 15:00</td>
+							<td>已审核</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>YY20160916193421</td>
+							<td>zhouGR</td>
+							<td>周广仁</td>
+							<td>130****0982</td>
+							<td>乐清市众泰网络信息技术有限公司</td>
+							<td>6097****44590</td>
+							<td>信息异常</td>
+							<td>2016-09-16 19:34</td>
+							<td>已审核</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+		</div>
+
+		<script type="text/javascript" src="../../../../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+		
+		<!--dialog-->
+		<script type="text/javascript" src="../../../../../thirdparty/artDialog/dialog-min.js"></script>
+		<script type="text/javascript" src="../../../../../thirdparty/artDialog/dialog-plus-min.js"></script>
+		<!--slimScroll-->
+		<script type="text/javascript" src="../../../../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+		<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/layout.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				//my97
+				$(".date").click(function() {
+					WdatePicker()
+				});
+				$(".time").click(function() {
+					WdatePicker({
+						skin: 'whyGreen',
+						dateFmt: 'H:mm:ss'
+					});
+				});
+				//禁止输入
+				$(".time,.date").keyup(function() {
+					var thisVal = $(this).val();
+					$(this).val(thisVal.slice(0, thisVal.length - 2))
+				});
+			});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$('#datagrid').datagrid({
+//					url: "datagrid_data1.json",
+					columns: [
+						[
+							{field: 'id',title: '异议单编号',width: 18,sortable:true,align:"center"},
+							{field: 'submitUser',title: '提交账户',width: 12,sortable:true},
+							{field: 'SubmitOne ',title: '提交人',width: 10},
+							{field: 'tel',title: '联系方式',width: 15},
+							{field: 'subjectName  ',title: '被异议主体名称',width: 30},
+							{field: 'subjectCode',title: '被异议主体标识码',width: 18,align:"center"},
+							{field: 'ObjectionType  ',title: '异议类型',width: 10,align:"center"},
+							{field: 'submitTime',title: '提交时间',width: 20,align:"center"},
+							{field: 'reviewStatus',title: '审核状态',width: 10,align:"center"},
+						]
+					],
+					frozenColumns: [
+						[
+							{field: 'opt',title: "操作",width: 50,align:"center",
+								formatter: function(value, row, index) {
+									/*return '<a href="yyclDetail'+ (index + 1) +'.html">处理</a>'*/
+									if(index == 0){
+										return '<a href="yyclVerify.html">审核</a>'
+									}else{
+										return '<a href="yyclDetail'+ index +'.html">处理</a>'
+										/*return '<a href="yyclDetail1.html">处理</a>'*/
+									}
+									
+								}
+							}
+						]
+					],
+					fitColumns: true,//True 就会自动扩大或缩小列的尺寸以适应表格的宽度并且防止水平滚动。
+					striped:true,//斑马线
+					pageSize: 10,
+					rownumbers: true,
+					pagination: true,
+					collapsible: true,
+
+					singleSelect: false, // 复选
+					selectOnCheck: true,
+					checkOnSelect: true,
+
+					sortName: 'id,     submitUser',
+					sortOrder: 'desc   ,asc,asc   ',
+					queryParams: {} // 查询条件
+				});
+				
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>素材管理 - 图文</title>
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" href="../../thirdparty/artDialog/ui-dialog.css" />
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/ztree/css/zTreeStyle/zTreeStyle.css">
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/uploadify/uploadify.css" />
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/Swiper-2.7.6/dist/idangerous.swiper.css"/>
+		<link rel="stylesheet" type="text/css" href="css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- 头部 -->
+			<div class="nav-outer">
+				<div class="nav-inner">
+					<div class="nav-box">
+						<h1 class="logo"></h1>
+						<div class="nav-slider">
+							<!-- Add Arrows -->
+					        <div class="fi-arrow-left"></div>
+					        <div class="fi-arrow-right"></div>
+							<div class="swiper-container">
+						        <ul class="nav swiper-wrapper" id="nav">
+									<li class="swiper-slide">
+										<a href="index.html">
+											首页
+										</a>
+									</li>
+									<li class="cur swiper-slide">
+										<a href="report.html">
+											数据管理系统
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="###">
+											数据查询系统
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="###">
+											报告管理系统
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="###">
+											数据挖掘系统
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="###">
+											应用支撑系统
+										</a>
+									</li>
+								</ul>
+						        
+						    </div>
+						</div>
+						<div class="overflow-hidden">
+							<ul class="top-info right">
+								<li class="relative">
+									<a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+									
+									<div class="user-control">
+										<a href="###">
+											<span class="fi-key"></span>
+											修改密码
+										</a>
+										<a href="###">
+											<span class="fi-envelop"></span>
+											消息
+										</a>
+										<a href="###">
+											<span class="fi-cog"></span>
+											设置
+										</a>
+									</div>
+								</li>
+								<li>
+									<a href="###">
+										<span class="fi-exit"></span>退出
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			
+				<div class="vertical-shadow"></div>
+			</div>
+		
+			<!-- 侧边栏 -->
+			<div class="sub-nav-outer">
+				<div class="sub-nav-box clearfix">
+					<div class="left sub-nav-scroll">
+						<div class="scroll">
+							<div class="sub-nav-inner">
+								<div>
+									<h3><i class="fi-bell"></i>表格</h3>
+									<ul>
+										<li><a href="base.html">dG基础结构</a></li>
+										<li><a href="base2-noControlBtn.html">dG基础结构-无</a></li>
+										<li><a href="doubleTable.html">双表格1</a></li>
+										<li><a href="doubleTable2.html">双表格2</a></li>
+										<li><a href="tabTable.html">tab同页</a></li>
+										<li><a href="tabTable-differentPage1.html">tab不同页</a></li>
+										<li><a href="tabTable-nesting-mix.html">tab嵌套-同页不同页混合</a></li>
+										<li><a href="treeAndTable.html">树和表格</a></li>
+										<li><a href="treeAndTable2.html">树,表格,查询栏</a></li>
+										<li><a href="doubleTableAndForm.html">上:表单,下:并列表格</a></li>
+										<li><a href="treeAndTableAndForm.html">树\表格\表单</a></li>
+										<li><a href="pureTable.html">纯表格</a></li>
+									</ul>
+									<h4><a href="widget.html"><i class="fi-bell"></i>小部件</a></h4>
+									<h3><i class="fi-bell"></i>表单</h3>
+									<ul>
+										<li><a href="formAccordion.html">折叠表单</a></li>
+										<li><a href="formAccordion-iframe.html">折叠表单-iframe</a></li>
+										<li><a href="formModule.html">分块表单</a></li>
+										<li><a href="formSimple.html">基本表单</a></li>
+										<li><a href="formSimple-detail.html">基本表单-详情</a></li>
+										<li><a href="formEdit-detail.html">可编辑-详情</a></li>
+									</ul>
+									<h4><a href="searchAndCharts.html"><i class="fi-bell"></i>搜索和图表</a></h4>
+									<h3><i class="fi-bell"></i>数据归集目录</h3>
+									<ul>
+										<li><a href="dataDirectory.html">版本一</a></li>
+										<li><a href="dataDirectory2.html">版本二</a></li>
+									</ul>
+									<h3><i class="fi-bell"></i>数据挖掘</h3>
+									<ul>
+										<li><a href="dataMiningSearch1-v2.html">查询一</a></li>
+										<li><a href="dataMiningSearch2-v2.html">查询二</a></li>
+										<li><a href="dataMiningSearch3-v2.html">查询三</a></li>
+										<li><a href="dataMiningSearchDetail1.html">查询详情一</a></li>
+										<li><a href="dataMiningSearchDetail2.html">查询详情二</a></li>
+										<li><a href="dataMiningLayout1.html">布局-左一右上一右下二</a></li>
+										<li><a href="dataMiningLayout2.html">布局-左二右一</a></li>
+										<li><a href="dataMiningLayout3.html">布局-田字</a></li>
+										<li><a href="dataMiningLayout4.html">布局-查询栏下田字</a></li>
+										<li><a href="dataMiningLayout5.html">布局-左右</a></li>
+										<li><a href="dataMiningCharts1.html">关系图1</a></li>
+										<li><a href="dataMiningCharts2.html">关系图2</a></li>
+										<li><a href="dataMiningCharts3.html">树图</a></li>
+									</ul>
+									<h3><i class="fi-bell"></i>列表</h3>
+									<ul>
+										<li><a href="list.html">列表1</a></li>
+										<li><a href="list2.html">列表2</a></li>
+									</ul>
+									<h3 class="cur"><i class="fi-bell"></i>微信</h3>
+									<ul>
+										<li><a href="wxMaterialManagement-pic.html">素材管理-图片</a></li>
+										<li><a href="wxMaterialManagement-graphic.html" class="cur-a">素材管理-图文</a></li>
+									</ul>
+									<h4><a href="ranking.html"><i class="fi-bell"></i>排行</a></h4>
+									<h4><a href="icon.html"><i class="fi-bell"></i>图标</a></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="left horizontal-shadow relative nav-control">
+						<i class="absolute icon-arrow-left"></i>
+					</div>
+				</div>
+			</div>
+		
+			<!--内容-->
+			<div class="main">
+				<form id="searchForm1" name="searchForm1">
+					<!-- 面包屑 Start -->
+					<div class="main-bread-crumb">
+						<div class="breadcrumb-hidden">
+							<span class="fi-breadcrumb left"></span>
+							<ol class="left">
+								<li>
+									<span>您的位置：</span>
+									<a href="###">系统管理</a>
+								</li>
+								<li>
+									<span class="breadcrumb-line breadcrumb-arrow"></span>
+									<a href="###">微信公众号管理</a>
+								</li>
+							</ol>
+	
+						</div>
+					</div>
+					<!-- 面包屑 End -->
+				</form>
+				
+				<div class="main-table-outer tab-outer">
+					<div class="tab-title-box">
+						<div >
+							<a href="${path}wxUser/list.htm"><h3>用户</h3></a>
+						</div>
+						<div class="cur">
+							<a href="${path}wxMaterials/list.htm"><h3>素材</h3></a>
+						</div>
+						<div>
+							<a href="${path}msgText/list.htm"><h3>自动回复</h3></a>
+						</div>
+						<div>
+							<a href="${path}wxUser/userList.htm"><h3>消息发送</h3></a>
+						</div>
+						<div>
+							<a href="${path}wxUser/toInfoList.htm"><h3>消息群发</h3></a>
+						</div>
+						<div>
+							<a href="${path}wxMenu/list.htm"><h3>菜单</h3></a>
+						</div>
+						<div>
+							<a href="${path}wxGroup/list.htm"><h3>用户组</h3></a>
+						</div>
+					</div>
+					
+					<div class="tab-content block nested-tab">
+						<div class="tab-outer">
+							<div class="tab-title-box">
+								<div>
+									<a href="wxMaterialManagement-pic.html">图片</a>
+								</div>
+								<div class="cur">
+									<a href="javascript:void(0);">图文</a>
+								</div>
+							</div>
+							<div class="tab-content block">
+								<form id="wxForm">
+									<div class="tab-table-inner tab-form" style="bottom: 40px;">
+
+										<div class="graphic-box">
+
+											<div class="scroll">
+												<div class="wx-content-box clearfix">
+													<div class="wx-left">
+														<p class="left-title">图文列表</p>
+														<div class="wx-box state-checked" id="wxBox0">
+															<div class="img-box">
+																<img src="" class="wx-cover" style="display: none;" name="cover" id="cover0"/>
+																<p class="wx-title">标题</p>
+																<input type="hidden" class="wx-author"/>
+															</div>
+														</div>
+														<div class="add-content"><i class="fi-add"></i></div>
+													</div>
+
+													<div class="wx-right">
+														<div class="main-control">
+															<div class="btns-outer">
+																<a href="javascript:showPic(2);" class="theme-btn">图片选择</a>
+															</div>
+														</div>
+														<div class="input-box graphic-title">
+															<input type="text" id="title"/>
+															<span class="placeholder">请在这里输入标题</span>
+														</div>
+														<div class="input-box graphic-author">
+															<input type="text" id="author"/>
+															<span class="placeholder">请在这里输入作者</span>
+														</div>
+
+														<!-- 加载编辑器的容器 -->
+														<!--style给定宽度可以影响编辑器的最终宽度-->
+														<div class="graphic-text">
+															<!--<textarea id="myEditor"></textarea>-->
+															<script id="myEditor" name="content" type="text/plain"></script>
+														</div>
+
+														<div class="graphic-other-info">
+															<div class="row">
+																<input type="checkbox" name="originalLink" id="originalLink"/>
+																<label for="originalLink">原文链接</label>
+																<div class="input-box" style="display: none;">
+																	<input type="text" disabled id="originalLinkText" class="w-per100"/>
+																</div>
+															</div>
+															<div>
+																<div class="row">
+																	<a href="javascript:showPic(1);" class="theme-btn mg-l-10">图片选择</a>
+																</div>
+																<p class="row">
+																	<input type="text" disabled class="w-per100" id="picSrc"/>
+																</p>
+
+																<label>摘要</label><span>选填,如果不填写会默认抓取正文前54个字</span>
+																<textarea rows="5" class="w-per100" id="summary"></textarea>
+
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="btn-row fixed">
+												<input type="submit" class="theme-btn" value="保存" id="save" />
+												<input type="reset" name="reset" style="display: none;" id="reset"/>
+											</div>
+
+										</div>
+
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="../../thirdparty/jquery-easyui-1.4.5/locale/easyui-lang-zh_CN.js"></script>
+	<!--slimScroll-->
+	<script type="text/javascript" src="../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+	<!--dialog-->
+	<script type="text/javascript" src="../../thirdparty/artDialog/dialog-min.js"></script>
+	<script type="text/javascript" src="../../thirdparty/artDialog/dialog-plus-min.js"></script>
+	<!--ztree-->
+	<script type="text/javascript" src="../../thirdparty/ztree/js/jquery.ztree.core-3.5.min.js"></script>
+	<script type="text/javascript" src="../../thirdparty/ztree/js/jquery.ztree.excheck-3.5.min.js"></script>
+	<!--uploadify-->
+	<script type="text/javascript" src="../../thirdparty/uploadify/jquery.uploadify.min.js"></script>
+	<!-- Swiper JS -->
+	<script src="../../thirdparty/Swiper-2.7.6/dist/idangerous.swiper.min.js"></script>
+	<!-- ueditor配置文件 -->
+	<script type="text/javascript" src="js/ueditor/ueditor.config.js"></script>
+	<!-- ueditor编辑器源码文件 -->
+	<script type="text/javascript" src="js/ueditor/ueditor.all.min.js"></script>
+
+	<script type="text/javascript" src="js/common.js"></script>
+	<script src="js/layout.js" type="text/javascript" charset="utf-8"></script>
+	
+    <script type="text/javascript">
+        $(function(){
+            <!-- 实例化编辑器 -->
+        	var ue = UE.getEditor('myEditor', {
+			    toolbars: [
+			        [
+			         'undo', //撤销
+	        		 'redo', //重做
+	        		 'fontsize', //字号
+	        		 'blockquote', //引用
+	        		 'removeformat', //清除格式
+	        		 'formatmatch', //格式刷
+	        		],
+	        		[
+	        		 'bold',//加粗
+	        		 'italic',//斜体
+	        		 'underline',//下划线
+	        		 'forecolor', //字体颜色
+	        		 'backcolor', //背景色
+	        		 'indent', //首行缩进
+	        		 'justifyleft', //居左对齐
+			         'justifyright', //居右对齐
+			         'justifycenter', //居中对齐
+			         'justifyjustify', //两端对齐
+			         'rowspacingtop', //段前距
+	        		 'rowspacingbottom', //段后距
+	        		 'lineheight', //行间距
+	        		 'insertorderedlist', //有序列表
+	        		 'insertunorderedlist', //无序列表
+	        		 'imagenone', //默认
+			         'imageleft', //左浮动
+			         'imageright', //右浮动
+			         'imagecenter', //居中
+	        		]
+			    ],
+			    /*autoHeightEnabled: true,
+			    autoFloatEnabled: true,*/
+				initialFrameWidth:null,
+				initialFrameHeight :500,
+				enableAutoSave: false, //启用自动保存
+				maximumWords: 2000,//允许的最大字符数
+				wordCountMsg:'{#count} / {#leave}', //字数统计提示
+				enableContextMenu: false, //打开右键菜单功能
+				autoHeightEnabled: true
+			});
+	       ue.ready(function() {
+		       if ($(".wx-left").height() < $(".wx-right").height()){
+		           $(".wx-left").height($(".wx-right").height() - 2)
+		       }
+	       });
+        });
+		//滚动条
+       $('.graphic-box .scroll').slimScroll({
+       		height: '100%',
+		    alwaysVisible: true
+		});
+
+		//input的placeholder
+		if($('.input-box').length > 0){
+			$('.input-box input').each(function(){
+				var $this = $(this),val = $(this).val();
+				if(val.length > 0){
+					$this.siblings('.placeholder').hide(0);
+				}
+			});
+		};
+		$('.input-box input').on('input propertychange',function(){
+			var $this = $(this),
+				$id = $this.attr('id'),
+				val = $(this).val();
+			if(val.length > 0){
+				$this.siblings('.placeholder').hide(0);
+				if($id == 'title'){
+                    $('.state-checked .wx-title').text(val).attr('title',val);
+				}else if($id == 'author'){
+				    $('.state-checked .wx-author').val(val);
+				};
+			}else{
+				$this.siblings('.placeholder').show(0);
+			};
+		});
+
+		//原文链接 显示/隐藏
+		$("#originalLink").click(function(){
+			var $this = $(this);
+			if($this.is(':checked')){
+				$this.siblings('.input-box').show();
+				$('#originalLinkText').val(document.location.href);
+			} else {
+				$this.siblings('.input-box').hide();
+			};
+		});
+		/* boxId
+		 * boxTitle 单条图文标题
+		 * author 作者
+		 * boxCover 封面src
+		 * link 原文链接
+		 * linkShow 是否显示原文链接
+		 * wxContent 图文内容,
+		 * summary 摘要*/
+        var contentArr =[],
+            singleObj = {};
+		//添加至contentArr
+        function backupInfo(){
+            var _boxId = $('.state-checked').attr('id'),
+                _index = $('.state-checked').index() - 1;
+				_title = $('#title').val(),//标题
+                _author = $('#author').val(),//作者
+                _link = $('#originalLinkText').val(),//原文链接
+                _linkShow = $('#originalLink').is(':checked'),//是否有原文链接
+                _cover = $('#picSrc').val(),
+                _content =UE.getEditor('myEditor').getContent(),
+                _summary = $('#summary').val();
+            singleObj = {'boxId':_boxId,'boxTitle':_title,'author':_author,'boxCover':_cover,'link':_link,'linkShow':_linkShow,'wxContent':_content,'summary':_summary};
+           if(contentArr.length > 0){
+               var x = 0;
+               $.each(contentArr, function (index, obj) {
+                   if (_boxId == obj.boxId){
+                       x = 0;
+                       contentArr[index] = singleObj;
+                       return false;
+                   }else{
+                       x++;
+				   };
+               });
+               if( x != 0) contentArr.push(singleObj);
+		   } else {
+               contentArr.push(singleObj);
+		   };
+		};
+
+        //选择
+		function boxChange() {
+            var _boxId = $('.state-checked').attr('id'),//选中box的id
+                _boxIndex = $('.state-checked').index() - 1,//选中box的index
+                _title = contentArr[_boxIndex].boxTitle,//标题
+                _author = contentArr[_boxIndex].author,//作者
+                _link = contentArr[_boxIndex].link,//原文链接
+                _linkShow = contentArr[_boxIndex].linkShow,//是否有原文链接
+                _cover = contentArr[_boxIndex].boxCover,//封面
+                _content = contentArr[_boxIndex].wxContent,//正文
+                _summary =contentArr[_boxIndex].summary;//摘要
+            $('#title').val(_title);
+            if(_title != ''){
+                $('#title').siblings('.placeholder').hide();
+            } else {
+                $('#title').siblings('.placeholder').show();
+            };
+            $('#author').val(_author);
+            if(_author != ''){
+                $('#author').siblings('.placeholder').hide();
+            } else {
+                $('#author').siblings('.placeholder').show();
+            };
+            $('#originalLinkText').val(_link);
+            $('#originalLink').prop('checked',_linkShow);
+            if(_linkShow == true){
+                $('#originalLink').siblings('.input-box').show();
+            } else {
+                $('#originalLink').siblings('.input-box').hide();
+            };
+            $('#picSrc').val(_cover);
+            UE.getEditor('myEditor').setContent(_content);
+            $('#summary').val(_summary);
+        };
+        //重置
+		function contentRest() {
+            UE.getEditor('myEditor').execCommand('cleardoc');
+            $('#originalLink').siblings('.input-box').hide();
+            $('#reset').trigger("click");
+            $('.placeholder').show();
+        };
+		//box相关点击
+        $(document).click(function(e){
+            e = window.event || e; // 兼容IE7
+            _target = $(e.srcElement || e.target);
+            var $this = $(_target);
+            if($(".wx-left .wx-box").length > 0){
+                if ($this.is(".wx-left > .wx-box") ) {
+                    //box选择:点击wx-box
+                    var $id = $('.state-checked').attr('id');
+					if ($this.attr('id') != $id) {
+						backupInfo();
+						$this.addClass('state-checked').siblings('.wx-box').removeClass('state-checked');
+						boxChange();
+					};
+                } else if($this.is(".wx-title") || $this.is(".img-box") || $this.is(".img-box img")) {
+                    //box选择:点击wx-box里的其他标签
+                    var $id = $('.state-checked').attr('id'),
+						$parent = $this.parents('.wx-box');
+                    if ($parent.attr('id') != $id) {
+                        backupInfo();
+                        $parent.addClass('state-checked').siblings('.wx-box').removeClass('state-checked');
+                        boxChange();
+                    };
+				} else if ($this.is('.fi-delete')){
+                    //box删除
+                    var copyArr = [],
+                        $parent = $this.parents('.other-box'),
+                        _index = $parent.index() - 1;
+                    backupInfo();
+                    $.each(contentArr, function (index, obj) {
+                        var newIndex = index - 1;
+                        if (index != _index) {
+                            if(index < _index){
+                                copyArr.push(obj)
+                            } else {
+                                contentArr[index].boxId = 'wxBox' + newIndex;
+                                copyArr.push(obj);
+                                $('.wx-left .wx-box').eq(newIndex).attr('id','wxBox' + newIndex);
+                                $('.wx-left .wx-box').eq(newIndex).find('.wx-cover').attr('id', 'cover' + newIndex);
+                            };
+                        } else {
+                            if($parent.hasClass('state-checked')){
+                            	$parent.removeClass('state-checked').prev('.wx-box').addClass('state-checked');
+                            };
+                            $parent.remove();
+                        };
+                    });
+                    contentArr = copyArr;
+                    if ($('.add-content').not(':visible')) {
+                        $('.add-content').show();
+                    };
+                }
+            }
+        });
+		//增加box
+        var n = 1;
+		$(".add-content").click(function(){
+            backupInfo();
+            if ($('.wx-left .wx-box').length <= 7) {
+                var html = '<div class="wx-box other-box state-checked" id="wxBox' + n + '">'
+                    + '<p class="left wx-title">标题</p>'
+                    + '<div class="right img-box"><img src="" class="wx-cover" style="display: none;" name="cover" id="cover' + n + '"/></div>'
+                    + '<div class="wx-control"><span class="fi-delete"></span></div>'
+                    + '<input type="hidden" class="wx-author"/>'
+                    + '</div>';
+                $(this).siblings('.wx-box').removeClass('state-checked');
+                $(this).before(html);
+                contentRest();
+                if ($('.wx-left .wx-box').length == 8) {
+                    $(this).hide();
+                } else {
+                    n++;
+				};
+            }else {
+                $(this).hide();
+			};
+            //other box hover
+            $('.other-box,.other-box *').hover(function () {
+                $(this).find('.wx-control').animate({
+                    'height': '28px',
+                    'line-height': '28px'
+                })
+            },function () {
+                $(this).find('.wx-control').animate({
+                    'height': 0,
+                    'line-height': 0
+                });
+            });
+		});
+		//正文图片
+        function onSelectPic(input) {
+            var obj_id = input.id;
+            var imageSrc = input.url;
+            UE.getEditor('myEditor').execCommand('inserthtml', '<img src=' + imageSrc +' />')
+        };
+
+        //预览封面
+        function onSelectCover(input) {
+            var obj_id = input.id;
+            var imageSrc = input.url;
+            var activeIndex = $('.state-checked').index() - 1;
+           //$("#"+divId+"1").val(obj_id);
+            document.getElementById('picSrc').value = imageSrc;
+            $('#cover' + activeIndex).attr('src',imageSrc).show();
+        };
+        //选择图片弹窗
+        function showPic(parameter){
+            $.GD.dialog({
+                id: 'showPicDialog',
+                url: "wxMaterialManagement-graphicDetail-layout1-2-pic.html",
+                title: "信用数据维护",
+               // data: {},// 往弹窗页面传递的参数
+                width: '715px',
+                height: '550px',
+                onclose: function(params) {
+                    if(params) {
+                        if(parameter == "1"){
+                            onSelectCover(params);
+                        }else{
+                            onSelectPic(params)
+                        };
+                    };
+                }
+            });
+        };
+
+
+
+    </script>
+	
+	<script type="text/javascript">
+        //nav slider
+        var curNavIndex = $(".nav .cur").index();
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto', //(number 或 'auto')设置slider容器能够同时显示的slides数量,默认1
+            mousewheelControl: true,
+            resizeReInit: true,
+            initialSlide :curNavIndex,//设定初始化时slide的索引 ,默认0
+            onFirstInit: function(swiper){
+                setcontrol();
+            },
+            onInit: function(swiper){
+                setcontrol();
+            }
+        });
+        $('.fi-arrow-left').on('click', function(e){
+            e.preventDefault();
+            swiper.swipePrev();
+        });
+        $('.fi-arrow-right').on('click', function(e){
+            e.preventDefault();
+            swiper.swipeNext();
+        });
+        function setcontrol(){
+            var liWidth = 0;
+            $('.nav li').each(function () {
+                liWidth += $(this).width();
+            })
+            if(liWidth >$('.swiper-container').width()){
+                $('.fi-arrow-right').show();
+                $('.fi-arrow-left').show();
+            }else{
+                $('.fi-arrow-right').hide();
+                $('.fi-arrow-left').hide();
+            }
+        };
+	</script>
+	
+	<script type="text/javascript">
+		/**
+		 * 展示微信图文列表
+		 */
+		function showNewsList() {
+			var content = {
+				"articles" : [
+						{
+							"content" : "11111",
+							"author" : "12",
+							"title" : "111",
+							"thumb_media_id" : "yt44HjQkmJj8THXiujOsXwebn-UhbS2618cAzBt6eMA",
+							"content_source_url" : "www.baidu.com",
+							"show_cover_pic" : 1,
+							"digest" : "111"
+						},
+						{
+							"content" : "11111fsff",
+							"author" : "fsfesf",
+							"title" : "fwwfw",
+							"thumb_media_id" : "yt44HjQkmJj8THXiujOsXzOkJchFMwQpmySEObKL7uE",
+							"content_source_url" : "www.baidu.com",
+							"show_cover_pic" : 0,
+							"digest" : "fsfs"
+						} ]
+			};
+			var html = createHtmlByContent(content);
+			$("#masonry").empty();
+			$("#masonry").append(html);
+			$("#masonry").append(html);
+			$("#masonry").append(html);
+			$("#masonry").append(html);
+			bindClick();
+		}
+		/**
+		 *根据图文素材的内容生成展示的html
+		 */
+		function createHtmlByContent(content) {
+			var html = '';
+			html += '<div class="wx-box">';
+			for (i = 0; i < content.articles.length; i++) {
+				var article = content.articles[i];
+				var thumb_media_id = article.thumb_media_id;
+				var imageUrl = imageMap[thumb_media_id];
+				if (i == 0) {//第一条图文
+					html += '<div class="img-box">';
+					html += '<img src="'
+							+ imageSuffix
+							+ imageUrl+'"/>';
+					html += '<p>'+article.title+'</p>';
+					html += '</div>';
+				} else {
+					//后续图文以li菜单显示
+					if (i == 1) {//只在第二条图文添加菜单标签
+						html += '<ul>';
+					}
+					html += '<li>';
+					html += '<a href="###" class="left">' + article.title
+							+ '</a>';
+					html += '<img src="'
+							+ imageSuffix
+							+ imageUrl+'"/>';
+					html += '</li>';
+				}
+			}
+			if (content.articles.length > 1) {
+				html += '</ul>';
+			}
+			html += '</div>';
+			return html;
+		}
+		/**
+		 *绑定图文列表选中效果
+		 */
+		function bindClick(){
+			$('.weixin-outer').masonry({
+				// options
+				itemSelector : '.wx-box',
+				percentPosition : true,
+				gutter : 10
+			});
+			$(".wx-box").click(
+				function() {
+					$(".weixin-outer").find('.bg').remove();
+					$(".weixin-outer").find('.wx-box').removeClass('cur');
+					$(this).addClass('cur').append(
+							'<div class="bg"><i class="checked-icon"></i></div>');
+				});
+			}
+	</script>
+</html>

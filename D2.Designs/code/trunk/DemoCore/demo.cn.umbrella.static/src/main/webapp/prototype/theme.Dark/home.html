@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="css/icon.font.css"/>
+	<link rel="stylesheet" type="text/css" href="css/home.layout.css"/>
+</head>
+<body>
+	<div class="wrapper home">
+		<!-- 头部 -->
+		<div class="nav-outer">
+			<div class="nav-inner">
+				<div class="nav-box">
+					<h1 class="logo"></h1>
+					<ul class="nav" id="nav">
+						<li>
+							<a href="index.html">
+								首页
+							</a>
+							
+						</li>
+						<li class="cur">
+							<a href="report.html">
+								数据管理系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								数据查询系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								报告管理系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								数据挖掘系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								应用支撑系统
+							</a>
+						</li>
+					</ul>
+					<div class="overflow-hidden">
+						<ul class="top-info right">
+							<li class="relative">
+								<a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+								
+								<div class="user-control">
+									<a href="###">
+										<span class="fi-key"></span>
+										修改密码
+									</a>
+									<a href="###">
+										<span class="fi-envelop"></span>
+										消息
+									</a>
+									<a href="###">
+										<span class="fi-cog"></span>
+										设置
+									</a>
+								</div>
+							</li>
+							<li>
+								<a href="###">
+									<span class="fi-exit"></span>退出
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		
+			<div class="vertical-shadow"></div>
+		</div>
+		<!-- 主体 -->
+		<div class="main">
+			<div class="chart-outer">
+				<div class="chart-fl">
+					<div class="chart-top">
+						<div class="block-box overflow-auto w-per100 h-per100 charts-box">
+							<div id="pie1" style="width:100%;"></div>
+						</div>
+					</div>
+					<div class="chart-bottom">
+						<a href="###" class="level-box level1">
+							<h5><span>一级</span><span>预警</span></h5>
+							<p>
+								<i class="fi-company"></i><span>100</span>
+								<i class="fi-dm-natural-man"></i><span>2000</span>
+							</p>
+						</a>
+						<a href="###" class="level-box level2">
+							<h5><span>二级</span><span>预警</span></h5>
+							<p>
+								<i class="fi-company"></i><span>100</span>
+								<i class="fi-dm-natural-man"></i><span>2000</span>
+							</p>
+						</a>
+						<a href="###" class="level-box level3">
+							<h5><span>三级</span><span>预警</span></h5>
+							<p>
+								<i class="fi-company"></i><span>100</span>
+								<i class="fi-dm-natural-man"></i><span>2000</span>
+							</p>
+						</a>
+					</div>
+				</div>
+				<div class="chart-fc">
+					 
+					 <div class="w-per100 h-per100 charts-box">
+							<div id="wzMap" style="width:100%;"></div>
+					</div>
+				</div>
+				<div class="chart-fr">
+					<div class="chart-top">
+						<div class="block-box overflow-auto w-per100 h-per100 charts-box">
+							<div id="pie2" style="width:100%;"></div>
+						</div>
+					</div>
+					<div class="chart-bottom">
+						<div class="home-list-left">
+							<h6>企业</h6>
+							<ul>
+								<li><a href="###">杭州六翼科技有限公司</a></li>
+								<li><a href="###">杭州六翼科技有限公司</a></li>
+								<li><a href="###">杭州六翼科技有限公司杭州六翼科技有限公司</a></li>
+								<li><a href="###">杭州六翼科技有限公司</a></li>
+								<li><a href="###">杭州六翼科技有限公司</a></li>
+								<li><a href="###">杭州六翼科技有限公司</a></li>
+								<li><a href="###">杭州六翼科技有限公司</a></li>
+								<li><a href="###">杭州六翼科技有限公司</a></li>
+								<li><a href="###">杭州六翼科技有限公司</a></li>
+								<li><a href="###">杭州六翼科技有限公司</a></li>
+							</ul>
+						</div>
+						<div class="home-list-right">
+							<h6>自然人</h6>
+							<ul>
+								<li><a href="###">张三</a></li>
+								<li><a href="###">张三</a></li>
+								<li><a href="###">张三</a></li>
+								<li><a href="###">张三</a></li>
+								<li><a href="###">张三</a></li>
+								<li><a href="###">张三张张</a></li>
+								<li><a href="###">张三</a></li>
+								<li><a href="###">张三</a></li>
+								<li><a href="###">张三</a></li>
+								<li><a href="###">张三</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 尾部 -->
+		<div class="footer-outer">
+			<div class="footer-inner">
+				<div class="foot-infos">
+					<p>技术支持：广多科技有限公司</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+	<!--echarts-->
+	<script type="text/javascript" src="../../thirdparty/echarts-3.2.3/echarts.js"></script>
+	<script type="text/javascript">
+		var pie1 = echarts.init(document.getElementById('pie1'));
+		var option1 = {
+		    title : {
+		        text: '信用评估企业',
+		        x:'center',
+		        y : 'bottom'
+		    },
+		    tooltip : {
+		        trigger: 'item',
+		        formatter: "{a} <br/>{b} : {c} ({d}%)"
+		    },
+		    legend: {
+		        x : 'center',
+		        data:['A','B','C','D'],
+		        itemWidth: 16,//矩形宽度,默认25
+		        itemHeight: 16, //矩形高度,默认14
+		        textStyle: {
+                    fontSize: 14 //标签字号
+                }
+		    },
+		    calculable : true,
+		    series : [
+		        {
+		            type:'pie',
+//		            radius : [40, '75%'],
+		            // center : ['75%', '50%'],
+//		            roseType : 'area',
+		            data:[
+		                {value:10, name:'A'},
+		                {value:5, name:'B'},
+		                {value:15, name:'C'},
+		                {value:25, name:'D'},
+		            ],
+		            label: {
+		                normal: {
+		                    textStyle: {
+		                        color: '#445e6d',//标签颜色
+		                        fontSize: 18 //标签字号
+		                    },
+		                    position: 'inner'
+		                }
+		            },
+		            labelLine: {
+		                normal: {
+		                    lineStyle: {
+		                        color: '#445e6d',//标签线颜色
+		                    }
+		                }
+		            },
+		            itemStyle: {
+		                normal: {
+		                    color: function(params) {
+		                        // build a color map as your need.
+		                        var colorList = [
+		                          '#ffc851','#f7f0d6','#bfbfbf','#39dcf4','#0570a6','#fff35f'
+		                        ];
+		                        return colorList[params.dataIndex]
+		                    }
+		                }
+		            }
+		        }
+		    ]
+		};
+		pie1.setOption(option1);
+		
+		var pie2 = echarts.init(document.getElementById('pie2'));
+		var option2 = {
+		    title : {
+		        text: '信用评估自然人',
+		        x:'center',
+		        y : 'bottom'
+		    },
+		    tooltip : {
+		        trigger: 'item',
+		        formatter: "{a} <br/>{b} : {c} ({d}%)"
+		    },
+		    legend: {
+		        x : 'center',
+		        data:['A','B','C','D'],
+		        itemWidth: 16,//矩形宽度,默认25
+		        itemHeight: 16, //矩形高度,默认14
+		        textStyle: {
+                    fontSize: 14 //标签字号
+                }
+		    },
+		    calculable : true,
+		    series : [
+		        {
+		            type:'pie',
+//		            radius : [40, '75%'],
+		            // center : ['75%', '50%'],
+//		            roseType : 'area',
+		            data:[
+		                {value:20, name:'A'},
+		                {value:15, name:'B'},
+		                {value:1, name:'C'},
+		                {value:11, name:'D'},
+		            ],
+		            label: {
+		                normal: {
+		                    textStyle: {
+		                        color: '#445e6d',//标签颜色
+		                        fontSize: 18 //标签字号
+		                    },
+		                    position: 'inner'
+		                }
+		            },
+		            labelLine: {
+		                normal: {
+		                    lineStyle: {
+		                        color: '#445e6d',//标签线颜色
+		                    }
+		                }
+		            },
+		            itemStyle: {
+		                normal: {
+		                    color: function(params) {
+		                        // build a color map as your need.
+		                        var colorList = [
+		                          '#ffc851','#f7f0d6','#bfbfbf','#39dcf4','#0570a6','#fff35f'
+		                        ];
+		                        return colorList[params.dataIndex]
+		                    }
+		                }
+		            }
+		        }
+		    ]
+		};
+		pie2.setOption(option2);
+		
+		
+		var map1 = echarts.init(document.getElementById('wzMap'));
+		$.get('js/wenzhou.json', function (mapData) {
+			echarts.registerMap('wenzhou', mapData);
+			var option3 = {
+				title: {
+					text: null
+				},
+				tooltip: {
+					trigger: 'item'
+				},
+				legend: {
+					show:false,//是否显示,默认true
+					left: 'right',
+					data: ['数量']
+				},
+				visualMap: {
+					min: 800,
+					max: 50000,
+					text: ['High', 'Low'],
+					realtime: false,
+					calculable: false,
+					inRange: {
+						color: ['#b3dcf2', '#2899c1', '#0d7fb3', '#56a7d2', '#1c7ab8', ]
+					},
+					show:false
+				},
+				series: [{
+					name: '数量',
+					type: 'map',
+					map: 'wenzhou',
+					label: {
+						normal: {
+							show: true,
+						},
+						emphasis: {
+							label: {
+								show: true
+							},
+							areaColor: '#fdba37',
+						}
+					}
+				}],
+			};
+			map1.setOption(option3);
+		});
+		
+		
+		//下拉显示
+		function slideShow(){
+			$('.user-control').css({
+				'top':$(".fi-arrow-down").parent('a').offset().top + 10 + $(".fi-arrow-down").parent('a').outerHeight(),
+				'left':$(".fi-arrow-down").parent('a').offset().left + 30 + 'px'
+			}).slideDown().show();
+		};
+		//下拉隐藏
+		function slideHide(){
+			$('.user-control').fadeOut("fast");
+		};
+		//图表大小
+		function chartWH(){
+			$(".charts-box div[id]").each(function(){
+				$(this).css({
+					"width":$(this).closest('.charts-box').width() - 30,"height":$(this).closest('.charts-box').height() - 10
+				})
+			})
+		};
+		$(function() {
+			//头部用户信息下拉
+			$('.top-info .fi-arrow-down').parent('a').click(function(){
+				slideShow();
+			});
+			$('.user-control').mouseleave(function() {
+				slideHide();
+			});
+			$("body").bind("click",function(evt){ 
+				if($(evt.target).parents(".top-info").length==0) slideHide();
+			});
+			//图表大小
+			chartWH();
+			//图表自适应
+			pie1.resize();
+			pie2.resize();
+			map1.resize();
+		});
+		//监听窗体大小变更事件
+		$(window).resize(function(){
+			chartWH();
+			pie1.resize(); 
+			pie2.resize();
+			map1.resize();
+		});
+	</script>
+</body>
+</html>

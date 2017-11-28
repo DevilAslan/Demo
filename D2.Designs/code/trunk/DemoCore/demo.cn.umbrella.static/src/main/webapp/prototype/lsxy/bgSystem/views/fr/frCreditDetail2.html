@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>法人信用查询</title>
+	<link rel="stylesheet" type="text/css" href="../../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../../css/icon.font.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/layout.css">
+</head>
+<body>
+	<div class="wrapper">
+		<!-- 头部 -->
+		<div class="nav-outer">
+			<div class="nav-inner">
+				<h1 class="logo"></h1>
+				<span class="fi-menu"></span>
+				<ul class="nav" id="nav">
+					<li>
+						<a href="###">
+							系统首页
+						</a>
+					</li>
+					<li>
+						<a href="../../dataDirectory.html">
+							数据管理系统
+						</a>
+					</li>
+					<li>
+						<a href="../sjwj.qy/qyDataMining.html">
+							数据挖掘系统
+						</a>
+					</li>
+					<li class="cur">
+						<a href="../zrr/zrrCredit.html">
+							数据查询系统
+						</a>
+					</li>
+					<li>
+						<a href="###">
+							报告管理系统
+						</a>
+					</li>
+					<li>
+						<a href="###">
+							行业应用系统
+						</a>
+					</li>
+					<li>
+						<a href="../cfgs/cfgs.html">
+							信用双公示
+						</a>
+					</li>
+					<li>
+						<a href="../xypj/gCreditRating.html">
+							信用评价
+						</a>
+					</li>
+				</ul>
+				<div class="overflow-hidden">
+					<ul class="top-info right">
+						<li class="relative">
+							<a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+							
+							<div class="user-control">
+								<a href="###">
+									<span class="fi-key"></span>
+									修改密码
+								</a>
+								<a href="###">
+									<span class="fi-envelop"></span>
+									消息
+								</a>
+								<a href="###">
+									<span class="fi-cog"></span>
+									设置
+								</a>
+							</div>
+						</li>
+						<li>
+							<a href="###">
+								<span class="fi-exit"></span>退出
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 侧边栏 -->
+		<div class="sub-nav-outer">
+			<div class="scroll">
+				<div class="sub-nav-inner">
+					<div>
+						<h4 ><a href="../zrr/zrrCredit.html">自然人综合查询</a></h4>
+						<h4 class="cur"><a href="frCredit.html">法人综合查询</a></h4>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 主体 -->
+		<div class="main">
+			<!-- 面包屑 -->
+			<div class="main-bread-crumb">
+				<div class="breadcrumb-hidden">
+					<span class="fi-breadcrumb left"></span>
+					<ol class="left">
+						<li>
+							<span>您的位置：</span>
+							<a href="###">数据查询系统</a>
+						</li>
+						<li>
+							<span class="breadcrumb-line breadcrumb-arrow"></span><a href="###">法人信用详情</a>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!-- 内容 -->
+	    	<div class="main-table-outer tab-outer" id="tab">
+				<div class="tab-title-box">
+					<div class="cur" id="info1" onclick="setContentTab('info',1,12)">
+						<h3>基本信息</h3>
+					</div>
+					<div id="info2" onclick="setContentTab('info',2,12)">
+						<h3>股东信息</h3>
+					</div>
+					<div id="info3" onclick="setContentTab('info',3,12)">
+						<h3>资质信息</h3>
+					</div>
+					<div id="info4" onclick="setContentTab('info',4,12)">
+						<h3>荣誉信息</h3>
+					</div>
+					<div id="info5" onclick="setContentTab('info',5,12)">
+						<h3>欠费信息</h3>
+					</div>
+					<div id="info6" onclick="setContentTab('info',6,12)">
+						<h3>知识产权信息</h3>
+					</div>
+					<div id="info7" onclick="setContentTab('info',7,12)">
+						<h3>行政处罚信息</h3>
+					</div>
+					<div id="info8" onclick="setContentTab('info',8,12)">
+						<h3>生效判决信息</h3>
+					</div>
+					<div id="info9" onclick="setContentTab('info',9,12)">
+						<h3>年报信息</h3>
+					</div>
+					<div id="info10" onclick="setContentTab('info',10,12)">
+						<h3>分类监管</h3>
+					</div>
+					<div id="info11" onclick="setContentTab('info',11,12)">
+						<h3>分支机构</h3>
+					</div>
+					<div id="info12" onclick="setContentTab('info',12,12)">
+						<h3>质量监督抽查</h3>
+					</div>
+					
+					
+				</div>
+				<div class="tab-content block" id="con_info_1">
+					<div class="tab-table-inner have-btn">
+						<div class="form-inner relative overflow-auto">
+							<div class="form-content absolute">
+								<div class="form-table">
+									<table>
+										<colgroup>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 35%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 35%;"/>
+										</colgroup>
+										<tr>
+											<th>
+												<label class="query-label">企业名称</label>
+											</th>
+											<td>
+												<p>庞蓓有限公司</p>
+											</td>
+											<th>
+												<label class="query-label">组织机构代码</label>
+											</th>
+											<td>
+												<p>77650410-1</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">统一信用代码</label>
+											</th>
+											<td>
+												<p>9143452063JQ5B</p>
+											</td>
+											<th>
+												<label class="query-label">工商注册号</label>
+											</th>
+											<td>
+												<p>33012910212112</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">登记机关</label>
+											</th>
+											<td>
+												<p>温州市工商局</p>
+											</td>
+											<th>
+												<label class="query-label">经营状态</label>
+											</th>
+											<td>
+												<p>登记</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">法定代表人</label>
+											</th>
+											<td>
+												<p>陈景润</p>
+											</td>
+											<th>
+												<label class="query-label">注册资本</label>
+											</th>
+											<td>
+												<p>7781万元人民币</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">注册时间</label>
+											</th>
+											<td>
+												<p>2012-09-12</p>
+											</td>
+											<th>
+												<label class="query-label">企业类型</label>
+											</th>
+											<td>
+												<p>有限责任公司</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">经营期限</label>
+											</th>
+											<td>
+												<p>2016-1-13至2018-1-13</p>
+											</td>
+											<th>
+												<label class="query-label">经营范围</label>
+											</th>
+											<td>
+												<p>— —</p>
+											</td>
+										</tr>
+										
+										<tr>
+											<th >
+												<label class="query-label">注册地址</label>
+											</th>
+											<td colspan="3">
+												<p>浙江省温州市鹿城区秀山路126号发展大楼8705室</p>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-content" id="con_info_2">
+					<div class="tab-table-inner have-btn">
+						<div class="form-inner relative overflow-auto">
+							<div class="form-content absolute">
+								<div class="form-table">
+									<table>
+										<colgroup>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 15%;"/>
+										</colgroup>
+										<tr>
+											<th>
+												<label class="query-label">股东类型</label>
+											</th>
+											<td>
+												<p>自然人</p>
+											</td>
+											<th>
+												<label class="query-label">姓名</label>
+											</th>
+											<td>
+												<p>陈晨</p>
+											</td>
+												<th>
+												<label class="query-label">注册资金</label>
+											</th>
+											<td>
+												<p>200万人民币</p>
+											</td>
+											<th>
+												<label class="query-label">注册时间</label>
+											</th>
+											<td>
+												<p>2014-3-14</p>
+											</td>
+											
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">股东类型</label>
+											</th>
+											<td>
+												<p>自然人</p>
+											</td>
+											<th>
+												<label class="query-label">姓名</label>
+											</th>
+											<td>
+												<p>陈晨</p>
+											</td>
+												<th>
+												<label class="query-label">注册资金</label>
+											</th>
+											<td>
+												<p>200万人民币</p>
+											</td>
+											<th>
+												<label class="query-label">注册时间</label>
+											</th>
+											<td>
+												<p>2014-3-14</p>
+											</td>
+											
+										</tr><tr>
+											<th>
+												<label class="query-label">股东类型</label>
+											</th>
+											<td>
+												<p>自然人</p>
+											</td>
+											<th>
+												<label class="query-label">姓名</label>
+											</th>
+											<td>
+												<p>陈晨</p>
+											</td>
+												<th>
+												<label class="query-label">注册资金</label>
+											</th>
+											<td>
+												<p>200万人民币</p>
+											</td>
+											<th>
+												<label class="query-label">注册时间</label>
+											</th>
+											<td>
+												<p>2014-3-14</p>
+											</td>
+											
+										</tr><tr>
+											<th>
+												<label class="query-label">股东类型</label>
+											</th>
+											<td>
+												<p>自然人</p>
+											</td>
+											<th>
+												<label class="query-label">姓名</label>
+											</th>
+											<td>
+												<p>陈晨</p>
+											</td>
+												<th>
+												<label class="query-label">注册资金</label>
+											</th>
+											<td>
+												<p>200万人民币</p>
+											</td>
+											<th>
+												<label class="query-label">注册时间</label>
+											</th>
+											<td>
+												<p>2014-3-14</p>
+											</td>
+											
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-content" id="con_info_3">
+					<div class="tab-table-inner have-btn">
+						<div class="form-inner relative overflow-auto">
+							<div class="form-content absolute">
+								<div class="form-table">
+									<table>
+										<colgroup>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 35%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 35%;"/>
+										</colgroup>
+										<tr>
+											<th>
+												<label class="query-label">资质名称</label>
+											</th>
+											<td>
+												<p>互联网信息服务经营许可证</p>
+											</td>
+											<th>
+												<label class="query-label">证书编号</label>
+											</th>
+											<td>
+												<p>8273****7892</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">有限期</label>
+											</th>
+											<td>
+												<p>2016-09-12 至 2020-09-12</p>
+											</td>
+											<th>
+												<label class="query-label">认定时间</label>
+											</th>
+											<td>
+												<p>2016-09-12</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">核发单位</label>
+											</th>
+											<td colspan="3">
+												<p>温州市劳动局</p>
+											</td>
+										</tr>
+									</table>
+									<table>
+										<colgroup>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 35%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 35%;"/>
+										</colgroup>
+										<tr>
+											<th>
+												<label class="query-label">资质名称</label>
+											</th>
+											<td>
+												<p>互联网经营许可证</p>
+											</td>
+											<th>
+												<label class="query-label">证书编号</label>
+											</th>
+											<td>
+												<p>3991****0158</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">有限期</label>
+											</th>
+											<td>
+												<p>2014-07-12 至 2018-07-12</p>
+											</td>
+											<th>
+												<label class="query-label">认定时间</label>
+											</th>
+											<td>
+												<p>2014-07-12</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">核发单位</label>
+											</th>
+											<td colspan="3">
+												<p>中华人民共和国人力资源和社会保障部</p>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-content" id="con_info_4">
+					<div class="tab-table-inner have-btn">
+						<div class="form-inner relative overflow-auto">
+							<div class="form-content absolute">
+								<div class="form-table">
+								
+									<table>
+										<colgroup>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 35%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 35%;"/>
+											
+										</colgroup>
+										<tr>
+											<th>
+												<label class="query-label">荣誉编号</label>
+											</th>
+											<td>
+												<p>20160918第123号</p>
+											</td>
+											<th>
+												<label class="query-label">认定时间</label>
+											</th>
+											<td>
+												<p>2016-07-19</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">颁发机关</label>
+											</th>
+											<td>
+												<p>温州市信用办</p>
+											</td>
+											<th>
+												<label class="query-label">荣誉名称</label>
+											</th>
+											<td>
+												<p>全国互联网100强企业</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">荣誉内容</label>
+											</th>
+											<td colspan="3">
+												<p>——</p>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-content" id="con_info_5">
+					<div class="tab-table-inner have-btn">
+						<div class="form-inner relative overflow-auto">
+							<div class="form-content absolute">
+								<div class="form-table">
+									<table>
+										<colgroup>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 15%;"/>
+										</colgroup>
+										<tr>
+											<th>
+												<label class="query-label">欠费号码</label>
+											</th>
+											<td>
+												<p>15657287812</p>
+											</td>
+											<th>
+												<label class="query-label">欠费总金额</label>
+											</th>
+											<td>
+												<p>108元</p>
+											</td>
+											<th>
+												<label class="query-label">欠费时段</label>
+											</th>
+											<td>
+												<p>2016-08-14</p>
+											</td>
+											<th>
+												<label class="query-label">欠费信息来源</label>
+											</th>
+											<td>
+												<p>中国移动温州分公司</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">欠费号码</label>
+											</th>
+											<td>
+												<p>15657287812</p>
+											</td>
+											<th>
+												<label class="query-label">欠费总金额</label>
+											</th>
+											<td>
+												<p>21元</p>
+											</td>
+											<th>
+												<label class="query-label">欠费时段</label>
+											</th>
+											<td>
+												<p>2016-06-07</p>
+											</td>
+											<th>
+												<label class="query-label">欠费信息来源</label>
+											</th>
+											<td>
+												<p>中国移动温州分公司</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">欠费号码</label>
+											</th>
+											<td>
+												<p>15657287812</p>
+											</td>
+											<th>
+												<label class="query-label">欠费总金额</label>
+											</th>
+											<td>
+												<p>8元</p>
+											</td>
+											<th>
+												<label class="query-label">欠费时段</label>
+											</th>
+											<td>
+												<p>2016-04-11</p>
+											</td>
+											<th>
+												<label class="query-label">欠费信息来源</label>
+											</th>
+											<td>
+												<p>中国移动温州分公司</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">欠费号码</label>
+											</th>
+											<td>
+												<p>15657287812</p>
+											</td>
+											<th>
+												<label class="query-label">欠费总金额</label>
+											</th>
+											<td>
+												<p>67元</p>
+											</td>
+											<th>
+												<label class="query-label">欠费时段</label>
+											</th>
+											<td>
+												<p>2016-01-24</p>
+											</td>
+											<th>
+												<label class="query-label">欠费信息来源</label>
+											</th>
+											<td>
+												<p>中国移动温州分公司</p>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-content" id="con_info_6">
+					<div class="tab-table-inner have-btn">
+						<div class="form-inner relative overflow-auto">
+							<div class="form-content absolute">
+								<div class="form-table">
+									<table>
+										<colgroup>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 18%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 18%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 18%;"/>
+										</colgroup>
+										<tr>
+											<th>
+												<label class="query-label">商标名</label>
+											</th>
+											<td>
+												<p>企鹅</p>
+											</td>
+											<th>
+												<label class="query-label">注册号</label>
+											</th>
+											<td>
+												<p>41415</p>
+											</td>
+												<th>
+												<label class="query-label">申请日期</label>
+											</th>
+											<td>
+												<p>2014-08-14</p>
+											</td>
+										</tr>
+											<tr>
+											<th>
+												<label class="query-label">商标名</label>
+											</th>
+											<td>
+												<p>骆驼</p>
+											</td>
+											<th>
+												<label class="query-label">注册号</label>
+											</th>
+											<td>
+												<p>41444</p>
+											</td>
+												<th>
+												<label class="query-label">申请日期</label>
+											</th>
+											<td>
+												<p>2014-08-13</p>
+											</td>
+										</tr>	<tr>
+											<th>
+												<label class="query-label">商标名</label>
+											</th>
+											<td>
+												<p>大嘴猴</p>
+											</td>
+											<th>
+												<label class="query-label">注册号</label>
+											</th>
+											<td>
+												<p>45465</p>
+											</td>
+												<th>
+												<label class="query-label">申请日期</label>
+											</th>
+											<td>
+												<p>2014-07-14</p>
+											</td>
+										</tr>	<tr>
+											<th>
+												<label class="query-label">商标名</label>
+											</th>
+											<td>
+												<p>青蛙</p>
+											</td>
+											<th>
+												<label class="query-label">注册号</label>
+											</th>
+											<td>
+												<p>47495</p>
+											</td>
+												<th>
+												<label class="query-label">申请日期</label>
+											</th>
+											<td>
+												<p>2014-06-14</p>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-content" id="con_info_7">
+					<div class="tab-table-inner have-btn">
+						<div class="form-inner relative overflow-auto">
+							<div class="form-content absolute">
+								<div class="form-table">
+									<table>
+										<colgroup>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 35%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 35%;"/>
+										</colgroup>
+										<tr>
+											<th>
+												<label class="query-label">处罚文号</label>
+											</th>
+											<td>
+												<p>2016PC12138</p>
+											</td>
+											<th>
+												<label class="query-label">处罚时间</label>
+											</th>
+											<td>
+												<p>2016-06-13</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">处罚机关</label>
+											</th>
+											<td>
+												<p>温州市信用办</p>
+											</td>
+											<th>
+												<label class="query-label">处罚依据</label>
+											</th>
+											<td>
+												<p>——</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">处罚内容</label>
+											</th>
+											<td colspan="3">
+												<p>责令整改，没收所得</p>
+											</td>
+										</tr>
+									</table>
+									<table>
+										<colgroup>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 35%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 35%;"/>
+										</colgroup>
+										<tr>
+											<th>
+												<label class="query-label">处罚文号</label>
+											</th>
+											<td>
+												<p>2016PC011108</p>
+											</td>
+											<th>
+												<label class="query-label">处罚时间</label>
+											</th>
+											<td>
+												<p>2016-01-11</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">处罚机关</label>
+											</th>
+											<td>
+												<p>温州市信用办</p>
+											</td>
+											<th>
+												<label class="query-label">处罚依据</label>
+											</th>
+											<td>
+												<p>——</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">处罚内容</label>
+											</th>
+											<td colspan="3">
+												<p>责令整改</p>
+											</td>
+										</tr>
+									</table>
+									<table>
+										<colgroup>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 35%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 35%;"/>
+										</colgroup>
+										<tr>
+											<th>
+												<label class="query-label">处罚文号</label>
+											</th>
+											<td>
+												<p>2016PC011108</p>
+											</td>
+											<th>
+												<label class="query-label">处罚时间</label>
+											</th>
+											<td>
+												<p>2016-01-11</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">处罚机关</label>
+											</th>
+											<td>
+												<p>温州市信用办</p>
+											</td>
+											<th>
+												<label class="query-label">处罚依据</label>
+											</th>
+											<td>
+												<p>——</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">处罚内容</label>
+											</th>
+											<td colspan="3">
+												<p>责令整改</p>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-content" id="con_info_8">
+					<div class="tab-table-inner have-btn">
+						<div class="form-inner relative overflow-auto">
+							<div class="form-content absolute">
+								<div class="form-table">
+									<table>
+										<colgroup>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 35%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 35%;"/>
+										</colgroup>
+										<tr>
+											<th>
+												<label class="query-label">案号</label>
+											</th>
+											<td>
+												<p>2016第1782号</p>
+											</td>
+											<th>
+												<label class="query-label">执行法院</label>
+											</th>
+											<td>
+												<p>温州市中级人民法院</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">立案时间</label>
+											</th>
+											<td>
+												<p>2016-08-01</p>
+											</td>
+											<th>
+												<label class="query-label">执行依据</label>
+											</th>
+											<td>
+												<p>——</p>
+											</td>
+										</tr>
+										<tr>
+											<th>
+												<label class="query-label">判决情况</label>
+											</th>
+											<td>
+												<p>——</p>
+											</td>
+											<th>
+												<label class="query-label">履行情况</label>
+											</th>
+											<td>
+												<p>未履行</p>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="tab-content" id="con_info_9">
+					<div class="tab-table-inner have-btn">
+						<div class="form-inner relative overflow-auto">
+							<div class="form-content absolute">
+								<div class="form-table">
+									<table>
+										<colgroup>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 18%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 18%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 18%;"/>
+										</colgroup>
+										<tr>
+										
+											<th>
+												<label class="query-label">年报时间</label>
+											</th>
+											<td>
+												<p>2016-8-11</p>
+											</td>
+											<th>
+												<label class="query-label">年报结果</label>
+											</th>
+											<td>
+												<p>A级</p>
+											</td>
+											<th>
+												<label class="query-label">年报部门</label>
+											</th>
+											<td>
+												<p>市场监督管理局</p>
+											</td>
+										</tr>
+											<tr>
+										
+											<th>
+												<label class="query-label">年报时间</label>
+											</th>
+											<td>
+												<p>2016-8-11</p>
+											</td>
+											<th>
+												<label class="query-label">年报结果</label>
+											</th>
+											<td>
+												<p>A级</p>
+											</td>
+											<th>
+												<label class="query-label">年报部门</label>
+											</th>
+											<td>
+												<p>市场发展管理局</p>
+											</td>
+										</tr>	<tr>
+										
+											<th>
+												<label class="query-label">年报时间</label>
+											</th>
+											<td>
+												<p>2016-8-11</p>
+											</td>
+											<th>
+												<label class="query-label">年报结果</label>
+											</th>
+											<td>
+												<p>B级</p>
+											</td>
+											<th>
+												<label class="query-label">年报部门</label>
+											</th>
+											<td>
+												<p>市场卫生管理局</p>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	    		<div class="tab-content" id="con_info_10">
+					<div class="tab-table-inner have-btn">
+						<div class="form-inner relative overflow-auto">
+							<div class="form-content absolute">
+								<div class="form-table">
+									<table>
+										<colgroup>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 15%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 15%;"/>
+										</colgroup>
+										<tr>
+											<th>
+												<label class="query-label">评价等级</label>
+											</th>
+											<td>
+												<p>红</p>
+											</td>
+											<th>
+												<label class="query-label">评价日期</label>
+											</th>
+											<td>
+												<p>2016-8-15</p>
+											</td>
+											<th>
+												<label class="query-label">评价单位</label>
+											</th>
+											<td>
+												<p>市环保局</p>
+											</td>
+											
+										</tr>
+											<tr>
+											<th>
+												<label class="query-label">评价等级</label>
+											</th>
+											<td>
+												<p>优</p>
+											</td>
+											<th>
+												<label class="query-label">评价日期</label>
+											</th>
+											<td>
+												<p>2016-8-15</p>
+											</td>
+											<th>
+												<label class="query-label">评价单位</label>
+											</th>
+											<td>
+												<p>市质监局</p>
+											</td>
+											
+										</tr>	<tr>
+											<th>
+												<label class="query-label">评价等级</label>
+											</th>
+											<td>
+												<p>红</p>
+											</td>
+											<th>
+												<label class="query-label">评价日期</label>
+											</th>
+											<td>
+												<p>2016-8-15</p>
+											</td>
+											<th>
+												<label class="query-label">评价单位</label>
+											</th>
+											<td>
+												<p>市环保局</p>
+											</td>
+											
+										</tr>	<tr>
+											<th>
+												<label class="query-label">评价等级</label>
+											</th>
+											<td>
+												<p>AAA</p>
+											</td>
+											<th>
+												<label class="query-label">评价日期</label>
+											</th>
+											<td>
+												<p>2016-8-15</p>
+											</td>
+											<th>
+												<label class="query-label">评价单位</label>
+											</th>
+											<td>
+												<p>市场监督管理局</p>
+											</td>
+											
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-content" id="con_info_11">
+					<div class="tab-table-inner have-btn">
+						<div class="form-inner relative overflow-auto">
+							<div class="form-content absolute">
+								<div class="form-table">
+									<table>
+										<colgroup>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 10%;"/>
+										</colgroup>
+										<tr>
+											<th>
+												<label class="query-label">机构名称</label>
+											</th>
+											<td>
+												<p>XXX有限公司</p>
+											</td>
+											<th>
+												<label class="query-label">机构类型</label>
+											</th>
+											<td>
+												<p>有限责任公司</p>
+											</td>
+											<th>
+												<label class="query-label">注册资本</label>
+											</th>
+											<td>
+												<p>200万人民币</p>
+											</td>
+												<th>
+												<label class="query-label">成立时间</label>
+											</th>
+											<td>
+												<p>2013-1-18</p>
+											</td>
+													<th>
+												<label class="query-label">经营范围</label>
+											</th>
+											<td>
+												<p>— —</p>
+											</td>
+										</tr>
+											<tr>
+											<th>
+												<label class="query-label">机构名称</label>
+											</th>
+											<td>
+												<p>XXX有限公司</p>
+											</td>
+											<th>
+												<label class="query-label">机构类型</label>
+											</th>
+											<td>
+												<p>有限责任公司</p>
+											</td>
+											<th>
+												<label class="query-label">注册资本</label>
+											</th>
+											<td>
+												<p>500万人民币</p>
+											</td>
+												<th>
+												<label class="query-label">成立时间</label>
+											</th>
+											<td>
+												<p>2014-5-18</p>
+											</td>
+													<th>
+												<label class="query-label">经营范围</label>
+											</th>
+											<td>
+												<p>— —</p>
+											</td>
+										</tr><tr>
+											<th>
+												<label class="query-label">机构名称</label>
+											</th>
+											<td>
+												<p>XXX有限公司</p>
+											</td>
+											<th>
+												<label class="query-label">机构类型</label>
+											</th>
+											<td>
+												<p>有限责任公司</p>
+											</td>
+											<th>
+												<label class="query-label">注册资本</label>
+											</th>
+											<td>
+												<p>200万人民币</p>
+											</td>
+												<th>
+												<label class="query-label">成立时间</label>
+											</th>
+											<td>
+												<p>2016-5-18</p>
+											</td>
+													<th>
+												<label class="query-label">经营范围</label>
+											</th>
+											<td>
+												<p>— —</p>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-content" id="con_info_12">
+					<div class="tab-table-inner have-btn">
+						<div class="form-inner relative overflow-auto">
+							<div class="form-content absolute">
+								<div class="form-table">
+									<table>
+										<colgroup>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 10%;"/>
+											<col span="1" style="width: 10%;"/>
+										</colgroup>
+										<tr>
+											<th>
+												<label class="query-label">抽查产品名称</label>
+											</th>
+											<td>
+												<p>借贷宝</p>
+											</td>
+											<th>
+												<label class="query-label">产品编号</label>
+											</th>
+											<td>
+												<p>319201</p>
+											</td>
+											<th>
+											<label class="query-label">抽查级别</label>
+											</th>
+											<td>
+												<p>A级</p>
+											</td>
+												<th>
+												<label class="query-label">抽查时间</label>
+											</th>
+											<td>
+												<p>2016-1-18</p>
+											</td>
+													<th>
+												<label class="query-label">抽查结果</label>
+											</th>
+											<td>
+												<p>优良</p>
+											</td>
+										</tr>
+											<tr>
+											<th>
+												<label class="query-label">抽查产品名称</label>
+											</th>
+											<td>
+												<p>余额宝</p>
+											</td>
+											<th>
+												<label class="query-label">产品编号</label>
+											</th>
+											<td>
+												<p>319222</p>
+											</td>
+											<th>
+											<label class="query-label">抽查级别</label>
+											</th>
+											<td>
+												<p>A级</p>
+											</td>
+												<th>
+												<label class="query-label">抽查时间</label>
+											</th>
+											<td>
+												<p>2016-1-22</p>
+											</td>
+													<th>
+												<label class="query-label">抽查结果</label>
+											</th>
+											<td>
+												<p>优良</p>
+											</td>
+										</tr><tr>
+											<th>
+												<label class="query-label">抽查产品名称</label>
+											</th>
+											<td>
+												<p>支付宝</p>
+											</td>
+											<th>
+												<label class="query-label">产品编号</label>
+											</th>
+											<td>
+												<p>319301</p>
+											</td>
+											<th>
+											<label class="query-label">抽查级别</label>
+											</th>
+											<td>
+												<p>A级</p>
+											</td>
+												<th>
+												<label class="query-label">抽查时间</label>
+											</th>
+											<td>
+												<p>2016-1-28</p>
+											</td>
+													<th>
+												<label class="query-label">抽查结果</label>
+											</th>
+											<td>
+												<p>优良</p>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	    		<div class="btn-row fixed">
+					<a href="frCredit.html" class="theme-btn">返回</a>
+				</div>
+	    	</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../../../../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+	<!--slimScroll-->
+	<script type="text/javascript" src="../../../../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+	<script src="../../js/layout.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		/*tab*/
+		function setContentTab(name, curr, n) {
+			debugger
+			for (i = 1; i <= n; i++) {
+				var menu = document.getElementById(name + i);
+				var cont = document.getElementById("con_" + name + "_" + i);
+				menu.className = i == curr ? "cur" : "";
+				if (i == curr) {
+					cont.style.display = "block";
+				} else {
+					cont.style.display = "none";
+				}
+			}
+		};
+	</script>
+</body>
+</html>

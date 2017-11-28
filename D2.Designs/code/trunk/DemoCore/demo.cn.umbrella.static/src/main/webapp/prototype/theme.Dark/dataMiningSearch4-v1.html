@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>数据挖掘查询2--样式4-信用档案查询</title>
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" href="../../thirdparty/artDialog/ui-dialog.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<!-- 头部 -->
+			<div class="nav-outer">
+				<div class="nav-inner">
+					<div class="nav-box">
+						<h1 class="logo"></h1>
+						<ul class="nav" id="nav">
+							<li>
+								<a href="index.html">
+									首页
+								</a>
+								
+							</li>
+							<li class="cur">
+								<a href="report.html">
+									数据管理系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									数据查询系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									报告管理系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									数据挖掘系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									应用支撑系统
+								</a>
+							</li>
+						</ul>
+						<div class="overflow-hidden">
+							<ul class="top-info right">
+								<li class="relative">
+									<a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+									
+									<div class="user-control">
+										<a href="###">
+											<span class="fi-key"></span>
+											修改密码
+										</a>
+										<a href="###">
+											<span class="fi-envelop"></span>
+											消息
+										</a>
+										<a href="###">
+											<span class="fi-cog"></span>
+											设置
+										</a>
+									</div>
+								</li>
+								<li>
+									<a href="###">
+										<span class="fi-exit"></span>退出
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			
+				<div class="vertical-shadow"></div>
+			</div>
+			<!-- 侧边栏 -->
+			<div class="sub-nav-outer">
+				<div class="sub-nav-box clearfix">
+					<div class="left sub-nav-scroll">
+						<div class="scroll">
+							<div class="sub-nav-inner">
+								<div>
+									<h3><i class="fi-bell"></i>表格</h3>
+									<ul>
+										<li><a href="base.html">dG基础结构</a></li>
+										<li><a href="base2-noControlBtn.html">dG基础结构-无</a></li>
+										<li><a href="doubleTable.html">双表格1</a></li>
+										<li><a href="doubleTable2.html">双表格2</a></li>
+										<li><a href="tabTable.html">tab同页</a></li>
+										<li><a href="tabTable-differentPage1.html">tab不同页</a></li>
+										<li><a href="tabTable-nesting-mix.html">tab嵌套-同页不同页混合</a></li>
+										<li><a href="tabTable-differentPage7-compositeAnalysis.html">综合分析</a></li>
+										<li><a href="treeAndTable.html">树和表格</a></li>
+										<li><a href="treeAndTable2.html">树,表格,查询栏</a></li>
+										<li><a href="doubleTableAndForm.html">上:表单,下:并列表格</a></li>
+										<li><a href="treeAndTableAndForm.html">树\表格\表单</a></li>
+										<li><a href="pureTable.html">纯表格</a></li>
+									</ul>
+									<h4><a href="widget.html"><i class="fi-bell"></i>小部件</a></h4>
+									<h3><i class="fi-bell"></i>表单</h3>
+									<ul>
+										<li><a href="formAccordion.html">折叠表单</a></li>
+										<li><a href="formAccordion-iframe.html">折叠表单-iframe</a></li>
+										<li><a href="formModule.html">分块表单</a></li>
+										<li><a href="formSimple.html">基本表单</a></li>
+										<li><a href="formSimple-detail.html">基本表单-详情</a></li>
+										<li><a href="formEdit-detail.html">可编辑-详情</a></li>
+										<li><a href="cns-detail.html">承诺书-详情</a></li>
+									</ul>
+									<h4><a href="searchAndCharts.html"><i class="fi-bell"></i>搜索和图表</a></h4>
+									<h3><i class="fi-bell"></i>数据归集目录</h3>
+									<ul>
+										<li><a href="dataDirectory.html">版本一</a></li>
+										<li><a href="dataDirectory2.html">版本二</a></li>
+									</ul>
+									<h3 class="cur"><i class="fi-bell"></i>数据挖掘</h3>
+									<ul>
+										<li><a href="dataMiningSearch1.html">查询一</a></li>
+										<li><a href="dataMiningSearch2.html">查询二</a></li>
+										<li><a href="dataMiningSearch3.html">查询三</a></li>
+										<li><a href="dataMiningSearch4-v1.html" class="cur-a">查询四-档案查询</a></li>
+										<li><a href="dataMiningSearch5-v1.html">查询五-报告查询</a></li>
+										<li><a href="dataMiningSearchDetail1.html">查询详情一</a></li>
+										<li><a href="dataMiningSearchDetail2.html">查询详情二</a></li>
+										<li><a href="dataMiningSearchDetail3-v1.html">查询详情三</a></li>
+										<li><a href="dataMiningSearchDetail4-v1.html">查询详情四-档案查询-企业</a></li>
+										<li><a href="dataMiningSearchDetail5-v1.html">查询详情五-档案查询-个人</a></li>
+										<li><a href="dataMiningLayout1.html">布局-左一右上一右下二</a></li>
+										<li><a href="dataMiningLayout2.html">布局-左二右一</a></li>
+										<li><a href="dataMiningLayout3.html">布局-田字</a></li>
+										<li><a href="dataMiningLayout4.html">布局-查询栏下田字</a></li>
+										<li><a href="dataMiningLayout5.html">布局-左右</a></li>
+										<li><a href="dataMiningCharts1.html">关系图1</a></li>
+										<li><a href="dataMiningCharts2.html">关系图2</a></li>
+										<li><a href="dataMiningCharts3.html">树图</a></li>
+									</ul>
+									<h3><i class="fi-bell"></i>列表</h3>
+									<ul>
+										<li><a href="list.html">列表1</a></li>
+										<li><a href="list2.html">列表2</a></li>
+									</ul>
+									<h3><i class="fi-bell"></i>信用评估</h3>
+									<ul>
+										<li><a href="credit-evaluate-charts.html">信用评估图表</a></li>
+										<li><a href="credit-evaluate-details.html">信用评估详情</a></li>
+									</ul>
+									<h4><a href="ranking.html"><i class="fi-bell"></i>排行</a></h4>
+									<h4><a href="icon.html"><i class="fi-bell"></i>图标</a></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="left horizontal-shadow relative nav-control">
+						<i class="absolute icon-arrow-left"></i>
+					</div>
+				</div>
+			</div>
+			<!-- 主体 -->
+			<div class="main">
+				<!-- 面包屑 -->
+				<div class="main-bread-crumb">
+					<div class="breadcrumb-hidden">
+						<span class="fi-position left"></span>
+						<ol class="left">
+							<li>
+								<span>：</span>
+								<a href="###">项目管理</a>
+							</li>
+							<li>
+								<span class="breadcrumb-line">>></span><a href="###">项目填报</a>
+							</li>
+						</ol>
+					</div>
+				</div>
+				<!-- 表格 -->
+				<div class="main-table-outer search-bg-box">
+					<div class="search-bg4-1">
+						<div class="search-bg4-2"></div>
+						<div class="relation-search person-search search-layout2">
+							<div class="margin0auto high-search clearfix">
+								<div id="search-bd" class="search-bd">
+									<ul class="clearfix">
+										<li data-placeholder="请输入法人信息进行查询">
+											<span>法人</span>
+											<i class="index-arrow-down"></i>
+										</li>
+										<li data-placeholder="查询自然人信用档案需要主体授权查询" id="personalID" class="selected zrr">
+											<span>自然人</span>
+											<i class="index-arrow-down"></i>
+										</li>
+										<li data-placeholder="请输入其他组织信息进行查询">
+											<span>其他组织</span>
+											<i class="index-arrow-down"></i>
+										</li>
+									</ul>
+								</div>
+								<div id="search-hd" class="search-hd left">
+									<input type="text" id="s1" class="search-input">
+									<span class="pholder" id="placeholder">查询自然人信用档案需要主体授权查询</span>
+									<!--<span class="s2 pholder">请输入自然人姓名进行查询</span>
+									<span class="s3 pholder">请输入自然人身份证号码进行查询</span>
+									<span class="s4 pholder">请输入自然人联系方式进行查询</span>-->
+									<a href="###" class="btn-search3 search-btn-bg"><i class="search-icon btn-search-icon2"></i></a>
+								</div>
+								<button id="jiansouBtn" type="button" class="high-search-btn right">
+									<i class="search-icon btn-search-icon3"></i>
+									<span>高级检索</span>
+								</button>
+								<button id="shouquanBtn" type="button" class="high-search-btn right" style="display: none;">
+									<i class="search-icon btn-search-icon3"></i>
+									<span>授权查询</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+		<!--slimScroll-->
+		<script type="text/javascript" src="../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+		<!--dialog-->
+		<script type="text/javascript" src="../../thirdparty/artDialog/dialog-min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/artDialog/dialog-plus-min.js"></script>
+		
+		<script type="text/javascript" src="js/common.js"></script>
+		<script src="js/layout.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/search.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+			$("#shouquanBtn").click(function(){
+				//外面包一层，便于寻找元素
+				var html = '<div class="form-table overflow-auto h-per100 w-per95 margin0auto mg-t-10">'
+						+'<table>'
+						+ '<tr><th>姓名</th><td><input id="creditEntityName" class="w-per100" type="text" value="" /></td></tr>'
+						+ '<tr><th>身份证号码</th><td><input id="creditEntityCode" class="w-per100" type="text" value="" /></td></tr>'
+						+ '<tr><th>主体授权码</th><td><input id="authorizationCode" class="w-per100" type="text" value="" /></td></tr>'
+						+ '<tr><th>用途</th><td><input id="purpose" class="w-per100" type="text" value="" /></td></tr>'
+						+ '</table>'
+						+ '<p class="font-size12 color-red mg-t-10 mg-b-10">说明：自然人信用查询需要信用主体授权查询，必须输入所有条件并正确无误后才能查询自然人信用档案</p>'
+						+'</div>';
+				 $.GD.dialog({
+						title: "授权查询",
+						width: 420,
+						height: 230,
+						content:html,
+						oktext:"授权查询",
+						ok: function() {
+							var creditEntityName = $('#creditEntityName').val().replace(/\s/gi,'');
+							var creditEntityCode = $('#creditEntityCode').val().replace(/\s/gi,'');
+							var authorizationCode = $('#authorizationCode').val().replace(/\s/gi,'');
+							var purpose = $('#purpose').val().replace(/\s/gi,'');
+							if("" == creditEntityName){
+								$.GD.msg("请输入姓名!"); 
+							}else if("" == creditEntityCode){
+								$.GD.msg("请输入身份证号码!");
+							}else if("" == authorizationCode){
+								$.GD.msg("请输入主体授权码!");
+							}else if("" == purpose){
+								$.GD.msg("请输入用途!");
+							}else{
+								$.ajax({
+							        type: "get",
+							        url: "${path}querydata/personalInfo/doSearchByPermit.json",
+							        dataType: 'json',
+							        data:{
+							        	"creditEntityName":creditEntityName,
+							        	"creditEntityCode":creditEntityCode,
+							        	"authorizationCode":authorizationCode,
+							        	"purpose":purpose
+							        },
+							        success: function (data) {
+										if(data.code > 0){//成功
+											$.post("${path}querydata/personalInfo/getComplexPersonInfo.json",{creditEntityCode: data.creditEntityCode},function(data){
+										   		if(data.success){
+										   			showCreditDetail('sga_personage', null, data.uid, null, person, yes);
+										   		}else{
+										   			$.GD.msg(data.msg);
+										   		}
+										   	});
+										}else{
+											$.GD.msg("找不到授权信用主体");
+								        	window.location.href="###";
+										}
+							        },
+							        error:function (data) {      
+							        	$.GD.msg("查询失败");
+							        }
+							     });
+							}
+							
+						},
+						cancelValue: '取消',
+					    cancel: function () {},
+				})
+			});
+		</script>
+	</body>
+
+</html>

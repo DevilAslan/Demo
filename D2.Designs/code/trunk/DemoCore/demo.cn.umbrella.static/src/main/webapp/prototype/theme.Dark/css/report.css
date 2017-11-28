@@ -1,0 +1,103 @@
+html,body{margin: 0;padding: 0;}
+body{font: 12px/1.5 "microsoft yahei";color: #333;background: #f8f8f8;}
+a{text-decoration: none;}
+button{outline: none;}
+input:focus,a:focus{outline:none;}
+/* 清除浮动*/
+.clearfix{*zoom:1;}
+.clearfix:before,.clearfix:after{display:table; content:''; clear:both;}
+/*public*/
+.wrapper{position: static;padding-top: 10px;padding-bottom: 10px;overflow: hidden;}
+.wrapper:before,.wrapper:after{content: " ";display: table;}
+.wrapper:after{clear: both;}
+.left{float: left;}
+.right{float: right;}
+.t-center{text-align: center;}
+.t-left{text-align: left;}
+.t-right{text-align: right;}
+
+.btn-row{margin-top: 10px;margin-bottom: 20px;text-align: center;}
+.btn{display: inline-block;width: 98px;margin-left: 10px;margin-right: 10px;font-size: 14px;line-height: 28px;vertical-align: middle;color: #fff;background: url('../images/report-btn-bg.jpg') repeat-x center;border: 1px solid #2d83da;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
+.btn[type="button"]{padding: 0 10px;}
+.container{position: relative;z-index: 99;width: 794px;margin: auto;background: #fff url('../images/watermark.png') repeat -50px 0;-moz-box-shadow:0px 0px 10px #e5e5e5; -webkit-box-shadow:0px 0px 10px #e5e5e5; box-shadow:0px 0px 10px #e5e5e5;border: 1px solid #e5e5e5;border: 0 rgba(0,0,0,.2);}
+.watermark{display: none;position: fixed;top: 0;left: 0;z-index: 0;}
+
+/*报告标题*/
+.report-title{padding-left: 39px;padding-right: 39px;border-bottom: 2px solid #2ba8f8;}
+.report-title .left{margin-top: 25px;margin-bottom: 14px;}
+.report-title .left h2{margin-top: 0;margin-bottom: 0;font-size: 24px;font-weight: normal;}
+.report-title .left p{margin-top: 10px;margin-bottom: 10px;font-size: 14px}
+.report-title .left span{margin-right: 40px;}
+.report-title .right{width: 100px;height: 100px;margin-top: 8px;margin-bottom: 8px;}
+.report-title .right img{width: 100%;height: 100%;}
+/*内容*/
+.report-content{padding: 5px 30px 50px;}
+.base-title{margin-top: 10px;margin-bottom: 10px;font-size: 16px;}
+.table{width: 100%;border: 1px solid #999;border-collapse:collapse; border-spacing:0;}
+.base-info{margin-top: 16px;font-size: 14px;}
+.table caption{font-size: 14px;font-weight: bold;line-height: 32px;text-align: left;}
+.table th,.table td{padding-top: 5px;padding-bottom: 5px;border-bottom: 1px solid #999;border-right: 1px solid #999;}
+.table th{padding-left: 5px;padding-right: 5px;font-weight: normal;}
+.table td{padding-left: 10px;padding-right: 10px;}
+.record-table th{line-height: 34px;}
+.base-info th{width: 135px;}
+.base-info td{padding-left: 16px;padding-right: 16px;font-weight: bold;}
+.base-info .credit-level{font-weight: normal;}
+.credit-level{text-align: center;color: #2babfb;}
+.credit-level p{margin-top: 0;margin-bottom: 0;font-size: 30px;}
+.credit-level label{font-size: 22px;}
+.circle-outer{margin-top: 30px;text-align: center;}
+.width300{width: 300px;}
+.width250{width: 250px;}
+.width200{width: 200px;}
+.width150{width: 150px;}
+.width100{width: 100px;}
+.info-box .table,.front-cover{page-break-inside:avoid;}
+.info-row{margin-top: 0;margin-bottom: 0;font-size: 14px;font-weight: bold;line-height: 32px;text-align: left; }
+/*信息统计*/
+.circle-box{display: inline-block;position: relative;width: 110px;height: 110px;margin-left: 20px;margin-right: 20px;vertical-align: middle;}
+@media print{
+	.circle-box{margin-left: 10px;margin-right: 10px;}
+	.watermark{display: block;}
+}
+.first-circle{margin-left: 0;}
+.last-circle{margin-right: 0;}
+.circle-img{position: absolute;top: 0;left: 0;}
+.circle-inner{position: relative;z-index: 1;}
+.circle-box p{margin-top: 20px;margin-bottom: 18px;font-size: 24px;line-height: 20px;color: #2babfb;}
+.circle-box label{display: inline-block;width: 90px;font-size: 14px;line-height: 1.2;}
+
+.info-title{position: relative;width: 100%;height: 26px;margin-top: 28px;overflow: hidden;}
+.line,.title-text{display: inline-block;vertical-align: middle;}
+.line1{width: 280px;height: 0;border-bottom: 2px solid #2babfb;}
+.line{position: absolute;top: 0;bottom: 0;width: 100%;height: 1px;border-bottom: 1px solid #2babfb;margin: auto;}
+.title-text{position: absolute;left: 0;right: 0;top: 0;bottom: 0;width: 140px;margin: auto;font-size: 16px;font-weight: bold;line-height: 26px;text-align: center;background: #fff;}
+.label-box{display: inline-block;margin-right: 10px;font-size: 14px;line-height: 34px;}
+.test-line:after,.test-line:before{content: '';display: inline-block;width: 100%;height: 1px;border-bottom: 2px solid #2ba8f8;}
+.test-line i{display: inline-block;width: 20px;height: 20px;background: #fff;border: 2px solid #999;-webkit-border-radius: 100%;-moz-border-radius: 100%;border-radius: 100%;}
+.svg-box{width: 90%;margin-left: auto;margin-right: auto;font-family: 'microsoft yahei';}
+/*无数据*/
+.nothing-text{font-size: 20px;line-height: 50px;text-align: center;color: #ddd;}
+
+/*封面*/
+.front-cover-content{position: relative;z-index: 11;width: 654px;height: 100%;margin: 0 auto;padding-top: 30px;padding-bottom: 10px;}
+.front-cover{position: relative;z-index: 10;height: 1123px;}
+.front-cover-bg{position: absolute;bottom: 0;height: 100%;}
+.front-cover-title{text-align: center;}
+.front-cover-title h1,.front-cover-title h3{font-weight: normal;}
+.front-cover-title h1{font-size: 36px;}
+.front-cover-title h3{font-size: 26px;}
+.code-box{width: 120px;height: 120px;margin: auto;-moz-box-shadow:0px 0px 10px #e5e5e5; -webkit-box-shadow:0px 0px 10px #e5e5e5; box-shadow:0px 0px 10px #e5e5e5;border: 0 rgba(0,0,0,.2);border: 1px solid #e5e5e5;}
+.code-box img{width: 100px;height: 100px;margin: 10px;}
+.number{margin-top: 20px;font-size: 16px}
+.front-cover-text{margin-top: 50px;}
+.f-c-text-row{font-size: 16px;overflow: hidden;}
+.f-c-text-row label,.f-c-text-row b,.f-c-text-row .text-box{float: left;}
+.f-c-text-row label{position: relative;z-index: 1;width: 20px;height: 20px;margin-top: 2px;margin-right: 8px;font: 14px "arial black";line-height: 20px;text-align: center;}
+.f-c-text-row .text-box{display: inline-block;width: 570px;}
+
+.front-cover-important-info{position: absolute;bottom: 100px;font-size: 16px;}
+.front-cover-important-info h4{margin-bottom: 10px;margin-bottom: 10px;font-size: 20px;}
+.front-cover-important-info label,.front-cover-important-info .text-box{float: none;display: inline-block;}
+.front-cover-important-info label{font: 16px "microsoft yahei";}
+.front-cover-important-info .text-box{width: 616px;vertical-align: top;}

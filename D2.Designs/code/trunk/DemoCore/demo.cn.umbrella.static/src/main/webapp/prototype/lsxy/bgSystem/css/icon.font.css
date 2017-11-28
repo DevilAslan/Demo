@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'sys-font';
+    src: url('../fonts/sys-font.eot?gji6l9');
+    src: url('../fonts/sys-font.eot?gji6l9#iefix') format('embedded-opentype'),
+        url('../fonts/sys-font.ttf?gji6l9') format('truetype'),
+        url('../fonts/sys-font.woff?gji6l9') format('woff'),
+        url('../fonts/sys-font.svg?gji6l9#sys-font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="fi-"], [class*=" fi-"] {
+    font-family: 'sys-font' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: middle;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*以下4个是箭头*/
+.fi-arrow-up:before { content: "\e900"; }
+.fi-arrow-right:before { content: "\e901"; }
+.fi-arrow-down:before { content: "\e902"; }
+.fi-arrow-left:before { content: "\e903"; }
+
+/*其他*/
+.fi-menu:before { content: "\e904"; }
+.fi-breadcrumb:before { content: "\e905"; }
+.fi-search:before { content: "\e906"; }
+.fi-cog:before { content: "\e907"; }
+.fi-bell:before { content: "\e908"; }
+.fi-envelop:before { content: "\e909"; }
+.fi-key:before { content: "\e90a"; }
+.fi-exit:before { content: "\e90b"; }
+.fi-details:before { content: "\e90c"; }
+.fi-upload:before { content: "\e90d"; }
+
+/*home页 图标颜样式*/
+.home .main [class^="fi-"],.home .main [class*=" fi-"]{display: block;font-size: 8em;color: #fff;text-align: center;}
+
+/*各别图标样式的单独修改*/
+.top-info [class^="fi-"],.top-info [class*=" fi-"]{font-size: 14px;}
+.fi-menu{position: absolute;top: 0;left: 140px;padding: 14px 6px;color: #fff;font-size: 20px;cursor: pointer;}
+.fi-menu:hover{color: #63cabb;background-color: #445e6d;}
+.fi-breadcrumb,.fi-search{margin-top: 5px;font-size: 16px;color: #63cabb;}
+.fi-breadcrumb{margin-right: 10px;}
+.fi-search{width: 30px;height: 100%;margin-top: 0;top: 0;right: 0;line-height: 30px;text-align: center;background: none;border: 0 none;outline: none;cursor: pointer;}
+.main-bread-crumb .fi-search{padding-right: 10px;font-size: 14px;line-height: 20px;}
+.tree-and-table .fi-search{display: inline-block;top: 1px;right: 4px;z-index: 10;padding: 5px 0;font-size: 20px;}
+.main-control .fi-search{top: 0;padding: 0;}
+.fi-search + input[type='text']{padding-right: 30px;}
+.more-text .fi-arrow-down{display: block;}
+.fi-arrow-up.title-arrow,.fi-arrow-down.title-arrow{font-size: 18px;color: #fff;}
+.fi{display: inline-block;height: 24px;margin-right: 6px;line-height: 22px;}
+.theme-btn .fi{color: #fff;}
+.theme-btn2 .fi{color: #63cabb;}
+.list-box .fi-details:before{font-size: 16px;line-height: 1.5;}
+/*上传图标*/
+.fi-upload{font-size: 14px;}

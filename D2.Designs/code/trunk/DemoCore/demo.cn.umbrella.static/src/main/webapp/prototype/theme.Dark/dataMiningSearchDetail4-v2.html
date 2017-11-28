@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>信用档案查询 - 企业信用查询</title>
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" href="../../thirdparty/artDialog/ui-dialog.css" />
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/Swiper-2.7.6/dist/idangerous.swiper.css"/>
+		<link rel="stylesheet" type="text/css" href="css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<link rel="stylesheet" type="text/css" href="css/dataGrid.layout.css"/>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<!-- 头部 -->
+			<div class="nav-outer">
+				<div class="nav-inner">
+					<div class="nav-box">
+						<h1 class="logo"></h1>
+						<div class="nav-slider">
+							<!-- Add Arrows -->
+							<div class="fi-arrow-right"></div>
+							<div class="fi-arrow-left"></div>
+
+							<div class="swiper-container">
+								<ul class="nav swiper-wrapper" id="nav">
+									<li class="swiper-slide">
+										<a href="index.html">
+											首页
+										</a>
+									</li>
+									<li class="cur swiper-slide">
+										<a href="report.html">
+											数据管理系统
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="###">
+											数据查询系统
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="###">
+											报告管理系统
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="###">
+											数据挖掘系统
+										</a>
+									</li>
+									<li class="swiper-slide">
+										<a href="###">
+											应用支撑系统
+										</a>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+						<div class="overflow-hidden">
+							<ul class="top-info right">
+								<li class="relative">
+									<a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+
+									<div class="user-control">
+										<a href="###">
+											<span class="fi-key"></span>
+											修改密码
+										</a>
+										<a href="###">
+											<span class="fi-envelop"></span>
+											消息
+										</a>
+										<a href="###">
+											<span class="fi-cog"></span>
+											设置
+										</a>
+									</div>
+								</li>
+								<li>
+									<a href="###">
+										<span class="fi-exit"></span>退出
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="vertical-shadow"></div>
+			</div>
+			<!-- 侧边栏 -->
+			<div class="sub-nav-outer">
+				<div class="sub-nav-box clearfix">
+					<div class="left sub-nav-scroll">
+						<div class="scroll">
+							<div class="sub-nav-inner">
+								<div>
+									<h3><i class="fi-bell"></i>表格</h3>
+									<ul>
+										<li><a href="base.html">dG基础结构</a></li>
+										<li><a href="base2-noControlBtn.html">dG基础结构-无</a></li>
+										<li><a href="doubleTable.html">双表格1</a></li>
+										<li><a href="doubleTable2.html">双表格2</a></li>
+										<li><a href="tabTable.html">tab同页</a></li>
+										<li><a href="tabTable-differentPage1.html">tab不同页</a></li>
+										<li><a href="tabTable-nesting-mix.html">tab嵌套-同页不同页混合</a></li>
+										<li><a href="treeAndTable.html">树和表格</a></li>
+										<li><a href="treeAndTable2.html">树,表格,查询栏</a></li>
+										<li><a href="doubleTableAndForm.html">上:表单,下:并列表格</a></li>
+										<li><a href="treeAndTableAndForm.html">树\表格\表单</a></li>
+										<li><a href="pureTable.html">纯表格</a></li>
+									</ul>
+									<h4><a href="widget.html"><i class="fi-bell"></i>小部件</a></h4>
+									<h3><i class="fi-bell"></i>表单</h3>
+									<ul>
+										<li><a href="formAccordion.html">折叠表单</a></li>
+										<li><a href="formAccordion-iframe.html">折叠表单-iframe</a></li>
+										<li><a href="formModule.html">分块表单</a></li>
+										<li><a href="formSimple.html">基本表单</a></li>
+										<li><a href="formSimple-detail.html">基本表单-详情</a></li>
+										<li><a href="formEdit-detail.html">可编辑-详情</a></li>
+									</ul>
+									<h4><a href="searchAndCharts.html"><i class="fi-bell"></i>搜索和图表</a></h4>
+									<h3><i class="fi-bell"></i>数据归集目录</h3>
+									<ul>
+										<li><a href="dataDirectory.html" >版本一</a></li>
+										<li><a href="dataDirectory2.html">版本二</a></li>
+									</ul>
+									<h3 class="cur"><i class="fi-bell"></i>数据挖掘</h3>
+									<ul>
+										<li><a href="dataMiningSearch1.html">查询一</a></li>
+										<li><a href="dataMiningSearch2.html">查询二</a></li>
+										<li><a href="dataMiningSearch3.html">查询三</a></li>
+										<li><a href="dataMiningSearch4-v1.html">查询四-档案查询</a></li>
+										<li><a href="dataMiningSearch5-v1.html">查询五-报告查询</a></li>
+										<li><a href="dataMiningSearchDetail1.html">查询详情一</a></li>
+										<li><a href="dataMiningSearchDetail2.html">查询详情二</a></li>
+										<li><a href="dataMiningSearchDetail3-v1.html">查询详情三</a></li>
+										<li><a href="dataMiningSearchDetail4-v1.html" class="cur-a">查询详情四-档案查询-企业</a></li>
+										<li><a href="dataMiningSearchDetail5-v1.html">查询详情五-档案查询-个人</a></li>
+										<li><a href="dataMiningSearchDetail6-v1.html">查询详情六-档案查询-其他组织</a></li>
+										<li><a href="dataMiningLayout1.html">布局-左一右上一右下二</a></li>
+										<li><a href="dataMiningLayout2.html">布局-左二右一</a></li>
+										<li><a href="dataMiningLayout3.html">布局-田字</a></li>
+										<li><a href="dataMiningLayout4.html">布局-查询栏下田字</a></li>
+										<li><a href="dataMiningLayout5.html">布局-左右</a></li>
+										<li><a href="dataMiningCharts1.html">关系图1</a></li>
+										<li><a href="dataMiningCharts2.html">关系图2</a></li>
+										<li><a href="dataMiningCharts3.html">树图</a></li>
+									</ul>
+									<h3><i class="fi-bell"></i>列表</h3>
+									<ul>
+										<li><a href="list.html">列表1</a></li>
+										<li><a href="list2.html">列表2</a></li>
+									</ul>
+									<h4><a href="ranking.html"><i class="fi-bell"></i>排行</a></h4>
+									<h4><a href="icon.html"><i class="fi-bell"></i>图标</a></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="left horizontal-shadow relative nav-control">
+						<i class="absolute icon-arrow-left"></i>
+					</div>
+				</div>
+			</div>
+			<!-- 主体 -->
+			<div class="main">
+				<!-- 面包屑 -->
+				<div class="main-bread-crumb">
+					<div class="breadcrumb-hidden">
+						<span class="fi-position left"></span>
+						<ol class="left">
+							<li>
+								<span>：</span>
+								<a href="###">项目管理</a>
+							</li>
+							<li>
+								<span class="breadcrumb-line">>></span><a href="###">项目填报</a>
+							</li>
+						</ol>
+					</div>
+				</div>
+				<!-- 内容 -->
+				<div class="main-table-outer">
+					<div class="relative h-per100">
+						<div class="detail-tab-top clearfix">
+							<div class="detail-title">
+								<h1>浙江天宝有限责任公司浙江天宝有限责任公司</h1>
+								<a href="javascript:void(0);" class="btn24">授权查询</a>
+								<!--<p class="detail-update-time"> </p>-->
+								<div class="detail-tab-top-info ">
+									<label class="detail-update-time">数据更新时间：2017-03-01</label>
+									<label>统一社会信用代码：91435021JQ9B</label>
+								</div>
+
+							</div>
+							<div class="detail-tab-top-middle mg-t-10 clearfix">
+								<div class="left w-per40">
+									<ul class="detail-top-middle-info box-color">
+										<li>
+											<label>不良记录：</label>
+											<span>3条</span>
+										</li>
+										<li>
+											<label>良好记录：</label>
+											<span>1条</span>
+										</li>
+										<li>
+											<label>其他信息：</label>
+											<span>3条</span>
+										</li>
+										<li>
+											<label>信用超过温州<span>80%</span>企业</label>
+										</li>
+									</ul>
+								</div>
+								<div class="left w-per40">
+									<ul class="detail-top-middle-info box-color">
+										<li>
+											<label>信用分：</label>
+											<span>727分</span>
+										</li>
+										<li>
+											<label>信用评级：</label>
+											<span>A</span>
+										</li>
+										<li>
+											<label>信用度：</label>
+											<span>优秀</span>
+										</li>
+										<li>
+											<label>注册时间：</label>
+											<span>2017-02-02</span>
+										</li>
+									</ul>
+								</div>
+								<div class="right qr-code-box">
+									<img src="images/code.jpg"/>
+									<p>查询编号：2016042800012</p>
+								</div>
+							</div>
+
+							<div class="mg-t-10">
+								<div class="detail-tab-btn-outer">
+									<div class="detail-tab-btn cur">
+										<span class="detial-tab-bg tab-bg1"></span>
+										<label class="detial-tab-text">基础信息</label>
+									</div>
+									<div class="detail-tab-btn">
+										<span class="detial-tab-bg tab-bg2"></span>
+										<label class="detial-tab-text">失信信息</label>
+									</div>
+									<div class="detail-tab-btn">
+										<span class="detial-tab-bg tab-bg3"></span>
+										<label class="detial-tab-text">守信信息</label>
+									</div>
+									<div class="detail-tab-btn">
+										<span class="detial-tab-bg tab-bg4"></span>
+										<label class="detial-tab-text">其他信息</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="detail-tab-content-outer">
+							<div class="scroll">
+
+								<div class="detail-tab-content">
+									<table class="prue-table-vertical">
+										<caption class="table-title">基础信息</caption>
+										<colgroup>
+											<col style="width: 15%;" />
+											<col style="width: 35%;" />
+											<col style="width: 15%;" />
+											<col style="width: 35%;" />
+										</colgroup>
+										<tr>
+											<th>企业名称</th>
+											<td>浙江天宝有限责任公司</td>
+											<th>统一社会信用代码</th>
+											<td>91435021JQ9B</td>
+										</tr>
+										<tr>
+											<th>工商注册号</th>
+											<td>33012910212112</td>
+											<th>组织机构代码</th>
+											<td>77650410-2</td>
+										</tr>
+										<tr>
+											<th>税务等级证号</th>
+											<td>91330327MA285YHY47</td>
+											<th>法定代表人</th>
+											<td>王律风</td>
+										</tr>
+										<tr>
+											<th>企业类型</th>
+											<td>有限责任公司</td>
+											<th>注册时间</th>
+											<td>2017-01-02</td>
+										</tr>
+										<tr>
+											<th>注册资金（万元）</th>
+											<td>200</td>
+											<th>注册资金（美金）</th>
+											<td>0</td>
+										</tr>
+										<tr>
+											<th>行业分类</th>
+											<td>制造业</td>
+											<th>企业状态</th>
+											<td>开业</td>
+										</tr>
+										<tr>
+											<th>注册地址</th>
+											<td>温州市洞头区北呑街道海天佳境43幢一楼09号</td>
+											<th>经营范围</th>
+											<td>纸质工艺品加工（不含印刷）</td>
+										</tr>
+									</table>
+									<div class="double-col mg-t-10 clearfix">
+										<table class="simple-prue-table left">
+											<colgroup>
+												<col style="width: 33.33%;"/>
+												<col style="width: 33.33%;"/>
+												<col style="width: 33.33%;"/>
+											</colgroup>
+											<caption>高管信息</caption>
+											<thead>
+											<tr>
+												<th>高管名称</th>
+												<th>高管性别</th>
+												<th>职务</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>钟翠云</td>
+												<td>女</td>
+												<td>执行董事兼总经理</td>
+											</tr>
+											<tr>
+												<td>夏月霞</td>
+												<td>女</td>
+												<td>执行董事兼总经理</td>
+											</tr>
+											<tr>
+												<td>叶希楚</td>
+												<td>男</td>
+												<td>监事</td>
+											</tr>
+											</tbody>
+										</table>
+										<table class="simple-prue-table right">
+											<colgroup>
+												<col style="width: 50%;"/>
+												<col style="width: 50%;"/>
+											</colgroup>
+											<caption>出资人信息</caption>
+											<thead>
+											<tr>
+												<th>出资人名称</th>
+												<th>职务</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>钟翠云</td>
+												<td>自然人股东</td>
+											</tr>
+											<tr>
+												<td>夏月霞</td>
+												<td>自然人股东</td>
+											</tr>
+											<tr>
+												<td>温州市城市发展有限公司</td>
+												<td>法人股东</td>
+											</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="w-per100 relative">
+										<h3 class="timeline-title">企业历程</h3>
+										<div id="my_svg"></div>
+									</div>
+								</div>
+								<div class="detail-tab-content" style="display: none;">
+									<table class="prue-table-vertical">
+										<caption class="table-title">市公安局——行政处罚信息</caption>
+										<thead>
+										<tr>
+											<th>处罚文号</th>
+											<th>处罚事由</th>
+											<th>违章区段</th>
+											<th>处罚时间</th>
+											<th>处罚内容</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td class="t-center">温政第127号文件</td>
+											<td>饮酒后驾驶机动车</td>
+											<td>温州市鹿城区绣山路</td>
+											<td class="t-center">2017-02-03</td>
+											<td>付款2000元整，扣12分</td>
+										</tr>
+										<tr>
+											<td class="t-center">温政第127号文件</td>
+											<td>饮酒后驾驶机动车</td>
+											<td>温州市鹿城区绣山路</td>
+											<td class="t-center">2017-02-03</td>
+											<td>付款2000元整，扣12分</td>
+										</tr>
+										</tbody>
+									</table>
+									<table class="prue-table-vertical">
+										<caption class="table-title">市公共交通——故意违章乘车</caption>
+										<thead>
+										<tr>
+											<th>违章车次</th>
+											<th>违章路段</th>
+											<th>违章时间</th>
+											<th>情况说明</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>81路公交</td>
+											<td>温州市鹿城区绣山路</td>
+											<td class="t-center">2017-02-03</td>
+											<td class="width300">驾驶员吴贵伟于2015年1月29日下午15点驾驶54路10一663车，由茶山开往府东家园途经双车路站有三位乘客上车其中有位女乘客刷卡发现是男性老人卡，卡号2496859170姓名陈文达当场给于没收。</td>
+										</tr>
+										</tbody>
+									</table>
+									<table class="prue-table-vertical">
+										<caption class="table-title">中国移动——个人欠费信息</caption>
+										<thead>
+										<tr>
+											<th>欠费号码</th>
+											<th>欠费起始日期</th>
+											<th>欠费截止日期</th>
+											<th>欠费金额</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td class="t-center">18157684632</td>
+											<td class="t-center">2017-01-02</td>
+											<td class="t-center">2017-02-03</td>
+											<td class="t-center">100元</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="detail-tab-content" style="display: none;">
+									<div class="nothing-text">
+										<p class="fi-dm-objection-complaints font-size18"></p>
+										<p>暂无此类信息</p>
+									</div>
+								</div>
+								<div class="detail-tab-content" style="display: none;">
+									<table class="prue-table-vertical">
+										<caption class="table-title">市公安局——行政处罚信息</caption>
+										<thead>
+										<tr>
+											<th>处罚文号</th>
+											<th>处罚事由</th>
+											<th>违章区段</th>
+											<th>处罚时间</th>
+											<th>处罚内容</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td class="t-center">温政第127号文件</td>
+											<td>饮酒后驾驶机动车</td>
+											<td>温州市鹿城区绣山路</td>
+											<td class="t-center">2017-02-03</td>
+											<td>付款2000元整，扣12分</td>
+										</tr>
+										<tr>
+											<td class="t-center">温政第127号文件</td>
+											<td>饮酒后驾驶机动车</td>
+											<td>温州市鹿城区绣山路</td>
+											<td class="t-center">2017-02-03</td>
+											<td>付款2000元整，扣12分</td>
+										</tr>
+										</tbody>
+									</table>
+									<table class="prue-table-vertical">
+										<caption class="table-title">市交通局——驾驶员资质信息</caption>
+										<thead>
+										<th>资质名称</th>
+										<th>资质证书编号</th>
+										<th>有效起始日期</th>
+										<th>有效截止日期</th>
+										<th>核发时间</th>
+										<th>证书状态</th>
+										</thead>
+										<tbody>
+										<tr>
+											<td>经营性道路旅客运输驾驶员</td>
+											<td class="t-center">3300341570</td>
+											<td class="t-center">2016-02-03</td>
+											<td class="t-center">2017-02-03</td>
+											<td class="t-center">2016-02-03</td>
+											<td class="t-center">有效</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<!--<div class="detail-tab-outer">
+                        </div>-->
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+		<!--slimScroll-->
+		<script type="text/javascript" src="../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+		<!--Raphaël -->
+		<script src="../../thirdparty/raphael.min.js" type="text/javascript"></script>
+		<!-- Swiper JS -->
+		<script src="../../thirdparty/Swiper-2.7.6/dist/idangerous.swiper.min.js"></script>
+		<!--dialog-->
+		<script type="text/javascript" src="../../thirdparty/artDialog/dialog-min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/artDialog/dialog-plus-min.js"></script>
+		
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/layout.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+            //nav slider
+            var curNavIndex = $(".nav .cur").index();
+            var swiper = new Swiper('.swiper-container', {
+                nextButton: '.fi-arrow-right',//前进按钮的css选择器或HTML元素。
+                prevButton: '.fi-arrow-left',//后退按钮的css选择器或HTML元素
+                slidesPerView: 'auto', //(number 或 'auto')设置slider容器能够同时显示的slides数量,默认1
+                mousewheelControl: true,
+                resizeReInit: true,
+                initialSlide :curNavIndex,//设定初始化时slide的索引 ,默认0
+                onFirstInit: function(swiper){
+                    setcontrol();
+                },
+                onInit: function(swiper){
+                    setcontrol();
+                }
+            });
+            $('.fi-arrow-left').on('click', function(e){
+                e.preventDefault();
+                swiper.swipePrev();
+            });
+            $('.fi-arrow-right').on('click', function(e){
+                e.preventDefault();
+                swiper.swipeNext();
+            });
+            function setcontrol(){
+                var liWidth = 0;
+                $('.nav li').each(function () {
+                    liWidth += $(this).width();
+                })
+                if(liWidth >$('.swiper-container').width()){
+                    console.log('liwidth1  ' + liWidth);
+                    console.log('navwidth1  ' + $('.swiper-container').width());
+                    $('.fi-arrow-right').show();
+                    $('.fi-arrow-left').show();
+                }else{
+                    console.log('liwidth2  ' + liWidth);
+                    console.log('navwidth2  ' + $('.swiper-container').width());
+                    $('.fi-arrow-right').hide();
+                    $('.fi-arrow-left').hide();
+                }
+            };
+		</script>
+		<script type="text/javascript">
+			//历程
+			var contentArray = [
+				/*{"datetime":"1993.03.07","content":"文字文字文字文字文字文"},
+				{"datetime":"1996.11.22","content":"文字文字文字文字1"},
+				{"datetime":"2011.01.14","content":"文字文字文字文字文字文字文字出"},
+				{"datetime":"2011.10.17","content":"文字文字"},
+				{"datetime":"2011.11.22","content":"文字文字文字"},
+				{"datetime":"2011.12.30","content":"文字文字达的文字"},
+				{"datetime":"2012.07.11","content":"文字文字文字文"},
+				{"datetime":"2012.07.26","content":"文字文"},
+				{"datetime":"2013.09.13","content":"文字文字文字文字文字文字文字出"}*/
+			];
+			function svgCourse(){
+				var aLen = contentArray.length,
+					aRows = (Math.ceil( aLen / 5) != 0)? Math.ceil( aLen / 5) : 1,
+					pWidth = $('#my_svg').width();
+				var r = Raphael(document.getElementById("my_svg"), pWidth, aRows * 104);
+				//线
+				var bgLine = r.set();
+				//圆
+				var tCircle = r.set();
+				//日期
+				var dateText = r.set();
+				//内容
+				var contentText = r.set();
+				var startX = 60,
+					lastX = pWidth - 60,
+					x = startX,
+					y = 70,
+					dY = y * 2 + 22,
+					spacing = (lastX - startX) / 4,
+					dateY = 22,
+					n = 0,
+					u = 0,
+					cHei = 0,oldHei = 0,oldY = 0;
+
+				if(aLen == 0){
+					//圆
+					tCircle.push(
+						r.circle(x ,y)
+					).attr({fill: "#fff", stroke: "#2ba8f8",r:5,"stroke-width":2});
+					//日期
+					dateText.push(
+						r.text(x, y - 20, '无数据').attr({"font-size":12})
+					).attr({fill: "#999", "text-anchor": "middle"});
+					//线
+					bgLine.push(r.path("M"+ (x + 5) +","+ y +"L"+ lastX +"," + y).attr({"stroke":"#ccc","stroke-width":4}));
+					bgLine.push(r.path("M"+ (x + 5) +","+ y +"L"+ (x + 60) +"," + y).attr({"stroke":"#2ba8f8","stroke-width":4}));
+				}else{
+					$.each(contentArray, function(i,val){
+						var dateStr = contentArray[i].datetime,
+							contentStr = contentArray[i].content;
+						var newT = contentStr.replace(/(.{8})/g,'$1\n');
+						var _length =contentStr.length,
+							tRows = Math.ceil(_length/8),
+							half = parseInt(tRows/2);
+							cHei = tRows * 16;
+						if(n != 0){
+							if(n%5 == 0){
+								oldY = y;
+								x = startX;
+								y +=  oldHei - x;
+								dY =  y + 70;
+
+								if(u == 0){
+									u = -1;
+								}else{
+									u = 0;
+								}
+							};
+						};
+						if(n == 5){
+							n = 1;
+						}else{
+							n++;
+						};
+						//圆
+						tCircle.push(
+							r.circle(x ,y)
+						).attr({fill: "#fff", stroke: "#2ba8f8",r:5,"stroke-width":2});
+						//日期
+						dateText.push(
+							r.text(x, y - 20, dateStr).attr({"font-size":12})
+						).attr({fill: "#999", "text-anchor": "middle"});
+						//内容
+						contentText.push(
+							r.text(x, y - dateY *2,newT).attr({"font-size":12})
+						).attr({fill: "#999", "text-anchor": "middle"});
+						//线
+						if(((aLen - 1) == i) && (n%5 != 0)){
+							bgLine.push(r.path("M"+ (x + 5) +","+ y +"L"+ lastX +"," + y).attr({"stroke":"#ccc","stroke-width":4}));
+							bgLine.push(r.path("M"+ (x + 5) +","+ y +"L"+ (x + 60) +"," + y).attr({"stroke":"#2ba8f8","stroke-width":4}));
+						}else if((n == 1)||(n%5 != 0) &&((aLen - 1) != i)){
+							bgLine.push(r.path("M"+ (x + 5) +","+ y +"L"+ lastX +"," + y).attr({"stroke":"#ccc","stroke-width":4}));
+							bgLine.push(r.path("M"+ (x + 5) +","+ y +"L"+ (x + spacing - 5) +"," + y).attr({"stroke":"#2ba8f8","stroke-width":4}));
+
+						};
+						if(parseInt(cHei) > parseInt(oldHei)){
+							oldHei = parseInt(cHei) + (dY - dateY - half*10);
+						};
+						x = x + spacing;
+
+					});
+				};
+			};
+			//初始加载
+			$(function(){
+			    //top info
+                var punishSwiper = new Swiper('#isPunish', {
+                    slidesPerView: 1, //(number 或 'auto')设置slider容器能够同时显示的slides数量,默认1
+                    mousewheelControl: true,
+                    resizeReInit: true,
+                    initialSlide : 0//设定初始化时slide的索引 ,默认0
+                });
+                var rewardSwiper = new Swiper('#isReward', {
+                    slidesPerView: 1, //(number 或 'auto')设置slider容器能够同时显示的slides数量,默认1
+                    mousewheelControl: true,
+                    resizeReInit: true,
+                    initialSlide : 0//设定初始化时slide的索引 ,默认0
+                });
+                var boxObj;
+                $('.info-swiper-outer').each(function () {
+                    var $this = $(this);
+                    if($this.find('li').length == 1){
+                        $this.find('.info-swiper-ar,.info-swiper-al').addClass('gray');
+                    } else {
+                        $this.find('.info-swiper-al').addClass('gray');
+                    };
+                });
+                $('.info-swiper-al').on('click', function(e){
+                    var $this = $(this);
+                    infoSwiper($this);
+                    e.preventDefault();
+                    boxObj.swipePrev();
+                    arrowLayout($this);
+                });
+                $('.info-swiper-ar').on('click', function(e){
+                    var $this = $(this);
+                    infoSwiper($this);
+                    e.preventDefault();
+                    boxObj.swipeNext();
+                    arrowLayout($this);
+                });
+                function infoSwiper(obj) {
+                    var $this = obj,
+                        objID = $this.siblings('.info-swiper-box').find('.info-swiper').attr('id');
+                    if( objID =='isPunish'){
+                        boxObj = punishSwiper;
+                    } else {
+                        boxObj = rewardSwiper;
+                    };
+                };
+                function arrowLayout(obj){
+                    var $this = obj,
+                        liLen = $this.siblings('.info-swiper-box').find('li').length,
+                        activeIndex = $this.siblings('.info-swiper-box').find('.swiper-slide-active').index();
+                    if(liLen == 1){
+                        $this.siblings('.info-swiper-arrow').removeClass('gray');
+                        $this.removeClass('gray');
+                    } else if(liLen > 1) {
+                        if( ((activeIndex == 0) && ($this.is('.info-swiper-al'))) || (activeIndex == ( liLen - 1 ))){
+                            //if($this.hasClass(''))
+                            $this.addClass('gray');
+                        };
+                        if((activeIndex == 0) ){
+                            $this.siblings('.info-swiper-ar').removeClass('gray')
+                        } else if ( activeIndex == ( liLen - 1 ) ){
+                            $this.siblings('.info-swiper-al').removeClass('gray')
+                        };
+                    };
+                };
+                //bubble
+                $(document).on('click','.info-swiper li',function () {
+                    var content = $(this).data('title'),
+						id = $(this).attr('id');
+                    $.GD.bubbles({
+                        msg: content,
+                        id: id,
+                        width:'100%'
+                    });
+                });
+
+				//tab control
+				$(".detail-tab-btn-outer .detail-tab-btn").click(function(){
+					var index = $(this).index();
+					$(this).addClass('cur').siblings('.detail-tab-btn').removeClass('cur');
+					$(".detail-tab-content-outer .detail-tab-content").eq(index).show();
+					$(".detail-tab-content-outer .detail-tab-content").eq(index).siblings('.detail-tab-content').hide()
+				});
+				//tab content top
+				$(".detail-tab-content-outer").css({
+					'top':function(){
+							var _top = $(".detail-tab-top").position().top + $(".detail-tab-top").height() +10;
+							return _top;
+						}
+				});
+				//svg add
+				svgCourse();
+			});
+			//监听窗体大小变更事件
+			$(window).resize(function(){
+				//remove svg
+				$("#my_svg svg").remove();
+				
+				//tab content top
+				$(".detail-tab-content-outer").css({
+					'top':function(){
+							var _top = $(".detail-tab-top").position().top + $(".detail-tab-top").height() +10;
+							return _top;
+						}
+				});
+				
+				//svg afresh
+				svgCourse();
+			});
+			
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>双表格2-中间有按钮</title>
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<link rel="stylesheet" type="text/css" href="css/dataGrid.layout.css"/>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<!-- 头部 -->
+			<div class="nav-outer">
+				<div class="nav-inner">
+					<div class="overflow-hidden">
+						<ul class="top-info right">
+							<li>
+								<a href="###">您好，李玉东（cxy）</a>
+							</li>
+							<li>
+								<a href="###">
+									<span class="head-icon message-icon"></span>
+									<span class="orange-point">19</span>
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<span class="head-icon remind-icon"></span>
+									<span class="blue-point">5</span>
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<span class="head-icon set-icon"></span>设置
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<span class="head-icon exit-icon"></span>退出
+								</a>
+							</li>
+						</ul>
+					</div>
+					<h1 class="logo"></h1>
+					<ul class="nav" id="nav">
+						<li>
+							<a href="index.html">
+								<span class="index-icon"></span>系统首页
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+						<li class="cur">
+							<a href="report.html">
+								<span class="project-icon"></span>项目管理
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+						<li>
+							<a href="###">
+								<span class="statistics-icon"></span>统计分析
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+						<li>
+							<a href="###">
+								<span class="map-icon"></span>电子地图
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+						<li>
+							<a href="###">
+								<span class="public-info-icon"></span>公共信息
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+						<li>
+							<a href="###">
+								<span class="system-icon"></span>系统管理
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+						<li>
+							<a href="###">
+								<span class="performance-icon"></span>绩效管理
+							</a>
+							<span class="nav-cur-icon"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="nav-line-vertical"></div>
+			</div>
+			<!-- 侧边栏 -->
+			<div class="sub-nav-outer">
+				<div class="scroll">
+					<div class="sub-nav-inner">
+						<dl>
+							<dt class="cur"><i class="fi-record"></i>项目填报<span class="fi-arrow-down"></span></dt>
+							<dd>
+								<div>
+									<a href="###">项目填报1</a>
+									<a href="###" class="cur-a">项目填报2</a>
+									<a href="###">项目填报3</a>
+									<a href="###">项目填报4</a>
+								</div>
+							</dd>
+							<dt><i class="fi-record"></i>项目变更<span class="fi-arrow-right"></span></dt>
+							<dd>
+								<div>
+									<a href="###">项目变更1</a>
+									<a href="###">项目变更2</a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+									<a href="###">项目变更3</a>
+									<a href="###">项目变更4</a>
+								</div>
+							</dd>
+							<dt><i class="fi-record"></i>项目年报<span class="fi-arrow-right"></span></dt>
+							<dd>
+								<div>
+									<a href="###">项目年报1</a>
+									<a href="###">项目年报2</a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+									<a href="###">项目年报3</a>
+								</div>
+							</dd>
+							<dt><i class="fi-record"></i>项目库<span class="fi-arrow-right"></span></dt>
+							<dd>
+								<div>
+									<a href="###">项目库1</a>
+									<a href="###">项目库2</a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				
+			</div>
+			<!-- 主体 -->
+			<div class="main">
+				<!-- 面包屑 -->
+				<div class="main-bread-crumb">
+					<div class="breadcrumb-hidden">
+						<span class="breadcrumb-icon"></span>
+						<ol>
+							<li><span class="breadcrumb-line"></span><a href="###">项目管理</a>
+							</li>
+							<li><span class="breadcrumb-line breadcrumb-arrow"></span><a href="###">项目填报</a>
+							</li>
+						</ol>
+					</div>
+				</div>
+				<!-- 表格 -->
+				<div class="main-table-outer double-table">
+					<div class="display-table">
+						<div class="table-three-big display-td relative">
+							<div class="display-table">
+								<!-- 搜索栏 -->
+								<div class="main-search">
+									<form>
+										<div class="overflow-hidden">
+											<input type="text" placeholder="输入项目名称查询" class="search-input left" />
+											<div class="search-btn-group left">
+												<input type="submit" class="theme-btn black-btn" value="查询">
+											</div>
+										</div>
+									</form>
+								</div>
+								<!-- 按钮操作栏 -->
+								<div class="main-control clearfix">
+									<div class="btns-outer">
+										<a href="###" class="add-btn green-btn">新增</a>
+										<a href="###" class="delete-btn red2-btn">删除</a>
+									</div>
+								</div>
+								<!-- 表格 -->
+								<div class="display-tr tab-table-inner">
+									<table id="datagrid1" class="user-datagrid easyui-datagrid" style="height:100%;width:100%;"></table>
+								</div>
+							</div>
+						</div>
+						<!-- 中间操作栏 -->
+						<div class="table-three-small display-td">
+							<div class="display-table">
+								<div class="display-tr null-row"></div>
+								<div class="display-tr null-row"></div>
+								<div class="display-tr">
+									<div class="display-td btn-col">
+										<input type="button" class="add-input green-btn small-btn" value="添加" />
+										<input type="button" class="add-input green-btn small-btn" value="全部添加">
+										<input type="button" class="delete-input red2-btn small-btn"  value="移除">
+										<input type="button" class="delete-input red2-btn small-btn"  value="全部移除">
+									</div>
+				
+								</div>
+							</div>
+
+						</div>
+						<div class="table-three-big display-td relative">
+							<div class="display-table">
+								<!-- 搜索栏 -->
+								<div class="main-search">
+									<form>
+										<div class="overflow-hidden">
+											<input type="text" placeholder="输入项目名称查询" class="search-input left" />
+											<div class="search-btn-group left">
+												<input type="submit" class="theme-btn black-btn" value="查询">
+											</div>
+										</div>
+									</form>
+								</div>
+								<!-- 按钮操作栏 -->
+								<div class="main-control clearfix">
+									<div class="btns-outer">
+										<a href="###" class="add-btn green-btn">新增</a>
+										<a href="###" class="delete-btn red2-btn">删除</a>
+									</div>
+								</div>
+								<!-- 表格 -->
+								<div class="display-tr tab-table-inner">
+									<table id="datagrid2" class="user-datagrid easyui-datagrid" style="height:100%;width:100%;"></table>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+
+		<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+		<!--slimScroll-->
+		<script type="text/javascript" src="../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+		<script src="js/layout.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#datagrid1').datagrid({
+					url:"getListData1.json",
+					columns:[[
+				          {field:'id',title:'ID',width:100},
+				          {field:'name',title:'Name',width:100}
+				    ]],
+				    frozenColumns:[[
+						{field:'ck',checkbox:true},// 复选框列
+						{field:'opt', title: "操作", width:100, formatter: function(value,row,index){
+							  return '<a href="###">删除</a>'
+						}}
+				    ]],
+					method:"post",
+					pageSize:10,
+					rownumbers:true,
+					pagination:true,
+					collapsible:true,
+					
+					singleSelect:false,// 复选
+					selectOnCheck:true,
+					checkOnSelect: true,
+					
+					
+				    sortName:'id,     name',
+				    sortOrder:'desc   ,asc,asc   ',
+				   	queryParams:{}// 查询条件
+				});
+				
+				$('#datagrid2').datagrid({
+					url:"getListData2.json",
+					columns:[[
+				          {field:'id',title:'ID',width:100},
+				          {field:'name',title:'Name',width:100},
+				          {field:'email',title:'E-mail',width:120}
+				    ]],
+				    frozenColumns:[[
+						{field:'ck',checkbox:true},// 复选框列
+						{field:'opt', title: "操作", width:100, formatter: function(value,row,index){
+							  return '<a href="###">删除</a>'
+						}}
+				    ]],
+					method:"post",
+					pageSize:10,
+					rownumbers:true,
+					pagination:true,
+					collapsible:true,
+					
+					singleSelect:false,// 复选
+					selectOnCheck:true,
+					checkOnSelect: true,
+					
+					
+				    sortName:'id,     name',
+				    sortOrder:'desc   ,asc,asc   ',
+				   	queryParams:{}// 查询条件
+				});
+
+			});
+		</script>
+	</body>
+
+</html>

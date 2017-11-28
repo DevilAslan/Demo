@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>数据挖掘查询3--法人与其他组织</title>
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<!-- 头部 -->
+			<div class="nav-outer">
+				<div class="nav-inner">
+					<div class="nav-box">
+						<h1 class="logo"></h1>
+						<ul class="nav" id="nav">
+							<li>
+								<a href="index.html">
+									首页
+								</a>
+								
+							</li>
+							<li class="cur">
+								<a href="report.html">
+									数据管理系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									数据查询系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									报告管理系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									数据挖掘系统
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									应用支撑系统
+								</a>
+							</li>
+						</ul>
+						<div class="overflow-hidden">
+							<ul class="top-info right">
+								<li class="relative">
+									<a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+									
+									<div class="user-control">
+										<a href="###">
+											<span class="fi-key"></span>
+											修改密码
+										</a>
+										<a href="###">
+											<span class="fi-envelop"></span>
+											消息
+										</a>
+										<a href="###">
+											<span class="fi-cog"></span>
+											设置
+										</a>
+									</div>
+								</li>
+								<li>
+									<a href="###">
+										<span class="fi-exit"></span>退出
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			
+				<div class="vertical-shadow"></div>
+			</div>
+			<!-- 侧边栏 -->
+			<div class="sub-nav-outer">
+				<div class="sub-nav-box clearfix">
+					<div class="left sub-nav-scroll">
+						<div class="scroll">
+							<div class="sub-nav-inner">
+								<div>
+									<h3><i class="fi-bell"></i>表格</h3>
+									<ul>
+										<li><a href="base.html">dG基础结构</a></li>
+										<li><a href="base2-noControlBtn.html">dG基础结构-无</a></li>
+										<li><a href="doubleTable.html">双表格1</a></li>
+										<li><a href="doubleTable2.html">双表格2</a></li>
+										<li><a href="tabTable.html">tab同页</a></li>
+										<li><a href="tabTable-differentPage1.html">tab不同页</a></li>
+										<li><a href="tabTable-nesting-mix.html">tab嵌套-同页不同页混合</a></li>
+										<li><a href="tabTable-differentPage7-compositeAnalysis.html">综合分析</a></li>
+										<li><a href="treeAndTable.html">树和表格</a></li>
+										<li><a href="treeAndTable2.html">树,表格,查询栏</a></li>
+										<li><a href="doubleTableAndForm.html">上:表单,下:并列表格</a></li>
+										<li><a href="treeAndTableAndForm.html">树\表格\表单</a></li>
+										<li><a href="pureTable.html">纯表格</a></li>
+									</ul>
+									<h4><a href="widget.html"><i class="fi-bell"></i>小部件</a></h4>
+									<h3><i class="fi-bell"></i>表单</h3>
+									<ul>
+										<li><a href="formAccordion.html">折叠表单</a></li>
+										<li><a href="formAccordion-iframe.html">折叠表单-iframe</a></li>
+										<li><a href="formModule.html">分块表单</a></li>
+										<li><a href="formSimple.html">基本表单</a></li>
+										<li><a href="formSimple-detail.html">基本表单-详情</a></li>
+										<li><a href="formEdit-detail.html">可编辑-详情</a></li>
+										<li><a href="cns-detail.html">承诺书-详情</a></li>
+									</ul>
+									<h4><a href="searchAndCharts.html"><i class="fi-bell"></i>搜索和图表</a></h4>
+									<h3><i class="fi-bell"></i>数据归集目录</h3>
+									<ul>
+										<li><a href="dataDirectory.html">版本一</a></li>
+										<li><a href="dataDirectory2.html">版本二</a></li>
+									</ul>
+									<h3 class="cur"><i class="fi-bell"></i>数据挖掘</h3>
+									<ul>
+										<li><a href="dataMiningSearch1.html">查询一</a></li>
+										<li><a href="dataMiningSearch2.html">查询二</a></li>
+										<li><a href="dataMiningSearch3.html">查询三</a></li>
+										<li><a href="dataMiningSearch4-v1.html">查询四-档案查询</a></li>
+										<li><a href="dataMiningSearch5-v1.html">查询五-报告查询</a></li>
+										<li><a href="dataMiningSearchDetail1.html">查询详情一</a></li>
+										<li><a href="dataMiningSearchDetail2.html">查询详情二</a></li>
+										<li><a href="dataMiningSearchDetail3-v1.html" class="cur-a">查询详情三</a></li>
+										<li><a href="dataMiningSearchDetail4-v1.html">查询详情四-档案查询-企业</a></li>
+										<li><a href="dataMiningSearchDetail5-v1.html">查询详情五-档案查询-个人</a></li>
+										<li><a href="dataMiningLayout1.html">布局-左一右上一右下二</a></li>
+										<li><a href="dataMiningLayout2.html">布局-左二右一</a></li>
+										<li><a href="dataMiningLayout3.html">布局-田字</a></li>
+										<li><a href="dataMiningLayout4.html">布局-查询栏下田字</a></li>
+										<li><a href="dataMiningLayout5.html">布局-左右</a></li>
+										<li><a href="dataMiningCharts1.html">关系图1</a></li>
+										<li><a href="dataMiningCharts2.html">关系图2</a></li>
+										<li><a href="dataMiningCharts3.html">树图</a></li>
+									</ul>
+									<h3><i class="fi-bell"></i>列表</h3>
+									<ul>
+										<li><a href="list.html">列表1</a></li>
+										<li><a href="list2.html">列表2</a></li>
+									</ul>
+									<h3><i class="fi-bell"></i>信用评估</h3>
+									<ul>
+										<li><a href="credit-evaluate-charts.html">信用评估图表</a></li>
+										<li><a href="credit-evaluate-details.html">信用评估详情</a></li>
+									</ul>
+									<h4><a href="ranking.html"><i class="fi-bell"></i>排行</a></h4>
+									<h4><a href="icon.html"><i class="fi-bell"></i>图标</a></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="left horizontal-shadow relative nav-control">
+						<i class="absolute icon-arrow-left"></i>
+					</div>
+				</div>
+			</div>
+			<!-- 主体 -->
+			<div class="main">
+				<!-- 面包屑 -->
+				<div class="main-bread-crumb">
+					<div class="breadcrumb-hidden">
+						<span class="fi-position left"></span>
+						<ol class="left">
+							<li>
+								<span>：</span>
+								<a href="###">项目管理</a>
+							</li>
+							<li>
+								<span class="breadcrumb-line">>></span><a href="###">项目填报</a>
+							</li>
+						</ol>
+					</div>
+				</div>
+				<!-- 内容 -->
+				<div class="main-table-outer tab-outer">
+					<div class="tab-title-box">
+						<div class="cur">
+							<a href="javascript:void(0)"><h3>后台日志</h3></a>
+						</div>
+						<div>
+							<a href="###"><h3>官网日志</h3></a>
+						</div>
+					</div>
+					<div class="tab-content block">
+						<div class="special-content clearfix">
+							<div class="left mining-detail-left">
+								<div class="left">
+									<span class="zrr-bg"></span>
+									<div class="absolute">
+										<h5>自然人</h5>
+										<p>8204475人</p>
+									</div>
+								</div>
+								<div class="left">
+									<span class="qy-bg"></span>
+									<div class="absolute">
+										<h5>企业</h5>
+										<p>709825家</p>
+									</div>
+								</div>
+								<div class="left">
+									<span class="qtzz-bg"></span>
+									<div class="absolute">
+										<h5>其他组织</h5>
+										<p>11955家</p>
+									</div>
+								</div>
+							</div>
+							<div class="right mining-detail-right">
+								<table class="special-table">
+									<colgroup>
+										<col style="width: 20%;"/>
+										<col style="width: 30%;"/>
+										<col style="width: 20%;"/>
+										<col style="width: 30%;"/>
+									</colgroup>
+									<tr>
+										<th>累计归集数据量</th>
+										<td>31029201条</td>
+										<th>今日归集数据量</th>
+										<td>2901条</td>
+									</tr>
+									<tr>
+										<th>累计注册用户数</th>
+										<td>178293位</td>
+										<th>今日注册用户数</th>
+										<td>292位</td>
+									</tr>
+									<tr>
+										<th>累计提供查询次数</th>
+										<td>637222次</td>
+										<th>今日提供查询次数</th>
+										<td>1958次</td>
+									</tr>
+									<tr>
+										<th>累计报告打印次数</th>
+										<td>27282份</td>
+										<th>今日报告打印次数</th>
+										<td>3685份</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="tab-table-inner">
+							<div class="charts-outer">
+								<div class="charts-option-box">
+									<div class="charts-option cur">
+										<p>今日</p>
+									</div>
+									<div class="charts-option">
+										<p>本周</p>
+									</div>
+									<div class="charts-option">
+										<p>本月</p>
+									</div>
+								</div>
+								<div class="charts-box h-per100 clearfix">
+									<div class="data-list left w-per30 h-per100">
+										<div class="left-scroll">
+											<div class="list-col">
+												<label>登录用户数：</label>
+												<span>187598</span>
+											</div>
+											<div class="list-col">
+												<label>异议处理条数：</label>
+												<span>65</span>
+											</div>
+											<div class="list-col">
+												<label>投诉处理条数：</label>
+												<span>12</span>
+											</div>
+											<div class="list-col">
+												<label>自然人查询数：</label>
+												<span>8754</span>
+											</div>
+											<div class="list-col">
+												<label>法人查询数：</label>
+												<span>214</span>
+											</div>
+											<div class="list-col">
+												<label>其他组织查询数：</label>
+												<span>132</span>
+											</div>
+										</div>
+									</div>
+									<div class="right w-per70 h-per100">
+										<div class="highcharts-outer w-per100 h-per90">
+											<div id="container" style="width:100%;height:100%"></div>
+										</div>
+										<div class="radio-outer h-per10 btn-row">
+											<label><input type="radio" name="userType" value="2"  onClick="subuserType();" checked="checked">自然人用户年龄</label>
+											<label><input type="radio" name="userType" value="3"  onClick="subuserType();">数据查询</label>
+											<label><input type="radio" name="userType" value="4"  onClick="subuserType();">报告打印</label>
+											<label><input type="radio" name="userType" value="5"  onClick="subuserType();">异议投诉</label> 
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		    	</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+		<!--slimScroll-->
+		<script type="text/javascript" src="../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+		<!--highcharts-->
+		<script type="text/javascript" src="../../thirdparty/Highcharts-4.1.3/js/highcharts.js"></script>
+		<script type="text/javascript" src="../../thirdparty/Highcharts-4.1.3/js/highcharts-more.js"></script>
+		
+		<!--时间轴-->
+		<script type="text/javascript" src="js/vertical-timeline/vertical-timeline.min.js"></script>
+		<script src="js/layout.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.left-scroll').slimscroll({
+					height:'100%'
+			    });
+				
+				$('.charts-option').click(function(){
+					$(this).addClass('cur');
+					$(this).siblings('.charts-option').removeClass('cur');
+				})
+				//图表
+				$('#container').highcharts({
+			        chart: {
+			            type: 'line',
+			            backgroundColor: 'none',
+			        },
+			        title: {
+			            text: null
+			        },
+			        legend:{
+			        	align: 'right',
+            			verticalAlign: 'top',
+			        },
+			        xAxis: {
+			            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+			        },
+			        yAxis: {
+			            title: {
+			                text: ''
+			            }
+			        },
+			        plotOptions: {
+			            line: {
+			                dataLabels: {
+			                    enabled: true
+			                },
+			            }
+			        },
+			        series: [{
+			            name: 'Tokyo',
+			            data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+			        	color: '#7cb7ed'
+			        }],
+			        credits:{
+					     enabled:false // 禁用版权信息
+					}
+			    });
+			    
+				updateChartSize();
+			});
+			//监听窗体大小变更事件
+			$(window).resize(function(){
+				updateChartSize();
+			});
+			//图表大小
+			function updateChartSize() {
+				$(".highcharts").each(function(){
+					var $this =$(this);
+					var $id = $this.attr("id");
+					var height = $this.parent("div").height(); //获取父级高度
+					var width= $this.parent("div").width(); //获取父级宽度
+					
+					//动态修改大小
+					var hCharts = $("#" + $id).highcharts();
+					hCharts.setSize(width, height);
+				})
+			};
+		</script>
+	</body>
+
+</html>

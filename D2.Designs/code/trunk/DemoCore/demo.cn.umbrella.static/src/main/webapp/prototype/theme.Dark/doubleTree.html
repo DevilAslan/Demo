@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>弹窗内————两个ztree</title>
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link href="js/jquery-easyui-1.4.5/themes/icon.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../thirdparty/ztree/css/zTreeStyle/zTreeStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+		<link rel="stylesheet" type="text/css" href="css/dataGrid.layout.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- 主体 -->
+			<!-- 选择 -->
+			<div class="main-search">
+				<div class="overflow-hidden">
+					<ul>
+						<li>
+							<label class="query-label">项目名称</label>
+							<select>
+								<option value="0">未开工</option>
+								<option value="1">谋划</option>
+								<option value="2">待开工</option>
+								<option value="3">建设初期</option>
+								<option value="4">建设中期</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- tree -->
+			<div class="main-table-outer dialog-table-outer">
+				<div class="display-table">
+					<div class="table-two-big display-td">
+						<div class="display-table relative double-tree-unchecked">
+							<div class="display-tr text-font">
+								未选择
+							</div>
+							<!-- 树 -->
+							<div class="display-tr tab-table-inner relative">
+								<div class="ztree-module absolute">
+									<div class="ztree-outer">
+										<ul id="treeDemo" class="ztree"></ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="display-td"></div>
+					<div class="table-two-big display-td">
+						<div class="display-table relative double-tree-checked">
+							<div class="display-tr text-font">
+								已选择
+							</div>
+							<!-- 树 -->
+							<div class="display-tr tab-table-inner relative">
+								<div class="ztree-module absolute">
+									<div class="ztree-outer">
+										<ul id="treeDemo2" class="ztree"></ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="btn-row fixed">
+				<input type="submit" class="theme-btn" value="保存">
+				<a href="###" class="theme-btn2">取消</a>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/ztree/js/jquery.ztree.core-3.5.min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/ztree/js/jquery.ztree.excheck-3.5.min.js"></script>
+		<!--dialog-->
+		<script type="text/javascript" src="../../thirdparty/artDialog/dialog-min.js"></script>
+		<script type="text/javascript" src="../../thirdparty/artDialog/dialog-plus-min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script src="js/layout.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+			var setting = {	};
+			var zNodes =[
+				{ name:"父节点1 - 展开", open:true,
+					children: [
+						{ name:"父节点11 - 折叠",
+							children: [
+								{ name:"叶子节点111"},
+								{ name:"叶子节点112"},
+								{ name:"叶子节点113"},
+								{ name:"叶子节点114"}
+							]},
+						{ name:"父节点12 - 折叠", open:true,
+							children: [
+								{ name:"叶子节点121"},
+								{ name:"叶子节点122"},
+								{ name:"叶子节点123"},
+								{ name:"叶子节点124"}
+							]},
+						{ name:"父节点13 - 没有子节点", isParent:true}
+					]},
+				{ name:"父节点2 - 折叠", open:true,
+					children: [
+						{ name:"父节点21 - 展开", open:true,
+							children: [
+								{ name:"叶子节点211"},
+								{ name:"叶子节点212"},
+								{ name:"叶子节点213"},
+								{ name:"叶子节点214"}
+							]},
+						{ name:"父节点22 - 折叠", open:true,
+							children: [
+								{ name:"叶子节点221"},
+								{ name:"叶子节点222"},
+								{ name:"叶子节点223"},
+								{ name:"叶子节点224"}
+							]},
+						{ name:"父节点23 - 折叠", open:true,
+							children: [
+								{ name:"叶子节点231"},
+								{ name:"叶子节点232"},
+								{ name:"叶子节点233"},
+								{ name:"叶子节点234"}
+							]}
+					]},
+				{ name:"父节点3 - 没有子节点", isParent:true},
+				{ name:"父节点4 - 折叠", open:true,
+					children: [
+						{ name:"父节点41 - 展开", open:true,
+							children: [
+								{ name:"叶子节点411"},
+								{ name:"叶子节点412"},
+								{ name:"叶子节点413"},
+								{ name:"叶子节点414"}
+							]},
+						{ name:"父节点42 - 折叠", open:true,
+							children: [
+								{ name:"叶子节点421"},
+								{ name:"叶子节点422"},
+								{ name:"叶子节点423"},
+								{ name:"叶子节点424"}
+							]},
+						{ name:"父节点43 - 折叠", open:true,
+							children: [
+								{ name:"叶子节点431"},
+								{ name:"叶子节点432"},
+								{ name:"叶子节点433"},
+								{ name:"叶子节点434"}
+							]}
+					]}
+
+			];
+
+			$(document).ready(function(){
+				$.fn.zTree.init($("#treeDemo"), setting, zNodes);
+				$.fn.zTree.init($("#treeDemo2"), setting, zNodes);
+			});
+		</script>
+	</body>
+</html>

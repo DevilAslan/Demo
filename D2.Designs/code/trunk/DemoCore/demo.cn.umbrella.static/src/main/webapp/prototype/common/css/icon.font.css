@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'sys-font';
+    src:    url('../fonts/sys-font.eot?gji6l9');
+    src:    url('../fonts/sys-font.eot?gji6l9#iefix') format('embedded-opentype'),
+        url('../fonts/sys-font.ttf?gji6l9') format('truetype'),
+        url('../fonts/sys-font.woff?gji6l9') format('woff'),
+        url('../fonts/sys-font.svg?gji6l9#sys-font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="fi-"], [class*=" fi-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'sys-font' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fi-address-list:before { content: "\e900"; }
+.fi-month-record:before { content: "\e901"; }
+.fi-policy-file:before { content: "\e902"; }
+.fi-project-month:before { content: "\e903"; }
+.fi-record:before { content: "\e904"; }
+.fi-subtotal:before { content: "\e905"; }
+
+/*以下4个是箭头*/
+.fi-arrow-down:before { content: "\e906"; }
+.fi-arrow-left:before { content: "\e907"; }
+.fi-arrow-right:before { content: "\e908"; }
+.fi-arrow-up:before { content: "\e909"; }
+
+/*home页 图标颜样式*/
+.home .main [class^="fi-"],.home .main [class*=" fi-"]{display: block;font-size: 8em;color: #fff;text-align: center;}

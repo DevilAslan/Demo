@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>新增处罚公示</title>
+		<link rel="stylesheet" type="text/css" href="../../../../../thirdparty/jquery-easyui-1.4.5/themes/default/easyui.css"/>
+		<link rel="stylesheet" href="../../../../../thirdparty/artDialog/ui-dialog.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../../css/icon.font.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/layout.css">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<!-- 头部 -->
+			<div class="nav-outer">
+				<div class="nav-inner">
+					<h1 class="logo"></h1>
+					<span class="fi-menu"></span>
+					<ul class="nav" id="nav">
+						<li>
+							<a href="###">
+								系统首页
+							</a>
+						</li>
+						<li>
+							<a href="../../dataDirectory.html">
+								数据管理系统
+							</a>
+						</li>
+						<li>
+							<a href="../sjwj.qy/qyDataMining.html">
+								数据挖掘系统
+							</a>
+						</li>
+						<li>
+							<a href="../zrr/zrrCredit.html">
+								数据查询系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								报告管理系统
+							</a>
+						</li>
+						<li>
+							<a href="###">
+								行业应用系统
+							</a>
+						</li>
+						<li class="cur">
+							<a href="cfgs.html">
+								信用双公示
+							</a>
+						</li>
+						<li>
+							<a href="../xypj/gCreditRating.html">
+								信用评价
+							</a>
+						</li>
+					</ul>
+					<div class="overflow-hidden">
+						<ul class="top-info right">
+							<li class="relative">
+								<a href="###">您好，李玉东（cxy）<span class="fi-arrow-down"></span></a>
+								
+								<div class="user-control">
+									<a href="###">
+										<span class="fi-key"></span>
+										修改密码
+									</a>
+									<a href="###">
+										<span class="fi-envelop"></span>
+										消息
+									</a>
+									<a href="###">
+										<span class="fi-cog"></span>
+										设置
+									</a>
+								</div>
+							</li>
+							<li>
+								<a href="###">
+									<span class="fi-exit"></span>退出
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 侧边栏 -->
+			<div class="sub-nav-outer">
+				<div class="scroll">
+					<div class="sub-nav-inner">
+						<div>
+							<h4 class="cur"><a href="cfgs.html">处罚公示</a></h4>
+							<h4><a href="../xkgs/xkgs.html">许可公示</a></h4>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- 主体 -->
+			<div class="main">
+				<!-- 面包屑 -->
+				<div class="main-bread-crumb">
+					<div class="breadcrumb-hidden">
+						<span class="fi-breadcrumb left"></span>
+						<ol class="left">
+							<li>
+								<span>您的位置：</span>
+								<a href="###">信用双公示</a>
+							</li>
+							<li>
+								<span class="breadcrumb-line breadcrumb-arrow"></span><a href="###">新增处罚公示</a>
+							</li>
+						</ol>
+					</div>
+				</div>
+				
+				<!-- form -->
+				<div class="main-form-outer">
+					<div class="form-inner relative overflow-auto">
+						<form action="" method="post">
+							<div class="form-content absolute">
+								<div class="form-table add-table">
+									<table>
+								<colgroup>
+									<col span="1" style="width: 22%;"/>
+									<col span="1" style="width: 78%;"/>
+								</colgroup>
+								<tr>
+								    <th><label class="query-label">行政区划编码</label></th>
+								    <td>
+								    	<input type="text" />
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">所属地区名称</label></th>
+								    <td>
+								    	<input type="text" />
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">执法部门名称</label></th>
+								    <td>
+								    	<input type="text" />
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">执法部门组织编码</label></th>
+								    <td>
+								    	<input type="text" />
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">行政处罚决定书文号</label></th>
+								    <td>
+								    	<input type="text" />
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">案件名称</label></th>
+								    <td>
+								    	<input type="text" />
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">被处罚对象类别</label></th>
+								    <td>
+								    	<select id="objectType">
+											<option value="objectType0">法人</option>
+											<option value="objectType1">自然人</option>
+											<option value="objectType2">非企业法人</option>
+										</select>
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">被处罚对象名称</label></th>
+								    <td>
+								    	<input type="text" />
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">被处罚对象证件类型</label></th>
+								    <td>
+								    	<select id="credentialsType">
+											<option value="credentialsType0">身份证</option>
+											<option value="credentialsType1">组织机构代码证</option>
+											<option value="credentialsType2">营业执照</option>
+											<option value="credentialsType3">其他证件</option>
+										</select>
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">被处罚对象证件号码</label></th>
+								    <td>
+								    	<input type="text" />
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">涉案金额</label></th>
+								    <td>
+								    	<div class="unit-font-box">
+											<input type="text">
+											<span class="unit-font">元</span>
+										</div>
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">被处罚单位法定代表人姓名</label></th>
+								    <td>
+								    	<input type="text" />
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">被处罚单位法定代表人身份证号码</label></th>
+								    <td>
+								    	<input type="text" />
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">行政处罚权利事项名称</label></th>
+								    <td>
+								    	<input type="text" />
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">权利内部编码</label></th>
+								    <td>
+								    	<input type="text" />
+								    </td>
+								  </tr>
+								  <tr>
+								     <th><label class="query-label">对外公开的行政处罚决定书全文或者摘要</label></th>
+								    <td>
+								    	<textarea rows="10"></textarea>
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">作出行政处罚的日期</label></th>
+								    <td>
+								    	<input type="text" class="time Wdate" />
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">是否公开</label></th>
+								    <td>
+								    	<div class="radio-outer">
+											<label>
+												<input type="radio" name="radioGroup" checked/>公开
+											</label>
+											<label>
+												<input type="radio" name="radioGroup" />不公开
+											</label>
+										</div>
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">不公开依据</label></th>
+								    <td>
+								    	<textarea rows="6"></textarea>
+								    </td>
+								  </tr>
+								  <!--<tr>
+								    <th><label class="query-label">状态标记</label></th>
+								    <td></td>
+								  </tr>-->
+								  <tr>
+								    <th><label class="query-label">撤销处罚的原因说明</label></th>
+								    <td>
+								    	<textarea rows="6"></textarea>
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">信息版本号</label></th>
+								    <td>
+								    	<input type="text" />
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">处罚立案时间</label></th>
+								    <td>
+								    	<input type="text" class="Wdate time" />
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">执法部门主体编码</label></th>
+								    <td>
+								    	<input type="text" />
+								    </td>
+								  </tr>
+								  <tr>
+								    <th><label class="query-label">处罚案件流水号</label></th>
+								    <td>
+								    	<input type="text" />
+								    </td>
+								  </tr>
+							</table>
+									
+								</div>
+							</div>
+							<div class="btn-row fixed">
+								<input type="button" class="theme-btn" value="提交" onclick="confirm();"/>
+								<a href="cfgs.html" class="theme-btn">取消</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<script type="text/javascript" src="../../../../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../../../thirdparty/jquery-easyui-1.4.5/jquery.easyui.min.js"></script>
+		<!--slimScroll-->
+		<script type="text/javascript" src="../../../../../thirdparty/slimScroll/jquery.slimscroll.min.js"></script>
+		<!--My97日期插件-->
+		<script type="text/javascript" src="../../../../../thirdparty/My97DatePicker/WdatePicker.js"></script>
+		
+		<!--dialog-->
+		<script type="text/javascript" src="../../../../../thirdparty/artDialog/dialog-min.js"></script>
+		<script type="text/javascript" src="../../../../../thirdparty/artDialog/dialog-plus-min.js"></script>
+		
+		<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/layout.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				//my97
+				$(".date").click(function() {
+					WdatePicker()
+				});
+				$(".time").click(function() {
+					WdatePicker({
+						dateFmt: 'yyyy-MM-dd HH:mm'
+					});
+				});
+				//禁止输入
+				$(".time,.date").keyup(function() {
+					var thisVal = $(this).val();
+					$(this).val(thisVal.slice(0, thisVal.length - 2))
+				});
+			});
+			function confirm() {
+				$.GD.confirm({
+					//title: '确认提交？',
+					msg: '确认提交？',
+					oktext: '提交',
+					canceltext: '关闭',
+					fixed: true,
+					ok: function() {
+						window.location.href="cfgs.html";
+					}
+				});
+			};
+		</script>
+	</body>
+
+</html>

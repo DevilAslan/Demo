@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'sys-font';
+  src:  url('../fonts/sys-font.eot?fmay6p');
+  src:  url('../fonts/sys-font.eot?fmay6p#iefix') format('embedded-opentype'),
+  url('../fonts/sys-font.ttf?fmay6p') format('truetype'),
+  url('../fonts/sys-font.woff?fmay6p') format('woff'),
+  url('../fonts/sys-font.svg?fmay6p#sys-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="fi-"], [class*=" fi-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'sys-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*以下4个是箭头*/
+.fi-arrow-down:before { content: "\e910"; }
+.fi-arrow-left:before { content: "\e912"; }
+.fi-arrow-right:before { content: "\e913"; }
+.fi-arrow-up:before { content: "\e914"; }
+.fi-arrow-up2:before { content: "\e915"; }
+.fi-arrow-down2:before { content: "\e911"; }
+
+/*其他*/
+.fi-bell:before { content: "\e916"; }
+.fi-cog:before { content: "\e918"; }
+.fi-breadcrumb:before { content: "\e917"; }
+.fi-envelop:before { content: "\e91a"; }
+.fi-exit:before { content: "\e91b"; }
+.fi-key:before { content: "\e91c"; }
+.fi-company:before { content: "\e90f"; }
+.fi-details:before { content: "\e919"; }
+.fi-upload:before { content: "\e91f"; }
+.fi-menu:before { content: "\e91d"; }
+.fi-search:before { content: "\e91e"; }
+.fi-edit:before { content: "\e945"; }
+.fi-ok:before { content: "\e946"; }
+.fi-add:before { content: "\e947"; }
+.fi-cancel:before { content: "\e948"; }
+.fi-minus:before { content: "\e949"; }
+.fi-forbidden:before { content: "\e94a"; }
+.fi-delete:before { content: "\e94b"; }
+.fi-generate:before { content: "\e94c"; }
+.fi-position:before { content: "\e94e"; }
+.fi-circle:before { content: "\e94f"; }
+.fi-refresh:before { content: "\e984"; }
+.fi-eye:before { content: "\e9ce"; }
+.fi-eye-plus:before { content: "\e9cf"; }
+.fi-eye-minus:before { content: "\e9d0"; }
+.fi-favorite:before { content: "\e9da"; }
+.fi-application:before { content: "\e900"; }
+.fi-light:before { content: "\e901"; }
+
+/*sub-nav-icon*/
+.fi-red-black-list:before { content: "\e902"; }
+.fi-dm-data-mining:before { content: "\e903"; }
+.fi-cr-person:before { content: "\e904"; }
+.fi-cr-person-pr:before { content: "\e905"; }
+.fi-cr-evaluation-model:before { content: "\e906"; }
+.fi-cr-company-pr:before { content: "\e907"; }
+.fi-cr-other-org:before { content: "\e908"; }
+.fi-cr-company:before { content: "\e909"; }
+.fi-ds-encourage-search:before { content: "\e90a"; }
+.fi-dm-maintenance-record:before { content: "\e90b"; }
+.fi-dm-resources-catalogue:before { content: "\e90c"; }
+.fi-ds-data-contrast:before { content: "\e90d"; }
+.fi-ds-complex-search:before { content: "\e90e"; }
+.fi-rm-print-record:before { content: "\e920"; }
+.fi-rm-report-print:before { content: "\e921"; }
+.fi-rm-template:before { content: "\e922"; }
+.fi-dm-classified-statistic:before { content: "\e923"; }
+.fi-dm-data-maintenance:before { content: "\e924"; }
+.fi-dm-file:before { content: "\e925"; }
+.fi-dm-file-maintenance:before { content: "\e926"; }
+.fi-dm-info-warning:before { content: "\e927"; }
+.fi-dm-log-mining:before { content: "\e928"; }
+.fi-dm-lo-statistic:before { content: "\e929"; }
+.fi-dm-lp-and-other:before { content: "\e92a"; }
+.fi-dm-natural-man:before { content: "\e92b"; }
+.fi-dm-nm-statistic:before { content: "\e92c"; }
+.fi-dm-objection-complaints:before { content: "\e92d"; }
+.fi-dm-quality-examine:before { content: "\e92e"; }
+.fi-dm-share:before { content: "\e92f"; }
+.fi-dm-unload:before { content: "\e930"; }
+.fi-ds-area:before { content: "\e931"; }
+.fi-ds-black-list:before { content: "\e932"; }
+.fi-ds-credit-archive:before { content: "\e933"; }
+.fi-ds-credit-evaluate:before { content: "\e934"; }
+.fi-ds-departments:before { content: "\e935"; }
+.fi-ds-main-authorize:before { content: "\e936"; }
+.fi-ds-profession:before { content: "\e937"; }
+.fi-ds-time:before { content: "\e938"; }
+.fi-as-authority-management:before { content: "\e939"; }
+.fi-as-c-sort-management:before { content: "\e93a"; }
+.fi-as-data-dictionary:before { content: "\e93b"; }
+.fi-as-exchange-interface:before { content: "\e93c"; }
+.fi-as-operational-logbook:before { content: "\e93d"; }
+.fi-as-organization:before { content: "\e93e"; }
+.fi-as-regional-management:before { content: "\e93f"; }
+.fi-as-reg-user:before { content: "\e940"; }
+.fi-as-role:before { content: "\e941"; }
+.fi-as-user:before { content: "\e942"; }
+.fi-as-web-bg:before { content: "\e943"; }
+.fi-as-weixin-bg:before { content: "\e944"; }
+.fi-dm-evaluate:before { content: "\e94d"; }
+.fi-office:before { content: "\e950"; }
+.fi-finance:before { content: "\e951"; }
+.fi-education:before { content: "\e952"; }
+.fi-food-and-drug:before { content: "\e953"; }
+.fi-honest:before { content: "\e954"; }
+.fi-civil-servant:before { content: "\e955"; }
+.fi-government-affairs:before { content: "\e956"; }
+.fi-business-integrity:before { content: "\e957"; }
+.fi-society:before { content: "\e958"; }
+
+/*home页 图标颜样式*/
+/*.home .main [class^="fi-"],.home .main [class*=" fi-"]{display: block;font-size: 8em;color: #fff;text-align: center;}*/
+.level-box [class^="fi-"],.level-box [class^="fi-"]{font-size: 20px;}
+
+/*各别图标样式的单独修改*/
+.top-info [class^="fi-"],.top-info [class*=" fi-"]{font-size: 14px;line-height: 40px;vertical-align: middle;}
+.top-info .fi-exit{margin-right: 4px;font-size: 18px;}
+.fi-menu{position: absolute;top: 0;bottom: 0;left: 190px;color: #fff;font-size: 20px;line-height: 80px;cursor: pointer;}
+.fi-breadcrumb,.fi-search{font-size: 16px;color: #2fbbd0;}
+.main-bread-crumb .fi-position{font-size: 22px;line-height: 40px;color: #999;}
+.fi-breadcrumb{margin-right: 10px;line-height: 40px;}
+.fi-search{width: 30px;height: 100%;margin-top: 0;top: 0;right: 0;line-height: 30px;text-align: center;background: none;border: 0 none;outline: none;cursor: pointer;}
+.main-bread-crumb .fi-search{padding-right: 10px;font-size: 16px;line-height: 28px;}
+.tree-and-table .fi-search{display: inline-block;top: 1px;right: 4px;z-index: 10;padding: 5px 0;font-size: 20px;}
+.main-control .fi-search{top: 0;padding: 0;}
+.fi-search + input[type='text']{padding-right: 30px;}
+.more-text .fi-arrow-down{display: block;}
+.fi-arrow-up.title-arrow,.fi-arrow-down.title-arrow{font-size: 18px;color: #fff;}
+.fi{display: inline-block;height: 24px;margin-right: 6px;line-height: 22px;}
+.theme-btn .fi{color: #fff;}
+.theme-btn2 .fi{color: #61aef0;}
+.list-box .fi-details:before{font-size: 16px;line-height: 1.5;}
+/*上传图标*/
+.fi-upload{font-size: 14px;}
+
+/*ranking*/
+.ranking-icon.fi-arrow-up2{color: #6dbf39;}
+.ranking-icon.fi-arrow-down2{color: #df5b57;}
+/*table 操作按钮*/
+.table-fi{display: inline-block;font-size: 14px;line-height: 30px;cursor: pointer;}
+.table-fi.fi-add,.table-fi.fi-ok,.table-fi.fi-generate{color: #2ECC71;}/*green*/
+.table-fi.fi-minus,.table-fi.fi-cancel{color: #E68900;}/*orange*/
+.table-fi.fi-edit{color: #00B6F3;}/*blue*/
+.table-fi.fi-forbidden{color: #E24244;}/*red*/

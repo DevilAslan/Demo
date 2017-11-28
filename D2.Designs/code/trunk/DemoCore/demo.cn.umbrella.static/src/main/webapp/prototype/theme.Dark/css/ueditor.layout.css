@@ -1,0 +1,4 @@
+hr{border:0;background-color:#ddd;height:1px;}
+.ueditor-title{font-size:28px;}
+.ueditor-title,.ueditor-author,.ueditor-text{width: 100%;border: 0 none;outline: none;}
+.ueditor-text{height: 100px;background: #000080;resize: none;}

@@ -9,16 +9,25 @@
 
 	<name>DemoCore</name>
 	<modules>
-		<module>demo-example</module>
-		<module>demo-commons</module>
+		<module>demo.cn.umbrella.commons.util</module>
+		<module>demo.cn.umbrella.static</module>
+		<module>demo.cn.umbrella.dmb.api</module>
+		<module>demo.cn.umbrella.resource</module>
 		
-		<module>demo-resource</module>
-		<module>demo-api</module>
-		<module>demo-business</module>
-		<module>demo-broadcast</module>
-		<module>demo-backstage</module>
 		<module>demo-model</module>
-		<module>demo-report</module>
+		
+		<module>demo.cn.umbrella.mss.webapp</module>
+		
+		<module>demo.cn.umbrella.bss.service</module>
+		<module>demo.cn.umbrella.bss.report</module>
+		
+		<module>demo.cn.umbrella.oss.backstage</module>
+		<module>demo.cn.umbrella.oss.webapp_ftl</module>
+		
+		<module>demo.cn.umbrella.mboss.service</module>
+		
+		<module>demo-example</module>
+		<module>demo-api</module>
 	</modules>
 	
 	<properties>

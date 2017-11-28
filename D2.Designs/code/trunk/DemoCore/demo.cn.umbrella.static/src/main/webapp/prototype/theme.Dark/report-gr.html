@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+		<title>个人信用查询报告</title>
+		<link rel="stylesheet" type="text/css" href="css/report.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="btn-row">
+				<input type="button" id="btnPrint" class="btn" value="打印报告" onclick="onprint()"/>
+				<a href="###" class="btn">返回</a>
+			</div>
+			
+			<div>
+				<div class="container" id="printArea">
+					<div class="front-cover">
+						<div class="front-cover-content">
+							<div class="front-cover-title">
+								<h1>个人信用查询报告</h1>
+								<h3>张益达</h3>
+								<div class="code-box">
+									<img src="images/code.jpg" />
+								</div>
+								<p class="number">报告编号:2016042800012【第13次打印】</p>
+							</div>
+							<div class="front-cover-text">
+								<p class="f-c-text-row">
+									<b>基础信息：</b>
+									<span class="text-box">个人基础信息、公积金缴纳信息、低保信息、车辆信息、个人历程信息、信用评价信息等</span>
+								</p>
+								<p class="f-c-text-row">
+									<b>失信信息：</b>
+									<span class="text-box">处罚信息、判决信息、不良行为信息、违法行为信息、事故信息、违法生育信息、逾期违约信息、欠费信息等</span>
+								</p>
+								<p class="f-c-text-row">
+									<b>守信信息：</b>
+									<span class="text-box">荣誉信息、捐赠信息、志愿者信息、良好信息、奖励信息等</span>
+								</p>
+								<p class="f-c-text-row">
+									<b>其他信息：</b>
+									<span class="text-box">行政许可信息、认证信息、知识产权信息、纳税信息、信用评级信息等</span>
+								</p>
+							</div>
+							<div class="front-cover-important-info">
+								<h4>重要申明</h4>
+								<p class="f-c-text-row">
+									<label>1、 </label>
+									<span class="text-box">报告生成时间为2017年3月29日  09：49</span>
+								</p>
+								<p class="f-c-text-row">
+									<label>2、 </label>
+									<span class="text-box">本报告信用信息来源各信源单位，温州市信用信息中心不对报告结果的准确 、真实性负责。使用本信用报告产生的任何后果，温州市信用信息中心概不负责</span>
+								</p>
+								<p class="f-c-text-row">
+									<label>3、 </label>
+									<span class="text-box">信用评估规则通过基础素质、合规度、践约度、社会贡献度4个纬度对信用主体进行评     估，总分为1000分，评估结果仅供参考</span>
+								</p>
+							</div>
+						</div>
+						<img src="images/report-bg.jpg" class="front-cover-bg"/>
+					</div>
+					
+					<div class="report-content">
+						<div class="info-title">
+							<div class="line"></div>
+							<span class="title-text">自然人基本信息</span>
+						</div>
+						<table class="table base-info">
+							<tr>
+								<th>姓名</th>
+								<td>张益达</td>
+								<th>性别</th>
+								<td>男</td>
+								<td class="credit-level" rowspan="3">
+									<p>AAA</p>
+									<label>信用评级</label>
+								</td>
+							</tr>
+							<tr>
+								<th>身份证号码</th>
+								<td>412721198004237891</td>
+								<th>籍贯</th>
+								<td>浙江省温州市</td>
+							</tr>
+							<tr>
+								<th>户籍地址</th>
+								<td colspan="3">温州市鹿城区绣山路321号</td>
+							</tr>
+						</table>
+						<div class="info-box">
+							<div class="info-title">
+								<div class="line"></div>
+								<span class="title-text">个人历程</span>
+							</div>
+							<div id="my_svg" class="svg-box"></div>
+						</div>
+						
+						<div class="info-box">
+							<div class="info-title">
+								<div class="line"></div>
+								<span class="title-text">失信信息【3】</span>
+							</div>
+							<table class="table record-table">
+								<caption>市公安局——行政处罚信息</caption>
+								<thead>
+									<th>处罚文号</th>
+									<th>处罚事由</th>
+									<th>违章区段</th>
+									<th>处罚时间</th>
+									<th>处罚内容</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>温政第127号文件</td>
+										<td>饮酒后驾驶机动车</td>
+										<td>温州市鹿城区绣山路</td>
+										<td class="t-center">2017-02-03</td>
+										<td>付款2000元整，扣12分</td>
+									</tr>
+									<tr>
+										<td>温政第127号文件</td>
+										<td>饮酒后驾驶机动车</td>
+										<td>温州市鹿城区绣山路</td>
+										<td class="t-center">2017-02-03</td>
+										<td>付款2000元整，扣12分</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table record-table">
+								<caption>市公共交通——故意违章乘车</caption>
+								<thead>
+									<th>违章车次</th>
+									<th>违章路段</th>
+									<th>违章时间</th>
+									<th>情况说明</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>81路公交</td>
+										<td>温州市鹿城区绣山路</td>
+										<td class="t-center">2017-02-03</td>
+										<td class="width300">驾驶员吴贵伟于2015年1月29日下午15点驾驶54路10一663车，由茶山开往府东家园途经双车路站有三位乘客上车其中有位女乘客刷卡发现是男性老人卡，卡号2496859170姓名陈文达当场给于没收。</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table record-table">
+								<caption>中国移动——个人欠费信息</caption>
+								<thead>
+									<th>欠费号码</th>
+									<th>欠费起始日期</th>
+									<th>欠费截止日期</th>
+									<th>欠费金额</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="t-center">18157684632</td>
+										<td class="t-center">2017-01-02</td>
+										<td class="t-center">2017-02-03</td>
+										<td class="t-center">100元</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="info-box">
+							<div class="info-title">
+								<div class="line"></div>
+								<span class="title-text">守信信息【3】</span>
+							</div>
+							<table class="table record-table">
+								<caption>市城管与执法局——个人荣誉信息</caption>
+								<thead>
+									<th>荣誉编号</th>
+									<th>荣誉名称</th>
+									<th>荣誉时间</th>
+									<th class="width300">荣誉内容</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>温城管办（2015）30号 </td>
+										<td>城管热心市民</td>
+										<td class="t-center">2017-02-03</td>
+										<td>“十佳城管热心市民”的通报</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table record-table">
+								<caption>市城管与执法局——个人荣誉信息11</caption>
+								<thead>
+									<th>荣誉编号1</th>
+									<th>荣誉名称1</th>
+									<th>荣誉时间1</th>
+									<th class="width300">荣誉内容1</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>温城管办（2015）30号 </td>
+										<td>城管热心市民</td>
+										<td class="t-center">2017-02-03</td>
+										<td>“十佳城管热心市民”的通报</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table record-table">
+								<caption>市城管与执法局——个人荣誉信息21</caption>
+								<thead>
+									<th>荣誉编号2</th>
+									<th>荣誉名称2</th>
+									<th>荣誉时间2</th>
+									<th class="width300">荣誉内容21</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>温城管办（2015）30号 </td>
+										<td>城管热心市民</td>
+										<td class="t-center">2017-02-03</td>
+										<td>“十佳城管热心市民”的通报</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="info-box">
+							<div class="info-title">
+								<div class="line"></div>
+								<span class="title-text">其他信息【1】</span>
+							</div>
+							<table class="table record-table">
+								<caption>市交通局——驾驶员资质信息</caption>
+								<thead>
+									<th class="width200">资质名称</th>
+									<th>资质证书编号</th>
+									<th>有效起始日期</th>
+									<th>有效截止日期</th>
+									<th>核发时间</th>
+									<th>证书状态</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>经营性道路旅客运输驾驶员</td>
+										<td class="t-center">3300341570</td>
+										<td class="t-center">2016-02-03</td>
+										<td class="t-center">2017-02-03</td>
+										<td class="t-center">2016-02-03</td>
+										<td class="t-center">有效</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<img src="images/watermark2.png" class="watermark"/>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../thirdparty/jquery-1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../../thirdparty/raphael.min.js"></script>
+	<script type="text/javascript">
+		function printHtml(html) {                 //定义一个函数用来打印HTML
+			var bodyHtml = document.body.innerHTML; //保存当前的body区的HTML
+			document.body.innerHTML = html;  //为body区赋选中的HTML
+			window.print();                         //调用打印功能
+			document.body.innerHTML = bodyHtml;      //恢复body区原来的HTML
+		};
+		function onprint() {                       //打印按钮所执行的代码
+			var html = $("#printArea").html();      //获取打印区域的HTML
+			printHtml(html);                         //打印HTML内容
+		};
+		
+		$(function(){
+			//历程
+			var contentArray = [
+            	{"datetime":"1993.03.07","content":"文字文字文字文字文字文"},
+            	{"datetime":"1996.11.22","content":"文字文字文字文字1"},
+            	{"datetime":"2011.01.14","content":"文字文字文字文字文字文字文字出"},
+            	{"datetime":"2011.10.17","content":"文字文字"}
+            ];
+            
+        	var aLen = contentArray.length,
+        		aRows =(Math.ceil( aLen / 5) != 0)? Math.ceil( aLen / 5) : 1;
+            var r = Raphael(document.getElementById("my_svg"), 660, aRows * 104);
+            if(aLen == 0){
+            	/*无数据*/
+            	var tip = r.set();
+            	tip.push(
+	            	r.text('50%','65%', '无内容').attr({"font-size":18})
+	            ).attr({fill: "#999", "text-anchor": "middle"});
+            }else{
+            	/*有数据*/
+            	//线
+	            var bgLine = r.set();
+	            //圆
+	            var tCircle = r.set();
+	            //日期
+	            var dateText = r.set();
+	            //内容
+	            var contentText = r.set();
+	        	var x = 60,
+	            	y = 70,
+	           		dY = y * 2 + 22,
+	            	spacing = 130,
+	            	dateY = 22,
+	            	n = 0,
+	            	u = 0,
+	            	cHei = 0,oldHei = 0,oldY = 0;
+	            $.each(contentArray, function(i,val){
+	            	var dateStr = contentArray[i].datetime,
+	            		contentStr = contentArray[i].content;
+	            	var newT = contentStr.replace(/(.{8})/g,'$1\n');
+	            	var _length =contentStr.length,
+	            		tRows = Math.ceil(_length/8),
+	            		half = parseInt(tRows/2);
+	            		cHei = tRows * 16;
+	            	
+	            	if(n != 0){
+		            	if(n%5 == 0){
+		            		oldY = y;
+		            		x = 60;
+		            		y +=  oldHei - x;
+		           			dY =  y + 70;
+		           			
+		           			if(u == 0){
+		           				u = -1;
+		           			}else{
+		           				u = 0;
+		           			}
+		           			
+		            	};
+	            	};
+	            	if(n == 5){
+		        		n = 1;
+		        	}else{
+		            	n++;
+		        	};
+		            //圆
+	            	tCircle.push(
+		            	r.circle(x ,y)
+		        	).attr({fill: "#fff", stroke: "#2ba8f8",r:5,"stroke-width":2});
+	            	//日期
+		            dateText.push(
+		            	r.text(x, y - 20, dateStr).attr({"font-size":14})
+		            ).attr({fill: "#333", "text-anchor": "middle"});
+	            	//内容
+					contentText.push(
+		            	r.text(x, y - dateY *2,newT).attr({"font-size":14})
+	            	).attr({fill: "#333", "text-anchor": "middle"});
+					//线
+		           	if(((aLen - 1) == i) && (n%5 != 0)){
+		           		bgLine.push(r.path("M"+ (x + 5) +","+ y +"L575," + y).attr({"stroke":"#ccc","stroke-width":4}));
+		           		bgLine.push(r.path("M"+ (x + 5) +","+ y +"L"+ (x + 60) +"," + y).attr({"stroke":"#2ba8f8","stroke-width":4}));
+		           	}else if((n == 1)||(n%5 != 0) &&((aLen - 1) != i)){
+		           		bgLine.push(r.path("M"+ (x + 5) +","+ y +"L575," + y).attr({"stroke":"#ccc","stroke-width":4}));
+		           		bgLine.push(r.path("M"+ (x + 5) +","+ y +"L"+ (x + spacing - 5) +"," + y).attr({"stroke":"#2ba8f8","stroke-width":4}));
+		           		
+		           	};
+	            	
+	              	if(parseInt(cHei) > parseInt(oldHei)){
+	              		oldHei = parseInt(cHei) + (dY - dateY - half*10);
+	              	};
+	            	x = x + spacing;
+				});
+            };
+		});
+	</script>
+</html>
