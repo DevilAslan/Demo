@@ -16,6 +16,7 @@
 		
 		<module>demo-model</module>
 		
+		<module>demo.cn.umbrella.mss.service</module>
 		<module>demo.cn.umbrella.mss.webapp</module>
 		
 		<module>demo.cn.umbrella.bss.service</module>

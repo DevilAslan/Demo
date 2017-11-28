@@ -1,4 +1,4 @@
-package cn.umbrella.conmmons.util.lucene.seo;
+package cn.umbrella.conmmons.util.seo.lucene;
 
 import java.io.IOException;
 import java.nio.file.Paths;

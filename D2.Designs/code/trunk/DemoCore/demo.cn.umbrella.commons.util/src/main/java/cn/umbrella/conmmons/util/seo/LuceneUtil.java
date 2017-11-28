@@ -9,7 +9,7 @@ import java.util.Properties;
 
 import org.apache.lucene.search.Query;
 
-import cn.umbrella.conmmons.util.lucene.seo.LuceneAnalyzerUtil;
+import cn.umbrella.conmmons.util.seo.lucene.LuceneAnalyzerUtil;
 
 
 public class LuceneUtil {

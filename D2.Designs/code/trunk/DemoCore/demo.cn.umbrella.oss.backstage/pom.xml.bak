@@ -9,9 +9,9 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<groupId>cn.umbrella</groupId>
-	<artifactId>cn.umbrella.oss.backstage</artifactId>
+	<artifactId>demo.cn.umbrella.mss.backstage</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<name>cn.umbrella.oss.backstage</name>
+	<name>demo.cn.umbrella.mss.backstage</name>
 	<packaging>war</packaging>
 	
 	<properties>
