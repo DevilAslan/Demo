@@ -29,6 +29,7 @@
 		<lucene.version>5.2.1</lucene.version>
 		<IKAnalyzer.version>IKAnalyzer2012_FF</IKAnalyzer.version>
 		<pagehelper.version>4.0.3</pagehelper.version>
+		<hibernate.validator.version>5.1.0.Final</hibernate.validator.version>
 	</properties>
 
 	<dependencies>
@@ -76,6 +77,11 @@
 			<version>${commonshttpclient.version}</version>
 		</dependency>
 		
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>${commons-codec.version}</version>
+		</dependency>
 		<!-- Begin commons -->
 		
 		<!--Begin jackson -->
@@ -257,11 +263,31 @@
 		</dependency>
 		<!--End lucene -->
 		
+		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+		<dependency>
+		    <groupId>org.apache.httpcomponents</groupId>
+		    <artifactId>httpclient</artifactId>
+		    <version>4.5.2</version>
+		</dependency>
+		
 		<dependency>
 			<groupId>com.github.pagehelper</groupId>
 			<artifactId>pagehelper</artifactId>
 			<version>${pagehelper.version}</version>
 		</dependency>
 		
+		<!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
+		<dependency>
+		    <groupId>javax.validation</groupId>
+		    <artifactId>validation-api</artifactId>
+		    <version>1.0.0.GA</version>
+		</dependency>
+		
+		
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>${hibernate.validator.version}</version>
+		</dependency>
 	</dependencies>
 </project>

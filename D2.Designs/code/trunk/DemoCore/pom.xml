@@ -12,7 +12,6 @@
 		<module>demo.cn.umbrella.commons.util</module>
 		<module>demo.cn.umbrella.static</module>
 		<module>demo.cn.umbrella.dmb.api</module>
-		<module>demo.cn.umbrella.resource</module>
 		
 		<module>demo-model</module>
 		
@@ -26,6 +25,8 @@
 		<module>demo.cn.umbrella.oss.webapp_ftl</module>
 		
 		<module>demo.cn.umbrella.mboss.service</module>
+		
+		<module>demo.cn.umbrella.resource.api</module>
 		
 		<module>demo-example</module>
 		<module>demo-api</module>
