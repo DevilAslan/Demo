@@ -17,19 +17,20 @@ import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.hibernate.validator.constraints.Range;
 
-import cn.com.dhcc.common.util.validate.bean.Validate;
-import cn.com.dhcc.common.util.validate.parse.DigitsParse;
-import cn.com.dhcc.common.util.validate.parse.EmailParse;
-import cn.com.dhcc.common.util.validate.parse.ExtistParse;
-import cn.com.dhcc.common.util.validate.parse.IValidateParse;
-import cn.com.dhcc.common.util.validate.parse.LengthParse;
-import cn.com.dhcc.common.util.validate.parse.MaxParse;
-import cn.com.dhcc.common.util.validate.parse.MinParse;
-import cn.com.dhcc.common.util.validate.parse.NotEmptyParse;
-import cn.com.dhcc.common.util.validate.parse.NotNullParse;
-import cn.com.dhcc.common.util.validate.parse.PatternParse;
-import cn.com.dhcc.common.util.validate.parse.RangeParse;
-import cn.com.dhcc.common.util.validate.parse.SizeParse;
+import cn.umbrella.commons.validate.AnnExtist;
+import cn.umbrella.commons.validate.bean.Validate;
+import cn.umbrella.commons.validate.parse.DigitsParse;
+import cn.umbrella.commons.validate.parse.EmailParse;
+import cn.umbrella.commons.validate.parse.ExtistParse;
+import cn.umbrella.commons.validate.parse.IValidateParse;
+import cn.umbrella.commons.validate.parse.LengthParse;
+import cn.umbrella.commons.validate.parse.MaxParse;
+import cn.umbrella.commons.validate.parse.MinParse;
+import cn.umbrella.commons.validate.parse.NotEmptyParse;
+import cn.umbrella.commons.validate.parse.NotNullParse;
+import cn.umbrella.commons.validate.parse.PatternParse;
+import cn.umbrella.commons.validate.parse.RangeParse;
+import cn.umbrella.commons.validate.parse.SizeParse;
 
 /**
  * Created by ZXL on 2015/11/9.

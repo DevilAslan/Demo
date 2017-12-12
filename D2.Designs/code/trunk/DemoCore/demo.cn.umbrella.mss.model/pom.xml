@@ -5,11 +5,11 @@
   <parent>
     <groupId>cn.umbrella</groupId>
     <artifactId>Demo233</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
   </parent>
   <groupId>cn.umbrella</groupId>
   <artifactId>demo.cn.umbrella.mss.model</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>0.0.1-SNAPSHOT</version>
   <name>demo.cn.umbrella.mss.model</name>
   <url>http://maven.apache.org</url>
   <properties>
@@ -25,7 +25,7 @@
     <dependency>
 		<groupId>cn.umbrella</groupId>
 		<artifactId>demo-commons</artifactId>
-		<version>1.0-SNAPSHOT</version>
+		<version>0.0.1-SNAPSHOT</version>
 	</dependency>
   </dependencies>
   <build>

@@ -1,16 +1,16 @@
-package cn.umbrella.finance.util.alipay.util;
+package cn.umbrella.finance.util.alipay;
 
 import java.util.Map;
 
 import org.apache.commons.httpclient.NameValuePair;
 
+import cn.umbrella.finance.util.alipay.AlipayCore;
+import cn.umbrella.finance.util.alipay.MD5;
+import cn.umbrella.finance.util.alipay.RSA;
 import cn.umbrella.finance.util.alipay.httpclient.HttpProtocolHandler;
 import cn.umbrella.finance.util.alipay.httpclient.HttpRequest;
 import cn.umbrella.finance.util.alipay.httpclient.HttpResponse;
 import cn.umbrella.finance.util.alipay.httpclient.HttpResultType;
-import cn.umbrella.finance.util.alipay.util.AlipayCore;
-import cn.umbrella.finance.util.alipay.util.MD5;
-import cn.umbrella.finance.util.alipay.util.RSA;
 
 
 /* *

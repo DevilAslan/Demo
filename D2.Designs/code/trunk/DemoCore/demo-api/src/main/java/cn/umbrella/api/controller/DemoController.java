@@ -29,7 +29,7 @@ public class DemoController {
 	
 	protected Logger logger = Logger.getLogger(this.getClass());
 	protected static final String ACTION_PATH = "/demo";
-	protected static final String PAGE_PATH = "/excavateData/creditAssessment/";
+	protected static final String PAGE_PATH = "/page/demo/";
 	
 	/**
 	 * 获取栏目内容 

@@ -6,11 +6,11 @@
 	<parent>
 		<groupId>cn.umbrella</groupId>
 		<artifactId>DemoCore</artifactId>
-		<version>1.0-SNAPSHOT</version>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>cn.umbrella</groupId>
 	<artifactId>cn.umbrella.oss.backstage</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>cn.umbrella.oss.backstage</name>
 	<packaging>war</packaging>
 	
@@ -29,28 +29,28 @@
 		<dependency>
 			<groupId>cn.umbrella</groupId>
 			<artifactId>cn.umbrella.commons.util</artifactId>
-			<version>1.0-SNAPSHOT</version>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>cn.umbrella</groupId>
 			<artifactId>cn.umbrella.mboss.service</artifactId>
-			<version>1.0-SNAPSHOT</version>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 <!-- 		<dependency> -->
 <!-- 			<groupId>cn.umbrella</groupId> -->
 <!-- 			<artifactId>demo-finance</artifactId> -->
-<!-- 			<version>1.0-SNAPSHOT</version> -->
+<!-- 			<version>0.0.1-SNAPSHOT</version> -->
 <!-- 		</dependency> -->
 <!-- 		<dependency> -->
 <!-- 			<groupId>cn.umbrella</groupId> -->
 <!-- 			<artifactId>demo-business</artifactId> -->
-<!-- 			<version>1.0-SNAPSHOT</version> -->
+<!-- 			<version>0.0.1-SNAPSHOT</version> -->
 <!-- 		</dependency> -->
 <!-- 		<dependency> -->
 <!-- 			<groupId>cn.umbrella</groupId> -->
 <!-- 			<artifactId>demo-backstage</artifactId> -->
-<!-- 			<version>1.0-SNAPSHOT</version> -->
+<!-- 			<version>0.0.1-SNAPSHOT</version> -->
 <!-- 		</dependency> -->
 		<!--End Custom Modular-->
 		

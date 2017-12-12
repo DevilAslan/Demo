@@ -95,6 +95,7 @@ public class BaseQuery {
 	 * @return BaseQuery
 	 * @throws
 	 */
+	@SuppressWarnings("unchecked")
 	public static BaseQuery encapsulateQueryCondition(HttpServletRequest request) {
 		BaseQuery query = new BaseQuery();
 		Enumeration<String> parameterNames = request.getParameterNames();

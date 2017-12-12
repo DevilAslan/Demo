@@ -1,5 +1,5 @@
 
-package cn.umbrella.finance.util.alipay.util;
+package cn.umbrella.finance.util.alipay;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -12,7 +12,7 @@ import java.security.spec.X509EncodedKeySpec;
 
 import javax.crypto.Cipher;
 
-import cn.umbrella.finance.util.alipay.util.Base64;
+import cn.umbrella.finance.util.alipay.Base64;
 
 public class RSA{
 	

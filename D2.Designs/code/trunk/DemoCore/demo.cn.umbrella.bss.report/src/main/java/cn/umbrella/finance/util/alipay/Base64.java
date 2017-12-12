@@ -4,7 +4,7 @@
  * author: shiqun.shi@alipay.com
  */
 
-package cn.umbrella.finance.util.alipay.util;
+package cn.umbrella.finance.util.alipay;
 
 public final class Base64 {
 

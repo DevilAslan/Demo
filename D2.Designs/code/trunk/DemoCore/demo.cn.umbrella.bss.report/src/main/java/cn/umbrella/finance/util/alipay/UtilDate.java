@@ -1,5 +1,5 @@
 
-package cn.umbrella.finance.util.alipay.util;
+package cn.umbrella.finance.util.alipay;
 
 import java.util.Date;
 import java.util.Random;

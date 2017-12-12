@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.context.request.WebRequest;
 
 import cn.umbrella.commons.bean.BaseQuery;
+import cn.umbrella.commons.validate.ValidateUtil;
 import cn.umbrella.conmmons.genarator.IDGenarator;
 import cn.umbrella.oss.config.Constant;
 import cn.umbrella.oss.service.wechat.IWxMenuService;

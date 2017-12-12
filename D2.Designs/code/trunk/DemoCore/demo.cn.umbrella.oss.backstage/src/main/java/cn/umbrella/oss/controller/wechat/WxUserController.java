@@ -26,6 +26,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import cn.umbrella.commons.bean.BaseQuery;
+import cn.umbrella.commons.validate.ValidateUtil;
 import cn.umbrella.oss.config.Constant;
 import cn.umbrella.oss.service.wechat.IWxGroupService;
 import cn.umbrella.oss.service.wechat.IWxMediaService;
@@ -35,6 +36,7 @@ import cn.umbrella.oss.utils.wechat.RecursiveUtil;
 import cn.umbrella.oss.utils.wechat.TokenUtils;
 import cn.umbrella.oss.utils.wechat.WxURIApi;
 import cn.umbrella.oss.utils.wechat.WxUtilApi;
+import cn.umbrella.oss.vo.MySessionInfo;
 import cn.umbrella.oss.wechat.bean.WxGroup;
 import cn.umbrella.oss.wechat.bean.WxMedia;
 import cn.umbrella.oss.wechat.bean.WxMsgInput;

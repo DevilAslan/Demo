@@ -4,7 +4,7 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <dependent-module archiveName="cn.umbrella.commons.util-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/cn.umbrella.commons.util/cn.umbrella.commons.util">
+        <dependent-module archiveName="cn.umbrella.commons.util-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/cn.umbrella.commons.util/cn.umbrella.commons.util">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="java-output-path" value="/demo-api/target/classes"/>

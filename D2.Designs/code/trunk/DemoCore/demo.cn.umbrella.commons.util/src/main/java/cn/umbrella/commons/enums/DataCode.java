@@ -2,21 +2,24 @@ package cn.umbrella.commons.enums;
 
 import cn.umbrella.commons.enums.IGDCommonEnum;
 
-public enum AccessCode implements IGDCommonEnum<String> {
+public enum DataCode implements IGDCommonEnum<String> {
+	EMPTY("", "EMPTY"),
 	UNDEFINED("0", "UNDEFINED"),
-	SUCCESS("101", "SUCCESS"),
+	INIT("100", "INIT"),
 	
-	ERROR("400", "ERROR"),
+//	ERROR("400", "ERROR"),
 	UNVERIFIED("401", "UNVERIFIED"),
 	INVALID("402", "INVALID"),
 	FORBIDDEN("403", "FORBIDDEN"),
-	NOT_FOUND("404", "NOT FOUND"),
+//	NOT_FOUND("404", "NOT FOUND"),
 	OVERDUE("405", "OVERDUE"),
 	EXIST("406", "EXIST"),
 	OUT_OF_SERVICE("410", "OUT OF SERVICE"),
+//	429	过多的请求	请求超出了频率限制。相应的描述信息会解释具体的原因。
 	
 	SERVICE_ERROR("500", "SERVICE ERROR"),
 	INVALID_AGENT("502", "INVALID AGENT"),
+	
 //	INVALID_AGENT("503", "INVALID AGENT"),
 //	INVALID_AGENT("504", "INVALID AGENT"),
 //	503	服务暂时失效	服务器无法响应请求。请稍后重试。
@@ -25,7 +28,6 @@ public enum AccessCode implements IGDCommonEnum<String> {
 	CLOSE("601", "CLOSE"),
 	
 	REFUSE("701", "REFUSE"),
-	UNAUTHORIZED("702", "UNAUTHORIZED"),
 	
 	
 	PARAMETER_ERROR("801", "PARAMETER ERROR"),
@@ -35,16 +37,10 @@ public enum AccessCode implements IGDCommonEnum<String> {
 	EXCEPTION("9999", "系统异常");
 	
 	
-	
-	
-//	405	请求方法不合适	该接口不支持该方法的请求。
-	
-//	429	过多的请求	请求超出了频率限制。相应的描述信息会解释具体的原因。
-	
 	private String value;
 	private String name;
 
-	private AccessCode(String value, String name) {
+	private DataCode(String value, String name) {
 		this.value = value;
 		this.name = name;
 	}

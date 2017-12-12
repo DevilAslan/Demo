@@ -1,4 +1,4 @@
-package cn.umbrella.finance.util.alipay.util;
+package cn.umbrella.finance.util.alipay;
 
 import java.io.File;
 import java.io.IOException;

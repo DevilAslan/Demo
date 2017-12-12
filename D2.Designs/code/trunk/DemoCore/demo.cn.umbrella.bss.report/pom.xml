@@ -6,17 +6,19 @@
 	<parent>
 		<groupId>cn.umbrella</groupId>
 		<artifactId>DemoCore</artifactId>
-		<version>1.0-SNAPSHOT</version>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
 	<groupId>cn.umbrella</groupId>
 	<artifactId>cn.umbrella.bss.report</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>cn.umbrella.bss.report</name>
 
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		
+		<commons-codec.version>1.9</commons-codec.version>
 	</properties>
 
 	<dependencies>
@@ -27,7 +29,13 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-
+		
+		<dependency>
+			<groupId>cn.umbrella</groupId>
+			<artifactId>cn.umbrella.bss.service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
 		<dependency>
 			<groupId>commons-httpclient</groupId>
 			<artifactId>commons-httpclient</artifactId>
@@ -40,5 +48,11 @@
 			<version>20140107</version>
 		</dependency>
 
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>3.0-alpha-1</version>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 </project>
