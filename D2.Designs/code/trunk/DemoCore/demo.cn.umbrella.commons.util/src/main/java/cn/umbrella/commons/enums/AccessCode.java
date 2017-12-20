@@ -4,7 +4,7 @@ import cn.umbrella.commons.enums.IGDCommonEnum;
 
 public enum AccessCode implements IGDCommonEnum<String> {
 	UNDEFINED("0", "UNDEFINED"),
-	SUCCESS("101", "SUCCESS"),
+	SUCCESS("200", "SUCCESS"),
 	
 	ERROR("400", "ERROR"),
 	UNVERIFIED("401", "UNVERIFIED"),
@@ -13,14 +13,12 @@ public enum AccessCode implements IGDCommonEnum<String> {
 	NOT_FOUND("404", "NOT FOUND"),
 	OVERDUE("405", "OVERDUE"),
 	EXIST("406", "EXIST"),
-	OUT_OF_SERVICE("410", "OUT OF SERVICE"),
+	GONE("410", "410 Gone"),
 	
 	SERVICE_ERROR("500", "SERVICE ERROR"),
 	INVALID_AGENT("502", "INVALID AGENT"),
-//	INVALID_AGENT("503", "INVALID AGENT"),
-//	INVALID_AGENT("504", "INVALID AGENT"),
-//	503	服务暂时失效	服务器无法响应请求。请稍后重试。
-//	504	代理超时	服务器在运行，但是无法响应请求。请稍后重试。
+	OUT_OF_SERVICE("503", "SERVER OUT OF SERCIVE,PLEASE TRY AGAIN LATER"),
+	PROXY_TIMEOUT("504", "PROXY TIMEOUT,PLEASE TRY AGAIN LATER"),
 	
 	CLOSE("601", "CLOSE"),
 	

@@ -19,17 +19,18 @@
 		<fastjson.version>1.2.4</fastjson.version>
 		<commons-lang3.version>3.3.2</commons-lang3.version>
 		<spring.version>4.1.2.RELEASE</spring.version>
-		<mybatis.version>3.2.7</mybatis.version>
+		<mybatis.version>3.4.2</mybatis.version>
 		<lucene.version>5.2.1</lucene.version>
 		<javax.servlet-api.version>3.0.1</javax.servlet-api.version>
 		<zxing.version>3.3.0</zxing.version>
 		<commonshttpclient.version>3.1</commonshttpclient.version>
 		<pinyin4j.version>2.5.1</pinyin4j.version>
-		<mybatis.version>3.2.7</mybatis.version>
 		<lucene.version>5.2.1</lucene.version>
 		<IKAnalyzer.version>IKAnalyzer2012_FF</IKAnalyzer.version>
 		<pagehelper.version>4.0.3</pagehelper.version>
 		<hibernate.validator.version>5.1.0.Final</hibernate.validator.version>
+		<slf4j.version>1.7.12</slf4j.version>
+		<jodd.version>3.3.2</jodd.version>
 	</properties>
 
 	<dependencies>
@@ -174,11 +175,11 @@
 		
 		<!-- Begin Logger -->
 		
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-			<version>${slf4j.version}</version>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.slf4j</groupId> -->
+<!-- 			<artifactId>slf4j-log4j12</artifactId> -->
+<!-- 			<version>${slf4j.version}</version> -->
+<!-- 		</dependency> -->
 
 		<dependency>
 			<groupId>log4j</groupId>
@@ -288,6 +289,12 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
 			<version>${hibernate.validator.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.jodd</groupId>
+			<artifactId>jodd</artifactId>
+			<version>${jodd.version}</version>
 		</dependency>
 	</dependencies>
 </project>
