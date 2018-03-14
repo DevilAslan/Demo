@@ -27,6 +27,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import cn.umbrella.commons.bean.BaseQuery;
 import cn.umbrella.commons.validate.ValidateUtil;
+import cn.umbrella.conmmons.genarator.IDGenarator;
 import cn.umbrella.oss.config.Constant;
 import cn.umbrella.oss.service.wechat.IWxGroupService;
 import cn.umbrella.oss.service.wechat.IWxMediaService;
@@ -193,7 +194,7 @@ public class WxUserController {
 	 */
 	@RequestMapping(value="toUserInfoTmp")
 	public String toUserInfoTmp(Model model,HttpServletRequest request,String openid,@ModelAttribute(Constant.MY_SESSION_INFO) MySessionInfo sessionInfo,String inputId,String pageNum,String pageSize,String indexTemp){
-		String token = UUIDTool.getUUID();
+		String token = IDGenarator.getUUID32();
 		sessionInfo.setToken(token);
 		BaseQuery query = BaseQuery.encapsulateQueryCondition(request);
 		if(pageNum !=null&&pageSize != null){
@@ -346,7 +347,7 @@ public class WxUserController {
 	 */
 	@RequestMapping(value="toInfoList")
 	public String toInfoList(Model model,@ModelAttribute("msg")String result,HttpServletRequest request,@ModelAttribute(Constant.MY_SESSION_INFO) MySessionInfo sessionInfo,String pageNum,String pageSize,String indexTemp){
-		String token = UUIDTool.getUUID();
+		String token = IDGenarator.getUUID32();
 		sessionInfo.setToken(token);
 		BaseQuery query = BaseQuery.encapsulateQueryCondition(request);
 		if(pageNum !=null&&pageSize != null){

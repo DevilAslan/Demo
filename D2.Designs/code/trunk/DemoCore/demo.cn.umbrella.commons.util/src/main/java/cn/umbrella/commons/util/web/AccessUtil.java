@@ -2,19 +2,19 @@ package cn.umbrella.commons.util.web;
 
 import java.util.List;
 
-import cn.umbrella.commons.config.AccessConfig;
 import cn.umbrella.commons.config.Constant;
 import cn.umbrella.commons.config.CryptConfig;
+import cn.umbrella.commons.enums.AccessCode;
 import cn.umbrella.commons.model.Page;
 import cn.umbrella.commons.util.crypt.DESede;
 
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
 //import net.sf.json.JSONArray;
 //import net.sf.json.JSONObject;
 //import net.sf.json.JsonConfig;
 //import net.sf.json.util.JavaIdentifierTransformer;
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 
 public class AccessUtil {
 	/**
@@ -25,8 +25,8 @@ public class AccessUtil {
 	 */
 	public static String getInvalidParaJson(String errorMsg) {
 		JSONObject response = new JSONObject();
-		response.put(Constant.ACCESS_RESULT, AccessConfig.RESULT_INVALID_CODE);
-		response.put(Constant.ACCESS_MSG, AccessConfig.RESULT_INVALID_MSG);
+		response.put(Constant.ACCESS_RESULT, AccessCode.INVALID.getKey());
+		response.put(Constant.ACCESS_MSG, AccessCode.INVALID.getValue());
 		return response.toString();
 	}
 

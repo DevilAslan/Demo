@@ -14,7 +14,7 @@ public class IDGenarator {
 	 * @return
 	 */
 	public static String getUUID32() {
-		return UUID.randomUUID().toString().replaceAll("-", "");
+		return UUID.randomUUID().toString().trim().replaceAll("-", "");
 	}
 
 	/**

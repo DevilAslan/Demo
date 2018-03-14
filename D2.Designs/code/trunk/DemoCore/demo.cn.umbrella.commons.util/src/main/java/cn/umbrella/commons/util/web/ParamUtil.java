@@ -3,8 +3,8 @@ package cn.umbrella.commons.util.web;
 import java.util.HashMap;
 import java.util.Map;
 
-import cn.umbrella.commons.config.AccessConfig;
 import cn.umbrella.commons.config.CryptConfig;
+import cn.umbrella.commons.enums.AccessCode;
 import cn.umbrella.commons.util.base.StringUtil;
 import cn.umbrella.commons.util.crypt.DESede;
 
@@ -76,8 +76,8 @@ public class ParamUtil {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return AccessUtil.getAccessJson("", AccessConfig.RESULT_FAIL_CODE,
-				AccessConfig.RESULT_FAIL_MSG);
+		return AccessUtil.getAccessJson("", AccessCode.FAIL.getKey(),
+				AccessCode.FAIL.getValue());
 	}
 	
 	// ---------------------------------------------------------------------------------------------------------------------------------------------------------

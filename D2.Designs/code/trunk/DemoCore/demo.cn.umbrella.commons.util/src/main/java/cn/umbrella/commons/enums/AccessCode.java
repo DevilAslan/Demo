@@ -1,8 +1,8 @@
 package cn.umbrella.commons.enums;
 
-import cn.umbrella.commons.enums.IGDCommonEnum;
+import cn.umbrella.commons.enums.ICommonEnum;
 
-public enum AccessCode implements IGDCommonEnum<String> {
+public enum AccessCode implements ICommonEnum<String> {
 	UNDEFINED("0", "UNDEFINED"),
 	SUCCESS("200", "SUCCESS"),
 	
@@ -17,7 +17,7 @@ public enum AccessCode implements IGDCommonEnum<String> {
 	
 	SERVICE_ERROR("500", "SERVICE ERROR"),
 	INVALID_AGENT("502", "INVALID AGENT"),
-	OUT_OF_SERVICE("503", "SERVER OUT OF SERCIVE,PLEASE TRY AGAIN LATER"),
+	OUT_OF_SERVICE("503", "OUT OF SERCIVE,PLEASE TRY AGAIN LATER"),
 	PROXY_TIMEOUT("504", "PROXY TIMEOUT,PLEASE TRY AGAIN LATER"),
 	
 	CLOSE("601", "CLOSE"),
@@ -39,46 +39,46 @@ public enum AccessCode implements IGDCommonEnum<String> {
 	
 //	429	过多的请求	请求超出了频率限制。相应的描述信息会解释具体的原因。
 	
+	private String key;
 	private String value;
-	private String name;
 
-	private AccessCode(String value, String name) {
+	private AccessCode(String key, String value) {
+		this.key = key;
 		this.value = value;
-		this.name = name;
 	}
 
+	@Override
+	public String getKey() {
+		return this.key;
+	}
+	
 	@Override
 	public String getValue() {
 		return this.value;
 	}
-
-	@Override
-	public String getName() {
-		return this.name;
-	}
-
-	public static String getNameByValue(String value) {
-		for (IGDCommonEnum<String> item : values()) {
-			if (item.getValue().equals(value)) {
-				return item.getName();
-			}
-		}
-		return null;
-	}
-
-	public static String getValueByName(String name) {
-		for (IGDCommonEnum<String> item : values()) {
-			if (item.getName().equals(name)) {
+	
+	public static String getValueByKey(String key) {
+		for (ICommonEnum<String> item : values()) {
+			if (item.getKey().equals(key)) {
 				return item.getValue();
 			}
 		}
 		return null;
 	}
 
-	public static String getValueByItemName(String itemName) {
+	public static String getKeyByValue(String value) {
+		for (ICommonEnum<String> item : values()) {
+			if (item.getValue().equals(value)) {
+				return item.getValue();
+			}
+		}
+		return null;
+	}
+
+	public static String getKeyByItemValue(String itemValue) {
 		String res = null;
 		try {
-			res = valueOf(itemName).getValue();
+			res = valueOf(itemValue).getValue();
 		} catch (IllegalArgumentException | NullPointerException e) {
 		}
 		return res;

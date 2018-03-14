@@ -9,59 +9,50 @@ package cn.umbrella.commons.enums;
  * @date 
  *
  */
-public enum DataExchangeType implements IGDCommonEnum<Integer> {
+public enum DataExchangeType implements ICommonEnum<Integer> {
 	ALL(1, "全量"),
 	INCREASE(2, "增量");
 	
-	private int value;
-	private String name;
+	private int key;
+	private String value;
 
-	private DataExchangeType(int value, String name) {
+	private DataExchangeType(int key, String value) {
+		this.key = key;
 		this.value = value;
-		this.name = name;
 	}
 
 	@Override
-	public Integer getValue() {
-		return this.value;
-	}
-
-	@Override
-	public String getName() {
-		return this.name;
-	}
-
-	public static String getNameByValue(Integer value) {
-		for (IGDCommonEnum<Integer> item : values()) {
-			if (item.getValue() == value) {
-				return item.getName();
-			}
-		}
-		return null;
-	}
-
-	public static Integer getValueByName(String name) {
-		for (IGDCommonEnum<Integer> item : values()) {
-			if (item.getName().equals(name)) {
-				return (Integer) item.getValue();
-			}
-		}
-		return null;
-	}
-
-	public static Integer getValueByItemName(String itemName) {
-		Integer res = null;
-		try {
-			res = valueOf(itemName).getValue();
-		} catch (IllegalArgumentException | NullPointerException e) {
-		}
-		return res;
+	public Integer getKey() {
+		return this.key;
 	}
 	
-	public static String getNameByItemName(String itemName) {
-		String res = null;
+	@Override
+	public String getValue() {
+		return this.value;
+	}
+	
+	public static String getValueByKey(int key) {
+		for (ICommonEnum<Integer> item : values()) {
+			if (item.getKey().equals(key)) {
+				return item.getValue();
+			}
+		}
+		return null;
+	}
+
+	public static String getKeyByValue(String value) {
+		for (ICommonEnum<Integer> item : values()) {
+			if (item.getValue().equals(value)) {
+				return item.getValue();
+			}
+		}
+		return null;
+	}
+
+	public static Integer getKeyByItemValue(String itemValue) {
+		Integer res = null;
 		try {
-			res = valueOf(itemName).getName();
+			res = valueOf(itemValue).getKey();
 		} catch (IllegalArgumentException | NullPointerException e) {
 		}
 		return res;

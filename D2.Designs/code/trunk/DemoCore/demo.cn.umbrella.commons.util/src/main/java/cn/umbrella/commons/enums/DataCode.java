@@ -1,8 +1,8 @@
 package cn.umbrella.commons.enums;
 
-import cn.umbrella.commons.enums.IGDCommonEnum;
+import cn.umbrella.commons.enums.ICommonEnum;
 
-public enum DataCode implements IGDCommonEnum<String> {
+public enum DataCode implements ICommonEnum<String> {
 	EMPTY("", "EMPTY"),
 	UNDEFINED("0", "UNDEFINED"),
 	INIT("100", "INIT"),
@@ -37,46 +37,46 @@ public enum DataCode implements IGDCommonEnum<String> {
 	EXCEPTION("9999", "系统异常");
 	
 	
+	private String key;
 	private String value;
-	private String name;
 
-	private DataCode(String value, String name) {
+	private DataCode(String key, String value) {
+		this.key = key;
 		this.value = value;
-		this.name = name;
 	}
 
+	@Override
+	public String getKey() {
+		return this.key;
+	}
+	
 	@Override
 	public String getValue() {
 		return this.value;
 	}
-
-	@Override
-	public String getName() {
-		return this.name;
-	}
-
-	public static String getNameByValue(String value) {
-		for (IGDCommonEnum<String> item : values()) {
-			if (item.getValue().equals(value)) {
-				return item.getName();
-			}
-		}
-		return null;
-	}
-
-	public static String getValueByName(String name) {
-		for (IGDCommonEnum<String> item : values()) {
-			if (item.getName().equals(name)) {
+	
+	public static String getValueByKey(String key) {
+		for (ICommonEnum<String> item : values()) {
+			if (item.getKey().equals(key)) {
 				return item.getValue();
 			}
 		}
 		return null;
 	}
 
-	public static String getValueByItemName(String itemName) {
+	public static String getKeyByValue(String value) {
+		for (ICommonEnum<String> item : values()) {
+			if (item.getValue().equals(value)) {
+				return item.getValue();
+			}
+		}
+		return null;
+	}
+
+	public static String getKeyByItemValue(String itemValue) {
 		String res = null;
 		try {
-			res = valueOf(itemName).getValue();
+			res = valueOf(itemValue).getValue();
 		} catch (IllegalArgumentException | NullPointerException e) {
 		}
 		return res;

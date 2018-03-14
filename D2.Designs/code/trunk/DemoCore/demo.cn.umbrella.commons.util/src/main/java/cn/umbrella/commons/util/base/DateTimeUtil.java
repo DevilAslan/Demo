@@ -266,6 +266,134 @@ public class DateTimeUtil {
 	// End private
 
 	// Begin Test
-
+	
+	public static boolean compare(String arg0, String arg1) {
+		return arg0.compareTo(arg1)<0;
+	}
+	
+	/** 
+     * 获取指定日期所在月初
+     * @Methods Name getMonthBegin 
+     * @return Date 
+     */ 
+	public static Date getMonthBegin(Date sDate) {
+		Calendar cale = Calendar.getInstance();
+		cale.setTime(sDate);
+        cale.add(Calendar.MONTH, 0);
+        cale.set(Calendar.DAY_OF_MONTH, 1);
+        return cale.getTime();
+	}
+	
+	/** 
+     * 获取指定日期所在月末 
+     * @Methods Name getMonthEnd 
+     * @return Date 
+     */  
+	public static Date getMonthEnd(Date sDate) {
+		Calendar cale = Calendar.getInstance();
+		cale.setTime(sDate);
+        cale.add(Calendar.MONTH, 1);
+        cale.set(Calendar.DAY_OF_MONTH, 0);
+		return cale.getTime();
+	}
+	
+	 /** 
+     * 获取指定日期所在周日 
+     * @Methods Name getSunday 
+     * @return Date 
+     */  
+    public static Date getSunday(Date date){  
+        Calendar cDay = Calendar.getInstance();     
+        cDay.setTime(date);  
+        if(Calendar.DAY_OF_WEEK==cDay.getFirstDayOfWeek()){ //如果刚好是周日，直接返回  
+            return date;  
+        }else{//如果不是周日，加一周计算  
+            cDay.add(Calendar.DAY_OF_YEAR, 7);  
+            cDay.set(Calendar.DAY_OF_WEEK, 1);  
+            System.out.println(cDay.getTime());  
+            return cDay.getTime();  
+        }    
+    }  
+	
+	/** 
+     * 获取指定日期所在周的周一 
+     * @Methods Name getMonday 
+     * @return Date 
+     */  
+    public static Date getMonday(Date date){  
+        Calendar cDay = Calendar.getInstance();     
+        cDay.setTime(date);     
+        cDay.set(Calendar.DAY_OF_WEEK, 2);//老外将周日定位第一天，周一取第二天  
+        return cDay.getTime();     
+    } 
+	
+    /** 
+     * 获取指定日期所在周的周五 
+     * @Methods Name getFriday 
+     * @return Date 
+     */  
+	public static Date getFriday(Date date) {
+		Calendar calendar = new GregorianCalendar();  
+		calendar.setTime(date);  
+	    calendar.set(Calendar.DAY_OF_WEEK, 6);  
+		return calendar.getTime();
+	}
+	
+	/** 
+     * 得到本季度第一天的日期 
+     * @Methods Name getFirstDayOfQuarter 
+     * @return Date 
+     */  
+    public static Date getFirstDayOfQuarter(Date date)   {     
+        Calendar cDay = Calendar.getInstance();     
+        cDay.setTime(date);  
+        int curMonth = cDay.get(Calendar.MONTH);  
+        if (curMonth >= Calendar.JANUARY && curMonth <= Calendar.MARCH){    
+            cDay.set(Calendar.MONTH, Calendar.JANUARY);  
+        }  
+        if (curMonth >= Calendar.APRIL && curMonth <= Calendar.JUNE){    
+            cDay.set(Calendar.MONTH, Calendar.APRIL);  
+        }  
+        if (curMonth >= Calendar.JULY && curMonth <= Calendar.AUGUST) {    
+            cDay.set(Calendar.MONTH, Calendar.JULY);  
+        }  
+        if (curMonth >= Calendar.OCTOBER && curMonth <= Calendar.DECEMBER) {    
+            cDay.set(Calendar.MONTH, Calendar.OCTOBER);  
+        }  
+        cDay.set(Calendar.DAY_OF_MONTH, cDay.getActualMinimum(Calendar.DAY_OF_MONTH));  
+        System.out.println(cDay.getTime());  
+        return cDay.getTime();     
+    }  
+    /** 
+     * 得到本季度最后一天的日期 
+     * @Methods Name getLastDayOfQuarter 
+     * @return Date 
+     */  
+    public static Date getLastDayOfQuarter(Date date)   {     
+        Calendar cDay = Calendar.getInstance();     
+        cDay.setTime(date);  
+        int curMonth = cDay.get(Calendar.MONTH);  
+        if (curMonth >= Calendar.JANUARY && curMonth <= Calendar.MARCH){    
+            cDay.set(Calendar.MONTH, Calendar.MARCH);  
+        }  
+        if (curMonth >= Calendar.APRIL && curMonth <= Calendar.JUNE){    
+            cDay.set(Calendar.MONTH, Calendar.JUNE);  
+        }  
+        if (curMonth >= Calendar.JULY && curMonth <= Calendar.AUGUST) {    
+            cDay.set(Calendar.MONTH, Calendar.AUGUST);  
+        }  
+        if (curMonth >= Calendar.OCTOBER && curMonth <= Calendar.DECEMBER) {    
+            cDay.set(Calendar.MONTH, Calendar.DECEMBER);  
+        }  
+        cDay.set(Calendar.DAY_OF_MONTH, cDay.getActualMaximum(Calendar.DAY_OF_MONTH));  
+        System.out.println(cDay.getTime());  
+        return cDay.getTime();     
+    }  
 	// End Test
+	
+	public static void main(String[] args) {
+		Date date = new Date();
+		Date res = getLastDayOfQuarter(date);
+		System.out.println(getNextDay(res, 0));
+	}
 }

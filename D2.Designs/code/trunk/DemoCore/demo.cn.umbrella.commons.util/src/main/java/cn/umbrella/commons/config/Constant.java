@@ -20,5 +20,7 @@ public class Constant {
 	public static final String SESSION_IMAGE_VERIFY_CODE = "verify_code";
 	public static final String SESSION_SYS_ID = "session_sys_id";
 	
+	public static final String OSS_SESSION_INFO = "my_session_info";
+	
 	public static final String ARRAY_FLAG = "ARR-";// 数组标记
 }

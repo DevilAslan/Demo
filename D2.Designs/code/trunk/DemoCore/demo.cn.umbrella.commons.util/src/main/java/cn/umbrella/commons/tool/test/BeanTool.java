@@ -80,7 +80,7 @@ public class BeanTool {
 		Map<String, String> res = new HashMap<String, String>();
 		for (Object o : enumClass.getEnumConstants()) {
 			ICommonEnum item=(ICommonEnum) o;
-			res.put(item.getValue()+"", item.getName());
+			res.put(item.getKey()+"", item.getValue());
 		}
 		return res;
 	}

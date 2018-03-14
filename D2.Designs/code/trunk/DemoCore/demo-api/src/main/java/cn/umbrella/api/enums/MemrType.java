@@ -8,46 +8,46 @@ public enum MemrType  implements IGDCommonEnum<Integer>{
 	PERSON(1, "个人"),
 	ENTERPRISE(2, "企业");
 
-	private int value;
-	private String name;
+	private int key;
+	private String value;
 
-	private MemrType(int value, String name) {
+	private MemrType(int key, String value) {
+		this.key = key;
 		this.value = value;
-		this.name = name;
 	}
 
 	@Override
-	public Integer getValue() {
+	public Integer getKey() {
+		return this.key;
+	}
+	
+	@Override
+	public String getValue() {
 		return this.value;
 	}
-
-	@Override
-	public String getName() {
-		return this.name;
-	}
-
-	public static String getNameByValue(Integer value) {
+	
+	public static String getValueByKey(int key) {
 		for (IGDCommonEnum<Integer> item : values()) {
-			if (item.getValue() == value) {
-				return item.getName();
+			if (item.getKey().equals(key)) {
+				return item.getValue();
 			}
 		}
 		return null;
 	}
 
-	public static Integer getValueByName(String name) {
+	public static String getKeyByValue(String value) {
 		for (IGDCommonEnum<Integer> item : values()) {
-			if (item.getName().equals(name)) {
-				return (Integer) item.getValue();
+			if (item.getValue().equals(value)) {
+				return item.getValue();
 			}
 		}
 		return null;
 	}
 
-	public static Integer getValueByItemName(String itemName) {
+	public static Integer getKeyByItemValue(String itemValue) {
 		Integer res = null;
 		try {
-			res = valueOf(itemName).getValue();
+			res = valueOf(itemValue).getKey();
 		} catch (IllegalArgumentException | NullPointerException e) {
 		}
 		return res;
