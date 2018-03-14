@@ -1,8 +1,9 @@
 package cn.umbrella.oss.enums;
 
-import cn.umbrella.commons.enums.IGDCommonEnum;
+import cn.umbrella.commons.enums.ICommonEnum;
 
-public enum ReturnCode implements IGDCommonEnum<String> {
+
+public enum ReturnCode implements ICommonEnum<String> {
 	SUCCESS("0000", "业务执行成功"),
 	
 	NOT_LOGIN("0001", "用户未登录"),
@@ -67,7 +68,7 @@ public enum ReturnCode implements IGDCommonEnum<String> {
 	}
 	
 	public static String getValueByKey(String key) {
-		for (IGDCommonEnum<String> item : values()) {
+		for (ICommonEnum<String> item : values()) {
 			if (item.getKey().equals(key)) {
 				return item.getValue();
 			}
@@ -76,7 +77,7 @@ public enum ReturnCode implements IGDCommonEnum<String> {
 	}
 
 	public static String getKeyByValue(String value) {
-		for (IGDCommonEnum<String> item : values()) {
+		for (ICommonEnum<String> item : values()) {
 			if (item.getValue().equals(value)) {
 				return item.getValue();
 			}

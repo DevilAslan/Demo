@@ -15,7 +15,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.FileUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -25,8 +24,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.multipart.MultipartFile;
 
+import cn.umbrella.commons.bean.ResponseData;
 import cn.umbrella.mboss.po.SysUser;
 import cn.umbrella.oss.config.Constant;
+import cn.umbrella.oss.model.Extras;
+import cn.umbrella.oss.model.FileQuery;
+import cn.umbrella.oss.model.SysAttachment;
+import cn.umbrella.oss.utils.FileTool;
 import cn.umbrella.oss.vo.MySessionInfo;
 
 import com.baidu.ueditor.ConfigManager;
@@ -44,8 +48,8 @@ import com.baidu.ueditor.upload.Base64Uploader;
 @RequestMapping("/wxFileUpload/")
 @SessionAttributes({Constant.MY_SESSION_INFO})
 public class WXFileController {
-	@Autowired
-	private SysAttachmentService sysAttachmentService;
+//	@Autowired
+//	private SysAttachmentService sysAttachmentService;
 	
 	@Value("#{properties['fileupload.path']}")
 	private String rootPath;
@@ -149,7 +153,7 @@ public class WXFileController {
 								
 				                try {
 									FileUtils.copyInputStreamToFile(file.getInputStream(), new File(physicalPath));
-									sysAttachmentService.addSysAttachment(sysAttachment);
+//									sysAttachmentService.addSysAttachment(sysAttachment);
 									
 									state = new BaseState(true);
 									state.putInfo("url", request.getScheme()+"://"+request.getServerName() +":"+ request.getServerPort() + request.getContextPath()+"/" + sysAttachment.getUrl());
@@ -183,7 +187,8 @@ public class WXFileController {
 	 */
 	@RequestMapping(value="download.json", method = {RequestMethod.GET, RequestMethod.POST})
 	public void download(String id, HttpServletRequest request, HttpServletResponse response){
-		SysAttachment sysAttachment = sysAttachmentService.getSysAttachmentById(id);
+//		SysAttachment sysAttachment = sysAttachmentService.getSysAttachmentById(id);
+		SysAttachment sysAttachment = null;
 		if(sysAttachment == null){
 			return;
 		}
@@ -246,7 +251,8 @@ public class WXFileController {
 		extras.setCreater(user.getName());
 		extras.setCreaterId(user.getUserId());
 		SysAttachment attachments = FileTool.saveFile(Filedata, extras, rootPath);
-		int addNum = sysAttachmentService.addSysAttachment(attachments);
+		int addNum = 0;
+//		int addNum = sysAttachmentService.addSysAttachment(attachments);
 		ResponseData rd = new ResponseData();
 		if (addNum > 0) {
 			rd.addData("attachmentId", attachments.getId());
@@ -259,7 +265,7 @@ public class WXFileController {
 	public void downloadAttachment(String id, HttpServletRequest request, HttpServletResponse response) {
 		SysAttachment sysAttachment = null;
 		if (id != null) {
-			sysAttachment = sysAttachmentService.getSysAttachmentById(id);
+//			sysAttachment = sysAttachmentService.getSysAttachmentById(id);
 		}
 		if (sysAttachment == null) {
 			return;
@@ -270,7 +276,8 @@ public class WXFileController {
 	@RequestMapping(value = "downloadAttachment.json", params={"targetId"}, method = { RequestMethod.GET, RequestMethod.POST })
 	public void downloadAttachment(Extras extras, HttpServletRequest request, HttpServletResponse response) {
 		SysAttachment sysAttachment = null;
-		List<SysAttachment> sysAttachments = sysAttachmentService.getAttachmentByExtras(extras);
+//		List<SysAttachment> sysAttachments = sysAttachmentService.getAttachmentByExtras(extras);
+		List<SysAttachment> sysAttachments = null;
 		if (sysAttachments != null && sysAttachments.size() > 0) {
 			sysAttachment = sysAttachments.get(0);
 		}
@@ -291,7 +298,8 @@ public class WXFileController {
 	@RequestMapping(value = "getAttachements.json", method = {RequestMethod.GET, RequestMethod.POST })
 	@ResponseBody
 	public ResponseData getAttachements(Extras extras) {
-		List<SysAttachment> sysAttachments = sysAttachmentService.getAttachmentByExtras(extras);
+//		List<SysAttachment> sysAttachments = sysAttachmentService.getAttachmentByExtras(extras);
+		List<SysAttachment> sysAttachments = null;
 		ResponseData ard = new ResponseData();
 		ard.put("sysAttachments", sysAttachments);
 		return ard;
@@ -351,7 +359,7 @@ public class WXFileController {
 	@ResponseBody
 	public ResponseData deleteAttachment(String id) {
 		ResponseData ard = new ResponseData();
-		sysAttachmentService.delSysAttachment(id);
+//		sysAttachmentService.delSysAttachment(id);
 		return ard;
 	}
 }
