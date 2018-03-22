@@ -108,6 +108,13 @@ public class StringUtil {
 		}
 		return true;
 	}
+	
+	public static boolean isEquals(String strA,String strB) {
+		if (strA.equalsIgnoreCase(strB)) {
+			return true;
+		}
+		return false;
+	}
 
 	/**
 	 * 字符串是否为空

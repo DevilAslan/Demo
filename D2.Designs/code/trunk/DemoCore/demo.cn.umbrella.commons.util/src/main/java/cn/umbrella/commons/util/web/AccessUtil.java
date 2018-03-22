@@ -6,7 +6,9 @@ import cn.umbrella.commons.config.Constant;
 import cn.umbrella.commons.config.CryptConfig;
 import cn.umbrella.commons.enums.AccessCode;
 import cn.umbrella.commons.model.Page;
+import cn.umbrella.commons.util.base.StringUtil;
 import cn.umbrella.commons.util.crypt.DESede;
+
 
 //import net.sf.json.JSONArray;
 //import net.sf.json.JSONObject;
@@ -17,48 +19,73 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
 public class AccessUtil {
+	
 	/**
-	 * 有问题
 	 * 
 	 * @param errorMsg
 	 * @return
 	 */
-	public static String getInvalidParaJson(String errorMsg) {
+	
+	public static String getSuccessAccessJson(String errorMsg) {
+		JSONObject response = new JSONObject();
+		response.put(Constant.ACCESS_RESULT, AccessCode.SUCCESS.getKey());
+		if(StringUtil.isEmpty(errorMsg)){response.put(Constant.ACCESS_MSG, AccessCode.SUCCESS.getValue());}
+		else{response.put(Constant.ACCESS_MSG, errorMsg);}
+		return response.toString();
+	}
+	
+	public static String getSuccessAccessJson() {
+		return getSuccessAccessJson(null);
+	}
+	
+	public static JSONObject getSuccessAccessObj(String errorMsg) {
+		JSONObject response = new JSONObject();
+		response.put(Constant.ACCESS_RESULT, AccessCode.SUCCESS.getKey());
+		if(StringUtil.isEmpty(errorMsg)){response.put(Constant.ACCESS_MSG, AccessCode.SUCCESS.getValue());}
+		else{response.put(Constant.ACCESS_MSG, errorMsg);}
+		return response;
+	}
+	
+	public static JSONObject getSuccessAccessObj() {
+		return getSuccessAccessObj(null);
+	}
+	
+	public static String getInvalidAccessJson(String errorMsg) {
 		JSONObject response = new JSONObject();
 		response.put(Constant.ACCESS_RESULT, AccessCode.INVALID.getKey());
-		response.put(Constant.ACCESS_MSG, AccessCode.INVALID.getValue());
+		if(StringUtil.isEmpty(errorMsg)){response.put(Constant.ACCESS_MSG, AccessCode.INVALID.getValue());}
+		else{response.put(Constant.ACCESS_MSG, errorMsg);}
+		return response.toString();
+	}
+	
+	public static String getFailAccessJson(String errorMsg) {
+		JSONObject response = new JSONObject();
+		response.put(Constant.ACCESS_RESULT, AccessCode.FAIL.getKey());
+		if(StringUtil.isEmpty(errorMsg)){response.put(Constant.ACCESS_MSG, AccessCode.FAIL.getValue());}
+		else{response.put(Constant.ACCESS_MSG, errorMsg);}
 		return response.toString();
 	}
 
-//	public static JsonConfig getDefaultConfig(Class<?> objClass) {
-//		JsonConfig jsconfig = new JsonConfig();
-//		jsconfig.setJavaIdentifierTransformer(new JavaIdentifierTransformer() {
-//			@Override
-//			public String transformToJavaIdentifier(String arg0) {
-//				if (arg0.equals(Constant.ACCESS_RESULT)) {
-//					return arg0;
-//				}
-//				if (arg0.equals(Constant.ACCESS_CODE)) {
-//					return arg0;
-//				}
-//				if (arg0.equals(Constant.ACCESS_MSG)) {
-//					return arg0;
-//				}
-//				char[] chars = arg0.toCharArray();
-//				chars[0] = Character.toLowerCase(chars[0]);
-//				return new String(chars);
-//			}
-//		});
-//		jsconfig.setRootClass(objClass);
-//		return jsconfig;
-//	}
+	public static String getFailAccessJson() {
+		return getFailAccessJson(null);
+	}
+	
+	public static JSONObject getFailAccessObj(String errorMsg) {
+		JSONObject response = new JSONObject();
+		response.put(Constant.ACCESS_RESULT, AccessCode.FAIL.getKey());
+		if(StringUtil.isEmpty(errorMsg)){response.put(Constant.ACCESS_MSG, AccessCode.FAIL.getValue());}
+		else{response.put(Constant.ACCESS_MSG, errorMsg);}
+		return response;
+	}
 
-	// Begin Get Access Json Tool
-
+	public static JSONObject getFailAccessObj() {
+		return getFailAccessObj(null);
+	}
+	
+	//----------------------------------------------------------------------------------------------
 	public static JSONObject getPageObj(Page page) {
 		JSONObject response = new JSONObject();
 		JSONArray jsonArray = (JSONArray) JSON.toJSON(page);
-//		JSONArray.fromObject(page.getRecordList());
 		response.put(Constant.RECORD_LIST, jsonArray);
 		response.put(Constant.CUR_PAGE_NUM, page.getCurrentPage());
 		response.put(Constant.PAGE_SIZE, page.getPageSize());
@@ -94,75 +121,84 @@ public class AccessUtil {
 		return response.toString();
 	}
 
-	public static String getAccessJson(String result, String code, String msg) {
+	public static String getAccessJson(String result,String msg) {
 		JSONObject response = new JSONObject();
 		response.put(Constant.ACCESS_RESULT, result);
-		response.put(Constant.ACCESS_CODE, code);
-		response.put(Constant.ACCESS_MSG, msg);
+		response.put(Constant.ACCESS_CODE, AccessCode.SUCCESS);
+		if(StringUtil.isEmpty(msg)){response.put(Constant.ACCESS_MSG, AccessCode.SUCCESS.getValue());}
+		else{response.put(Constant.ACCESS_MSG, msg);}
 		return response.toString();
 	}
 
-	public static JSONObject getAccessObj(String result, String code, String msg) {
+	public static JSONObject getAccessObj(String result, String msg) {
 		JSONObject response = new JSONObject();
 		response.put(Constant.ACCESS_RESULT, result);
-		response.put(Constant.ACCESS_CODE, code);
-		response.put(Constant.ACCESS_MSG, msg);
+		response.put(Constant.ACCESS_CODE, AccessCode.SUCCESS);
+		if(StringUtil.isEmpty(msg)){response.put(Constant.ACCESS_MSG, AccessCode.SUCCESS.getValue());}
+		else{response.put(Constant.ACCESS_MSG, msg);}
 		return response;
 	}
 
-	public static String getAccessJson(Page page, String code, String msg) {
+	public static String getAccessJson(Page page, String msg) {
 		JSONObject response = new JSONObject();
 		response.put(Constant.ACCESS_RESULT, getPageJson(page));
-		response.put(Constant.ACCESS_CODE, code);
-		response.put(Constant.ACCESS_MSG, msg);
+		response.put(Constant.ACCESS_CODE, AccessCode.SUCCESS);
+		if(StringUtil.isEmpty(msg)){response.put(Constant.ACCESS_MSG, AccessCode.SUCCESS.getValue());}
+		else{response.put(Constant.ACCESS_MSG, msg);}
 		return response.toString();
 	}
 
-	public static String getAccessJson(List<?> list, String code, String msg) {
+	public static String getAccessJson(List<?> list, String msg) {
 		JSONObject response = new JSONObject();
 		response.put(Constant.ACCESS_RESULT, getListJson(list));
-		response.put(Constant.ACCESS_CODE, code);
-		response.put(Constant.ACCESS_MSG, msg);
+		response.put(Constant.ACCESS_CODE, AccessCode.SUCCESS);
+		if(StringUtil.isEmpty(msg)){response.put(Constant.ACCESS_MSG, AccessCode.SUCCESS.getValue());}
+		else{response.put(Constant.ACCESS_MSG, msg);}
 		return response.toString();
 	}
 
-	public static String getAccessJson(Object obj, String code, String msg) {
+	public static String getAccessJson(Object obj, String msg) {
 		JSONObject response = new JSONObject();
 		response.put(Constant.ACCESS_RESULT, JSON.toJSON(obj));
-		response.put(Constant.ACCESS_CODE, code);
-		response.put(Constant.ACCESS_MSG, msg);
+		response.put(Constant.ACCESS_CODE, AccessCode.SUCCESS);
+		if(StringUtil.isEmpty(msg)){response.put(Constant.ACCESS_MSG, AccessCode.SUCCESS.getValue());}
+		else{response.put(Constant.ACCESS_MSG, msg);}
 		return response.toString();
 	}
 
-	/**
+	/**getAccessJsonToken
 	 * flag doing
-	 * 
 	 * @param obj
 	 * @param code
 	 * @param msg
+	 * @param keyCode
 	 * @return
 	 */
-	public static String getAccessJsonEnTest(Object obj, String code,
-			String msg, String keyCode) {
+	public static String getAccessJsonEnTest(Object obj
+			,String msg
+			, String keyCode) {
 		JSONObject response = new JSONObject();
 		response.put(Constant.ACCESS_RESULT, JSON.toJSON(obj));
-		response.put(Constant.ACCESS_CODE, code);
-		response.put(Constant.ACCESS_MSG, msg);
+		response.put(Constant.ACCESS_CODE, AccessCode.SUCCESS);
+		if(StringUtil.isEmpty(msg)){response.put(Constant.ACCESS_MSG, AccessCode.SUCCESS.getValue());}
+		else{response.put(Constant.ACCESS_MSG, msg);}
 		String res = EnTest(response.toString(), keyCode);
 		boolean flag = false;
 		flag = ParamUtil.DeTest(response.toString(), res, keyCode);
 		System.out.println(flag);
 		return res;
 	}
-
+	public final static String encryptKey = "2012PinganVitality075522628888ForShenZhenBelter075561869839";// 分配得到
 	static String EnTest(String content, String keyCode) {
 		String encryptText = content + "";
 		String enContent = null;
-		if (CryptConfig.DESEDE.equals(keyCode)) {
-			String encryptKey = "2012PinganVitality075522628888ForShenZhenBelter075561869839";// 分配得到
+		if (StringUtil.isEquals(CryptConfig.DESEDE, keyCode)) {
 			enContent = DESede.encryptMode(encryptKey, encryptText);
 		}
 		return enContent;
 	}
-	// End Get Access Json Tool
+	public static void main(String[] args) {
+		System.out.println(CryptConfig.DESEDE.equals("DESEDE".toLowerCase()));
+		System.out.println(StringUtil.isEquals(CryptConfig.DESEDE, "DESEDE"));
+	}
 }
