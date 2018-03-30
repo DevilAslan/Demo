@@ -178,14 +178,19 @@ public class AccessUtil {
 			,String msg
 			, String keyCode) {
 		JSONObject response = new JSONObject();
-		response.put(Constant.ACCESS_RESULT, JSON.toJSON(obj));
-		response.put(Constant.ACCESS_CODE, AccessCode.SUCCESS);
-		if(StringUtil.isEmpty(msg)){response.put(Constant.ACCESS_MSG, AccessCode.SUCCESS.getValue());}
-		else{response.put(Constant.ACCESS_MSG, msg);}
+		
 		String res = EnTest(response.toString(), keyCode);
-		boolean flag = false;
-		flag = ParamUtil.DeTest(response.toString(), res, keyCode);
-		System.out.println(flag);
+		boolean isDecrypt = false;
+		isDecrypt = ParamUtil.DeTest(response.toString(), res, keyCode);
+		
+		if(isDecrypt){
+			response.put(Constant.ACCESS_RESULT, JSON.toJSON(obj));
+			response.put(Constant.ACCESS_CODE, AccessCode.SUCCESS);
+			if(StringUtil.isEmpty(msg)){response.put(Constant.ACCESS_MSG, AccessCode.SUCCESS.getValue());}
+			else{response.put(Constant.ACCESS_MSG, msg);}
+		}else{
+			
+		}
 		return res;
 	}
 	public final static String encryptKey = "2012PinganVitality075522628888ForShenZhenBelter075561869839";// 分配得到
@@ -196,9 +201,5 @@ public class AccessUtil {
 			enContent = DESede.encryptMode(encryptKey, encryptText);
 		}
 		return enContent;
-	}
-	public static void main(String[] args) {
-		System.out.println(CryptConfig.DESEDE.equals("DESEDE".toLowerCase()));
-		System.out.println(StringUtil.isEquals(CryptConfig.DESEDE, "DESEDE"));
 	}
 }
