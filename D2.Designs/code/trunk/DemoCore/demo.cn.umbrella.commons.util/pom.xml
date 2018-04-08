@@ -9,7 +9,7 @@
 		<groupId>cn.umbrella</groupId>
 	</parent>
 	<groupId>cn.umbrella</groupId>
-	<artifactId>cn.umbrella.commons.util</artifactId>
+	<artifactId>cn.umbrella.commons.utils</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cn.umbrella.commons.util</name>
 	<url>http://maven.apache.org</url>
