@@ -11,6 +11,7 @@ package cn.umbrella.commons.base.model;
  * @param <KEY_TYPE>
  */
 public abstract class BaseModel<KEY_TYPE> {
+	@SuppressWarnings("unused")
 	private KEY_TYPE id;
 
 	public abstract KEY_TYPE getId();

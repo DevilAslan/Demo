@@ -5,12 +5,16 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<artifactId>DemoCore</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
 		<groupId>cn.umbrella</groupId>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+<!-- 	<groupId>cn.umbrella</groupId> -->
+<!-- 	<artifactId>cn.umbrella.commons.utils</artifactId> -->
+<!-- 	<version>0.0.1-SNAPSHOT</version> -->
 	<groupId>cn.umbrella</groupId>
 	<artifactId>cn.umbrella.commons.utils</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>cn.umbrella.commons.util</name>
 	<url>http://maven.apache.org</url>
 	<properties>

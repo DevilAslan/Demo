@@ -76,6 +76,7 @@ public class BeanTool {
 		return tmp;
 	}
 	
+	@SuppressWarnings("rawtypes")
 	public static Map<String, String> enumToJSONString(Class<?> enumClass){
 		Map<String, String> res = new HashMap<String, String>();
 		for (Object o : enumClass.getEnumConstants()) {

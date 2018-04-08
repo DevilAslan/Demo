@@ -24,6 +24,7 @@ public class OGNL {
 		return !isEmpty(o);
 	}
 
+	@SuppressWarnings("rawtypes")
 	public static boolean isEmpty(Object o) {
 		if (o == null)
 			return true;

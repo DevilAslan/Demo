@@ -1,12 +1,11 @@
 import java.text.DateFormat;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 
 
 public class Test {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) throws Exception {
 		String f_a = "yyyy-MM-dd HH:mm:ss";
 		String f_b = "yyyy-MM-dd";
