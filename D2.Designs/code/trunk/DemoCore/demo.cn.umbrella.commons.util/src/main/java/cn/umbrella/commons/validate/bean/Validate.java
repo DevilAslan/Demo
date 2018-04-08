@@ -29,10 +29,12 @@ public class Validate {
         messages.put(rule,ruleMessage);
     }
 
-    class Rule extends HashMap<String,Map<String,Object>>{
+    @SuppressWarnings("serial")
+	class Rule extends HashMap<String,Map<String,Object>>{
 
     }
-    class Message extends  HashMap<String,Map<String,Object>>{
+    @SuppressWarnings("serial")
+	class Message extends  HashMap<String,Map<String,Object>>{
 
     }
 

@@ -16,7 +16,7 @@ import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.BeanWrapperImpl;
 
 import cn.umbrella.commons.enums.ICommonEnum;
-import cn.umbrella.commons.util.base.StringTool;
+import cn.umbrella.commons.utils.base.StringTool;
 
 public class BeanTool {
 

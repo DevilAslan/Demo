@@ -13,7 +13,7 @@ import cn.umbrella.commons.base.dao.BaseDao;
 import cn.umbrella.commons.base.model.BaseModel;
 import cn.umbrella.commons.base.model.BaseQuery;
 import cn.umbrella.commons.tool.test.BeanTool;
-import cn.umbrella.commons.util.web.SessionUtil;
+import cn.umbrella.commons.utils.web.SessionUtil;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;

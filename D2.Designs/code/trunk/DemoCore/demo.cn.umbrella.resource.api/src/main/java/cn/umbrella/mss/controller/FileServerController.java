@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.multipart.MultipartFile;
 
-import cn.umbrella.commons.util.base.FileTool;
+import cn.umbrella.commons.utils.base.FileTool;
 import cn.umbrella.mss.config.Constant;
 
 @Controller
