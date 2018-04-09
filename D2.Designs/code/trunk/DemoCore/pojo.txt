@@ -1,0 +1,49 @@
+BSS:Business support system 业务支撑系统
+
+OSS:Operation support system 运营支撑系统
+MSS:Management support System 管理支撑系统
+
+BOSS:Business and Operation support system 电信业务运营支持系统，中国移动将前两者整合在一起。
+
+MBOSS:Management, Business and Operation support system 中国电信将三者整合在一起。
+
+BSS往往指计费、结算、帐务、客服、营业等系统
+
+OSS往往指网管、网优等系统
+BSS、OSS和MSS在电信行业IT战略规划中占据了重要地位.
+
+pojo size coupling
+demo.cn.umbrella.commons.util
+demo.cn.umbrella.static
+demo.cn.umbrella.dmb.api     数字多媒体广播(Digital Multimedia Broadcasting)
+demo.cn.umbrella.resource    
+tips:
+	file upload download 
+	QRCode
+demo.cn.umbrella.bss.webapp
+demo.cn.umbrella.bss.service
+demo.cn.umbrella.bss.report
+tips:
+	finance
+	alipay
+	unionpay
+demo.cn.umbrella.oss.third api ??
+demo.cn.umbrella.oss.webapp    home website
+demo.cn.umbrella.oss.business
+demo.cn.umbrella.oss.backstage
+tips:
+	cms channel content templet
+	wechat
+	code 验证码
+	log
+demo.cn.umbrella.mss.webapp
+demo.cn.umbrella.mss.business
+demo.cn.umbrella.mss.api open
+
+
+tips:
+	express
+	id5
+	sms
+Search Engine Optimization(SEO)
+网易云 IM
