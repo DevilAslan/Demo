@@ -1,4 +1,4 @@
-package cn.umbrella.commons.utils.masterworker;
+package cn.umbrella.commons.masterworker;
 /**
  * Type Name : Task
  * Description :  任务基

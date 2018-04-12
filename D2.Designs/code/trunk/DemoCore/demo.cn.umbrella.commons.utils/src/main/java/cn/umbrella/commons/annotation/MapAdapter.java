@@ -6,7 +6,10 @@ import java.util.Map;
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
 public class MapAdapter extends XmlAdapter<MapConvertor, Map<String, Object>> {
-
+	
+	/**
+	 * 整理,编队
+	 */
     @Override
     public MapConvertor marshal(Map<String, Object> map) throws Exception {
         MapConvertor convertor = new MapConvertor();
@@ -17,6 +20,9 @@ public class MapAdapter extends XmlAdapter<MapConvertor, Map<String, Object>> {
         return convertor;
     }
 
+    /**
+     * 解编
+     */
     @Override
     public Map<String, Object> unmarshal(MapConvertor map) throws Exception {
         Map<String, Object> result = new HashMap<String, Object>();

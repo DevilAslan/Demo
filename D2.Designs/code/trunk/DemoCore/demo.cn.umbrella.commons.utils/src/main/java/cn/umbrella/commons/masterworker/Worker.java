@@ -1,4 +1,4 @@
-package cn.umbrella.commons.utils.masterworker;
+package cn.umbrella.commons.masterworker;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -10,7 +10,7 @@ import java.util.concurrent.CountDownLatch;
  * @param <T> 任务
  * @param <V> 结果
  */
-public abstract class Worker<T extends cn.umbrella.commons.utils.masterworker.Task,V> implements Runnable {
+public abstract class Worker<T extends cn.umbrella.commons.masterworker.Task,V> implements Runnable {
 
     /* 任务队列 */
     protected ConcurrentLinkedQueue<T> tasks;
