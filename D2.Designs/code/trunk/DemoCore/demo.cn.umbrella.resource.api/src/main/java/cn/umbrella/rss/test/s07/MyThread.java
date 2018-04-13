@@ -1,4 +1,4 @@
-package cn.umbrella.mss.test.s07;
+package cn.umbrella.rss.test.s07;
 
 public class MyThread extends Thread{
   	

@@ -1,4 +1,4 @@
-package cn.umbrella.mss.test.s05;
+package cn.umbrella.rss.test.s05;
 
 public class MySingleton {
 	

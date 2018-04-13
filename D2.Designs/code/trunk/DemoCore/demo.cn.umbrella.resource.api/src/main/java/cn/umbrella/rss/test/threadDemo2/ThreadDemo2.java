@@ -1,4 +1,4 @@
-package cn.umbrella.mss.test.threadDemo2;
+package cn.umbrella.rss.test.threadDemo2;
 
 
 public class ThreadDemo2 {

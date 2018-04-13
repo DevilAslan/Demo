@@ -1,4 +1,4 @@
-package cn.umbrella.mss.utils;
+package cn.umbrella.rss.utils;
 
 import java.io.InputStream;
 import java.io.RandomAccessFile;

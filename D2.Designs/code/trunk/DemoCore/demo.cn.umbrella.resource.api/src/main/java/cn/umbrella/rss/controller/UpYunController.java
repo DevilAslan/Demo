@@ -1,4 +1,4 @@
-package cn.umbrella.mss.controller;
+package cn.umbrella.rss.controller;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import cn.umbrella.mss.config.Constant;
+import cn.umbrella.rss.config.Constant;
 
 @Controller
 @RequestMapping(UpYunController.ACTION_PATH)

@@ -1,4 +1,4 @@
-package cn.umbrella.mss.controller;
+package cn.umbrella.rss.controller;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.multipart.MultipartFile;
 
 import cn.umbrella.commons.utils.base.FileTool;
-import cn.umbrella.mss.config.Constant;
+import cn.umbrella.rss.config.Constant;
 
 @Controller
 @RequestMapping(FileServerController.ACTION_PATH)

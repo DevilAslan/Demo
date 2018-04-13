@@ -1,4 +1,4 @@
-package cn.umbrella.mss.filter;
+package cn.umbrella.rss.filter;
 
 import java.io.IOException;
 

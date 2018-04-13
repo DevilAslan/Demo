@@ -1,15 +1,15 @@
-package cn.umbrella.mss.test.threadDemo2;
+package cn.umbrella.rss.test.threadDemo2;
 
 /**
- * 存折负责取钱
+ * 银行卡负责存钱
  * @author Administrator
  *
  */
-public class Paper implements Runnable{
+public class Card implements Runnable{
     private String name;
     private Account account = new Account();
     
-    public Paper(String name,Account account) {
+    public Card(String name,Account account) {
         this.account = account;
         this.name = name;
     }
@@ -22,9 +22,7 @@ public class Paper implements Runnable{
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            account.subAccount(name,50);
-        }
-        
+            account.addAccount(name,100);        }
     }
-
+    
 }
