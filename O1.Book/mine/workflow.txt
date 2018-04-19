@@ -1,0 +1,107 @@
+flowNode
+
+Process
+
+
+行政
+
+用章申请
+名片印制
+外出考察或培训
+派车申请
+
+财务
+
+费用报销
+立项付款
+合同付款
+固定资产调拨
+固定资产报废
+
+人事
+
+招聘需求
+面试及录用
+转正申请
+人事公告
+请假加班
+工作移交
+
+IT信息
+
+项目立项
+资源申请
+账号申请
+故障申报
+
+采购
+
+采购申请
+年度买卖合同申请
+供应商主数据管理
+
+营销
+
+客户主数据管理
+产品主数据管理
+保函开立申请
+报价管理
+合同管理
+
+sku(Stock Keeping Unit)
+run_property_key;
+run_property_value;
+SELECT
+prod_name
+,alias
+,累计销量
+,主要图片
+,产品最低价?
+,产品最高价?
+,物流服务?
+,累计评价?
+run_product;
+
+SELECT
+alias
+,market_price
+,price
+,stock
+run_goods;
+run_goods_expand;
+run_merchant;
+
+run_order;
+SELECT
+ordr_code
+,merchant_code
+,goods_code
+,count
+,express_num
+run_order_expand;
+
+workflow.run_process_instance;
+workflow.his_process_instance;
+workflow.his_process_version;
+
+SELECT
+	#233
+	row_id,
+	item_code,
+	alias,
+	bus_code,
+	proc_code,
+	proc_version
+FROM
+	workflow.his_task;
+
+
+finance.run_bill;
+
+支付方式 
+cash
+转账
+分期(Hire purchase)
+
+计价器(fare meter)
+Taximeter

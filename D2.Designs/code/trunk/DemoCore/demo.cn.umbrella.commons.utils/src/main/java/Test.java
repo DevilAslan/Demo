@@ -13,8 +13,9 @@ public class Test {
 //		String date = df.format(new Date());// new Date()为获取当前系统时间，也可使用当前时间戳
 //		System.out.println();
 		
-		DateFormat df = new SimpleDateFormat(f_a);  
-        java.util.Date date = df.parse("2014-01-11 01:37:00");  
+		DateFormat df = new SimpleDateFormat(f_b);  
+//        java.util.Date date = df.parse("2014-01-11 01:37:00");  
+        java.util.Date date = df.parse("1970-01-01"); 
         Calendar cal = Calendar.getInstance();  
         cal.setTime(date);  
         long timestamp = cal.getTimeInMillis();  
