@@ -1,16 +1,30 @@
-周天阵
-
-星辰阵
-
 青山疯人院
 Qingshan M.A.D.H.O.U.S.E./Medical Advance Danger and Health of Organization for Uniting Strategic Environment
 Humanity
 
-
+外勤
 临时工/Temporary worker
 医生/Doctor
 护士/Nurse
 OSABCD 10
+编号 MAD
+██
+
+人体素质判定
+精神力
+智力
+肌肉组织强度
+神经反射速度
+免疫力
+细胞活力
+
+思维
+魅力
+
+东南大学九龙湖校区是东南大学的新校址，坐落于南京市江宁开发区，于2006年9月投入使用。
+
+
+
 周天星辰阵
 
 星君 类星体 模因 轮回 时间 空间 科技(法则显象) 命运 
@@ -89,6 +103,7 @@ ICA 杀手组织
 
 花牌
 	黑与红 人头 数字
+卡牌执行者
 驾驶
 
 教官
