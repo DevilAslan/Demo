@@ -20,6 +20,11 @@ public class Test {
         cal.setTime(date);  
         long timestamp = cal.getTimeInMillis();  
         System.out.println(timestamp/1000);  
+        
+        String str = "PNG";
+		if("gif".equalsIgnoreCase(str) || "jpg".equalsIgnoreCase(str) || "png".equalsIgnoreCase(str) || "bmp".equalsIgnoreCase(str)){
+			System.out.println("true");
+		}
 	}
 
 }

@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.multipart.MultipartFile;
 
 import cn.umbrella.commons.utils.base.FileTool;
+import cn.umbrella.commons.utils.base.StringUtil;
+import cn.umbrella.commons.utils.base.SymbolUtil;
 import cn.umbrella.rss.config.Constant;
 
 @Controller
@@ -26,17 +28,64 @@ public class FileServerController {
 	protected static final String ACTION_PATH = "/server/file";
 	protected static final String PAGE_PATH = "/page/file/";
 	
-	@Value("#{properties['titleImgStore']}")
-	private String titleImgStore;
+	@Value("#{properties['fileStore']}")
+	private String fileStore;
 	
-	@RequestMapping(value="singleFileUpload.json", method={RequestMethod.POST})
+	@Value("#{properties['tempFileStore']}")
+	private String tempFileStore;
+	
+	@RequestMapping(value="singleTempFileUpload", method={RequestMethod.POST})
 	@ResponseBody
-	public String doContentSave(@RequestParam(value = "singleFile", required = false) MultipartFile file){
+	public String singleTempFileUpload(@RequestParam(value = "singleFile", required = false) MultipartFile file){
+		JSONObject response = new JSONObject();
+		if(!file.isEmpty()){
+			String fileName = file.getOriginalFilename();
+			if(!StringUtil.EMPTY.equals(fileName)){
+				int k = fileName.lastIndexOf(SymbolUtil.SPOT); 
+				String str = fileName.substring(k+1, fileName.length());
+				if(FileTool.ImgContains(str)){
+					
+				}else{
+					
+				}
+			}
+			
+		}
+		String separator = System.getProperty("file.separator");
+		//do upload file
+		if(!file.isEmpty()){
+			String name = file.getOriginalFilename();
+			int index = name.lastIndexOf(SymbolUtil.SPOT);
+			String type = name.substring(index, name.length());
+			String imgName = UUID.randomUUID().toString().replace(SymbolUtil.BAR, "");
+			
+			File path = new File(tempFileStore);
+			if (!path.exists()) {
+				path.mkdirs();
+			}
+			
+			File img = new File(tempFileStore+separator+imgName+type);
+			try {
+				if(img.createNewFile()){
+					file.transferTo(img);
+				}
+			} catch (IllegalStateException | IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return response.toString();
+	}
+	
+	
+	@RequestMapping(value="singleFileUpload", method={RequestMethod.POST})
+	@ResponseBody
+	public String singleFileUpload(@RequestParam(value = "singleFile", required = false) MultipartFile file){
 		JSONObject response = new JSONObject();
 		if(!file.isEmpty()){
 			String fileName = file.getOriginalFilename();
 			if(!"".equals(fileName)){
-				int k = fileName.lastIndexOf("."); 
+				int k = fileName.lastIndexOf(SymbolUtil.SPOT); 
 //				file.getContentType()
 				String str = fileName.substring(k+1, fileName.length());
 				if(FileTool.ImgContains(str)){
@@ -51,16 +100,16 @@ public class FileServerController {
 		//do upload file
 		if(!file.isEmpty()){
 			String name = file.getOriginalFilename();
-			int index = name.lastIndexOf(".");
+			int index = name.lastIndexOf(SymbolUtil.SPOT);
 			String type = name.substring(index, name.length());
-			String imgName = UUID.randomUUID().toString().replace("-", "");
+			String imgName = UUID.randomUUID().toString().replace(SymbolUtil.BAR, "");
 			
-			File path = new File(titleImgStore);
+			File path = new File(fileStore);
 			if (!path.exists()) {
 				path.mkdirs();
 			}
 			
-			File img = new File(titleImgStore+separator+imgName+type);
+			File img = new File(fileStore+separator+imgName+type);
 			try {
 				if(img.createNewFile()){
 					file.transferTo(img);
@@ -74,5 +123,4 @@ public class FileServerController {
 		
 		return response.toString();
 	}
-	
 }

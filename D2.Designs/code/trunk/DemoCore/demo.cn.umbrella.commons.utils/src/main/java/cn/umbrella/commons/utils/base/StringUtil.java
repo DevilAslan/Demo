@@ -34,7 +34,7 @@ import cn.umbrella.commons.utils.usual.BeanUtil;
 public class StringUtil {
 	private static final char[] LT_ENCODE = "&lt;".toCharArray();
 	private static final char[] GT_ENCODE = "&gt;".toCharArray();
-	private static final String EMPTY = "";
+	public static final String EMPTY = "";
 
 	/**
 	 * 转换字符串的编码
