@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.dhcc.credit.metadata.dao.CommitmentBookDao">
+	<resultMap type="cn.com.dhcc.credit.metadata.po.CommitmentBook" id="BaseResultMap">
+        <result property="uid" column="uid" javaType="String"/>
+        <result property="creditEntityName" column="credit_entity_name" javaType="String"/>
+        <result property="creditEntityCode" column="credit_entity_code" javaType="String"/>
+        <result property="unifySocietyCode" column="unify_society_code" javaType="String"/>
+        <result property="businessLicense" column="business_license" javaType="String"/>
+        <result property="taxRegisterNumber" column="tax_register_number" javaType="String"/>
+        <result property="legalPerson" column="legal_person" javaType="String"/>
+        <result property="tableOwnerId" column="table_owner_id" javaType="String"/>
+        <result property="tableOwnerName" column="table_owner_name" javaType="String"/>
+        <result property="filePath" column="file_path" javaType="String"/>
+        <result property="imgFile" column="img_file" javaType="String"/>
+        <result property="isPublish" column="is_publish" javaType="Integer"/>
+        <result property="ctime" column="ctime" javaType="Date"/>
+        <result property="createrId" column="creater_id" javaType="Integer"/>
+        <result property="creater" column="creater" javaType="String"/>
+        <result property="etime" column="etime" javaType="Date"/>
+        <result property="editorId" column="editor_id" javaType="Integer"/>
+        <result property="editor" column="editor" javaType="String"/>
+        <result property="remarks" column="remarks" javaType="String"/>
+        <result property="deleted" column="deleted" javaType="Boolean"/>
+        
+        <result property="bookName" column="book_name" javaType="String"/>
+        <result property="domainType" column="domain_type" javaType="String"/>
+        <result property="orderValue" column="order_value" javaType="Integer"/>
+        <result property="content" column="content" javaType="String"/>
+        <result property="commTime" column="comm_time" javaType="String"/>
+        
+        <result property="domainName" column="domain_name" javaType="String"/>
+	</resultMap>
+	
+	<sql id="full-columns" >
+        t.uid,
+        t.credit_entity_name,
+        t.credit_entity_code,
+        t.unify_society_code,
+        t.business_license,
+        t.tax_register_number,
+        t.legal_person,
+        t.table_owner_id,
+        t.table_owner_name,
+        t.file_path,
+        t.img_file,
+        t.is_publish,
+        t.ctime,
+        t.creater_id,
+        t.creater,
+        t.etime,
+        t.editor_id,
+        t.editor,
+        t.remarks,
+        t.deleted,
+        t.book_name,
+        t.domain_type,
+        t.order_value,
+        t.content,
+        t.comm_time,
+        t.domain_name
+        
+	</sql>
+
+	<!-- 如果主键为非自增的，需要将selectKey删除  -->
+	<insert id="insert"  parameterType="cn.com.dhcc.credit.metadata.po.CommitmentBook" >
+        INSERT INTO commitment_book (
+        
+        <if test="@OGNL@isNotEmpty(uid)">
+       		uid,
+        </if>
+            credit_entity_name ,
+            credit_entity_code ,
+            unify_society_code ,
+            business_license ,
+            tax_register_number ,
+            legal_person ,
+            table_owner_id ,
+            table_owner_name ,
+            file_path ,
+            img_file ,
+            is_publish ,
+            ctime ,
+            creater_id ,
+            creater ,
+            etime ,
+            editor_id ,
+            editor ,
+            remarks ,
+            deleted,
+            book_name,
+            domain_type,
+            order_value,
+            content,
+            comm_time,
+            domain_name
+        ) VALUES (
+        <if test="@OGNL@isNotEmpty(uid)">
+       		#{uid},
+        </if>
+        	#{creditEntityName},
+        	#{creditEntityCode},
+        	#{unifySocietyCode},
+        	#{businessLicense},
+        	#{taxRegisterNumber},
+        	#{legalPerson},
+        	#{tableOwnerId},
+        	#{tableOwnerName},
+        	#{filePath},
+        	#{imgFile},
+        	#{isPublish},
+        	now(),
+        	#{createrId},
+        	#{creater},
+        	#{etime},
+        	#{editorId},
+        	#{editor},
+        	#{remarks},
+        	0,
+        	#{bookName},
+        	#{domainType},
+        	#{orderValue},
+        	#{content},
+        	#{commTime},
+        	#{domainName}
+        )
+    	<selectKey resultType="java.lang.String" keyProperty="uid">
+			SELECT LAST_INSERT_ID() AS uid
+        </selectKey>
+	</insert>
+	
+	<insert id="insertBatch" parameterType="java.util.List" >
+        INSERT INTO wzcredit.commitment_book (
+        	uid,
+            credit_entity_name ,
+            credit_entity_code ,
+            unify_society_code ,
+            business_license ,
+            tax_register_number ,
+            legal_person ,
+            table_owner_id ,
+            table_owner_name ,
+            file_path ,
+            img_file ,
+            is_publish ,
+            ctime ,
+            creater_id ,
+            creater ,
+            etime ,
+            editor_id ,
+            editor ,
+            remarks ,
+            deleted ,
+            book_name,
+			domain_type,
+			order_value,
+			content,
+			comm_time,
+			domain_name
+        ) VALUES 
+        <foreach collection="list" item="item" index="index" separator=",">
+        (
+        	#{item.uid},
+        	#{item.creditEntityName},
+        	#{item.creditEntityCode},
+        	#{item.unifySocietyCode},
+        	#{item.businessLicense},
+        	#{item.taxRegisterNumber},
+        	#{item.legalPerson},
+        	#{item.tableOwnerId},
+        	#{item.tableOwnerName},
+        	#{item.filePath},
+        	#{item.imgFile},
+        	#{item.isPublish},
+        	now(),
+        	#{item.createrId},
+        	#{item.creater},
+        	#{item.etime},
+        	#{item.editorId},
+        	#{item.editor},
+        	#{item.remarks},
+        	0,
+        	#{item.bookName},
+        	#{item.domainType},
+        	#{item.orderValue},
+        	#{item.content},
+        	#{item.commTime},
+        	#{item.domainName}
+        )
+        </foreach>
+	</insert>
+	
+	<update id="update" parameterType="cn.com.dhcc.credit.metadata.po.CommitmentBook">
+        UPDATE commitment_book 
+        <set>
+       		<if test="@OGNL@isNotEmpty(creditEntityName)">
+       			credit_entity_name = #{creditEntityName},
+	        </if>
+       		<if test="@OGNL@isNotEmpty(creditEntityCode)">
+       			credit_entity_code = #{creditEntityCode},
+	        </if>
+       		<if test="@OGNL@isNotEmpty(unifySocietyCode)">
+       			unify_society_code = #{unifySocietyCode},
+	        </if>
+       		<if test="@OGNL@isNotEmpty(businessLicense)">
+       			business_license = #{businessLicense},
+	        </if>
+       		<if test="@OGNL@isNotEmpty(taxRegisterNumber)">
+       			tax_register_number = #{taxRegisterNumber},
+	        </if>
+       		<if test="@OGNL@isNotEmpty(legalPerson)">
+       			legal_person = #{legalPerson},
+	        </if>
+       		<if test="@OGNL@isNotEmpty(tableOwnerId)">
+       			table_owner_id = #{tableOwnerId},
+	        </if>
+       		<if test="@OGNL@isNotEmpty(tableOwnerName)">
+       			table_owner_name = #{tableOwnerName},
+	        </if>
+       		<if test="@OGNL@isNotEmpty(filePath)">
+       			file_path = #{filePath},
+	        </if>
+       		<if test="@OGNL@isNotEmpty(imgFile)">
+       			img_file = #{imgFile},
+	        </if>
+       		<if test="@OGNL@isNotEmpty(isPublish)">
+       			is_publish = #{isPublish},
+	        </if>
+       		<if test="@OGNL@isNotEmpty(ctime)">
+       			ctime = #{ctime},
+	        </if>
+       		<if test="@OGNL@isNotEmpty(createrId)">
+       			creater_id = #{createrId},
+	        </if>
+       		<if test="@OGNL@isNotEmpty(creater)">
+       			creater = #{creater},
+	        </if>
+   				etime = now(),
+       		<if test="@OGNL@isNotEmpty(editorId)">
+       			editor_id = #{editorId},
+	        </if>
+       		<if test="@OGNL@isNotEmpty(editor)">
+       			editor = #{editor},
+	        </if>
+       		<if test="@OGNL@isNotEmpty(remarks)">
+       			remarks = #{remarks},
+	        </if>
+       		<if test="@OGNL@isNotEmpty(deleted)">
+       			deleted = #{deleted},
+	        </if>
+	        <if test="@OGNL@isNotEmpty(bookName)">
+       			book_name = #{bookName},
+	        </if>
+	        <if test="@OGNL@isNotEmpty(domainType)">
+       			domain_type = #{domainType},
+	        </if>
+	        <if test="@OGNL@isNotEmpty(orderValue)">
+       			order_value = #{orderValue},
+	        </if>
+	        <if test="@OGNL@isNotEmpty(content)">
+       			content = #{content},
+	        </if>
+	        <if test="@OGNL@isNotEmpty(domainName)">
+       			domain_name = #{domainName},
+	        </if>
+        </set>
+        WHERE deleted=0
+        	AND uid = #{uid}
+	</update>
+	
+	<update id="updateBatch" parameterType="java.util.List">
+		<foreach collection="list" item="item" index="index" open="" close="" separator="">
+	        UPDATE commitment_book 
+	        <set>
+	        	<if test="@OGNL@isNotEmpty(item.creditEntityName)">
+	        		credit_entity_name = #{item.creditEntityName},
+		        </if>
+	        	<if test="@OGNL@isNotEmpty(item.creditEntityCode)">
+	        		credit_entity_code = #{item.creditEntityCode},
+		        </if>
+	        	<if test="@OGNL@isNotEmpty(item.unifySocietyCode)">
+	        		unify_society_code = #{item.unifySocietyCode},
+		        </if>
+	        	<if test="@OGNL@isNotEmpty(item.businessLicense)">
+	        		business_license = #{item.businessLicense},
+		        </if>
+	        	<if test="@OGNL@isNotEmpty(item.taxRegisterNumber)">
+	        		tax_register_number = #{item.taxRegisterNumber},
+		        </if>
+	        	<if test="@OGNL@isNotEmpty(item.legalPerson)">
+	        		legal_person = #{item.legalPerson},
+		        </if>
+	        	<if test="@OGNL@isNotEmpty(item.tableOwnerId)">
+	        		table_owner_id = #{item.tableOwnerId},
+		        </if>
+	        	<if test="@OGNL@isNotEmpty(item.tableOwnerName)">
+	        		table_owner_name = #{item.tableOwnerName},
+		        </if>
+	        	<if test="@OGNL@isNotEmpty(item.filePath)">
+	        		file_path = #{item.filePath},
+		        </if>
+	        	<if test="@OGNL@isNotEmpty(item.imgFile)">
+	        		img_file = #{item.imgFile},
+		        </if>
+	        	<if test="@OGNL@isNotEmpty(item.isPublish)">
+	        		is_publish = #{item.isPublish},
+		        </if>
+	        	<if test="@OGNL@isNotEmpty(item.ctime)">
+	        		ctime = #{item.ctime},
+		        </if>
+	        	<if test="@OGNL@isNotEmpty(item.createrId)">
+	        		creater_id = #{item.createrId},
+		        </if>
+	        	<if test="@OGNL@isNotEmpty(item.creater)">
+	        		creater = #{item.creater},
+		        </if>
+        			etime = now(),
+	        	<if test="@OGNL@isNotEmpty(item.editorId)">
+	        		editor_id = #{item.editorId},
+		        </if>
+	        	<if test="@OGNL@isNotEmpty(item.editor)">
+	        		editor = #{item.editor},
+		        </if>
+	        	<if test="@OGNL@isNotEmpty(item.remarks)">
+	        		remarks = #{item.remarks},
+		        </if>
+	        	<if test="@OGNL@isNotEmpty(item.deleted)">
+	        		deleted = #{item.deleted},
+		        </if>
+		        <if test="@OGNL@isNotEmpty(bookName)">
+	       			book_name = #{item.bookName},
+		        </if>
+		        <if test="@OGNL@isNotEmpty(domainType)">
+	       			domain_type = #{item.domainType},
+		        </if>
+		        <if test="@OGNL@isNotEmpty(orderValue)">
+	       			order_value = #{item.orderValue},
+		        </if>
+		        <if test="@OGNL@isNotEmpty(domainName)">
+       				domain_name = #{item.domainName},
+	        </if>
+	        </set>
+	        WHERE deleted = 0
+	        	AND uid = #{item.uid};
+        </foreach>
+	</update>
+	
+	<update id="delete" parameterType="java.lang.String">
+        UPDATE commitment_book SET deleted = 1, etime = now()
+        WHERE deleted = 0 AND uid = #{value}
+	</update>
+	<update id="deleteBatch" parameterType="java.util.List" >
+        UPDATE commitment_book SET deleted = 1, etime = now()
+        WHERE deleted = 0 AND uid IN 
+        <foreach collection="list" item = "id" open="(" separator="," close=")">
+        	#{id}
+		</foreach>
+	</update>
+	
+	<update id="updateIsPublishBatch" parameterType="map" >
+        UPDATE commitment_book t,
+        (SELECT credit_entity_name, table_owner_id from commitment_book where uid in
+         <foreach collection="ids" item = "id" open="(" separator="," close=")">
+        	#{id}
+		</foreach>
+        ) a SET is_publish = #{ispublish}, etime = now()
+        WHERE t.deleted = 0 AND t.credit_entity_name = a.credit_entity_name AND t.table_owner_id = a.table_owner_id;
+	</update>
+	
+	<select id="queryById" parameterType="java.lang.String" resultMap="BaseResultMap">
+	   	SELECT 
+	   		<include refid="full-columns" />
+       	FROM commitment_book t
+       	WHERE t.uid = #{value}
+    </select>
+	
+	<select id="query" parameterType="map" resultMap="BaseResultMap">
+		SELECT
+			tt.uid,
+			tt.credit_entity_name,
+			tt.table_owner_id,
+			tt.table_owner_name,
+			tt.legal_person,
+			tt.ctime,
+			tt.comm_time,
+			tt.etime,
+			tt.is_publish,
+			tt.creater,
+			tt.book_name,
+			tt.content,
+			tt.img_file,
+			tt.domain_type,
+			tt.domain_name
+		FROM
+			(
+				SELECT
+					t.uid,
+					t.credit_entity_name,
+					t.table_owner_id,
+					t.table_owner_name,
+					t.legal_person,
+					t.ctime,
+					t.comm_time,
+					t.etime,
+					t.is_publish,
+					t.creater,
+					t.book_name,
+					t.content,
+					GROUP_CONCAT(t.img_file) AS img_file,
+					t.domain_type,
+					g.region_id,
+					g.region_name,
+					t.order_value,
+					t.domain_name
+				FROM
+					wzcredit.commitment_book t,
+					rbac.sys_group g
+				WHERE
+					t.table_owner_id = g.group_path
+				AND t.deleted = 0
+				AND t.img_file IS NOT NULL
+				GROUP BY
+					t.credit_entity_name,
+					t.table_owner_id
+				UNION
+					SELECT
+						t.uid,
+						t.credit_entity_name,
+						t.table_owner_id,
+						t.table_owner_name,
+						t.legal_person,
+						t.ctime,
+						t.comm_time,
+						t.etime,
+						t.is_publish,
+						t.creater,
+						t.book_name,
+						t.content,
+						t.img_file,
+						t.domain_type,
+						g.region_id,
+						g.region_name,
+						t.order_value,
+						t.domain_name
+					FROM
+						wzcredit.commitment_book t,
+						rbac.sys_group g
+					WHERE
+						t.table_owner_id = g.group_path
+					AND t.deleted = 0
+					AND t.img_file IS NULL
+			) tt
+
+			<where>
+			<if test="siteId != null">
+				AND tt.region_id = (SELECT region_id FROM rbac.sys_group WHERE group_id = #{siteId} )
+			</if>
+			<if test="@OGNL@isNotEmpty(uid)">
+	            AND tt.uid = #{uid}
+	        </if>
+			<if test="@OGNL@isNotEmpty(creditEntityName)">
+	            AND tt.credit_entity_name = #{creditEntityName}
+	        </if>
+			<if test="@OGNL@isNotEmpty(legalPerson)">
+	            AND tt.legal_person = #{legalPerson}
+	        </if>
+			<if test="@OGNL@isNotEmpty(tableOwnerId)">
+	            AND tt.table_owner_id = #{tableOwnerId}
+	        </if>
+			<if test="@OGNL@isNotEmpty(tableOwnerName)">
+	            AND tt.table_owner_name = #{tableOwnerName}
+	        </if>
+			<if test="@OGNL@isNotEmpty(imgFile)">
+	            AND tt.img_file = #{imgFile}
+	        </if>
+			<if test="@OGNL@isNotEmpty(ctime)">
+	            AND tt.ctime = #{ctime}
+	        </if>
+			<if test="@OGNL@isNotEmpty(etime)">
+	            AND tt.etime = #{etime}
+	        </if>
+	        <if test="@OGNL@isNotEmpty(isPublish)">
+	            AND tt.is_publish = #{isPublish}
+	        </if>
+	        <if test="@OGNL@isNotEmpty(keyword)">
+	            AND (tt.credit_entity_name LIKE binary concat('%',#{keyword},'%') OR 
+	            tt.table_owner_name LIKE binary concat('%',#{keyword},'%') OR
+	            tt.creater LIKE binary concat('%',#{keyword},'%') OR
+	            tt.domain_name LIKE binary concat('%',#{keyword},'%'))
+	        </if>
+	        <if test="@OGNL@isNotEmpty(keywordForFront)">
+	            AND tt.credit_entity_name LIKE binary concat('%',#{keywordForFront},'%')
+	        </if>
+	        <if test="@OGNL@isNotEmpty(searchNewDataTime)">
+				AND tt.ctime &gt; #{searchNewDataTime}
+			</if>
+			<if test="@OGNL@isNotEmpty(bookName)">
+       			AND tt.book_name = #{bookName}
+	        </if>
+	        <if test="@OGNL@isNotEmpty(domainType)">
+       			AND tt.domain_type = #{domainType}
+	        </if>
+	        <if test="@OGNL@isNotEmpty(orderValue)">
+       			AND tt.order_value = #{orderValue}
+	        </if>
+	        <if test="@OGNL@isNotEmpty(regionId)">
+       			AND tt.region_id = #{regionId}
+	        </if>
+	        <if test="@OGNL@isNotEmpty(regionName)">
+       			AND tt.region_name = #{regionName}
+	        </if>
+		</where>
+		<if test="@OGNL@isNotEmpty(orderBy)">
+			ORDER BY tt.ctime DESC
+		</if>
+		<if test="@OGNL@isEmpty(orderBy)">
+			ORDER BY tt.ctime DESC
+		</if>
+	</select>
+	
+	<select id="queryCount" parameterType="map" resultType="java.lang.Integer">
+		SELECT COUNT(*) FROM (SELECT
+			t.uid,
+			t.credit_entity_name,
+			t.table_owner_id,
+			t.table_owner_name,
+			t.legal_person,
+			t.ctime,
+			t.comm_time,
+			t.etime,
+			t.is_publish,
+			t.creater,
+			t.book_name,
+			t.content,
+			GROUP_CONCAT(t.img_file) AS img_file,
+			t.domain_type,
+			g.region_id,
+			g.region_name,
+			t.order_value,
+			t.domain_name
+		FROM
+			wzcredit.commitment_book t,
+			rbac.sys_group g
+		WHERE
+			t.table_owner_id = g.group_path
+		AND t.deleted = 0
+		AND t.img_file IS NOT NULL
+		GROUP BY
+			t.credit_entity_name,
+			t.table_owner_id
+		UNION
+			SELECT
+				t.uid,
+				t.credit_entity_name,
+				t.table_owner_id,
+				t.table_owner_name,
+				t.legal_person,
+				t.ctime,
+				t.comm_time,
+				t.etime,
+				t.is_publish,
+				t.creater,
+				t.book_name,
+				t.content,
+				t.img_file,
+				t.domain_type,
+				g.region_id,
+				g.region_name,
+				t.order_value,
+				t.domain_name
+			FROM
+				wzcredit.commitment_book t,
+				rbac.sys_group g
+			WHERE
+				t.table_owner_id = g.group_path
+			AND t.deleted = 0
+			AND t.img_file IS NULL
+	) tt
+        <where>	
+       		<if test="siteId != null">
+				AND tt.region_id = (SELECT region_id FROM rbac.sys_group WHERE group_id = #{siteId} )
+			</if>
+       		<if test="@OGNL@isNotEmpty(keyword)">
+	            AND (tt.credit_entity_name LIKE binary concat('%',#{keyword},'%') OR 
+	            tt.table_owner_name LIKE binary concat('%',#{keyword},'%') OR
+	            tt.creater LIKE binary concat('%',#{keyword},'%') OR
+	            tt.domain_name LIKE binary concat('%',#{keyword},'%'))
+	        </if>
+       		<if test="@OGNL@isNotEmpty(keywordForFront)">
+	            AND tt.credit_entity_name LIKE binary concat('%',#{keywordForFront},'%')
+	        </if>
+        	<if test="@OGNL@isNotEmpty(uid)">
+            	AND tt.uid = #{uid}
+        	</if>
+        	<if test="@OGNL@isNotEmpty(creditEntityName)">
+            	AND tt.credit_entity_name = #{creditEntityName}
+        	</if>
+        	<if test="@OGNL@isNotEmpty(legalPerson)">
+            	AND tt.legal_person = #{legalPerson}
+        	</if>
+        	<if test="@OGNL@isNotEmpty(tableOwnerId)">
+            	AND tt.table_owner_id = #{tableOwnerId}
+        	</if>
+        	<if test="@OGNL@isNotEmpty(tableOwnerName)">
+            	AND tt.table_owner_name = #{tableOwnerName}
+        	</if>
+        	<if test="@OGNL@isNotEmpty(imgFile)">
+            	AND tt.img_file = #{imgFile}
+        	</if>
+        	<if test="@OGNL@isNotEmpty(isPublish)">
+            	AND tt.is_publish = #{isPublish}
+        	</if>
+        	<if test="@OGNL@isNotEmpty(ctime)">
+            	AND tt.ctime = #{ctime}
+        	</if>
+        	<if test="@OGNL@isNotEmpty(etime)">
+            	AND tt.etime = #{etime}
+        	</if>
+        	<if test="@OGNL@isNotEmpty(searchNewDataTime)">
+				AND tt.ctime &gt; #{searchNewDataTime}
+			</if>
+			<if test="@OGNL@isNotEmpty(bookName)">
+       			AND tt.book_name = #{bookName}
+	        </if>
+	        <if test="@OGNL@isNotEmpty(domainType)">
+       			AND tt.domain_type = #{domainType}
+	        </if>
+	        <if test="@OGNL@isNotEmpty(orderValue)">
+       			AND tt.order_value = #{orderValue}
+	        </if>
+	        <if test="@OGNL@isNotEmpty(regionId)">
+       			AND tt.region_id = #{regionId}
+	        </if>
+	        <if test="@OGNL@isNotEmpty(regionName)">
+       			AND tt.region_name = #{regionName}
+	        </if>
+        </where>
+	</select>
+	
+	<select id="queryTableOwnerName" parameterType="map" resultMap="BaseResultMap">
+	SELECT
+		t.uid,
+		t.table_owner_id,
+		t.table_owner_name,
+		g.group_alias AS groupAlias
+	FROM
+		(
+		SELECT 
+			uid,
+			table_owner_id,
+			table_owner_name
+	    FROM commitment_book t
+		<where>
+			<if test="@OGNL@isNotEmpty(uid)">
+	            AND uid = #{uid}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(creditEntityName)">
+	            AND credit_entity_name = #{creditEntityName}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(creditEntityCode)">
+	            AND credit_entity_code = #{creditEntityCode}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(unifySocietyCode)">
+	            AND unify_society_code = #{unifySocietyCode}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(businessLicense)">
+	            AND business_license = #{businessLicense}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(taxRegisterNumber)">
+	            AND tax_register_number = #{taxRegisterNumber}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(legalPerson)">
+	            AND legal_person = #{legalPerson}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(tableOwnerId)">
+	            AND table_owner_id = #{tableOwnerId}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(tableOwnerName)">
+	            AND table_owner_name = #{tableOwnerName}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(filePath)">
+	            AND file_path = #{filePath}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(imgFile)">
+	            AND img_file = #{imgFile}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(isPublish)">
+	            AND is_publish = #{isPublish}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(ctime)">
+	            AND ctime = #{ctime}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(createrId)">
+	            AND creater_id = #{createrId}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(creater)">
+	            AND creater = #{creater}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(etime)">
+	            AND etime = #{etime}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(editorId)">
+	            AND editor_id = #{editorId}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(editor)">
+	            AND editor = #{editor}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(remarks)">
+	            AND remarks = #{remarks}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(deleted)">
+	            AND deleted = #{deleted}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(bookName)">
+	       		AND book_name = #{bookName},
+		        </if>
+		        <if test="@OGNL@isNotEmpty(domainType)">
+	       		AND domain_type = #{domainType},
+		        </if>
+		        <if test="@OGNL@isNotEmpty(orderValue)">
+	       		AND order_value = #{orderValue},
+		        </if>
+		</where>
+		GROUP BY t.table_owner_id
+		) t,
+			rbac.sys_group g
+		WHERE
+			t.table_owner_id = g.group_path
+		AND g.deleted = 0
+		AND g.group_alias IS NOT NULL
+		<if test="siteId != null">
+		AND g.region_id = (SELECT region_id FROM rbac.sys_group WHERE group_id = #{siteId} )
+		</if>
+		ORDER BY
+			g.order_value ASC
+	</select>
+	
+	<select id="queryCommit" parameterType="map" resultMap="BaseResultMap">
+		SELECT 
+		 	<include refid="full-columns" />
+	    FROM commitment_book t
+		<where>
+			<if test="@OGNL@isNotEmpty(uid)">
+	            AND t.uid = #{uid}
+	        </if>
+			<if test="@OGNL@isNotEmpty(creditEntityName)">
+	            AND t.credit_entity_name = #{creditEntityName}
+	        </if>
+			<if test="@OGNL@isNotEmpty(creditEntityCode)">
+	            AND t.credit_entity_code = #{creditEntityCode}
+	        </if>
+			<if test="@OGNL@isNotEmpty(unifySocietyCode)">
+	            AND t.unify_society_code = #{unifySocietyCode}
+	        </if>
+			<if test="@OGNL@isNotEmpty(businessLicense)">
+	            AND t.business_license = #{businessLicense}
+	        </if>
+			<if test="@OGNL@isNotEmpty(taxRegisterNumber)">
+	            AND t.tax_register_number = #{taxRegisterNumber}
+	        </if>
+			<if test="@OGNL@isNotEmpty(legalPerson)">
+	            AND t.legal_person = #{legalPerson}
+	        </if>
+			<if test="@OGNL@isNotEmpty(tableOwnerId)">
+	            AND t.table_owner_id = #{tableOwnerId}
+	        </if>
+			<if test="@OGNL@isNotEmpty(tableOwnerName)">
+	            AND t.table_owner_name = #{tableOwnerName}
+	        </if>
+			<if test="@OGNL@isNotEmpty(filePath)">
+	            AND t.file_path = #{filePath}
+	        </if>
+			<if test="@OGNL@isNotEmpty(imgFile)">
+	            AND t.img_file = #{imgFile}
+	        </if>
+			<if test="@OGNL@isNotEmpty(ctime)">
+	            AND t.ctime = #{ctime}
+	        </if>
+			<if test="@OGNL@isNotEmpty(createrId)">
+	            AND t.creater_id = #{createrId}
+	        </if>
+			<if test="@OGNL@isNotEmpty(creater)">
+	            AND t.creater = #{creater}
+	        </if>
+			<if test="@OGNL@isNotEmpty(etime)">
+	            AND t.etime = #{etime}
+	        </if>
+	        <if test="@OGNL@isNotEmpty(isPublish)">
+	            AND is_publish = #{isPublish}
+	        	</if>
+			<if test="@OGNL@isNotEmpty(editorId)">
+	            AND t.editor_id = #{editorId}
+	        </if>
+			<if test="@OGNL@isNotEmpty(editor)">
+	            AND t.editor = #{editor}
+	        </if>
+			<if test="@OGNL@isNotEmpty(remarks)">
+	            AND t.remarks = #{remarks}
+	        </if>
+			<if test="@OGNL@isNotEmpty(deleted)">
+	            AND t.deleted = #{deleted}
+	        </if>
+	        <if test="@OGNL@isNotEmpty(keyword)">
+	            AND t.credit_entity_name LIKE binary concat('%',#{keyword},'%') OR 
+	            t.table_owner_name LIKE binary concat('%',#{keyword},'%') OR
+	            t.creater LIKE binary concat('%',#{keyword},'%')
+	        </if>
+	        <if test="@OGNL@isNotEmpty(bookName)">
+       			AND t.book_name = #{bookName},
+	        </if>
+	        <if test="@OGNL@isNotEmpty(domainType)">
+       			AND t.domain_type = #{domainType},
+	        </if>
+	        <if test="@OGNL@isNotEmpty(orderValue)">
+       			AND t.order_value = #{orderValue},
+	        </if>
+		</where>
+	</select>
+	
+	<update id="updateImgFile" parameterType="cn.com.dhcc.credit.metadata.po.CommitmentBook">
+        UPDATE commitment_book 
+        <set>
+       		img_file = #{imgFile},etime = now()
+        </set>
+        WHERE deleted=0
+        	AND uid = #{uid}
+	</update>
+	
+	<select id="queryDomainType" parameterType="map" resultType="map">
+		SELECT
+			b.item_value,
+			b.`name`
+		FROM
+			(
+				SELECT
+					cb.table_owner_id,
+					cb.domain_type
+				FROM
+					wzcredit.commitment_book cb
+				GROUP BY
+					cb.domain_type
+			) a,
+			rbac.sys_dict b
+			,rbac.sys_group g
+		WHERE
+			a.domain_type = b.item_value
+		AND a.table_owner_id = g.group_path
+		<if test="siteId != null">
+		AND g.region_id = (SELECT region_id FROM rbac.sys_group WHERE group_id = #{siteId} )
+		</if>
+	</select>
+	
+	<select id="queryRegionAndGroup" parameterType="map" resultType="map">
+	SELECT
+		t.uid,
+		t.table_owner_id,
+		t.table_owner_name,
+		g.group_alias AS groupAlias,
+		g.region_id AS regionId,
+		g.region_name AS regionName
+	FROM
+		(
+		SELECT 
+			uid,
+			table_owner_id,
+			table_owner_name
+	    FROM commitment_book t
+		<where>
+			<if test="@OGNL@isNotEmpty(uid)">
+	            AND uid = #{uid}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(creditEntityName)">
+	            AND credit_entity_name = #{creditEntityName}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(creditEntityCode)">
+	            AND credit_entity_code = #{creditEntityCode}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(unifySocietyCode)">
+	            AND unify_society_code = #{unifySocietyCode}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(businessLicense)">
+	            AND business_license = #{businessLicense}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(taxRegisterNumber)">
+	            AND tax_register_number = #{taxRegisterNumber}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(legalPerson)">
+	            AND legal_person = #{legalPerson}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(tableOwnerId)">
+	            AND table_owner_id = #{tableOwnerId}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(tableOwnerName)">
+	            AND table_owner_name = #{tableOwnerName}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(filePath)">
+	            AND file_path = #{filePath}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(imgFile)">
+	            AND img_file = #{imgFile}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(isPublish)">
+	            AND is_publish = #{isPublish}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(ctime)">
+	            AND ctime = #{ctime}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(createrId)">
+	            AND creater_id = #{createrId}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(creater)">
+	            AND creater = #{creater}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(etime)">
+	            AND etime = #{etime}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(editorId)">
+	            AND editor_id = #{editorId}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(editor)">
+	            AND editor = #{editor}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(remarks)">
+	            AND remarks = #{remarks}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(deleted)">
+	            AND deleted = #{deleted}
+	        	</if>
+	        	<if test="@OGNL@isNotEmpty(bookName)">
+	       		AND book_name = #{bookName},
+		        </if>
+		        <if test="@OGNL@isNotEmpty(domainType)">
+	       		AND domain_type = #{domainType},
+		        </if>
+		        <if test="@OGNL@isNotEmpty(orderValue)">
+	       		AND order_value = #{orderValue},
+		        </if>
+		</where>
+		GROUP BY t.table_owner_id
+		) t,
+			rbac.sys_group g
+		WHERE
+			t.table_owner_id = g.group_path
+		AND g.deleted = 0
+		AND g.group_alias IS NOT NULL
+		<if test="siteId != null">
+		AND g.region_id = (SELECT region_id FROM rbac.sys_group WHERE group_id = #{siteId} )
+		</if>
+		ORDER BY
+			g.order_value ASC
+	</select>
+</mapper>

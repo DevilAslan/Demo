@@ -20,10 +20,13 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import cn.umbrella.commons.bean.BaseQuery;
 import cn.umbrella.commons.validate.ValidateUtil;
+import cn.umbrella.conmmons.genarator.IDGenarator;
 import cn.umbrella.mboss.po.SysUser;
 import cn.umbrella.oss.config.Constant;
+import cn.umbrella.oss.model.wechat.TwxcmsMsgBaseForm;
 import cn.umbrella.oss.service.wechat.IWxMediaService;
 import cn.umbrella.oss.utils.wechat.TokenUtils;
+import cn.umbrella.oss.utils.wechat.WxMessageBuilder;
 import cn.umbrella.oss.vo.MySessionInfo;
 import cn.umbrella.oss.wechat.bean.TwxcmsMsgBase;
 import cn.umbrella.oss.wechat.bean.TwxcmsMsgText;
@@ -46,8 +49,8 @@ public class WXMsgTextController {
 	@Autowired
 	private TokenUtils tokenUtils;
 	
-	@Autowired
-	private ITwxcmsMsgTextService iTwxcmsMsgTextService;
+//	@Autowired
+//	private ITwxcmsMsgTextService iTwxcmsMsgTextService;
 	
 	@Autowired
 	private IWxMediaService wxMediaService;
@@ -77,7 +80,8 @@ public class WXMsgTextController {
 	@ResponseBody
 	public JSONObject getListData(WebRequest request) {
 		BaseQuery query = BaseQuery.encapsulateQueryCondition(request);
-		PageInfo<TwxcmsMsgText> list = iTwxcmsMsgTextService.queryPage(query);
+//		PageInfo<TwxcmsMsgText> list = iTwxcmsMsgTextService.queryPage(query);
+		PageInfo<TwxcmsMsgText> list = null;
 		JSONObject datas = new JSONObject();
 		datas.put("rows", list.getList());
 		datas.put("total", list.getTotal());
@@ -95,7 +99,7 @@ public class WXMsgTextController {
 	@RequestMapping(value="add")
 	public String add(Model model,@ModelAttribute(Constant.MY_SESSION_INFO) MySessionInfo sessionInfo){
 		TwxcmsMsgBaseForm twxcmsMsgBaseForm = new TwxcmsMsgBaseForm();
-		String token = UUIDTool.getUUID();
+		String token = IDGenarator.getUUID32();
 		twxcmsMsgBaseForm.setToken(token);
 		sessionInfo.setToken(token);
 		model.addAttribute("twxcmsMsgBaseForm", twxcmsMsgBaseForm);
@@ -125,7 +129,7 @@ public class WXMsgTextController {
 			wxMedia.setContent(content);
 			wxMedia.setCreaterId(sysUser.getUserId());
 			wxMedia.setCreater(sysUser.getName());
-			iTwxcmsMsgTextService.add(twxcmsMsgBase,wxMedia);
+//			iTwxcmsMsgTextService.add(twxcmsMsgBase,wxMedia);
 			result.addFlashAttribute("msg", "保存成功！");
 			sessionInfo.setToken(null);
 			return  "redirect:" + ACTION_PATH + "list.htm";
@@ -148,9 +152,9 @@ public class WXMsgTextController {
 	public String addNews(Model model,WebRequest request){
 		//String  access_token = tokenUtils.getAccessToken();
 		
-		TwxcmsMsgNewsForm twxcmsMsgNewsForm = new TwxcmsMsgNewsForm();
-		String token = UUIDTool.getUUID();
-		twxcmsMsgNewsForm.setToken(token);
+//		TwxcmsMsgNewsForm twxcmsMsgNewsForm = new TwxcmsMsgNewsForm();
+		String token = IDGenarator.getUUID32();
+//		twxcmsMsgNewsForm.setToken(token);
 	
 		
 		//JSONObject bodyObj = new JSONObject();
@@ -182,8 +186,8 @@ public class WXMsgTextController {
 			//Material material = WxMessageBuilder.getMsgResponseNews(newJsonObject.parse(str).toString());
 			//Material material = WxMessageBuilder.getMsgResponseNews(newJsonObject.toJSONString());
 			
-			model.addAttribute("twxcmsMsgNewsForm", twxcmsMsgNewsForm);
-			model.addAttribute("validate", ValidateUtil.getValidate(TwxcmsMsgNewsForm.class));
+//			model.addAttribute("twxcmsMsgNewsForm", twxcmsMsgNewsForm);
+//			model.addAttribute("validate", ValidateUtil.getValidate(TwxcmsMsgNewsForm.class));
 			model.addAttribute("twxcmsMsgNewsList", wxMediaList);
 			model.addAttribute("imageSrcMap", imageSrcMap);
 			return  "wxcms" + ACTION_PATH + "addNews";
@@ -199,7 +203,7 @@ public class WXMsgTextController {
 			TwxcmsMsgBase twxcmsMsgBase = new TwxcmsMsgBase();
 			BeanUtils.copyProperties(twxcmsMsgBaseForm, twxcmsMsgBase);
 			twxcmsMsgBase.setMsgType("news");
-			iTwxcmsMsgTextService.insertByMediaId(twxcmsMsgBase,newId);
+//			iTwxcmsMsgTextService.insertByMediaId(twxcmsMsgBase,newId);
 			result.addFlashAttribute("msg", "保存成功！");
 			sessionInfo.setToken(null);
 			return  "redirect:" + ACTION_PATH + "list.htm";
@@ -218,18 +222,18 @@ public class WXMsgTextController {
 	 */
 	@RequestMapping(value="toEdit")
 	public String toEdit(Model model,WebRequest request,String baseId,@ModelAttribute(Constant.MY_SESSION_INFO) MySessionInfo sessionInfo){
-		TwxcmsMsgBase twxcmsMsgBase = iTwxcmsMsgTextService.getMediaByBaseId(baseId);
+//		TwxcmsMsgBase twxcmsMsgBase = iTwxcmsMsgTextService.getMediaByBaseId(baseId);
 		TwxcmsMsgBaseForm twxcmsMsgBaseForm = new TwxcmsMsgBaseForm();
-		BeanUtils.copyProperties(twxcmsMsgBase, twxcmsMsgBaseForm);
+//		BeanUtils.copyProperties(twxcmsMsgBase, twxcmsMsgBaseForm);
 		
-		String token = UUIDTool.getUUID();
+		String token = IDGenarator.getUUID32();
 		twxcmsMsgBaseForm.setToken(token);
 		sessionInfo.setToken(token);
 		
 		model.addAttribute("twxcmsMsgBaseForm", twxcmsMsgBaseForm);
-		if(twxcmsMsgBase.getMsgType().equals("text")){
-			return "wxcms" + ACTION_PATH + "updateText";
-		}else if(twxcmsMsgBase.getMsgType().equals("news")){
+//		if(twxcmsMsgBase.getMsgType().equals("text")){
+//			return "wxcms" + ACTION_PATH + "updateText";
+//		}else if(twxcmsMsgBase.getMsgType().equals("news")){
 			
 			BaseQuery query = BaseQuery.encapsulateQueryCondition(request);
 			PageInfo<WxMedia> page = wxMediaService.queryPage(query,MaterialType.NEWS);
@@ -243,8 +247,8 @@ public class WXMsgTextController {
 			}
 			model.addAttribute("twxcmsMsgNewsList", wxMediaList);
 			return "wxcms" + ACTION_PATH + "updateNews";
-		}
-		return null;
+//		}
+//		return null;
 	}
 	
 	/**
@@ -261,7 +265,8 @@ public class WXMsgTextController {
 		if(!flag){
 			TwxcmsMsgBase twxcmsMsgBase = new TwxcmsMsgBase();
 			BeanUtils.copyProperties(twxcmsMsgBaseForm, twxcmsMsgBase);
-			int row = iTwxcmsMsgTextService.updateByMediaId(twxcmsMsgBase);
+			int row = 0;
+//			int row = iTwxcmsMsgTextService.updateByMediaId(twxcmsMsgBase);
 			if(row>0){
 				result.addFlashAttribute("msg", "更新成功！");
 			}else{
@@ -280,7 +285,8 @@ public class WXMsgTextController {
 	@ResponseBody
 	public JSONObject doDeleted(Model model, @ModelAttribute(Constant.MY_SESSION_INFO) MySessionInfo sessionInfo,String[] ids){
 		JSONObject datas = new JSONObject();
-		int row = iTwxcmsMsgTextService.deleteBatch(ids);
+		int row = 0;
+//		int row = iTwxcmsMsgTextService.deleteBatch(ids);
 		if(row>0){
 			datas.put("msg", "删除成功！");
 		}else{

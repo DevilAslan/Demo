@@ -9,7 +9,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>cn.umbrella</groupId>
-	<artifactId>cn.umbrella.mss.webapp</artifactId>
+	<artifactId>demo.cn.umbrella.mss.webapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cn.umbrella.mss.webapp</name>
 	<packaging>war</packaging>
@@ -28,7 +28,7 @@
 		<!--Begin Custom Modular-->
 		<dependency>
 			<groupId>cn.umbrella</groupId>
-			<artifactId>cn.umbrella.commons.util</artifactId>
+			<artifactId>cn.umbrella.commons.utils</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 <!-- 		<dependency> -->

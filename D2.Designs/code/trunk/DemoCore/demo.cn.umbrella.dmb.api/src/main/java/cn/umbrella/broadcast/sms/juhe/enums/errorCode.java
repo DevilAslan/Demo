@@ -1,8 +1,8 @@
 package cn.umbrella.broadcast.sms.juhe.enums;
 
-import cn.umbrella.commons.enums.IGDCommonEnum;
+import cn.umbrella.commons.enums.ICommonEnum;
 
-public enum errorCode implements IGDCommonEnum<String> {
+public enum errorCode implements ICommonEnum<String> {
 	//系统级错误码
  	SYS_10001("10001", "错误的请求KEY"),
  	SYS_10002("10002", "该KEY无请求权限"),
@@ -36,46 +36,46 @@ public enum errorCode implements IGDCommonEnum<String> {
 	
 	DEF("0000", "UNDEFINED");
  	
+ 	private String key;
 	private String value;
-	private String name;
 
-	private errorCode(String value, String name) {
+	private errorCode(String key, String value) {
+		this.key = key;
 		this.value = value;
-		this.name = name;
 	}
 
+	@Override
+	public String getKey() {
+		return this.key;
+	}
+	
 	@Override
 	public String getValue() {
 		return this.value;
 	}
-
-	@Override
-	public String getName() {
-		return this.name;
-	}
-
-	public static String getNameByValue(String value) {
-		for (IGDCommonEnum<String> item : values()) {
-			if (item.getValue().equals(value)) {
-				return item.getName();
-			}
-		}
-		return null;
-	}
-
-	public static String getValueByName(String name) {
-		for (IGDCommonEnum<String> item : values()) {
-			if (item.getName().equals(name)) {
+	
+	public static String getValueByKey(String key) {
+		for (ICommonEnum<String> item : values()) {
+			if (item.getKey().equals(key)) {
 				return item.getValue();
 			}
 		}
 		return null;
 	}
 
-	public static String getValueByItemName(String itemName) {
+	public static String getKeyByValue(String value) {
+		for (ICommonEnum<String> item : values()) {
+			if (item.getValue().equals(value)) {
+				return item.getValue();
+			}
+		}
+		return null;
+	}
+
+	public static String getKeyByItemValue(String itemValue) {
 		String res = null;
 		try {
-			res = valueOf(itemName).getValue();
+			res = valueOf(itemValue).getValue();
 		} catch (IllegalArgumentException | NullPointerException e) {
 		}
 		return res;
