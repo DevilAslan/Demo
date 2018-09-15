@@ -26,9 +26,4 @@
 hs_err_pid*
 
 #ignore folder target 
-model/target/
-license/target/
-device-core/target/
-common/target/
-client/target/
-license-client/target/
+target
