@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="demo.cn.umbrella.static:war exploded">
+    <output-path>$PROJECT_DIR$/demo.cn.umbrella.static/target/static</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="demo.cn.umbrella.static" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/demo.cn.umbrella.static/target/static/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="demo.cn.umbrella.static/web/Web" />
+    </root>
+  </artifact>
+</component>

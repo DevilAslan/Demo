@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="demo.cn.umbrella.static:war">
+    <output-path>$PROJECT_DIR$/demo.cn.umbrella.static/target</output-path>
+    <root id="archive" name="static.war">
+      <element id="artifact" artifact-name="demo.cn.umbrella.static:war exploded" />
+    </root>
+  </artifact>
+</component>

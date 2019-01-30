@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cn.umbrella.bss.report" />
+        <module name="cn.umbrella.bss.service" />
+        <module name="cn.umbrella.dmb.api" />
+        <module name="cn.umbrella.mboss.service" />
+        <module name="cn.umbrella.mss.service" />
+        <module name="cn.umbrella.oss.backstage" />
+        <module name="demo-api" />
+        <module name="demo-example" />
+        <module name="demo.cn.umbrella.mss.webapp" />
+        <module name="demo.cn.umbrella.resource.api" />
+        <module name="demo.cn.umbrella.static" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cn.umbrella.bss.report" target="1.7" />
+      <module name="cn.umbrella.bss.service" target="1.7" />
+      <module name="cn.umbrella.dmb.api" target="1.7" />
+      <module name="cn.umbrella.mboss.service" target="1.7" />
+      <module name="cn.umbrella.mss.service" target="1.7" />
+      <module name="cn.umbrella.oss.backstage" target="7" />
+      <module name="demo-api" target="7" />
+      <module name="demo-example" target="1.7" />
+      <module name="demo.cn.umbrella.mss.webapp" target="7" />
+      <module name="demo.cn.umbrella.resource.api" target="7" />
+      <module name="demo.cn.umbrella.static" target="1.5" />
+      <module name="DemoCore" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

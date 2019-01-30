@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo.cn.umbrella.bss.report" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo.cn.umbrella.bss.service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo.cn.umbrella.dmb.api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo.cn.umbrella.mboss.service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo.cn.umbrella.mss.service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo.cn.umbrella.mss.webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo.cn.umbrella.oss.backstage" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo.cn.umbrella.resource.api" charset="UTF-8" />
+  </component>
+</project>
