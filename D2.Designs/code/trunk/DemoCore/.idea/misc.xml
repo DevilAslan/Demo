@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/demo-api" />
+    <file type="web" url="file://$PROJECT_DIR$/demo.cn.umbrella.mss.webapp" />
+    <file type="web" url="file://$PROJECT_DIR$/demo.cn.umbrella.oss.backstage" />
+    <file type="web" url="file://$PROJECT_DIR$/demo.cn.umbrella.resource.api" />
+    <file type="web" url="file://$PROJECT_DIR$/demo.cn.umbrella.static" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>

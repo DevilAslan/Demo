@@ -6,8 +6,10 @@
     <file url="file://$PROJECT_DIR$/demo-example" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo.cn.umbrella.bss.report" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo.cn.umbrella.bss.service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo.cn.umbrella.commons.util" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo.cn.umbrella.dmb.api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo.cn.umbrella.mboss.service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo.cn.umbrella.mss.model" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo.cn.umbrella.mss.service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo.cn.umbrella.mss.webapp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo.cn.umbrella.oss.backstage" charset="UTF-8" />

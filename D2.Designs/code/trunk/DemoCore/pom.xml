@@ -8,11 +8,12 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>DemoCore</name>
 	<modules>
-		<module>cn.umbrella.commons.utils</module>
+
+		<module>demo.cn.umbrella.commons.util</module>
 		<module>demo.cn.umbrella.static</module>
 		<module>demo.cn.umbrella.dmb.api</module>
 		
-		<module>demo-model</module>
+		<module>demo.cn.umbrella.mss.model</module>
 		
 		<module>demo.cn.umbrella.mss.service</module>
 		<module>demo.cn.umbrella.mss.webapp</module>
@@ -21,7 +22,7 @@
 		<module>demo.cn.umbrella.bss.report</module>
 		
 		<module>demo.cn.umbrella.oss.backstage</module>
-		<module>demo.cn.umbrella.oss.webapp_ftl</module>
+		<!--<module>demo.cn.umbrella.oss.webapp_ftl</module>-->
 		
 		<module>demo.cn.umbrella.mboss.service</module>
 		

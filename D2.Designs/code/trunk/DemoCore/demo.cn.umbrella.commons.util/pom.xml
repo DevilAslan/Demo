@@ -47,7 +47,7 @@
 		<dependency>
 			<groupId>commons-net</groupId>
 			<artifactId>commons-net</artifactId>
-			<version>1.4.1</version>
+			<!--<version>1.4.1</version>-->
 		</dependency>
 
 		<dependency>
@@ -77,7 +77,7 @@
 		<dependency>
 			<groupId>commons-httpclient</groupId>
 			<artifactId>commons-httpclient</artifactId>
-			<version>${commonshttpclient.version}</version>
+			<!--<version>${commonshttpclient.version}</version>-->
 		</dependency>
 		
 		<dependency>
@@ -162,7 +162,7 @@
 		<dependency>
 			<groupId>com.google.zxing</groupId>
 			<artifactId>javase</artifactId>
-			<version>${zxing.version}</version>
+			<!--<version>${zxing.version}</version>-->
 		</dependency>
 		
 		<!-- End qrcode -->
@@ -266,7 +266,7 @@
 		<dependency>
 		  <groupId>org.wltea.IKAnalyzer</groupId>
 		  <artifactId>IKAnalyzer2012_FF</artifactId>
-		  <version>${IKAnalyzer.version}</version>
+		  <!--<version>${IKAnalyzer.version}</version>-->
 		  <scope>provided</scope>
 		</dependency>
 		<!--End lucene -->

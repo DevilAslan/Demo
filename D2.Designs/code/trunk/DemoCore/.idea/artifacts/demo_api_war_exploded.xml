@@ -7,7 +7,9 @@
           <element id="module-output" name="demo-api" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: cn.umbrella:cn.umbrella.commons.util:0.0.1-SNAPSHOT" />
+          <element id="archive" name="cn.umbrella.commons.util-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="cn.umbrella.commons.util" />
+          </element>
           <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.1.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.1.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.1.2.RELEASE" />

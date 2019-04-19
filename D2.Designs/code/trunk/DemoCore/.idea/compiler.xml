@@ -8,10 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cn.umbrella.bss.report" />
         <module name="cn.umbrella.bss.service" />
+        <module name="cn.umbrella.commons.util" />
         <module name="cn.umbrella.dmb.api" />
         <module name="cn.umbrella.mboss.service" />
+        <module name="cn.umbrella.mss.model" />
         <module name="cn.umbrella.mss.service" />
+        <module name="cn.umbrella.mss.webapp" />
         <module name="cn.umbrella.oss.backstage" />
+        <module name="cn.umbrella.resource.api" />
         <module name="demo-api" />
         <module name="demo-example" />
         <module name="demo.cn.umbrella.mss.webapp" />
@@ -22,12 +26,17 @@
     <bytecodeTargetLevel>
       <module name="cn.umbrella.bss.report" target="1.7" />
       <module name="cn.umbrella.bss.service" target="1.7" />
+      <module name="cn.umbrella.commons.util" target="1.7" />
       <module name="cn.umbrella.dmb.api" target="1.7" />
       <module name="cn.umbrella.mboss.service" target="1.7" />
+      <module name="cn.umbrella.mss.model" target="1.7" />
       <module name="cn.umbrella.mss.service" target="1.7" />
+      <module name="cn.umbrella.mss.webapp" target="7" />
       <module name="cn.umbrella.oss.backstage" target="7" />
+      <module name="cn.umbrella.resource.api" target="7" />
       <module name="demo-api" target="7" />
       <module name="demo-example" target="1.7" />
+      <module name="demo.cn.umbrella.mss.model" target="1.7" />
       <module name="demo.cn.umbrella.mss.webapp" target="7" />
       <module name="demo.cn.umbrella.resource.api" target="7" />
       <module name="demo.cn.umbrella.static" target="1.5" />

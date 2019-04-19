@@ -1,17 +1,14 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="cn.umbrella.oss.backstage:war exploded">
-    <output-path>$PROJECT_DIR$/demo.cn.umbrella.oss.backstage/target/api</output-path>
+  <artifact type="exploded-war" name="cn.umbrella.mss.webapp:war exploded">
+    <output-path>$PROJECT_DIR$/demo.cn.umbrella.mss.webapp/target/api</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="cn.umbrella.oss.backstage" />
+          <element id="module-output" name="cn.umbrella.mss.webapp" />
         </element>
         <element id="directory" name="lib">
           <element id="archive" name="cn.umbrella.commons.util-0.0.1-SNAPSHOT.jar">
             <element id="module-output" name="cn.umbrella.commons.util" />
-          </element>
-          <element id="archive" name="cn.umbrella.mboss.service-0.0.1-SNAPSHOT.jar">
-            <element id="module-output" name="cn.umbrella.mboss.service" />
           </element>
           <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.1.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.1.2.RELEASE" />
@@ -88,9 +85,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/demo.cn.umbrella.oss.backstage/target/api/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/demo.cn.umbrella.mss.webapp/target/api/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="cn.umbrella.oss.backstage/web/Web" />
+      <element id="javaee-facet-resources" facet="cn.umbrella.mss.webapp/web/Web" />
     </root>
   </artifact>
 </component>

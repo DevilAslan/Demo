@@ -1,28 +1,22 @@
 package cn.umbrella.rss.controller;
 
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayOutputStream;
-import java.util.Calendar;
-
-import javax.imageio.ImageIO;
-import javax.servlet.ServletOutputStream;
-import javax.servlet.http.HttpServletResponse;
-
-import org.apache.log4j.Logger;
+import cn.umbrella.rss.config.Constant;
+import com.google.code.kaptcha.impl.DefaultKaptcha;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import cn.umbrella.rss.config.Constant;
-
-import com.google.code.kaptcha.impl.DefaultKaptcha;
+import javax.imageio.ImageIO;
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletResponse;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayOutputStream;
 
 @Controller
 @RequestMapping(SupportServerController.ACTION_PATH)
 @SessionAttributes(Constant.CREDIT_SESSION)
 public class SupportServerController {
-	protected Logger logger = Logger.getLogger(this.getClass());
 	protected static final String ACTION_PATH = "/server/file";
 	protected static final String PAGE_PATH = "/page/file/";
 	
@@ -31,7 +25,6 @@ public class SupportServerController {
 	
 	/**
      * 图形验证码
-     * @param sessionInfo
      * @param response
      * @throws Exception
      */
@@ -61,7 +54,7 @@ public class SupportServerController {
 //            sessionInfo.setVerifyCodeTimeout(Calendar.getInstance().getTime().getTime() + VERIFYCODE_TIMEOUT * 1000);
         } catch (IllegalArgumentException e) {
             e.printStackTrace();
-            logger.error("验证码生成失败");
+//            logger.error("验证码生成失败");
             response.sendError(HttpServletResponse.SC_NOT_FOUND);
             return;
         }

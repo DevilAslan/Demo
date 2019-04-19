@@ -3,16 +3,30 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DemoCore.iml" filepath="$PROJECT_DIR$/DemoCore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DemoCore.iml" filepath="$PROJECT_DIR$/DemoCore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.bss.report/cn.umbrella.bss.report.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.bss.report/cn.umbrella.bss.report.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.bss.report/cn.umbrella.bss.report.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.bss.report/cn.umbrella.bss.report.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.bss.service/cn.umbrella.bss.service.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.bss.service/cn.umbrella.bss.service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.bss.service/cn.umbrella.bss.service.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.bss.service/cn.umbrella.bss.service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.commons.util/cn.umbrella.commons.util.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.commons.util/cn.umbrella.commons.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.dmb.api/cn.umbrella.dmb.api.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.dmb.api/cn.umbrella.dmb.api.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.dmb.api/cn.umbrella.dmb.api.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.dmb.api/cn.umbrella.dmb.api.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.mboss.service/cn.umbrella.mboss.service.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.mboss.service/cn.umbrella.mboss.service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.mboss.service/cn.umbrella.mboss.service.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.mboss.service/cn.umbrella.mboss.service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.mss.model/cn.umbrella.mss.model.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.mss.model/cn.umbrella.mss.model.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.mss.service/cn.umbrella.mss.service.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.mss.service/cn.umbrella.mss.service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.mss.service/cn.umbrella.mss.service.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.mss.service/cn.umbrella.mss.service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.mss.webapp/cn.umbrella.mss.webapp.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.mss.webapp/cn.umbrella.mss.webapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.oss.backstage/cn.umbrella.oss.backstage.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.oss.backstage/cn.umbrella.oss.backstage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.oss.backstage/cn.umbrella.oss.backstage.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.oss.backstage/cn.umbrella.oss.backstage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.resource.api/cn.umbrella.resource.api.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.resource.api/cn.umbrella.resource.api.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-api/demo-api.iml" filepath="$PROJECT_DIR$/demo-api/demo-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-api/demo-api.iml" filepath="$PROJECT_DIR$/demo-api/demo-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-example/demo-example.iml" filepath="$PROJECT_DIR$/demo-example/demo-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-example/demo-example.iml" filepath="$PROJECT_DIR$/demo-example/demo-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.mss.webapp/demo.cn.umbrella.mss.webapp.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.mss.webapp/demo.cn.umbrella.mss.webapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.resource.api/demo.cn.umbrella.resource.api.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.resource.api/demo.cn.umbrella.resource.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.static/demo.cn.umbrella.static.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.static/demo.cn.umbrella.static.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo.cn.umbrella.static/demo.cn.umbrella.static.iml" filepath="$PROJECT_DIR$/demo.cn.umbrella.static/demo.cn.umbrella.static.iml" />
     </modules>
   </component>

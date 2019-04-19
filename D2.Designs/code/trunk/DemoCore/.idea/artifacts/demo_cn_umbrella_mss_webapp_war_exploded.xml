@@ -4,7 +4,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="demo.cn.umbrella.mss.webapp" />
+          <element id="module-output" name="cn.umbrella.mss.webapp" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: cn.umbrella:cn.umbrella.commons.utils:0.0.1-SNAPSHOT" />
@@ -85,7 +85,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/demo.cn.umbrella.mss.webapp/target/api/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="demo.cn.umbrella.mss.webapp/web/Web" />
+      <element id="javaee-facet-resources" facet="cn.umbrella.mss.webapp/web/Web" />
     </root>
   </artifact>
 </component>
